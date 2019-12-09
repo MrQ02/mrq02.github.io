@@ -25,7 +25,7 @@ h2 a { color: #000; }
 
 h2 a:hover { text-decoration: none; }
 
-p, address, ul { font-size: 1.5em; margin-bottom: 20px; font-weight: 300; line-height: 1.6em; font-family: 'Lato', 'Perpetua', sans-serif; }
+p, address, ul { font-size: 1.38em; margin-bottom: 20px; font-weight: 300; line-height: 1.6em; font-family: 'Lato', 'Perpetua', sans-serif; }
 
 .hero { color: #ffffff; text-align: center; height: 100vh; min-height: 550px; background-color: #333; background-repeat: no-repeat; background-size: cover; background-position: center center; }
 
