@@ -5,10 +5,42 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/screen.css">
-	<script type='text/javascript' src='js/main.js'></script>
 </head>
 
 <body>
+	<header id="mainHeader">
+			<div class="container">
+				<nav>
+					<a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
+					
+						
+						
+				
+						
+						<a href="/" class=" active" >Main</a>
+					
+						
+						
+				
+						
+						<a href="/cv/" class="" >CV</a>
+					
+						
+						
+				
+						
+						<a href="/roadmap/" class="" >Roadmap</a>
+					
+						
+						
+				
+						
+						<a href="http://github.com/mrq02" class="" >Projects</a>
+					
+				</nav>
+				<p class="editor-link"><a style="display:inline;" href="cloudcannon:collections/_data/navigation.yml" class="btn"><strong>&#9998;</strong> Edit navigation</a></p>
+			</div>
+	</header>
 	<section class="hero" style="background-image: url(./images/background-cover.gif)">
 		<div class="inner-hero text-container">
 			<div class="hero-text-container">
@@ -70,28 +102,16 @@
 					<h2 class="editable">Categories</h2>
 					<table style="width: 100%">
 						<tr>
-							<td class="sl"
-								style="background-image: url('./images/sl/ml.png'); background-size: cover; ">
-								Machine<br>Learning</td>
-							<td class="sl"
-								style="background-image: url('./images/sl/dl.png'); background-size: cover; ">
-								Deep<br>Learning</td>
-						</tr>
-						<tr>
-							<td class="sl"
-								style="background-image: url('./images/sl/rl.png'); background-size: cover; ">
-								Reinforcement<br>Learning</td>
-							<td class="sl"
-								style="background-image: url('./images/sl/ai.png'); background-size: cover; ">
-								Artificial<br>Intelligence</td>
-						</tr>
-						<tr>
-							<td class="sl"
-								style="background-image: url('./images/sl/pr.png'); background-size: cover; ">
-								Probability<br>& Statistics</td>
-							<td class="sl"
-								style="background-image: url('./images/sl/ec.png'); background-size: cover; ">
-								Econometrics<br>& Time Series</td>
+							<td class="sl" style="background-color: rgb(255, 98, 98); background-size: cover">
+								<h3>CV</h3>
+								<p>For CV & interesting facts about Mr.Q &#8594;</p>
+							</td>
+							<td class="sl" style="background-color: rgb(0, 255, 191); background-size: cover">
+								<h3>Roadmap</h3>
+								<p>For the roadmap of Mr.Q's self<br>study notes &#8594;</p>
+							<td class="sl" style="background-color: rgb(204, 127, 255); background-size: cover">
+								<h3>Projects</h3>
+								<p>For programs posted on Mr.Q's github &#8594;</p>
 						</tr>
 					</table>
 					<!--<div class="cta button alt"><a href="#">Join Now</a></div>-->
@@ -99,6 +119,8 @@
 			</div>
 		</section>
 	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>

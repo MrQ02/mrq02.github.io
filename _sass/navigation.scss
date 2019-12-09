@@ -21,7 +21,6 @@ nav {
 	font-size: .8em;
 	width: 100%;
 	position: relative;
-	top: -7px;
 	text-shadow: none;
 
 	@media #{$mid-point} {
@@ -47,7 +46,7 @@ nav {
 			display: inline;
 			position: absolute;
 			right: 10px;
-			top: -7px;
+			// top: -7px;
 			font-size: 1.9em;
 			border: 0;
 			text-shadow: 0;
@@ -62,8 +61,8 @@ nav {
 		}
 	}
 
-	a.active {
-		border-bottom: 5px solid #ffa74d;
-	}
+	// a.active {
+	// 	border-bottom: 5px solid #ffa74d;
+	// }
 
 }
