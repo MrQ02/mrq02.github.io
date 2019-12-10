@@ -13,7 +13,7 @@ plugins:
 
 nav:
     - {title: Main, description: Back to Main, url: '/'}
-    - {title: CV, description: My CV, url: 'CV/'}
+    - {title: CV, description: My CV, url: '/cv.html'}
     - {title: Roadmap, description: Roadmap of notes, url: 'roadmap/'}
     - {title: Projects, description: My Projects, url: 'http://github.com/mrq02'}
     
