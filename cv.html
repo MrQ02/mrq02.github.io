@@ -1,0 +1,174 @@
+---
+title: Mr.Q's CV
+description: AI & Stats addict
+---
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../css/screen.css">
+</head>
+
+<body>
+	<header id="mainHeader">
+			<div class="container">
+				<nav>
+					<a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
+					{% for link in site.data.navigation %}
+						{% assign class = "" %}
+						{% if link.highlight %}
+							{% assign class = class | append: " highlight" %}
+						{% endif %}
+				
+						{% if link.link == page.url %}
+							{% assign class = class | append: " active" %}
+						{% endif %}
+						<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
+					{% endfor %}
+				</nav>
+				<!--<p class="editor-link"><a style="display:inline;" href="cloudcannon:collections/_data/navigation.yml" class="btn"><strong>&#9998;</strong> Edit navigation</a></p>-->
+			</div>
+	</header>
+	<section class="hero" style="background-image: url('../images/cv1.png')">
+		<div class="inner-hero text-container">
+			<div class="hero-text-container">
+				<h1 class="editable">{{ page.title }}</h1>
+				<p class="subtext editable">{{ page.description }}</p>
+			</div>
+		</div>
+		<div class="learn-more"><a href="#learn-more">Learn more <span class="arrow">&#x25BC;</span></a></div>
+	</section>
+
+	<div class="content">
+		<section class="info" id="learn-more">
+			<div class="container flex">
+				<!--<div class="image">
+					<img class="editable" src="/images/me.JPG" style="border-radius: 50%; width: 75%" />
+				</div>-->
+				<div class="text">
+					<h2 style="text-align: center">Education</h2>
+					<table align="center">
+						<tr>
+							<td>2015-2017</td>
+							<td>Rosslyn Academy</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>2017-2018</td>
+							<td>Tampere University of Technology (IT, Physics, Mathematics)</td>
+							<td>GPA: 4.87/5.0</td>
+						</tr>
+						<tr>
+							<td>2018-2022</td>
+							<td>Keio University - PEARL program (Economics)</td>
+							<td>GPA: 4.0/4.0</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+
+		<section class="info">
+			<div class="container flex">
+				<div class="text">
+					<h2 style="text-align: center"><br>Work Experiences</h2>
+					<table align="center">
+						<tr>
+							<td>
+								<ul style="list-style-type: circle; font-size: 1em; list-style-position: inside"><strong>FLUX Co. – Data Engineer (2018/04 - 2018/11)</strong>
+									<li>Project: BI tool creation (Advertisement Data)</li>
+									<li>Tasks: Tool Architecture, Web Data Scraping, Data Processing, Database Interaction, etc.</li>
+									<li>Packages & Tools: scrapy, uuid, threading, numpy, pandas, selenium, request&response,<br>beautifulsoup, urllib, Postman, MongoDB, etc.</li>
+									<li>Result: success</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<ul style="list-style-type: circle; font-size: 1em; list-style-position: inside"><strong>OptoFidelity Co. – ML Project Engineer (2017/10 - 2018/05)</strong>
+									<li>Project: Object Detection (Digital Screen Defects)</li>
+									<li>Tasks: Segment Annotation, Data Collection, Tool Modification, etc.</li>
+									<li>Packages & Tools: labelme, labelbox, keras, tensorflow, scikit-learn, numpy, pandas</li>
+									<li>Result: failure due to the complexity of defects’ shapes. Polygonal annotation should<br>have been replaced with rectangles.</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<ul style="list-style-type: circle; font-size: 1em; list-style-position: inside"><strong>BRCK Co. – Arduino Engineer Intern (2016/05 - 2016/07)</strong>
+									<li>Project: GPS&SIM Module of the main product Brick</li>
+									<li>Tasks: Programming</li>
+									<li>Packages & Tools: Arduino & C++</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<ul style="list-style-type: none; font-size: 1em; list-style-position: outside"><strong>Others</strong>
+									<li>Slush 2019 Tokyo – Dialogue Stage Team Leader</li>
+									<li>Slush 2017 Helsinki – Security Service Team Volunteer</li>
+									<li>EESTEC – Autonomous Driving Workshop with RWTH Aachen</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+
+		<section class="info">
+			<div class="container flex">
+				<div class="text">
+					<h2 style="text-align: center">Achievements</h2>
+					<table align="center">
+						<tr>
+							<td>
+								<ul style="list-style-type: circle; font-size: 1em; list-style-position: inside"><strong>Mathematics</strong>
+									<li>57th IMO Participation Award (Correct Answers: 4/6, Final Score: 5/42)</li>
+									<li>Issac Newton Award – Prominence in Mathematics in Rosslyn Academy</li>
+									<li>Math League Leader with distinction in Rosslyn Academy</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<ul style="list-style-type: circle; font-size: 1em; list-style-position: inside"><strong>Scholarships</strong>
+									<li>2019 Keio University Scholarship</li>
+									<li>2019 Goldman Sachs Scholars Fund</li>
+									<li>2018 Jasso Honors Scholarship</li>
+									<li>2017 Academic Excellence Award in Tampere University of Technology</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+
+		<section class="hero" style="background-image: url('../images/cv2.jpg')">
+			<div class="inner-hero text-container">
+				<div class="hero-text-container">
+					<h2 class="editable">Interesting facts</h2>
+					<ul align="center" style="list-style-type: circle; font-family: 'Tw Cen MT', sans-serif; color: white; text-align: left; margin-bottom: 0;">
+						<li>He has never met anyone who could finish standard Math exams faster than him since primary school.</li>
+						<li>He never studied Python, but he is best at Python among all languages.</li>
+						<li>He suffered from diagnosed depression for over 1 month at 11 because he watched Wall-E.</li>
+						<li>He taught himself Calculus through MIT OCW at 14, but he had to retake everything again for the sake of credits in high school, in Finland, and in Japan, for a total of 6 years.</li>
+						<li>He had always been a pessimist when his family was rich, but he gradually transformed into a believer of optimistic nihilism after his family went broke.</li>
+						<li>He regrets every single life decision he made between 2017/01-2019/12.</li>
+						<li>Regardless of his enthusiasm on AI & Stats, he wants to be a chef after retirement.</li>
+						<li>He is a 100% extreme hardcore <a href="https://www.16personalities.com/intj-personality" style="color: white" target="_blank"><strong>INTJ</strong></a>.</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.0.2/dist/gsap.min.js"></script>
+</body>
+
+</html>
