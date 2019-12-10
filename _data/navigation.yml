@@ -1,7 +1,7 @@
 - name: Main
   link: /
 - name: CV
-  link: /cv.html
+  link: /cv/
 - name: Roadmap
   link: /roadmap/
 - name: Projects
