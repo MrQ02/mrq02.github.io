@@ -2,7 +2,8 @@
 layout: post
 title: "Machine Learning"
 date: 2019-12-08 22:29:53 +0900
-permalink: /ML/
+categories: ML
+permalink: /:categories/
 ---
 
 ## Machine Learning

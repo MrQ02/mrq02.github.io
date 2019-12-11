@@ -19,7 +19,6 @@ nav:
     - {title: Roadmap, description: Roadmap of notes, url: '/roadmap/'}
     - {title: Projects, description: My Projects, url: 'http://github.com/mrq02'}
 
-permalink: /:categories/
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
