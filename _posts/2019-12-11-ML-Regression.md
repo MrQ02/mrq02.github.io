@@ -4,8 +4,6 @@ title: "Regression"
 date: 2019-12-01 22:29:53 +0900
 categories: ML Regression
 permalink: /:categories/
-header-includes:
-   - \usepackage{mathtools}
 ---
 
 ## Notations
