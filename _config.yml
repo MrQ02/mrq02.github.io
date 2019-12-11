@@ -11,12 +11,15 @@ theme: minima
 plugins:
   - jekyll-feed
 
+markdown: kramdown
+
 nav:
     - {title: Main, description: Back to Main, url: '/'}
     - {title: CV, description: My CV, url: '/cv/'}
     - {title: Roadmap, description: Roadmap of notes, url: '/roadmap/'}
     - {title: Projects, description: My Projects, url: 'http://github.com/mrq02'}
-    
+
+permalink: /:categories/
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
