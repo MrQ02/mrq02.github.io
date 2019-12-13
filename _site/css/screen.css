@@ -39,11 +39,11 @@ p, address, ul, table { font-size: 1.38em; margin-bottom: 20px; font-weight: 300
 
 .hero .hero-text-container h1, .hero .hero-text-container h2, .hero .hero-text-container p, .hero .hero-text-container .button { text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8); }
 
-.hero .hero-text-container table { border-spacing: 15px; width: 1000px; }
+.hero .hero-text-container table { border-spacing: 15px; width: 100%; }
 
-.hero .hero-text-container td { width: 30%; height: 200px; text-align: middle; background: linear-gradient(to bottom, rgba(145, 145, 145, 0.8) 20%, rgba(95, 95, 95, 0.8) 100%); }
+.hero .hero-text-container td { width: 25%; height: 150px; text-align: middle; background: linear-gradient(to bottom, rgba(145, 145, 145, 0.8) 20%, rgba(95, 95, 95, 0.8) 100%); }
 
-.hero .hero-text-container td h3 { font-weight: normal; font-size: 30px; letter-spacing: 1px; }
+.hero .hero-text-container td h3 { font-weight: normal; font-size: 25px; letter-spacing: 1px; color: white; font-family: 'Tw Cen MT', sans-serif; }
 
 .hero .hero-text-container td p { font-family: 'Rubik', 'Tw Cen MT', sans-serif; font-weight: normal; font-size: 15px; text-align: left; text-shadow: none; margin-left: 5%; }
 

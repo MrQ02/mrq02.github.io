@@ -76,6 +76,8 @@ $$\begin{equation*}
       A: these matrix operations require too much computing power. GD is relatively much faster.
 
 - Probabilistic Interpretation
+    
+    
     1. Probabilistic Model of Linear Regression
     
         $$\begin{equation}
@@ -83,6 +85,61 @@ $$\begin{equation*}
         \end{equation}$$
         
         where $y^{(i)}=w^Tx^{(i)}+\epsilon^{(i)}$ and $\epsilon^{(i)}\sim N(0,\sigma)$
+        
+    2. Likelihood Function
+    
+        $$\begin{equation}
+        L(w)=\prod_{i=1}^{m}p(y^{(i)}|x^{(i)},w)=\prod_{i=1}^{m}\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(y^{(i)}-w^Tx^{(i)})^2}{2\sigma^2}}
+        \end{equation}$$
+        
+    3. Log Likelihoood
+      
+        $$\begin{align}
+        \mathcal{l}(w)&=\log{L(w)} \\
+        &=\log{\prod_{i=1}^{m}\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(y^{(i)}-w^Tx^{(i)})^2}{2\sigma^2}}} \\
+        &=\sum_{i=1}^{m}\log{\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(y^{(i)}-w^Tx^{(i)})^2}{2\sigma^2}}} \\
+        &=m\log{\frac{1}{\sqrt{2\pi}\sigma}}-\frac{1}{2\sigma^2}\sum_{i=1}^{m}(y^{(i)}-w^Tx^{(i)})^2
+        \end{align}$$
+    
+        Why log?
+        
+        1. log = monotonic & increasing on $[0,1]\rightarrow$  
+        
+            $$\mathop{\arg\max}_ {w}L(w)=\mathop{\arg\max}_ {w}\log{L(w)}$$
+            
+        2. log simplifies calculation (especially & obviously for $\prod$)
+        
+    4. MLE (Maximum Likelihood Estimation)
+    
+        $$\begin{align}
+        \mathop{\arg\max}_ {w}\mathcal{l}(w)&=\mathop{\arg\max}_ {w}(m\log{\frac{1}{\sqrt{2\pi}\sigma}}-\frac{1}{2\sigma^2}\sum_{i=1}^{m}(y^{(i)}-w^Tx^{(i)})^2) \\
+        &=\mathop{\arg\max}_ {w}(-\sum_{i=1}^{m}(y^{(i)}-w^Tx^{(i)})^2) \\
+        &=\mathop{\arg\min}_ {w}\sum_{i=1}^{m}(y^{(i)}-w^Tx^{(i)})^2
+        \end{align}$$
+        
+- LWR (Locally Weighted Linear Regression)
+    1. Original LinReg
+    
+        $$\begin{equation}
+        w\leftarrow\mathop{\arg\min}_ {w}\sum_{i=1}^{m}(y^{(i)}-w^Tx^{(i)})^2
+        \end{equation}$$
+        
+        Interpretation: we find the $w$ that minimizes the cost function that in turn maximizes the likelihood function so that our linear regression model is optimized to fit the data.
+        
+    2. LWR
+    
+        $$\begin{equation}
+        w\leftarrow\mathop{\arg\min}_ {w}\sum_{i=1}^{m}e^{-\frac{(x^{(i)}-x)^2}{2\tau^2}}\cdot(y^{(i)}-w^Tx^{(i)})^2
+        \end{equation}$$
+        
+        Interpretation: we add the weight function $W(x)=e^{-\frac{(x^{(i)}-x)^2}{2\tau^2}}$ to change the game.
+        
+        What game?
+        - Original Game:
+        
+            - underfit
+            
+                ![](../../images/ML/underfit.png)
         
         
         

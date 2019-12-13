@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-11T14:36:35+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">Machine Learning</title><link href="http://localhost:4000/ML/" rel="alternate" type="text/html" title="Machine Learning" /><published>2019-12-08T22:29:53+09:00</published><updated>2019-12-08T22:29:53+09:00</updated><id>http://localhost:4000/ML-welcome</id><content type="html" xml:base="http://localhost:4000/ML/">&lt;h2 id=&quot;machine-learning&quot;&gt;Machine Learning&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-14T00:13:28+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">Machine Learning</title><link href="http://localhost:4000/ML/" rel="alternate" type="text/html" title="Machine Learning" /><published>2019-12-08T22:29:53+09:00</published><updated>2019-12-08T22:29:53+09:00</updated><id>http://localhost:4000/ML-welcome</id><content type="html" xml:base="http://localhost:4000/ML/">&lt;h2 id=&quot;machine-learning&quot;&gt;Machine Learning&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Regression&lt;/strong&gt;&lt;/p&gt;
 
@@ -161,6 +161,7 @@
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Probabilistic Interpretation&lt;/p&gt;
+
     &lt;ol&gt;
       &lt;li&gt;
         &lt;p&gt;Probabilistic Model of Linear Regression&lt;/p&gt;
@@ -170,6 +171,85 @@
  \end{equation}&lt;/script&gt;
 
         &lt;p&gt;where $y^{(i)}=w^Tx^{(i)}+\epsilon^{(i)}$ and $\epsilon^{(i)}\sim N(0,\sigma)$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Likelihood Function&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ L(w)=\prod_{i=1}^{m}p(y^{(i)}|x^{(i)},w)=\prod_{i=1}^{m}\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(y^{(i)}-w^Tx^{(i)})^2}{2\sigma^2}}
+ \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Log Likelihoood&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ \mathcal{l}(w)&amp;=\log{L(w)} \\
+ &amp;=\log{\prod_{i=1}^{m}\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(y^{(i)}-w^Tx^{(i)})^2}{2\sigma^2}}} \\
+ &amp;=\sum_{i=1}^{m}\log{\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(y^{(i)}-w^Tx^{(i)})^2}{2\sigma^2}}} \\
+ &amp;=m\log{\frac{1}{\sqrt{2\pi}\sigma}}-\frac{1}{2\sigma^2}\sum_{i=1}^{m}(y^{(i)}-w^Tx^{(i)})^2
+ \end{align} %]]&gt;&lt;/script&gt;
+
+        &lt;p&gt;Why log?&lt;/p&gt;
+
+        &lt;ol&gt;
+          &lt;li&gt;
+            &lt;p&gt;log = monotonic &amp;amp; increasing on $[0,1]\rightarrow$&lt;/p&gt;
+
+            &lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathop{\arg\max}_ {w}L(w)=\mathop{\arg\max}_ {w}\log{L(w)}&lt;/script&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;log simplifies calculation (especially &amp;amp; obviously for $\prod$)&lt;/p&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;MLE (Maximum Likelihood Estimation)&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ \mathop{\arg\max}_ {w}\mathcal{l}(w)&amp;=\mathop{\arg\max}_ {w}(m\log{\frac{1}{\sqrt{2\pi}\sigma}}-\frac{1}{2\sigma^2}\sum_{i=1}^{m}(y^{(i)}-w^Tx^{(i)})^2) \\
+ &amp;=\mathop{\arg\max}_ {w}(-\sum_{i=1}^{m}(y^{(i)}-w^Tx^{(i)})^2) \\
+ &amp;=\mathop{\arg\min}_ {w}\sum_{i=1}^{m}(y^{(i)}-w^Tx^{(i)})^2
+ \end{align} %]]&gt;&lt;/script&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;LWR (Locally Weighted Linear Regression)&lt;/p&gt;
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;Original LinReg&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ w\leftarrow\mathop{\arg\min}_ {w}\sum_{i=1}^{m}(y^{(i)}-w^Tx^{(i)})^2
+ \end{equation}&lt;/script&gt;
+
+        &lt;p&gt;Interpretation: we find the $w$ that minimizes the cost function that in turn maximizes the likelihood function so that our linear regression model is optimized to fit the data.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;LWR&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ w\leftarrow\mathop{\arg\min}_ {w}\sum_{i=1}^{m}e^{-\frac{(x^{(i)}-x)^2}{2\tau^2}}\cdot(y^{(i)}-w^Tx^{(i)})^2
+ \end{equation}&lt;/script&gt;
+
+        &lt;p&gt;Interpretation: we add the weight function $W(x)=e^{-\frac{(x^{(i)}-x)^2}{2\tau^2}}$ to change the game.&lt;/p&gt;
+
+        &lt;p&gt;What game?&lt;/p&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;p&gt;Original Game:&lt;/p&gt;
+
+            &lt;ul&gt;
+              &lt;li&gt;
+                &lt;p&gt;underfit&lt;/p&gt;
+
+                &lt;p&gt;&lt;img src=&quot;../../images/ML/underfit.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;

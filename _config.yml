@@ -16,6 +16,7 @@ nav:
     - {title: CV, description: My CV, url: '/cv/'}
     - {title: Roadmap, description: Roadmap of notes, url: '/roadmap/'}
     - {title: Projects, description: My Projects, url: 'http://github.com/mrq02'}
+    - {title: About, description: About Mr.Q, url: '/about/'}
 
 markdown: kramdown
 # Exclude from processing.
