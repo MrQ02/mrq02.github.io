@@ -6,6 +6,12 @@ permalink: /ML/Regression/
 header-includes:
 - \usepackage{amsmath}
 ---
+## Intro
+
+This covers the basics of two basic regressions as the very basics of Machine Learning.
+- [Linear Regression](#linreg)
+- [Logistic Regression](#logreg)
+
 
 ## Notations
 
@@ -16,7 +22,7 @@ header-includes:
 - $w_j$ = the weight for $j$th feature (assume $w_0=b:\sum_{i=1}^{n}w_i x_i+b = \sum_{i=0}^{n}w_i x_i$)
 - $\hat{y}=h(x)$= the hypothetical model
 
-## Linear Regression
+## <a name="linreg"></a>Linear Regression
 
 - Model
 
@@ -24,13 +30,13 @@ $$\begin{equation}
 \hat{y}=\sum_{i=0}^{n}w_ix_i=w^Tx
 \end{equation}$$
 
-- Cost Function (OLS)
+- **Cost Function (OLS)**
 
 $$\begin{equation*}
 \mathcal{L}(w)=\frac{1}{2}\sum_{i=1}^{m}(\hat{y}^{(i)}-y^{(i)})^2
 \end{equation*}$$
 
-- Gradient Descent
+- **Gradient Descent**
 
     $$\begin{equation*}
     w_j := w_j-\alpha\frac{\partial\mathcal{L}(w)}{\partial w_j}
@@ -54,7 +60,7 @@ $$\begin{equation*}
         w_j = w_j-\alpha\sum_{i=1}^{m'}(\hat{y}^{(i)}-y^{(i)})x_j^{(i)}
         \end{equation*}$$
     
-- Normal Equation (the exact solution)
+- **Normal Equation** (the exact solution)
 
     $$\begin{equation*}
     W=(X^TX)^{-1}X^Ty
@@ -92,7 +98,7 @@ $$\begin{equation*}
         L(w)=\prod_{i=1}^{m}p(y^{(i)}|x^{(i)},w)=\prod_{i=1}^{m}\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(y^{(i)}-w^Tx^{(i)})^2}{2\sigma^2}}
         \end{equation}$$
         
-    3. Log Likelihoood
+    3. **Log Likelihoood**
       
         $$\begin{align}
         \mathcal{l}(w)&=\log{L(w)} \\
@@ -109,7 +115,7 @@ $$\begin{equation*}
             
         2. log simplifies calculation (especially & obviously for $\prod$)
         
-    4. MLE (Maximum Likelihood Estimation)
+    4. **MLE** (Maximum Likelihood Estimation)
     
         $$\begin{align}
         \mathop{\arg\max}_ {w}\mathcal{l}(w)&=\mathop{\arg\max}_ {w}(m\log{\frac{1}{\sqrt{2\pi}\sigma}}-\frac{1}{2\sigma^2}\sum_{i=1}^{m}(y^{(i)}-w^Tx^{(i)})^2) \\
@@ -117,7 +123,7 @@ $$\begin{equation*}
         &=\mathop{\arg\min}_ {w}\sum_{i=1}^{m}(y^{(i)}-w^Tx^{(i)})^2
         \end{align}$$
         
-- LWR (Locally Weighted Linear Regression)
+- **LWR** (Locally Weighted Linear Regression)
     1. Original LinReg
     
         $$\begin{equation}
@@ -132,17 +138,145 @@ $$\begin{equation*}
         w\leftarrow\mathop{\arg\min}_ {w}\sum_{i=1}^{m}e^{-\frac{(x^{(i)}-x)^2}{2\tau^2}}\cdot(y^{(i)}-w^Tx^{(i)})^2
         \end{equation}$$
         
-        Interpretation: we add the weight function $W(x)=e^{-\frac{(x^{(i)}-x)^2}{2\tau^2}}$ to change the game.
+        Interpretation: we add the weight function $W^{(i)}=e^{-\frac{(x^{(i)}-x)^2}{2\tau^2}}$ to change the game.
         
         What game?
-        - Original Game:
-        
-            - underfit
+        - **Underfitting**: the model barely fits the data points.
             
-                ![](../../images/ML/underfit.png)
+            ![](../../images/ML/underfit.png)
+            
+            One single line is usually not enough to capture the pattern of $x\ \&\ y$. In order to get a better fit, we add more polynomial features ($x^j$) to the original model:
         
+        - **Overfitting**: the model fits the given data points too well that it cannot be used on other data points
+            
+            ![](../../images/ML/overfit.png)
+                
+            When we add too much (e.g. $y=\sum_{j=0}^{6}w_jx^j$), the model captures the pattern of the given data points $(x^{(i)},y^{(i)})$ too much that it cannot perform well on new data points.
         
+        How can LWR change the game?
+        - When we would like to estimate $y$ at a certain $x$, instead of applying the original LinReg, we take a subset of data points $(x^{(i)},y^{(i)})$ around $x$ and try to do LinReg on that subset only so that we can get a more accurate estimation. 
+        - numerator
         
+        $$\begin{align}
+        &\text{If}\ |x^{(i)}-x|=\text{small} \longrightarrow W^{(i)}\approx 1 \\
+        &\text{If}\ |x^{(i)}-x|=\text{large} \longrightarrow W^{(i)}\approx 0
+        \end{align}$$
+            
+        - bandwidth parameter: $\tau$ (how fast the weight of $x^{(i)}$ falls off the query point $x$)
+        
+## <a name="logreg"></a>Logistic Regression (Classification)
+
+- Model
+
+    $$\begin{equation}
+    \hat{y}=g(w^Tx)
+    \end{equation}$$
+
+    $g(z)$: a function that converts $w^Tx$ to binary value
+
+- Sigmoid Function (see Deep Learning for more funcs)
+
+    $$\begin{equation}
+    g(z)=\sigma(z)=\frac{1}{1+e^{-z}}
+    \end{equation}$$
+    
+    - Derivative (you will know why we need this in Deep Learning)
+    
+        $$\begin{align}
+        g'(z)&=\frac{d}{dz}\frac{1}{1+e^{-z}} \\
+        &=\frac{e^{-z}(+1-1)}{(1+e^{-z})^2} \\
+        &=g(z)(1-g(z))
+        \end{align}$$
+
+- Cost Function
+
+
+    1. single training example (derivation later)
+    
+        $$\begin{equation}
+        \mathcal{L}(\hat{y},y)=-(y\log{\hat{y}}+(1-y)\log{(1-\hat{y})})
+        \end{equation}$$
+        
+        If $y=1\rightarrow\mathcal{L}(\hat{y},y)=-\log{\hat{y}}\rightarrow$ want "$\mathcal{L}\downarrow\leftrightarrow\hat{y}\uparrow$"$\rightarrow\hat{y}=1$   
+        If $y=0\rightarrow\mathcal{L}(\hat{y},y)=-\log{(1-\hat{y})}\rightarrow$ want "$\mathcal{L}\downarrow\leftrightarrow\hat{y}\downarrow$"$\rightarrow\hat{y}=0$ 
+        
+    2. entire training set
+    
+        $$\begin{equation}
+        \mathcal{J}(w)=\frac{1}{m}\sum_{i=1}^{m}\mathcal{L}(\hat{y}^{(i)},y^{(i)})=\text{mean}(\mathcal{L})
+        \end{equation}$$
+
+- Probabilistic Interpretation
+
+    1. Assumptions
+    
+        $$\begin{align}
+        P(y=1|x,w)&=\hat{y} \\
+        P(y=0|x,w)&=1-\hat{y}
+        \end{align}$$
+
+    2. Probabilistic Model of LogReg
+    
+        $$\begin{equation}
+        p(y|x,w)=\hat{y}^y(1-\hat{y})^{1-y}
+        \end{equation}$$
+        
+    3. Likelihood Function
+    
+        $$\begin{equation}
+        L(w)=\prod_{i=1}^{m}(\hat{y}^{(i)})^{y^{(i)}}(1-\hat{y}^{(i)})^{1-y^{(i)}}
+        \end{equation}$$
+        
+    4. Log Likelihood
+    
+        $$\begin{align}
+        l(w)&=\sum_{i=1}^{m}(y^{(i)}\log{\hat{y}^{(i)}}+(1-y^{(i)})\log{(1-\hat{y}^{(i)})}) \\
+        l(w)&=-\sum_{i=1}^{m}\mathcal{L}(\hat{y},y)
+        \end{align}$$
+        
+    5. MLE
+        
+        $$\begin{align}
+        \frac{\partial l(w)}{\partial w_j}&=(\frac{y}{g(w^Tx)}-\frac{1-y}{1-g(w^Tx)})\frac{\partial g(w^Tx)}{\partial w_j} \\
+        &=(\frac{y}{g(w^Tx)}-\frac{1-y}{1-g(w^Tx)})g(w^Tx)(1-g(w^Tx))\frac{\partial(w^Tx)}{\partial w_j} \\
+        &=(y(1-g(w^Tx))-(1-y)g(w^Tx))x_j \\
+        &=(y-\hat{y})x_j
+        \end{align}$$
+
+- Gradient Descent
+
+    $$\begin{align}
+    w_j &:= w_j-\alpha\frac{\partial\mathcal{L}(w)}{\partial w_j} \\
+    &=w_j+\alpha(y-\hat{y})x_j
+    \end{align}$$
+    
+    Why is it also called "Gradient Ascent"?  
+    $\because$ we are trying to minimize the loss function $\Leftrightarrow$ maximize the likelihood function
+
+- Gradient Descent - Newton's Method
+    1. Newton's formula
+    
+        $$\begin{equation}
+        w := w-\frac{f(w)}{f'(w)}
+        \end{equation}$$
+        
+    2. Newton-Raphson Method in GD
+    
+        $$\begin{equation}
+        w := w-H^{-1}\nabla_wl(w)
+        \end{equation}$$
+        
+        $H$: Hessian Matrix
+        
+        $$\begin{equation}
+        H_{ij}=\frac{\partial^2l(w)}{\partial w_i \partial w_j}
+        \end{equation}$$
+
+    3. Newton vs normal GD
+        - YES: faster convergence, fewer iterations
+        - NO:  expensive computing (inverse of a matrix)
+
+
         
         
         

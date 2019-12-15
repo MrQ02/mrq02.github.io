@@ -1,12 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-14T00:13:28+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">Machine Learning</title><link href="http://localhost:4000/ML/" rel="alternate" type="text/html" title="Machine Learning" /><published>2019-12-08T22:29:53+09:00</published><updated>2019-12-08T22:29:53+09:00</updated><id>http://localhost:4000/ML-welcome</id><content type="html" xml:base="http://localhost:4000/ML/">&lt;h2 id=&quot;machine-learning&quot;&gt;Machine Learning&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Regression&lt;/strong&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-15T23:24:05+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">Machine Learning</title><link href="http://localhost:4000/ML/" rel="alternate" type="text/html" title="Machine Learning" /><published>2019-12-08T22:29:53+09:00</published><updated>2019-12-08T22:29:53+09:00</updated><id>http://localhost:4000/ML-welcome</id><content type="html" xml:base="http://localhost:4000/ML/">&lt;h2 id=&quot;machine-learning&quot;&gt;Machine Learning&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a&gt;&lt;/a&gt;&lt;a href=&quot;/ML/Regression/&quot;&gt;Basics&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Improvements 1: Basics &amp;amp; Regularization&lt;/li&gt;
-  &lt;li&gt;Improvements 2: Optimization &amp;amp; GD Algorithms&lt;/li&gt;
-  &lt;li&gt;Improvements 3: Hyperparameter Tuning &amp;amp; Batch Normalization&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a&gt;&lt;/a&gt;&lt;a href=&quot;/ML/Regression/&quot;&gt;Regression&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a&gt;&lt;/a&gt;&lt;a href=&quot;/ML/GLM/&quot;&gt;GLM (Generalized Linear Models)&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;Classification&lt;/strong&gt;&lt;/p&gt;
@@ -70,7 +66,212 @@
   &lt;li&gt;GRUs &amp;amp; LSTM&lt;/li&gt;
   &lt;li&gt;Word Embeddings&lt;/li&gt;
   &lt;li&gt;Applications in NLP&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Machine Learning</summary></entry><entry><title type="html">Regression</title><link href="http://localhost:4000/ML/Regression/" rel="alternate" type="text/html" title="Regression" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-Regression</id><content type="html" xml:base="http://localhost:4000/ML/Regression/">&lt;h2 id=&quot;notations&quot;&gt;Notations&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Machine Learning</summary></entry><entry><title type="html">GLM</title><link href="http://localhost:4000/ML/GLM/" rel="alternate" type="text/html" title="GLM" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-GLM</id><content type="html" xml:base="http://localhost:4000/ML/GLM/">&lt;h2 id=&quot;generalized-linear-models-glm&quot;&gt;Generalized Linear Models (GLM)&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;What are &lt;strong&gt;GLM&lt;/strong&gt;s?&lt;/p&gt;
+
+    &lt;p&gt;Remember the two models we had in the last post?&lt;br /&gt;
+  Regression:      $p(y|x,w)\sim N(\mu,\sigma^2)$&lt;br /&gt;
+  Classification:   $p(y|x,w)\sim \text{Bernoulli}(\phi)$&lt;/p&gt;
+
+    &lt;p&gt;They belong to GLM, a collection of models that can be applied to Supervised Learning problems. We will show more examples of GLMs in this markdown.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Exponential Family&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  p(y,\eta)=b(y)\cdot e^{\eta^TT(y)-a(\eta)}
+  \end{equation}&lt;/script&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;$\eta$: natural parameter (i.e. canonical parameter)&lt;/p&gt;
+
+        &lt;p&gt; different $\eta \rightarrow$ different distributions within the family&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$T(y)$: sufficient statistic (usually, $T(y)=y$)&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$a(\eta)$: log partition function&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$e^{-a(\eta)}$: normalization constant (to ensure that $\int{p(y,\eta)dy}=1$)&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$T,a,b$: fixed choice that defines a family of distributions parametrized by $\eta$&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Example 1: &lt;strong&gt;Bernoulli Distribution (Classification)&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  p(y|\phi)&amp;=\phi^y(1-\phi)^{1-y} \\
+  &amp;=e^{y\log{\phi}+(1-y)\log{(1-\phi)}} \\
+  &amp;=e^{y\log{\frac{\phi}{1-\phi}}+\log{(1-\phi)}} \\
+  \end{align} %]]&gt;&lt;/script&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;$\eta=\log{\frac{\phi}{1-\phi}}\Leftrightarrow \phi=\frac{1}{1+e^{-\eta}}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$T(y)=y$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$a(\eta)=\log{(1+e^\eta)}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$b(y)=1$&lt;br /&gt;
+   &lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Example 2: &lt;strong&gt;Gaussian Distribution (Regression)&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  p(y|\mu,\sigma^2)&amp;=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{1}{2\sigma^2}(y-\mu)^2} \\
+  &amp;=\frac{1}{\sqrt{2\pi}}e^{\frac{\mu}{\sigma^2}y-\frac{1}{2\sigma^2}y^2-\frac{1}{2\sigma^2}\mu^2-\log{\sigma}}
+  \end{align} %]]&gt;&lt;/script&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;$\eta=\begin{bmatrix}
+    \frac{\mu}{\sigma^2} ;
+    \frac{-1}{2\sigma^2}
+   \end{bmatrix}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$T(y)=\begin{bmatrix}
+    y;
+    y^2
+   \end{bmatrix}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$a(\eta)=\frac{1}{2\sigma^2}\mu^2-\log{\sigma}=-\frac{\eta_1^2}{4\eta_2}-\frac{1}{2}\log{(-2\eta_2)}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$b(y)=\frac{1}{\sqrt{2\pi}}$
+   &lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Example 3: &lt;strong&gt;Poisson Distribution&lt;/strong&gt; (count-data)&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  p(y|\lambda)&amp;=\frac{\lambda^ye^{-\lambda}}{y!}\\
+  &amp;=\frac{1}{y!}e^{y\log{\lambda}-\lambda}
+  \end{align} %]]&gt;&lt;/script&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;$\eta=\log{\lambda}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$T(y)=y$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$a(\eta)=e^\eta$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$b(y)=\frac{1}{y!}$&lt;br /&gt;
+   &lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Example 4: &lt;strong&gt;Gamma Distribution&lt;/strong&gt; (continuous non-negative random variables)&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  p(y|\lambda,a)&amp;=\frac{\lambda^ay^{a-1}e^{-\lambda y}}{\Gamma(a)}\\
+  &amp;=\frac{y^{a-1}}{\Gamma(a)}e^{-\lambda y+a\log{\lambda}}
+  \end{align} %]]&gt;&lt;/script&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;$\eta=-\lambda$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$T(y)=y$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$a(\eta)=-a\log{(-\eta)}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$b(y)=\frac{y^{a-1}}{\Gamma(a)}$&lt;br /&gt;
+   &lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Example 5: &lt;strong&gt;Beta Distribution&lt;/strong&gt; (distribution of probabilities)&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  p(y|\alpha,\beta)&amp;=\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}y^{\alpha-1}(1-y)^{\beta-1} \\
+  &amp;=\frac{(1-y)^\beta}{y(1-y)\Gamma(\beta)}e^{\alpha\log{y}- \log{\frac{\Gamma(\alpha)}{\Gamma(\alpha+\beta)}}} \\
+  &amp;=\frac{y^\alpha}{y(1-y)\Gamma(\alpha)}e^{\beta\log{(1-y)}- \log{\frac{\Gamma(\beta)}{\Gamma(\alpha+\beta)}}}
+  \end{align} %]]&gt;&lt;/script&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;$\eta=\alpha\ \text{or}\ \beta$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$T(y)=\log{y}\ \text{or}\ \log{(1-y)}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$a(\eta)=\log{\frac{\Gamma(\eta)}{\Gamma(\alpha+\beta)}}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$b(y)=\frac{(1-y)^\beta}{y(1-y)\Gamma(\beta)}\ \text{or}\ \frac{y^\alpha}{y(1-y)\Gamma(\alpha)}$&lt;br /&gt;
+   &lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Example 6: &lt;strong&gt;Dirichlet Distribution&lt;/strong&gt; (multivariate beta)&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  p(y|\alpha)&amp;=\frac{\Gamma(\sum_k\alpha_k)}{\prod_k\Gamma(\alpha_k)}\prod_k{y_k^{\alpha_k-1}} \\
+  &amp;=\exp{\{\sum_k{(\alpha_k-1)\log{y_k}}-[\sum_k{\log{\Gamma(\alpha_k)}}-\log{\Gamma(\sum_k{\alpha_k})}]\}}
+  \end{align} %]]&gt;&lt;/script&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;$\eta=\alpha-1$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$T(y)=\log{y}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$a(\eta)=\sum_k{\log{\Gamma(\alpha_k)}}-\log{\Gamma(\sum_k{\alpha_k})}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$b(y)=1$&lt;br /&gt;
+   &lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Generalized Linear Models (GLM)</summary></entry><entry><title type="html">Regression</title><link href="http://localhost:4000/ML/Regression/" rel="alternate" type="text/html" title="Regression" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-Regression</id><content type="html" xml:base="http://localhost:4000/ML/Regression/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+
+&lt;p&gt;This covers the basics of two basic regressions as the very basics of Machine Learning.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#linreg&quot;&gt;Linear Regression&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#logreg&quot;&gt;Logistic Regression&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;notations&quot;&gt;Notations&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;$i$ th training example: $(x^{(i)},y^{(i)}) | x\in \mathbb{R}^n, y\in {0,1}$&lt;/li&gt;
@@ -81,7 +282,7 @@
   &lt;li&gt;$\hat{y}=h(x)$= the hypothetical model&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;linear-regression&quot;&gt;Linear Regression&lt;/h2&gt;
+&lt;h2 id=&quot;linear-regression&quot;&gt;&lt;a name=&quot;linreg&quot;&gt;&lt;/a&gt;Linear Regression&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Model&lt;/li&gt;
@@ -92,7 +293,7 @@
 \end{equation}&lt;/script&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Cost Function (OLS)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Cost Function (OLS)&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation*}
@@ -101,7 +302,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;Gradient Descent&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Gradient Descent&lt;/strong&gt;&lt;/p&gt;
 
     &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation*}
   w_j := w_j-\alpha\frac{\partial\mathcal{L}(w)}{\partial w_j}
@@ -132,7 +333,7 @@
     &lt;/ol&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Normal Equation (the exact solution)&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Normal Equation&lt;/strong&gt; (the exact solution)&lt;/p&gt;
 
     &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation*}
   W=(X^TX)^{-1}X^Ty
@@ -180,7 +381,7 @@
  \end{equation}&lt;/script&gt;
       &lt;/li&gt;
       &lt;li&gt;
-        &lt;p&gt;Log Likelihoood&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;Log Likelihoood&lt;/strong&gt;&lt;/p&gt;
 
         &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
 \begin{align}
@@ -204,7 +405,7 @@
         &lt;/ol&gt;
       &lt;/li&gt;
       &lt;li&gt;
-        &lt;p&gt;MLE (Maximum Likelihood Estimation)&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;MLE&lt;/strong&gt; (Maximum Likelihood Estimation)&lt;/p&gt;
 
         &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
 \begin{align}
@@ -216,7 +417,7 @@
     &lt;/ol&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;LWR (Locally Weighted Linear Regression)&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;LWR&lt;/strong&gt; (Locally Weighted Linear Regression)&lt;/p&gt;
     &lt;ol&gt;
       &lt;li&gt;
         &lt;p&gt;Original LinReg&lt;/p&gt;
@@ -234,23 +435,192 @@
  w\leftarrow\mathop{\arg\min}_ {w}\sum_{i=1}^{m}e^{-\frac{(x^{(i)}-x)^2}{2\tau^2}}\cdot(y^{(i)}-w^Tx^{(i)})^2
  \end{equation}&lt;/script&gt;
 
-        &lt;p&gt;Interpretation: we add the weight function $W(x)=e^{-\frac{(x^{(i)}-x)^2}{2\tau^2}}$ to change the game.&lt;/p&gt;
+        &lt;p&gt;Interpretation: we add the weight function $W^{(i)}=e^{-\frac{(x^{(i)}-x)^2}{2\tau^2}}$ to change the game.&lt;/p&gt;
 
         &lt;p&gt;What game?&lt;/p&gt;
         &lt;ul&gt;
           &lt;li&gt;
-            &lt;p&gt;Original Game:&lt;/p&gt;
+            &lt;p&gt;&lt;strong&gt;Underfitting&lt;/strong&gt;: the model barely fits the data points.&lt;/p&gt;
 
-            &lt;ul&gt;
-              &lt;li&gt;
-                &lt;p&gt;underfit&lt;/p&gt;
+            &lt;p&gt;&lt;img src=&quot;../../images/ML/underfit.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-                &lt;p&gt;&lt;img src=&quot;../../images/ML/underfit.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
+            &lt;p&gt;One single line is usually not enough to capture the pattern of $x\ \&amp;amp;\ y$. In order to get a better fit, we add more polynomial features ($x^j$) to the original model:&lt;/p&gt;
           &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;&lt;strong&gt;Overfitting&lt;/strong&gt;: the model fits the given data points too well that it cannot be used on other data points&lt;/p&gt;
+
+            &lt;p&gt;&lt;img src=&quot;../../images/ML/overfit.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+            &lt;p&gt;When we add too much (e.g. $y=\sum_{j=0}^{6}w_jx^j$), the model captures the pattern of the given data points $(x^{(i)},y^{(i)})$ too much that it cannot perform well on new data points.&lt;/p&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;p&gt;How can LWR change the game?&lt;/p&gt;
+        &lt;ul&gt;
+          &lt;li&gt;When we would like to estimate $y$ at a certain $x$, instead of applying the original LinReg, we take a subset of data points $(x^{(i)},y^{(i)})$ around $x$ and try to do LinReg on that subset only so that we can get a more accurate estimation.&lt;/li&gt;
+          &lt;li&gt;numerator&lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ &amp;\text{If}\ |x^{(i)}-x|=\text{small} \longrightarrow W^{(i)}\approx 1 \\
+ &amp;\text{If}\ |x^{(i)}-x|=\text{large} \longrightarrow W^{(i)}\approx 0
+ \end{align} %]]&gt;&lt;/script&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;bandwidth parameter: $\tau$ (how fast the weight of $x^{(i)}$ falls off the query point $x$)&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Notations</summary></entry></feed>
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;logistic-regression-classification&quot;&gt;&lt;a name=&quot;logreg&quot;&gt;&lt;/a&gt;Logistic Regression (Classification)&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Model&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  \hat{y}=g(w^Tx)
+  \end{equation}&lt;/script&gt;
+
+    &lt;p&gt;$g(z)$: a function that converts $w^Tx$ to binary value&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Sigmoid Function (see Deep Learning for more funcs)&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  g(z)=\sigma(z)=\frac{1}{1+e^{-z}}
+  \end{equation}&lt;/script&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Derivative (you will know why we need this in Deep Learning)&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  g'(z)&amp;=\frac{d}{dz}\frac{1}{1+e^{-z}} \\
+  &amp;=\frac{e^{-z}(+1-1)}{(1+e^{-z})^2} \\
+  &amp;=g(z)(1-g(z))
+  \end{align} %]]&gt;&lt;/script&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Cost Function&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;single training example (derivation later)&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ \mathcal{L}(\hat{y},y)=-(y\log{\hat{y}}+(1-y)\log{(1-\hat{y})})
+ \end{equation}&lt;/script&gt;
+
+        &lt;p&gt;If $y=1\rightarrow\mathcal{L}(\hat{y},y)=-\log{\hat{y}}\rightarrow$ want “$\mathcal{L}\downarrow\leftrightarrow\hat{y}\uparrow$”$\rightarrow\hat{y}=1$ &lt;br /&gt;
+ If $y=0\rightarrow\mathcal{L}(\hat{y},y)=-\log{(1-\hat{y})}\rightarrow$ want “$\mathcal{L}\downarrow\leftrightarrow\hat{y}\downarrow$”$\rightarrow\hat{y}=0$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;entire training set&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ \mathcal{J}(w)=\frac{1}{m}\sum_{i=1}^{m}\mathcal{L}(\hat{y}^{(i)},y^{(i)})=\text{mean}(\mathcal{L})
+ \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Probabilistic Interpretation&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;Assumptions&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ P(y=1|x,w)&amp;=\hat{y} \\
+ P(y=0|x,w)&amp;=1-\hat{y}
+ \end{align} %]]&gt;&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Probabilistic Model of LogReg&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ p(y|x,w)=\hat{y}^y(1-\hat{y})^{1-y}
+ \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Likelihood Function&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ L(w)=\prod_{i=1}^{m}(\hat{y}^{(i)})^{y^{(i)}}(1-\hat{y}^{(i)})^{1-y^{(i)}}
+ \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Log Likelihood&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ l(w)&amp;=\sum_{i=1}^{m}(y^{(i)}\log{\hat{y}^{(i)}}+(1-y^{(i)})\log{(1-\hat{y}^{(i)})}) \\
+ l(w)&amp;=-\sum_{i=1}^{m}\mathcal{L}(\hat{y},y)
+ \end{align} %]]&gt;&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;MLE&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ \frac{\partial l(w)}{\partial w_j}&amp;=(\frac{y}{g(w^Tx)}-\frac{1-y}{1-g(w^Tx)})\frac{\partial g(w^Tx)}{\partial w_j} \\
+ &amp;=(\frac{y}{g(w^Tx)}-\frac{1-y}{1-g(w^Tx)})g(w^Tx)(1-g(w^Tx))\frac{\partial(w^Tx)}{\partial w_j} \\
+ &amp;=(y(1-g(w^Tx))-(1-y)g(w^Tx))x_j \\
+ &amp;=(y-\hat{y})x_j
+ \end{align} %]]&gt;&lt;/script&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Gradient Descent&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  w_j &amp;:= w_j-\alpha\frac{\partial\mathcal{L}(w)}{\partial w_j} \\
+  &amp;=w_j+\alpha(y-\hat{y})x_j
+  \end{align} %]]&gt;&lt;/script&gt;
+
+    &lt;p&gt;Why is it also called “Gradient Ascent”?&lt;br /&gt;
+  $\because$ we are trying to minimize the loss function $\Leftrightarrow$ maximize the likelihood function&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Gradient Descent - Newton’s Method&lt;/p&gt;
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;Newton’s formula&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ w := w-\frac{f(w)}{f'(w)}
+ \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Newton-Raphson Method in GD&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ w := w-H^{-1}\nabla_wl(w)
+ \end{equation}&lt;/script&gt;
+
+        &lt;p&gt;$H$: Hessian Matrix&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ H_{ij}=\frac{\partial^2l(w)}{\partial w_i \partial w_j}
+ \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Newton vs normal GD&lt;/p&gt;
+        &lt;ul&gt;
+          &lt;li&gt;YES: faster convergence, fewer iterations&lt;/li&gt;
+          &lt;li&gt;NO:  expensive computing (inverse of a matrix)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Intro</summary></entry></feed>

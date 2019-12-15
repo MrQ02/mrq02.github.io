@@ -7,12 +7,8 @@ permalink: /ML/
 
 ## Machine Learning
 
-**Regression**
-
-- <a></a>[Basics](/ML/Regression/)
-- Improvements 1: Basics & Regularization
-- Improvements 2: Optimization & GD Algorithms
-- Improvements 3: Hyperparameter Tuning & Batch Normalization
+- **<a></a>[Regression](/ML/Regression/)**  
+- **<a></a>[GLM (Generalized Linear Models)](/ML/GLM/)**
 
 **Classification**
 
