@@ -7,8 +7,11 @@ permalink: /ML/
 
 ## Machine Learning
 
-- **<a></a>[Regression](/ML/Regression/)**  
+**Supervised Learning**
+
+- **<a></a>[Regression (& Classification)](/ML/Regression/)**  
 - **<a></a>[GLM (Generalized Linear Models)](/ML/GLM/)**
+- **<a></a>[GDA (Generative Discriminant Analysis)](/ML/GDA/)**
 
 **Classification**
 
