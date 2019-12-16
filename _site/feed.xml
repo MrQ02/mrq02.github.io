@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-15T23:24:05+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">Machine Learning</title><link href="http://localhost:4000/ML/" rel="alternate" type="text/html" title="Machine Learning" /><published>2019-12-08T22:29:53+09:00</published><updated>2019-12-08T22:29:53+09:00</updated><id>http://localhost:4000/ML-welcome</id><content type="html" xml:base="http://localhost:4000/ML/">&lt;h2 id=&quot;machine-learning&quot;&gt;Machine Learning&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-16T12:15:11+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">Machine Learning</title><link href="http://localhost:4000/ML/" rel="alternate" type="text/html" title="Machine Learning" /><published>2019-12-08T22:29:53+09:00</published><updated>2019-12-08T22:29:53+09:00</updated><id>http://localhost:4000/ML-welcome</id><content type="html" xml:base="http://localhost:4000/ML/">&lt;h2 id=&quot;machine-learning&quot;&gt;Machine Learning&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;&lt;a&gt;&lt;/a&gt;&lt;a href=&quot;/ML/Regression/&quot;&gt;Regression&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
@@ -244,7 +244,7 @@
     &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
 \begin{align}
   p(y|\alpha)&amp;=\frac{\Gamma(\sum_k\alpha_k)}{\prod_k\Gamma(\alpha_k)}\prod_k{y_k^{\alpha_k-1}} \\
-  &amp;=\exp{\{\sum_k{(\alpha_k-1)\log{y_k}}-[\sum_k{\log{\Gamma(\alpha_k)}}-\log{\Gamma(\sum_k{\alpha_k})}]\}}
+  &amp;=\exp{\big(\sum_k{(\alpha_k-1)\log{y_k}}-\big[\sum_k{\log{\Gamma(\alpha_k)}}-\log{\Gamma(\sum_k{\alpha_k})}\big]\big)}
   \end{align} %]]&gt;&lt;/script&gt;
 
     &lt;ol&gt;
@@ -261,6 +261,174 @@
         &lt;p&gt;$b(y)=1$&lt;br /&gt;
    &lt;/p&gt;
       &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;method-of-constructing-glms&quot;&gt;Method of Constructing GLMs&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;3 Assumptions&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;$y|x,w \sim \text{ExponentialFamily}(\eta)$&lt;/p&gt;
+
+        &lt;p&gt;interpretation: $y$ given $x\&amp;amp;w$ follows some exponential family distribution with natural parameter $\eta$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$h(x)=\text{E}[y|x]$&lt;/p&gt;
+
+        &lt;p&gt;interpretation: our hypothetical model $h(x)$ should predict the expected value of $y$ given $x$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$\eta=w^Tx$&lt;/p&gt;
+
+        &lt;p&gt;interpretation: $\eta$ is linearly related to $x$&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Example 1: OLS (Ordinary Least Squares) (i.e. LinReg)&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  h(x)&amp;=\text{E}[y\|x,w]\ \ \ \ \ \ &amp;\text{(Assumption 2)} \\
+     &amp;=\mu \\
+     &amp;=\eta\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ &amp;\text{(Assumption 1)} \\
+     &amp;=w^Tx\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ &amp;\text{(Assumption 3)}
+  \end{align} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Example 2: Logistic Regression&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  h(x)&amp;=\text{E}[y\|x,w]\ \ \ \ \ \ &amp;\text{(Assumption 2)} \\
+     &amp;=\phi \\
+     &amp;=\frac{1}{1+e^{-\eta}}\ \ \ \ \ \ &amp;\text{(Assumption 1)} \\
+     &amp;=\frac{1}{1+e^{-w^Tx}}\ \ \ \ \ \ &amp;\text{(Assumption 3)}
+  \end{align} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Example 3: &lt;strong&gt;Softmax Regression&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;What is it?&lt;/p&gt;
+
+        &lt;p&gt;a method used in &lt;strong&gt;multiclass classification&lt;/strong&gt; to select one output value $\phi_i$ of the highest probability among all the output values.&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ \hat{y}=\begin{bmatrix}
+ \phi_1 \\
+ \vdots \\
+ \phi_{k-1}
+ \end{bmatrix}
+ \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;One-hot Encoding&lt;/strong&gt;&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ y\in \{ 1,\cdots,k \} \Rightarrow T(y)\in \mathbb{R}^{k}
+ \end{equation}&lt;/script&gt;
+
+        &lt;p&gt;where&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ T(1)=\begin{bmatrix}
+ 1 \\ 0 \\ \vdots \\ 0
+ \end{bmatrix},
+ T(2)=\begin{bmatrix}
+ 0 \\ 1 \\ \vdots \\ 0
+ \end{bmatrix},\cdots,
+ T(k)=\begin{bmatrix}
+ 0 \\ 0 \\ \vdots \\ 1
+ \end{bmatrix}
+ \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;Dummy Encoding&lt;/strong&gt;&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ y\in \{ 1,\cdots,k \} \Rightarrow T(y)\in \mathbb{R}^{k-1}
+ \end{equation}&lt;/script&gt;
+
+        &lt;p&gt;where&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ T(1)=\begin{bmatrix}
+ 1 \\ 0 \\ \vdots \\ 0
+ \end{bmatrix},
+ T(2)=\begin{bmatrix}
+ 0 \\ 1 \\ \vdots \\ 0
+ \end{bmatrix},\cdots,
+ T(k-1)=\begin{bmatrix}
+ 0 \\ 0 \\ \vdots \\ 1
+ \end{bmatrix},
+ T(k)=\begin{bmatrix}
+ 0 \\ 0 \\ \vdots \\ 0
+ \end{bmatrix}
+ \end{equation}&lt;/script&gt;
+
+        &lt;p&gt;Why Dummy Encoding &amp;gt; One-hot Encoding? It reduces 1 entire column!&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Indicator Function&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ \text{I}\{ \text{True} \}=1,\ \text{I}\{ \text{False} \}=0
+ \end{equation}&lt;/script&gt;
+
+        &lt;p&gt;Therefore,&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ T(y)_i =\text{I}\{ y=i \}
+ \end{equation}&lt;/script&gt;
+
+        &lt;p&gt;Therefore,&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ \text{E}[T(y)_i] =P(y=i)=\phi_i
+ \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Exponential Family form&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ p(y|\phi)&amp;=\prod_{i=1}^{k}{\phi_i^{\text{I}\{ y=i \}}} \\
+ &amp;=\prod_{i=1}^{k-1}{\phi_i^{T(y)_i}} \cdot \phi_k^{1-\sum_{i=1}^{k-1}{T(y)_i}} \\
+ &amp;=\exp{\big(\sum_{i=1}^{k-1}{T(y)_i\log{(\phi_i)}-\sum_{i=1}^{k-1}{T(y)_i}\log{(\phi_k)}}+\log{(\phi_k)}\big)} \\
+ &amp;=\exp{\big(\sum_{i=1}^{k-1}{T(y)_i\log{\big(\frac{\phi_i}{\phi_k}\big)}+\log{(\phi_k)}\big)}} \\
+ \end{align} %]]&gt;&lt;/script&gt;
+
+        &lt;ol&gt;
+          &lt;li&gt;
+            &lt;p&gt;$\eta=\begin{bmatrix}\log{\big(\frac{\phi_1}{\phi_k}\big)}\ ;\ \cdots\ ;\ \log{\big(\frac{\phi_{k-1}}{\phi_k}\big)}\end{bmatrix}$&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;$T(y)=\begin{bmatrix}T(y)_1\ ;\ \cdots\ ;\ T(y)_k-1\end{bmatrix}$&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;$a(\eta)=-\log{(\phi_k)}$&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;$b(y)=1$&lt;br /&gt;
+  &lt;/p&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;Softmax Function&lt;/strong&gt; (derived from $\eta_i=\log{\big(\frac{\phi_i}{\phi_k}\big)}$)&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ \phi_i=\frac{e^{\eta_i}}{\sum_{j=1}^k{e^{\eta_j}}}
+ \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><summary type="html">Generalized Linear Models (GLM)</summary></entry><entry><title type="html">Regression</title><link href="http://localhost:4000/ML/Regression/" rel="alternate" type="text/html" title="Regression" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-Regression</id><content type="html" xml:base="http://localhost:4000/ML/Regression/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
