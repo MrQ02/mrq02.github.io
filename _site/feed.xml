@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-16T14:30:45+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">Machine Learning</title><link href="http://localhost:4000/ML/" rel="alternate" type="text/html" title="Machine Learning" /><published>2019-12-08T22:29:53+09:00</published><updated>2019-12-08T22:29:53+09:00</updated><id>http://localhost:4000/ML-welcome</id><content type="html" xml:base="http://localhost:4000/ML/">&lt;h2 id=&quot;machine-learning&quot;&gt;Machine Learning&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-22T23:41:57+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">Machine Learning</title><link href="http://localhost:4000/ML/" rel="alternate" type="text/html" title="Machine Learning" /><published>2019-12-08T22:29:53+09:00</published><updated>2019-12-08T22:29:53+09:00</updated><id>http://localhost:4000/ML-welcome</id><content type="html" xml:base="http://localhost:4000/ML/">&lt;h2 id=&quot;machine-learning&quot;&gt;Machine Learning&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Supervised Learning&lt;/strong&gt;&lt;/p&gt;
 
@@ -77,10 +77,10 @@
   &lt;li&gt;&lt;a href=&quot;#logreg&quot;&gt;Logistic Regression&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;two-types-of-learning-algorithms&quot;&gt;Two Types of Learning Algorithms&lt;/h2&gt;
+&lt;h2 id=&quot;learning-algorithms&quot;&gt;Learning Algorithms&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Discriminative Learning Algorithms&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Discriminative Learning Algorithms&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
@@ -88,7 +88,7 @@
 \end{equation}&lt;/script&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Generative Learning Algorithms&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Generative Learning Algorithms&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
@@ -99,7 +99,7 @@
 &lt;p&gt; 
  &lt;/p&gt;
 
-&lt;h2 id=&quot;bayes-theorem-the-core-of-glas&quot;&gt;Bayes Theorem (the core of GLAs)&lt;/h2&gt;
+&lt;h2 id=&quot;bayes-theorem&quot;&gt;Bayes Theorem&lt;/h2&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
 p(y|x)=\frac{p(x|y)p(y)}{p(x)}
@@ -122,6 +122,7 @@ p(y|x)=\frac{p(x|y)p(y)}{p(x)}
   &amp;=\mathop{\arg\max}_ {y}{p(x|y)p(y)}
   \end{align} %]]&gt;&lt;/script&gt;
   &lt;/li&gt;
+  &lt;li&gt;Bayes Theorem = the core of Generative Learning Algorithms&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt; 
@@ -131,13 +132,13 @@ p(y|x)=\frac{p(x|y)p(y)}{p(x)}
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Multivariate Gaussian Distribution&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;Assumption: Multivariate Gaussian Distribution&lt;/p&gt;
 
     &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
   p(x|\mu,\Sigma)=\frac{1}{(2\pi)^{\frac{n}{2}}|\Sigma|^{\frac{1}{2}}}e^{\big(-\frac{1}{2}(x-\mu)^T\Sigma^{-1}(x-\mu)\big)}
   \end{equation}&lt;/script&gt;
 
-    &lt;p&gt;Don’t be scared of the formula. It is literally the same as Gaussian Distribution but with vector parameters:&lt;/p&gt;
+    &lt;p&gt;It is literally the same as Gaussian Distribution but with vector parameters:&lt;/p&gt;
 
     &lt;ul&gt;
       &lt;li&gt;mean vector:    $\mu\in\mathbb{R}^n$&lt;/li&gt;
@@ -152,7 +153,7 @@ p(y|x)=\frac{p(x|y)p(y)}{p(x)}
   \end{equation}&lt;/script&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;GDA Model&lt;/p&gt;
+    &lt;p&gt;Model&lt;/p&gt;
 
     &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
 \begin{align}
@@ -188,11 +189,64 @@ p(y|x)=\frac{p(x|y)p(y)}{p(x)}
   \mu_1 &amp;= \frac{\sum_{i=1}^m{\text{I}\{ y^{(i)}=1 \}x^{(i)}}}{\sum_{i=1}^m{\text{I}\{ y^{(i)}=1 \}}} \\
   \Sigma &amp;= \frac{1}{m}\sum_{i=1}^m{(x^{(i)}-\mu_{y^{(i)}})(x^{(i)}-\mu_{y^{(i)}})^T}
   \end{align} %]]&gt;&lt;/script&gt;
-
-    &lt;p&gt;Derivation: just take the partial derivatives $\frac{\partial l}{\partial \text{param}}$ by yourself.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;What is GDA doing?&lt;/p&gt;
+    &lt;p&gt;GDA vs LogReg&lt;/p&gt;
+    &lt;ol&gt;
+      &lt;li&gt;GDA
+        &lt;ul&gt;
+          &lt;li&gt;makes &lt;strong&gt;stronger&lt;/strong&gt; modeling assumptions about data&lt;/li&gt;
+          &lt;li&gt;data efficient when assumptions (Gaussian distributions) are approximately correct&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;LogReg
+        &lt;ul&gt;
+          &lt;li&gt;makes &lt;strong&gt;weaker&lt;/strong&gt; modeling assumptions about data&lt;/li&gt;
+          &lt;li&gt;data efficient when assumptions (Gaussian distributions) are not necessarily correct (e.g. $x|y\sim \text{Poisson}(\lambda_1)$ instead of $N(\mu_0,\Sigma)$)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; 
+ &lt;/p&gt;
+
+&lt;h2 id=&quot;naive-bayes-classifier&quot;&gt;Naive Bayes Classifier&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;GDA vs NB
+    &lt;ol&gt;
+      &lt;li&gt;GDA: $x$ = continuous, real-valued vectors&lt;/li&gt;
+      &lt;li&gt;NB:   $x$ = discrete-valued vectors (e.g. text classification)&lt;br /&gt;
+   &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Text Encoding (more in DL/RNN)&lt;br /&gt;
+  We encode a text sentence into a vector of the same length as our &lt;strong&gt;dictionary&lt;/strong&gt; (like a Python dictionary with vocabulary and their indices as key-value pairs):&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  x=\begin{bmatrix}
+  0 \\ 0 \\ \vdots \\ 1 \\ \vdots \\ 1 \\ 1 \\ \vdots \\ 0
+  \end{bmatrix}
+  \begin{matrix}
+  \text{a} \\ \text{abandon} \\ \vdots \\ \text{pewdiepie} \\ \vdots \\ \text{subscribe} \\ \text{to} \\ \vdots \\ \text{zuck}
+  \end{matrix}
+  \end{equation}&lt;/script&gt;
+
+    &lt;p&gt;The original sentence was “Subscribe to Pewdiepie!”, and this text encoding method uses lowercases, throws punctuations and ignores the order of the sentence. This is convenient in some cases (e.g. spam email classification) but awful in the other cases (e.g. news/report-writer bots)&lt;/p&gt;
+
+    &lt;p&gt;Notice that $x\in \{0,1\}^{\text{len(dict)}}$. Why notice this? Because we now have $2^\text{len(dict)}$ possible outcomes for $x$. When we have a dictionary of over 20000 words, we have a $(2^{20000}-1)$-dimensional parameter vector. Have fun with that, laptop.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Assumption: Conditional Independence&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  p(x_i|y)=p(x_i|y,x_j)\ \ \ \forall j\neq i
+  \end{equation}&lt;/script&gt;
+
+    &lt;p&gt;meaning: Given $y$ as the condition, $x_i$ is independent of $x_j$.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><summary type="html">Intro</summary></entry><entry><title type="html">GLM</title><link href="http://localhost:4000/ML/GLM/" rel="alternate" type="text/html" title="GLM" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-GLM</id><content type="html" xml:base="http://localhost:4000/ML/GLM/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
