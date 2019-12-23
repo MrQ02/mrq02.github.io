@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-22T23:41:57+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">Machine Learning</title><link href="http://localhost:4000/ML/" rel="alternate" type="text/html" title="Machine Learning" /><published>2019-12-08T22:29:53+09:00</published><updated>2019-12-08T22:29:53+09:00</updated><id>http://localhost:4000/ML-welcome</id><content type="html" xml:base="http://localhost:4000/ML/">&lt;h2 id=&quot;machine-learning&quot;&gt;Machine Learning&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-23T12:15:23+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">Machine Learning</title><link href="http://localhost:4000/ML/" rel="alternate" type="text/html" title="Machine Learning" /><published>2019-12-08T22:29:53+09:00</published><updated>2019-12-08T22:29:53+09:00</updated><id>http://localhost:4000/ML-welcome</id><content type="html" xml:base="http://localhost:4000/ML/">&lt;h2 id=&quot;machine-learning&quot;&gt;Machine Learning&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Supervised Learning&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;&lt;a&gt;&lt;/a&gt;&lt;a href=&quot;/ML/Regression/&quot;&gt;Regression (&amp;amp; Classification)&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;a&gt;&lt;/a&gt;&lt;a href=&quot;/ML/GLM/&quot;&gt;GLM (Generalized Linear Models)&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;a&gt;&lt;/a&gt;&lt;a href=&quot;/ML/GDA/&quot;&gt;GDA (Generative Discriminant Analysis)&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a&gt;&lt;/a&gt;&lt;a href=&quot;/ML/GLM/&quot;&gt;Generalized Linear Models&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a&gt;&lt;/a&gt;&lt;a href=&quot;/ML/GDA/&quot;&gt;Generative Learning Algorithms&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;Classification&lt;/strong&gt;&lt;/p&gt;
@@ -69,12 +69,12 @@
   &lt;li&gt;GRUs &amp;amp; LSTM&lt;/li&gt;
   &lt;li&gt;Word Embeddings&lt;/li&gt;
   &lt;li&gt;Applications in NLP&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Machine Learning</summary></entry><entry><title type="html">GDA</title><link href="http://localhost:4000/ML/GDA/" rel="alternate" type="text/html" title="GDA" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-GDA</id><content type="html" xml:base="http://localhost:4000/ML/GDA/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Machine Learning</summary></entry><entry><title type="html">Generative Learning Algorithms</title><link href="http://localhost:4000/ML/GDA/" rel="alternate" type="text/html" title="Generative Learning Algorithms" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-GDA</id><content type="html" xml:base="http://localhost:4000/ML/GDA/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;p&gt;This covers the basics of Generative Learning Algorithms for classification&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#linreg&quot;&gt;Linear Regression&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#logreg&quot;&gt;Logistic Regression&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#gda&quot;&gt;Gaussian Discrminant Analysis&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#nb&quot;&gt;Naive Bayes Classifier&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;learning-algorithms&quot;&gt;Learning Algorithms&lt;/h2&gt;
@@ -128,7 +128,7 @@ p(y|x)=\frac{p(x|y)p(y)}{p(x)}
 &lt;p&gt; 
  &lt;/p&gt;
 
-&lt;h2 id=&quot;gaussian-discriminant-analysis-gda&quot;&gt;Gaussian Discriminant Analysis (GDA)&lt;/h2&gt;
+&lt;h2 id=&quot;gaussian-discriminant-analysis-gda&quot;&gt;&lt;a name=&quot;gda&quot;&gt;&lt;/a&gt;Gaussian Discriminant Analysis (GDA)&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -212,10 +212,12 @@ p(y|x)=\frac{p(x|y)p(y)}{p(x)}
 &lt;p&gt; 
  &lt;/p&gt;
 
-&lt;h2 id=&quot;naive-bayes-classifier&quot;&gt;Naive Bayes Classifier&lt;/h2&gt;
+&lt;h2 id=&quot;naive-bayes-classifier&quot;&gt;&lt;a name=&quot;nb&quot;&gt;&lt;/a&gt;Naive Bayes Classifier&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;GDA vs NB
+  &lt;li&gt;
+    &lt;p&gt;GDA vs NB&lt;/p&gt;
+
     &lt;ol&gt;
       &lt;li&gt;GDA: $x$ = continuous, real-valued vectors&lt;/li&gt;
       &lt;li&gt;NB:   $x$ = discrete-valued vectors (e.g. text classification)&lt;br /&gt;
@@ -223,8 +225,9 @@ p(y|x)=\frac{p(x|y)p(y)}{p(x)}
     &lt;/ol&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Text Encoding (more in DL/RNN)&lt;br /&gt;
-  We encode a text sentence into a vector of the same length as our &lt;strong&gt;dictionary&lt;/strong&gt; (like a Python dictionary with vocabulary and their indices as key-value pairs):&lt;/p&gt;
+    &lt;p&gt;Text Encoding (more in DL/RNN)&lt;/p&gt;
+
+    &lt;p&gt;We encode a text sentence into a vector of the same length as our &lt;strong&gt;dictionary&lt;/strong&gt; (like a Python dictionary with vocabulary and their indices as key-value pairs):&lt;/p&gt;
 
     &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
   x=\begin{bmatrix}
@@ -247,6 +250,115 @@ p(y|x)=\frac{p(x|y)p(y)}{p(x)}
   \end{equation}&lt;/script&gt;
 
     &lt;p&gt;meaning: Given $y$ as the condition, $x_i$ is independent of $x_j$.&lt;/p&gt;
+
+    &lt;p&gt;In the case of spam email classification, if we know that the email is spam, then whether or not “pewdiepie” is in the sentence does not change our belief of whether or not “subscribe” is in the sentence.&lt;/p&gt;
+
+    &lt;p&gt;Therefore, we can simplify our $p(x|y)$ into:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  p(x_1,...,x_{\text{len(dict)}}|y)=\prod_{i=1}^{n}{p(x_i|y)}
+  \end{equation}&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Model&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  \phi_{i|y=1}&amp;=p(x_i=1|y=1) \\
+  \phi_{i|y=0}&amp;=p(x_i=1|y=0) \\
+  \phi_y&amp;=p(y=1)
+  \end{align} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Joint Likelihood&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  \mathcal{L}(\phi_y,\phi_{i|y=0},\phi_{i|y=1})=\prod_{i=1}^{m}{p(x^{(i)},y^{(i)})}
+  \end{equation}&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;MLE&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  \phi_{j|y=1}&amp;=\frac{\sum_{i=1}^m{I\{x_j^{(i)}=1\land y^{(i)}=1\}}}{\sum_{i=1}^m{I\{y^{(i)}=1\}}} \\
+  \phi_{j|y=0}&amp;=\frac{\sum_{i=1}^m{I\{x_j^{(i)}=1\land y^{(i)}=0\}}}{\sum_{i=1}^m{I\{y^{(i)}=0\}}} \\
+  \phi_y&amp;=\frac{\sum_{i=1}^m{I\{y^{(i)}=1\}}}{m}
+  \end{align} %]]&gt;&lt;/script&gt;
+
+    &lt;p&gt;Quite intuitive. For example, $\phi_{j|y=0}$ = the fraction of non-spam emails with the word $j$ in it.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Prediction&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  p(y=1|x_\text{new})&amp;=\frac{p(x_\text{new}|y=1)p(y=1)}{p(x_\text{new})} \\
+  &amp;=\frac{\prod_{i=1}^n{p(x_i|y=1)}\cdot p(y=1)}{\prod_{i=1}^n{p(x_i|y=1)}\cdot p(y=1)+\prod_{i=1}^n{p(x_i|y=0)}\cdot p(y=0)}
+  \end{align} %]]&gt;&lt;/script&gt;
+
+    &lt;p&gt;Again, the formula is tedious but very intuitive. The $y$ with the higher posterior probability will be chosen as the final prediction.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Apply NB in GDA cases?&lt;/p&gt;
+
+    &lt;p&gt;Discretize: Just cut the continuous, real-valued $x$ into small intervals and label them with a discrete-valued scale.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Laplace Smoothing&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;Problem with NB&lt;/p&gt;
+
+        &lt;p&gt;What if there is a new word “mrbeast” in the email for prediction that our NB classifier has never learnt ever since it was born?&lt;/p&gt;
+
+        &lt;p&gt;A human would look it up on a dictionary, and so would our NB classifier.&lt;/p&gt;
+
+        &lt;p&gt;Assume the word “mrbeast” is the 1234th word in the dictionary, then:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ \phi_{1234|y=1}&amp;=\frac{\sum_{i=1}^m{I\{x_{1234}^{(i)}=1\land y^{(i)}=1\}}}{\sum_{i=1}^m{I\{y^{(i)}=1\}}}=0 \\
+ \phi_{1234|y=0}&amp;=\frac{\sum_{i=1}^m{I\{x_{1234}^{(i)}=1\land y^{(i)}=0\}}}{\sum_{i=1}^m{I\{y^{(i)}=0\}}}=0 \\
+ \end{align} %]]&gt;&lt;/script&gt;
+
+        &lt;p&gt;Yes. NB thinks that the probability of seeing this word in either spam or non-spam email is $0$, and therefore it would predict that:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ p(y=1|x_\text{new})&amp;=\frac{\prod_{i=1}^n{p(x_i|y=1)}\cdot p(y=1)}{\prod_{i=1}^n{p(x_i|y=1)}\cdot p(y=1)+\prod_{i=1}^n{p(x_i|y=0)}\cdot p(y=0)} \\
+ &amp;=\frac{0}{0}
+ \end{align} %]]&gt;&lt;/script&gt;
+
+        &lt;p&gt;Because both numerator and denominator contains $p(x_{1234|y})=0$.&lt;/p&gt;
+
+        &lt;p&gt;In summary, during prediction, if NB has never learnt a word $j$, there will always $\phi_j=0$ ruining the entire prediction. How do we estimate the unknown?&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Laplace Smoothing&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ \phi_j=\frac{\sum_{i=1}^m{I\{z^{(i)}=j\}}+1}{m+k}
+ \end{equation}&lt;/script&gt;
+
+        &lt;p&gt;where $k=\text{#features}$ if you forget.&lt;/p&gt;
+
+        &lt;p&gt;Let’s check if it still satisfies our condition:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ \sum_{j=1}^k{\phi_j}=\sum_{j=1}^k{\frac{\sum_{i=1}^m{I\{z^{(i)}=j\}}+1}{m+k}}=\frac{m+k}{m+k}=1
+ \end{equation}&lt;/script&gt;
+
+        &lt;p&gt;Nice. It still satisfies the basic sum rule. The estimates in NB will now become:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ \phi_{j|y=1}&amp;=\frac{\sum_{i=1}^m{I\{x_{j}^{(i)}=1\land y^{(i)}=1\}}+1}{\sum_{i=1}^m{I\{y^{(i)}=1\}}+2} \\
+ \phi_{j|y=0}&amp;=\frac{\sum_{i=1}^m{I\{x_{j}^{(i)}=1\land y^{(i)}=0\}}+1}{\sum_{i=1}^m{I\{y^{(i)}=0\}}+2} \\
+ \end{align} %]]&gt;&lt;/script&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><summary type="html">Intro</summary></entry><entry><title type="html">GLM</title><link href="http://localhost:4000/ML/GLM/" rel="alternate" type="text/html" title="GLM" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-GLM</id><content type="html" xml:base="http://localhost:4000/ML/GLM/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
