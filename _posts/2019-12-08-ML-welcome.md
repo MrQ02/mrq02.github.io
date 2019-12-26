@@ -10,8 +10,9 @@ permalink: /ML/
 **Supervised Learning**
 
 - **<a></a>[Regression (& Classification)](/ML/Regression/)**  
-- **<a></a>[Generalized Linear Models](/ML/GLM/)**
+- **<a></a>[Generalized Linear Models (GLM)](/ML/GLM/)**
 - **<a></a>[Generative Learning Algorithms](/ML/GDA/)**
+- **<a></a>[Support Vector Machines (SVM)](/ML/SVM/)**
 
 **Classification**
 
