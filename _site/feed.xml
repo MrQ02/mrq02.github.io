@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-31T15:55:32+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">Random Facts</title><link href="http://localhost:4000/blogs/random_facts/" rel="alternate" type="text/html" title="Random Facts" /><published>2020-01-27T21:32:00+09:00</published><updated>2020-01-27T21:32:00+09:00</updated><id>http://localhost:4000/blogs/random-facts</id><content type="html" xml:base="http://localhost:4000/blogs/random_facts/">&lt;p&gt;Just some random facts accumulated from my personal experiences.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-31T17:11:07+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">Random Facts</title><link href="http://localhost:4000/blogs/random_facts/" rel="alternate" type="text/html" title="Random Facts" /><published>2020-01-27T21:32:00+09:00</published><updated>2020-01-27T21:32:00+09:00</updated><id>http://localhost:4000/blogs/random-facts</id><content type="html" xml:base="http://localhost:4000/blogs/random_facts/">&lt;p&gt;Just some random facts accumulated from my personal experiences.&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -94,25 +94,22 @@
 &lt;/ul&gt;</content><author><name></name></author><summary type="html">Machine Learning</summary></entry><entry><title type="html">Basics of Neural Networks</title><link href="http://localhost:4000/DL/ANN/" rel="alternate" type="text/html" title="Basics of Neural Networks" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/DL/DL-Basics</id><content type="html" xml:base="http://localhost:4000/DL/ANN/">&lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Basics of NN&lt;/strong&gt;
     &lt;ul&gt;
-      &lt;li&gt;Neural Network Representation
+      &lt;li&gt;&lt;a href=&quot;#nn&quot;&gt;Neural Network Representation&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#af&quot;&gt;Activation Functions&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;Training Process
         &lt;ul&gt;
-          &lt;li&gt;Input Matrix&lt;/li&gt;
-          &lt;li&gt;Output Vector&lt;/li&gt;
-          &lt;li&gt;Weight Matrix&lt;/li&gt;
-          &lt;li&gt;Bias Vector&lt;/li&gt;
-          &lt;li&gt;Linear Combination&lt;/li&gt;
-          &lt;li&gt;Activation Vector&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#fp&quot;&gt;Forward Propagation&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#bp&quot;&gt;Backward Propagation&lt;/a&gt;&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
-      &lt;li&gt;Activation Functions&lt;/li&gt;
-      &lt;li&gt;Backward Propagation&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt; &lt;a name=&quot;nn&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;neural-network-representation&quot;&gt;Neural Network Representation&lt;/h2&gt;
 
-&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;../../images/DL/NN.png&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;../../images/DL/NN.png&quot; width=&quot;400&quot; /&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Input Matrix&lt;/strong&gt;:&lt;/p&gt;
 
@@ -207,38 +204,87 @@ z_j^{[k]}=w_j^{[k]}\cdot a^{[k-1]}+b_j^{[k]} \quad\quad\quad z_j^{[k]}\in\mathbb
   &lt;li&gt;$z_j^{[k]}$: the unactivated output value from the $j$th node of the $k$th layer&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt; &lt;a name=&quot;af&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;activation-functions&quot;&gt;Activation Functions&lt;/h2&gt;
 
 &lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Sigmoid&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Tanh&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;ReLU&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Leaky ReLU&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;$g(z)=\frac{1}{1+e^{-z}}$&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;$g(z)=\frac{e^z-e^{-z}}{e^z+e^{-z}}$&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;$g(z)=\max{(0,z)}$&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;$g(z)=\max{(\varepsilon z,z)\ |\ \varepsilon « 1}$&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;col 2 is&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;centered&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;$12&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;try&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;zebra stripes&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;are neat&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;$1&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;test&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name></name></author><summary type="html">Basics of NN Neural Network Representation Input Matrix Output Vector Weight Matrix Bias Vector Linear Combination Activation Vector Activation Functions Backward Propagation</summary></entry><entry><title type="html">Regression</title><link href="http://localhost:4000/ML/Regression/" rel="alternate" type="text/html" title="Regression" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-Regression</id><content type="html" xml:base="http://localhost:4000/ML/Regression/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+    &lt;thead&gt;
+        &lt;tr align=&quot;center&quot;&gt;
+            &lt;th&gt;Sigmoid&lt;/th&gt;
+            &lt;th&gt;Tanh&lt;/th&gt;
+            &lt;th&gt;ReLU&lt;/th&gt;
+            &lt;th&gt;Leaky ReLU&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody align=&quot;center&quot;&gt;
+        &lt;tr&gt;
+            &lt;td&gt;$g(z)=\frac{1}{1+e^{-z}}$&lt;/td&gt;
+            &lt;td&gt;$g(z)=\frac{e^z-e^{-z}}{e^z+e^{-z}}$&lt;/td&gt;
+            &lt;td&gt;$g(z)=\max{(0,z)}$&lt;/td&gt;
+            &lt;td&gt;$g(z)=\max{(\varepsilon z,z)}$&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;img src=&quot;../../images/DL/sigmoid.png&quot; width=&quot;100&quot; /&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;img src=&quot;../../images/DL/tanh.png&quot; width=&quot;100&quot; /&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;img src=&quot;../../images/DL/relu.png&quot; width=&quot;100&quot; /&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;img src=&quot;../../images/DL/leakyrelu.png&quot; width=&quot;100&quot; /&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;small&gt;$g'(z)=g(z)\cdot (1-g(z))$&lt;/small&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;small&gt;$g'(z)=1-(g(z))^2$&lt;/small&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;small&gt;$$g'(z)=\begin{cases} 0&amp;amp;z&amp;lt;0 \\ 1&amp;amp;z&amp;gt;0\end{cases}$$&lt;/small&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;small&gt;$$g'(z)=\begin{cases} \varepsilon&amp;amp;z&amp;lt;0 \\ 1&amp;amp;z&amp;gt;0\end{cases}$$&lt;/small&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;small&gt;centered at $y=0.5$&lt;br /&gt;$\Rightarrow$only good for binary classification&lt;/small&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;small&gt;centered at $y=0$&lt;br /&gt;$\Rightarrow$better than sigmoid in many cases&lt;/small&gt;&lt;/td&gt;
+            &lt;td colspan=&quot;2&quot;&gt;&lt;small&gt;used for cases other than binary classification&lt;br /&gt;faster computing&lt;br /&gt;&lt;strike&gt;vanishing gradient&lt;/strike&gt;&lt;br /&gt;model sparsity (some neurons can be inactivated)&lt;/small&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan=&quot;2&quot;&gt;$|z|\uparrow\uparrow \rightarrow\frac{da}{dz}\approx 0$&lt;br /&gt;$\Rightarrow$ vanishing gradient&lt;/td&gt;
+            &lt;td&gt;too many neurons get inactivated&lt;br /&gt;$\Rightarrow$dying ReLU&lt;/td&gt;
+            &lt;td&gt;$\varepsilon$ usually set to 0.01&lt;br /&gt;&lt;strike&gt;dying ReLU&lt;/strike&gt;&lt;br /&gt;widely used on Kaggle&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Why need activation funcs? To add nonlinearity.
+    &lt;ol&gt;
+      &lt;li&gt;Suppose $g(z)=z$ (i.e. $\nexists g(z)$)&lt;/li&gt;
+      &lt;li&gt;$\Longrightarrow z^{[1]}=w^{[1]}x+b^{[1]}$&lt;/li&gt;
+      &lt;li&gt;$\Longrightarrow z^{[2]}=w^{[2]}a^{[1]}+b^{[2]}=(w^{[2]}w^{[1]})x+(w^{[2]}b^{[1]}+b^{[2]})=w’x+b’$&lt;/li&gt;
+      &lt;li&gt;This is just linear regression. Hidden layers exist for no reason.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&quot;training&quot;&gt;Training&lt;/h2&gt;
+&lt;p&gt;&lt;a name=&quot;fp&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Forward Propagation&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{pmatrix} Z^{[1]}=W^{[1]}X+b^{[1]} \\ \cdots \end{pmatrix}
+\Rightarrow
+\begin{pmatrix} Z^{[l]}=W^{[l]}A^{[l-1]}+b^{[l]} \\ A^{[l]}=g^{[l]}(Z^{[l]}) \end{pmatrix}
+\Rightarrow
+\begin{pmatrix} \cdots \\ A^{[L]}=g^{[L]}(Z^{[L]})=\hat{Y} \end{pmatrix}&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Backward Propagation&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;small&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\begin{pmatrix} \cdots \\ dW^{[1]}=\frac{1}{m}dZ^{[1]}A^{[1]^T} \\ db^{[1]}=\frac{1}{m}\sum_{j=1}^{n}{dz_j^{[1]}} \end{pmatrix}
+\Leftarrow
+\begin{pmatrix} dZ^{[l-1]}=dW^{[l]^T}dZ^{[l]}g'^{[l]}(Z^{[l-1]}) \\ \cdots \\ \cdots \end{pmatrix}
+\Leftarrow
+\begin{pmatrix} dZ^{[L]}=\hat{Y}-Y \\ dW^{[L]}=\frac{1}{m}dZ^{[L]}A^{[L]^T} \\ db^{[L]}=\frac{1}{m}\sum_{j=1}^{n}{dz_j^{[L]}}\end{pmatrix}&lt;/script&gt;
+&lt;/small&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Basics of NN Neural Network Representation Activation Functions Training Process Forward Propagation Backward Propagation   Neural Network Representation</summary></entry><entry><title type="html">Regression</title><link href="http://localhost:4000/ML/Regression/" rel="alternate" type="text/html" title="Regression" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-Regression</id><content type="html" xml:base="http://localhost:4000/ML/Regression/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;p&gt;This covers the basics of two basic regressions as the very basics of Machine Learning.&lt;/p&gt;
 &lt;ul&gt;
