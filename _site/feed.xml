@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-31T18:01:54+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">Random Facts</title><link href="http://localhost:4000/blogs/random_facts/" rel="alternate" type="text/html" title="Random Facts" /><published>2020-01-27T21:32:00+09:00</published><updated>2020-01-27T21:32:00+09:00</updated><id>http://localhost:4000/blogs/random-facts</id><content type="html" xml:base="http://localhost:4000/blogs/random_facts/">&lt;p&gt;Just some random facts accumulated from my personal experiences.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-31T18:13:32+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">Random Facts</title><link href="http://localhost:4000/blogs/random_facts/" rel="alternate" type="text/html" title="Random Facts" /><published>2020-01-27T21:32:00+09:00</published><updated>2020-01-27T21:32:00+09:00</updated><id>http://localhost:4000/blogs/random-facts</id><content type="html" xml:base="http://localhost:4000/blogs/random_facts/">&lt;p&gt;Just some random facts accumulated from my personal experiences.&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -91,11 +91,7 @@
   &lt;li&gt;GRUs &amp;amp; LSTM&lt;/li&gt;
   &lt;li&gt;Word Embeddings&lt;/li&gt;
   &lt;li&gt;Applications in NLP&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Machine Learning</summary></entry><entry><title type="html">Basics of Neural Networks</title><link href="http://localhost:4000/DL/ANN/" rel="alternate" type="text/html" title="Basics of Neural Networks" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/DL/DL-Basics</id><content type="html" xml:base="http://localhost:4000/DL/ANN/">&lt;head&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/stylesheet.css&quot; /&gt;
-&lt;/head&gt;
-
-&lt;ul&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Machine Learning</summary></entry><entry><title type="html">Basics of Neural Networks</title><link href="http://localhost:4000/DL/ANN/" rel="alternate" type="text/html" title="Basics of Neural Networks" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/DL/DL-Basics</id><content type="html" xml:base="http://localhost:4000/DL/ANN/">&lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Basics of NN&lt;/strong&gt;
     &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#nn&quot;&gt;Neural Network Representation&lt;/a&gt;&lt;/li&gt;
@@ -211,16 +207,17 @@ z_j^{[k]}=w_j^{[k]}\cdot a^{[k-1]}+b_j^{[k]} \quad\quad\quad z_j^{[k]}\in\mathbb
 &lt;p&gt; &lt;a name=&quot;af&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;activation-functions&quot;&gt;Activation Functions&lt;/h2&gt;
 
+&lt;p&gt;(Blame github pages for not supporting colspan/rowspan)&lt;/p&gt;
 &lt;table&gt;
     &lt;thead&gt;
-        &lt;tr align=&quot;center&quot;&gt;
+        &lt;tr style=&quot;text-align: center&quot;&gt;
             &lt;th&gt;Sigmoid&lt;/th&gt;
             &lt;th&gt;Tanh&lt;/th&gt;
             &lt;th&gt;ReLU&lt;/th&gt;
             &lt;th&gt;Leaky ReLU&lt;/th&gt;
         &lt;/tr&gt;
     &lt;/thead&gt;
-    &lt;tbody align=&quot;center&quot;&gt;
+    &lt;tbody style=&quot;text-align: center&quot;&gt;
         &lt;tr&gt;
             &lt;td&gt;$g(z)=\frac{1}{1+e^{-z}}$&lt;/td&gt;
             &lt;td&gt;$g(z)=\frac{e^z-e^{-z}}{e^z+e^{-z}}$&lt;/td&gt;
@@ -242,10 +239,12 @@ z_j^{[k]}=w_j^{[k]}\cdot a^{[k-1]}+b_j^{[k]} \quad\quad\quad z_j^{[k]}\in\mathbb
         &lt;tr&gt;
             &lt;td&gt;&lt;small&gt;centered at $y=0.5$&lt;br /&gt;$\Rightarrow$only good for binary classification&lt;/small&gt;&lt;/td&gt;
             &lt;td&gt;&lt;small&gt;centered at $y=0$&lt;br /&gt;$\Rightarrow$better than sigmoid in many cases&lt;/small&gt;&lt;/td&gt;
-            &lt;td colspan=&quot;2&quot;&gt;&lt;small&gt;used for cases other than binary classification&lt;br /&gt;faster computing&lt;br /&gt;&lt;strike&gt;vanishing gradient&lt;/strike&gt;&lt;br /&gt;model sparsity (some neurons can be inactivated)&lt;/small&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;small&gt;faster computing&lt;br /&gt;&lt;strike&gt;vanishing gradient&lt;/strike&gt;&lt;br /&gt;model sparsity (some neurons can be inactivated)&lt;/small&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;small&gt;faster computing&lt;br /&gt;&lt;strike&gt;vanishing gradient&lt;/strike&gt;&lt;br /&gt;model sparsity (some neurons can be inactivated)&lt;/small&gt;&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
-            &lt;td colspan=&quot;2&quot;&gt;$|z|\uparrow\uparrow \rightarrow\frac{da}{dz}\approx 0$&lt;br /&gt;$\Rightarrow$ vanishing gradient&lt;/td&gt;
+            &lt;td&gt;$|z|\uparrow\uparrow \rightarrow\frac{da}{dz}\approx 0$&lt;br /&gt;$\Rightarrow$ vanishing gradient&lt;/td&gt;
+            &lt;td&gt;$|z|\uparrow\uparrow \rightarrow\frac{da}{dz}\approx 0$&lt;br /&gt;$\Rightarrow$ vanishing gradient&lt;/td&gt;
             &lt;td&gt;too many neurons get inactivated&lt;br /&gt;$\Rightarrow$dying ReLU&lt;/td&gt;
             &lt;td&gt;$\varepsilon$ usually set to 0.01&lt;br /&gt;&lt;strike&gt;dying ReLU&lt;/strike&gt;&lt;br /&gt;widely used on Kaggle&lt;/td&gt;
         &lt;/tr&gt;
@@ -270,7 +269,7 @@ z_j^{[k]}=w_j^{[k]}\cdot a^{[k-1]}+b_j^{[k]} \quad\quad\quad z_j^{[k]}\in\mathbb
   &lt;li&gt;&lt;strong&gt;Forward Propagation&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;../../images/DL/fp.png&quot; width=&quot;400&quot; margin-left=&quot;auto&quot; margin-right=&quot;auto&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;../../images/DL/fp.png&quot; width=&quot;500&quot; /&gt;&lt;/center&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -284,7 +283,7 @@ z_j^{[k]}=w_j^{[k]}\cdot a^{[k-1]}+b_j^{[k]} \quad\quad\quad z_j^{[k]}\in\mathbb
 \begin{pmatrix} dZ^{[L]}=\hat{Y}-Y \\ dW^{[L]}=\frac{1}{m}dZ^{[L]}A^{[L]^T} \\ db^{[L]}=\frac{1}{m}\sum_{j=1}^{n}{dz_j^{[L]}}\end{pmatrix}&lt;/script&gt;
 &lt;/small&gt;&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Regression</title><link href="http://localhost:4000/ML/Regression/" rel="alternate" type="text/html" title="Regression" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-Regression</id><content type="html" xml:base="http://localhost:4000/ML/Regression/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Basics of NN Neural Network Representation Activation Functions Training Process Forward Propagation Backward Propagation   Neural Network Representation</summary></entry><entry><title type="html">Regression</title><link href="http://localhost:4000/ML/Regression/" rel="alternate" type="text/html" title="Regression" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-Regression</id><content type="html" xml:base="http://localhost:4000/ML/Regression/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;p&gt;This covers the basics of two basic regressions as the very basics of Machine Learning.&lt;/p&gt;
 &lt;ul&gt;
