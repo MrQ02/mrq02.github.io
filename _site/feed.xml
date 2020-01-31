@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-30T14:21:50+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">Machine Learning</title><link href="http://localhost:4000/ML/" rel="alternate" type="text/html" title="Machine Learning" /><published>2019-12-08T22:29:53+09:00</published><updated>2019-12-08T22:29:53+09:00</updated><id>http://localhost:4000/ML-welcome</id><content type="html" xml:base="http://localhost:4000/ML/">&lt;h2 id=&quot;machine-learning&quot;&gt;Machine Learning&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-31T15:55:32+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">Random Facts</title><link href="http://localhost:4000/blogs/random_facts/" rel="alternate" type="text/html" title="Random Facts" /><published>2020-01-27T21:32:00+09:00</published><updated>2020-01-27T21:32:00+09:00</updated><id>http://localhost:4000/blogs/random-facts</id><content type="html" xml:base="http://localhost:4000/blogs/random_facts/">&lt;p&gt;Just some random facts accumulated from my personal experiences.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Inside every cynical person, there is a disappointed idealist.     – George Carlin&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Being bothered with sunk costs is an economic inefficiency.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Fairness is a myth.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Jungle Rule is the Constitution of the society.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Just some random facts accumulated from my personal experiences.</summary></entry><entry><title type="html">My Bizarre Adventure</title><link href="http://localhost:4000/blogs/bizarre_adventure/" rel="alternate" type="text/html" title="My Bizarre Adventure" /><published>2020-01-27T21:32:00+09:00</published><updated>2020-01-27T21:32:00+09:00</updated><id>http://localhost:4000/blogs/bizarre-adventure</id><content type="html" xml:base="http://localhost:4000/blogs/bizarre_adventure/">&lt;h2 id=&quot;201701&quot;&gt;2017/01&lt;/h2&gt;
+
+&lt;p&gt;As I was applying to those “top unis” in the US, the bad news came out of my expectation: my family went broke. My father, who had never wept in front of me for 18 years, shed tears.&lt;/p&gt;
+
+&lt;p&gt;I had been given everything I wanted: barbecues, high-class foods, finest wines, field trips, parties, netflix &amp;amp; chill, easy grades &amp;amp; math achievements, … I barely put any effort in life, and I never took anything seriously. I had searched for challenges at certain times, but I always gave up immediately as I saw no necessity of challenging myself.&lt;/p&gt;
+
+&lt;p&gt;I was shocked at that moment. I didn’t know what to do. I didn’t even know what to say. It was too sudden for me. All the insecurities and uncertainties sealed behind my “wonderful life” came out altogether.&lt;/p&gt;</content><author><name></name></author><summary type="html">2017/01</summary></entry><entry><title type="html">Machine Learning</title><link href="http://localhost:4000/ML/" rel="alternate" type="text/html" title="Machine Learning" /><published>2019-12-08T22:29:53+09:00</published><updated>2019-12-08T22:29:53+09:00</updated><id>http://localhost:4000/ML-welcome</id><content type="html" xml:base="http://localhost:4000/ML/">&lt;h2 id=&quot;machine-learning&quot;&gt;Machine Learning&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Supervised Learning&lt;/strong&gt;&lt;/p&gt;
 
@@ -70,686 +91,154 @@
   &lt;li&gt;GRUs &amp;amp; LSTM&lt;/li&gt;
   &lt;li&gt;Word Embeddings&lt;/li&gt;
   &lt;li&gt;Applications in NLP&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Machine Learning</summary></entry><entry><title type="html">Generative Learning Algorithms</title><link href="http://localhost:4000/ML/GDA/" rel="alternate" type="text/html" title="Generative Learning Algorithms" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-GDA</id><content type="html" xml:base="http://localhost:4000/ML/GDA/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
-
-&lt;p&gt;This covers the basics of Generative Learning Algorithms for classification&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#gda&quot;&gt;Gaussian Discrminant Analysis&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#nb&quot;&gt;Naive Bayes Classifier&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Machine Learning</summary></entry><entry><title type="html">Basics of Neural Networks</title><link href="http://localhost:4000/DL/ANN/" rel="alternate" type="text/html" title="Basics of Neural Networks" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/DL/DL-Basics</id><content type="html" xml:base="http://localhost:4000/DL/ANN/">&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Basics of NN&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Neural Network Representation
+        &lt;ul&gt;
+          &lt;li&gt;Input Matrix&lt;/li&gt;
+          &lt;li&gt;Output Vector&lt;/li&gt;
+          &lt;li&gt;Weight Matrix&lt;/li&gt;
+          &lt;li&gt;Bias Vector&lt;/li&gt;
+          &lt;li&gt;Linear Combination&lt;/li&gt;
+          &lt;li&gt;Activation Vector&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Activation Functions&lt;/li&gt;
+      &lt;li&gt;Backward Propagation&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;learning-algorithms&quot;&gt;Learning Algorithms&lt;/h2&gt;
+&lt;h2 id=&quot;neural-network-representation&quot;&gt;Neural Network Representation&lt;/h2&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Discriminative Learning Algorithms&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;../../images/DL/NN.png&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-\text{model }p(y|x)\text{ directly}\ \ \ (X \Rightarrow Y)
-\end{equation}&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Generative Learning Algorithms&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Input Matrix&lt;/strong&gt;:&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
 \begin{equation}
-\text{model }p(x|y)\ \&amp;\ p(y)\Rightarrow\text{ use Bayes Theorem to get }p(y|x) 
+X=\begin{bmatrix}
+x_1^{(1)} &amp; \cdots &amp; x_1^{(m)} \\
+\vdots &amp; \ddots &amp; \vdots \\
+x_{n_x}^{(1)} &amp; \cdots &amp; x_{n_x}^{(m)}
+\end{bmatrix}=\begin{bmatrix}
+x^{(1)} &amp; \cdots &amp; x^{(m)}
+\end{bmatrix}\quad\quad\quad X\in\mathbb{R}^{n_x\times m}
 \end{equation} %]]&gt;&lt;/script&gt;
 
-&lt;p&gt; 
- &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;$x_j^{(i)}$: the $j$th feature of the $i$th training example&lt;/li&gt;
+  &lt;li&gt;$m$: # training examples: each column vector of $x$ represents one training example&lt;/li&gt;
+  &lt;li&gt;$n_x$: # input features: each row vector of $x$ represents one type of input feature&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h2 id=&quot;bayes-theorem&quot;&gt;Bayes Theorem&lt;/h2&gt;
+&lt;p&gt;for easier understanding in this session, we use one training example / input vector at each training step:&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-p(y|x)=\frac{p(x|y)p(y)}{p(x)}
+x^{(i)}=\begin{bmatrix}
+x_1^{(i)} \\ \vdots \\ x_{n_x}^{(i)}
+\end{bmatrix}\quad\quad\quad x^{(i)}\in\mathbb{R}^{n_x}
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;Output Vector&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+\hat{Y}=\begin{bmatrix}
+\hat{y}^{(1)} &amp; \cdots &amp; \hat{y}^{(m)}
+\end{bmatrix}\quad\quad\quad \hat{Y}\in\mathbb{R}^{m}
+\end{equation} %]]&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;$\hat{y}^{(i)}$: the predicted output value of the $i$th training example&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;for easier understanding in this session, we assume that there is only one output value for each training example. The output vector in the training set is denoted without the “$\hat{}$” symbol.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Weight Matrix&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+W^{[k]}=\begin{bmatrix}
+w_{1,1}^{[k]} &amp; \cdots &amp; w_{1,n_{k-1}}^{[k]} \\
+\vdots &amp; \ddots &amp; \vdots \\
+w_{n_k,1}^{[k]} &amp; \cdots &amp; w_{n_k,n_{k-1}}^{[k]}
+\end{bmatrix}=\begin{bmatrix}
+w_1^{[k]} \\ \vdots \\ w_{n_k}^{[k]}
+\end{bmatrix}\quad\quad\quad W^{[k]}\in\mathbb{R}^{n_k\times n_{k-1}}
+\end{equation} %]]&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;$w_{j,l}^{[k]}$: the weight value for the $l$th input at the $j$th node on the $k$th layer&lt;/li&gt;
+  &lt;li&gt;$n_k$: # nodes/neurons on the $k$th layer (the current layer)&lt;/li&gt;
+  &lt;li&gt;$n_{k-1}$: # nodes/neurons on the $k-1$th layer (the previous layer)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Bias Vector&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+b^{[k]}=\begin{bmatrix}
+b_1^{[k]} \\ \vdots \\ b_{n_k}^{[k]}
+\end{bmatrix}\quad\quad\quad b^{[k]}\in\mathbb{R}^{n_k}
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;Activation&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+a^{[k]}=\begin{bmatrix}
+a_1^{[k]} \\ \vdots \\ a_{n_k}^{[k]}
+\end{bmatrix}=\begin{bmatrix}
+g(z_1^{[k]}) \\ \vdots \\ g(z_{n_k}^{[k]})
+\end{bmatrix}\quad\quad\quad a^{[k]}\in\mathbb{R}^{n_k}
 \end{equation}&lt;/script&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Prior&lt;/strong&gt;:   $p(y)$&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Posterior&lt;/strong&gt;: $p(y|x)$&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Simplification:&lt;/p&gt;
-
-    &lt;p&gt;$\because$ we are trying to find the output $y$ with the highest probability given $x$&lt;br /&gt;
-  $\therefore$ we can simplify Bayes Theorem for our purpose:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  \mathop{\arg\max}_ {y}{p(y|x)}&amp;=\mathop{\arg\max}_ {y}{\frac{p(x|y)p(y)}{p(x)}} \\
-  &amp;=\mathop{\arg\max}_ {y}{p(x|y)p(y)}
-  \end{align} %]]&gt;&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Bayes Theorem = the core of Generative Learning Algorithms&lt;/li&gt;
+  &lt;li&gt;$g(z)$: Activation function (to add &lt;strong&gt;nonlinearity&lt;/strong&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt; 
- &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Linear Combination&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;h2 id=&quot;gaussian-discriminant-analysis-gda&quot;&gt;&lt;a name=&quot;gda&quot;&gt;&lt;/a&gt;Gaussian Discriminant Analysis (GDA)&lt;/h2&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+z_j^{[k]}=w_j^{[k]}\cdot a^{[k-1]}+b_j^{[k]} \quad\quad\quad z_j^{[k]}\in\mathbb{R}^{n_k}
+\end{equation}&lt;/script&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Assumption: Multivariate Gaussian Distribution&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  p(x|\mu,\Sigma)=\frac{1}{(2\pi)^{\frac{n}{2}}|\Sigma|^{\frac{1}{2}}}e^{\big(-\frac{1}{2}(x-\mu)^T\Sigma^{-1}(x-\mu)\big)}
-  \end{equation}&lt;/script&gt;
-
-    &lt;p&gt;It is literally the same as Gaussian Distribution but with vector parameters:&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;mean vector:    $\mu\in\mathbb{R}^n$&lt;/li&gt;
-      &lt;li&gt;covariance matrix: $\Sigma\in\mathbb{R}^{n\times n}$&lt;br /&gt;
-   &lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;p&gt;As a reminder and a comparison, here is the univariate version:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  p(x|\mu,\sigma)=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}}
-  \end{equation}&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Model&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  y&amp;\sim \text{Bernoulli}{(\phi)} \\
-  x|y=0&amp;\sim N(\mu_0,\Sigma) \\
-  x|y=1&amp;\sim N(\mu_1,\Sigma) \\
-  \end{align} %]]&gt;&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Probabilistic Interpretation&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  p(y)&amp;=\phi^y(1-\phi)^{1-y} \\
-  p(x|y=0)&amp;=\frac{1}{(2\pi)^{\frac{n}{2}}|\Sigma|^{\frac{1}{2}}}e^{\big(-\frac{1}{2}(x-\mu_0)^T\Sigma^{-1}(x-\mu_0)\big)} \\
-  p(x|y=1)&amp;=\frac{1}{(2\pi)^{\frac{n}{2}}|\Sigma|^{\frac{1}{2}}}e^{\big(-\frac{1}{2}(x-\mu_1)^T\Sigma^{-1}(x-\mu_1)\big)}
-  \end{align} %]]&gt;&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;log likelihood&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  l(\phi,\mu_0,\mu_1,\Sigma)=\log{\prod_{i=1}^{m}{p(x^{(i)}|y^{(i)};\mu_0,\mu_1,\Sigma)p(y^{(i)};\phi)}}
-  \end{equation}&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;MLE&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  \phi &amp;= \frac{1}{m}\sum_{i=1}^m{\text{I}\{ y^{(i)}=l \}} \\
-  \mu_0 &amp;= \frac{\sum_{i=1}^m{\text{I}\{ y^{(i)}=0 \}x^{(i)}}}{\sum_{i=1}^m{\text{I}\{ y^{(i)}=0 \}}} \\
-  \mu_1 &amp;= \frac{\sum_{i=1}^m{\text{I}\{ y^{(i)}=1 \}x^{(i)}}}{\sum_{i=1}^m{\text{I}\{ y^{(i)}=1 \}}} \\
-  \Sigma &amp;= \frac{1}{m}\sum_{i=1}^m{(x^{(i)}-\mu_{y^{(i)}})(x^{(i)}-\mu_{y^{(i)}})^T}
-  \end{align} %]]&gt;&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;GDA vs LogReg&lt;/p&gt;
-    &lt;ol&gt;
-      &lt;li&gt;GDA
-        &lt;ul&gt;
-          &lt;li&gt;makes &lt;strong&gt;stronger&lt;/strong&gt; modeling assumptions about data&lt;/li&gt;
-          &lt;li&gt;data efficient when assumptions (Gaussian distributions) are approximately correct&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;LogReg
-        &lt;ul&gt;
-          &lt;li&gt;makes &lt;strong&gt;weaker&lt;/strong&gt; modeling assumptions about data&lt;/li&gt;
-          &lt;li&gt;data efficient when assumptions (Gaussian distributions) are not necessarily correct (e.g. $x|y\sim \text{Poisson}(\lambda_1)$ instead of $N(\mu_0,\Sigma)$)&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
+  &lt;li&gt;$z_j^{[k]}$: the unactivated output value from the $j$th node of the $k$th layer&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt; 
- &lt;/p&gt;
-
-&lt;h2 id=&quot;naive-bayes-classifier&quot;&gt;&lt;a name=&quot;nb&quot;&gt;&lt;/a&gt;Naive Bayes Classifier&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;GDA vs NB&lt;/p&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;GDA: $x$ = continuous, real-valued vectors&lt;/li&gt;
-      &lt;li&gt;NB:   $x$ = discrete-valued vectors (e.g. text classification)&lt;br /&gt;
-   &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Text Encoding (more in DL/RNN)&lt;/p&gt;
-
-    &lt;p&gt;We encode a text sentence into a vector of the same length as our &lt;strong&gt;dictionary&lt;/strong&gt; (like a Python dictionary with vocabulary and their indices as key-value pairs):&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  x=\begin{bmatrix}
-  0 \\ 0 \\ \vdots \\ 1 \\ \vdots \\ 1 \\ 1 \\ \vdots \\ 0
-  \end{bmatrix}
-  \begin{matrix}
-  \text{a} \\ \text{abandon} \\ \vdots \\ \text{pewdiepie} \\ \vdots \\ \text{subscribe} \\ \text{to} \\ \vdots \\ \text{zuck}
-  \end{matrix}
-  \end{equation}&lt;/script&gt;
-
-    &lt;p&gt;The original sentence was “Subscribe to Pewdiepie!”, and this text encoding method uses lowercases, throws punctuations and ignores the order of the sentence. This is convenient in some cases (e.g. spam email classification) but awful in the other cases (e.g. news/report-writer bots)&lt;/p&gt;
-
-    &lt;p&gt;Notice that $x\in \{0,1\}^{\text{len(dict)}}$. Why notice this? Because we now have $2^\text{len(dict)}$ possible outcomes for $x$. When we have a dictionary of over 20000 words, we have a $(2^{20000}-1)$-dimensional parameter vector. Have fun with that, laptop.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Assumption: Conditional Independence&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  p(x_i|y)=p(x_i|y,x_j)\ \ \ \forall j\neq i
-  \end{equation}&lt;/script&gt;
-
-    &lt;p&gt;meaning: Given $y$ as the condition, $x_i$ is independent of $x_j$.&lt;/p&gt;
-
-    &lt;p&gt;In the case of spam email classification, if we know that the email is spam, then whether or not “pewdiepie” is in the sentence does not change our belief of whether or not “subscribe” is in the sentence.&lt;/p&gt;
-
-    &lt;p&gt;Therefore, we can simplify our $p(x|y)$ into:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  p(x_1,...,x_{\text{len(dict)}}|y)=\prod_{i=1}^{n}{p(x_i|y)}
-  \end{equation}&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Model&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  \phi_{i|y=1}&amp;=p(x_i=1|y=1) \\
-  \phi_{i|y=0}&amp;=p(x_i=1|y=0) \\
-  \phi_y&amp;=p(y=1)
-  \end{align} %]]&gt;&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Joint Likelihood&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  \mathcal{L}(\phi_y,\phi_{i|y=0},\phi_{i|y=1})=\prod_{i=1}^{m}{p(x^{(i)},y^{(i)})}
-  \end{equation}&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;MLE&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  \phi_{j|y=1}&amp;=\frac{\sum_{i=1}^m{I\{x_j^{(i)}=1\land y^{(i)}=1\}}}{\sum_{i=1}^m{I\{y^{(i)}=1\}}} \\
-  \phi_{j|y=0}&amp;=\frac{\sum_{i=1}^m{I\{x_j^{(i)}=1\land y^{(i)}=0\}}}{\sum_{i=1}^m{I\{y^{(i)}=0\}}} \\
-  \phi_y&amp;=\frac{\sum_{i=1}^m{I\{y^{(i)}=1\}}}{m}
-  \end{align} %]]&gt;&lt;/script&gt;
-
-    &lt;p&gt;Quite intuitive. For example, $\phi_{j|y=0}$ = the fraction of non-spam emails with the word $j$ in it.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Prediction&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  p(y=1|x_\text{new})&amp;=\frac{p(x_\text{new}|y=1)p(y=1)}{p(x_\text{new})} \\
-  &amp;=\frac{\prod_{i=1}^n{p(x_i|y=1)}\cdot p(y=1)}{\prod_{i=1}^n{p(x_i|y=1)}\cdot p(y=1)+\prod_{i=1}^n{p(x_i|y=0)}\cdot p(y=0)}
-  \end{align} %]]&gt;&lt;/script&gt;
-
-    &lt;p&gt;Again, the formula is tedious but very intuitive. The $y$ with the higher posterior probability will be chosen as the final prediction.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Apply NB in GDA cases?&lt;/p&gt;
-
-    &lt;p&gt;Discretize: Just cut the continuous, real-valued $x$ into small intervals and label them with a discrete-valued scale.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Laplace Smoothing&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;
-        &lt;p&gt;Problem with NB&lt;/p&gt;
-
-        &lt;p&gt;What if there is a new word “mrbeast” in the email for prediction that our NB classifier has never learnt ever since it was born?&lt;/p&gt;
-
-        &lt;p&gt;A human would look it up on a dictionary, and so would our NB classifier.&lt;/p&gt;
-
-        &lt;p&gt;Assume the word “mrbeast” is the 1234th word in the dictionary, then:&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
- \phi_{1234|y=1}&amp;=\frac{\sum_{i=1}^m{I\{x_{1234}^{(i)}=1\land y^{(i)}=1\}}}{\sum_{i=1}^m{I\{y^{(i)}=1\}}}=0 \\
- \phi_{1234|y=0}&amp;=\frac{\sum_{i=1}^m{I\{x_{1234}^{(i)}=1\land y^{(i)}=0\}}}{\sum_{i=1}^m{I\{y^{(i)}=0\}}}=0 \\
- \end{align} %]]&gt;&lt;/script&gt;
-
-        &lt;p&gt;Yes. NB thinks that the probability of seeing this word in either spam or non-spam email is $0$, and therefore it would predict that:&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
- p(y=1|x_\text{new})&amp;=\frac{\prod_{i=1}^n{p(x_i|y=1)}\cdot p(y=1)}{\prod_{i=1}^n{p(x_i|y=1)}\cdot p(y=1)+\prod_{i=1}^n{p(x_i|y=0)}\cdot p(y=0)} \\
- &amp;=\frac{0}{0}
- \end{align} %]]&gt;&lt;/script&gt;
-
-        &lt;p&gt;Because both numerator and denominator contains $p(x_{1234|y})=0$.&lt;/p&gt;
-
-        &lt;p&gt;In summary, during prediction, if NB has never learnt a word $j$, there will always $\phi_j=0$ ruining the entire prediction. How do we estimate the unknown?&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Laplace Smoothing&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- \phi_j=\frac{\sum_{i=1}^m{I\{z^{(i)}=j\}}+1}{m+k}
- \end{equation}&lt;/script&gt;
-
-        &lt;p&gt;where $k=\text{#features}$ if you forget.&lt;/p&gt;
-
-        &lt;p&gt;Let’s check if it still satisfies our condition:&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- \sum_{j=1}^k{\phi_j}=\sum_{j=1}^k{\frac{\sum_{i=1}^m{I\{z^{(i)}=j\}}+1}{m+k}}=\frac{m+k}{m+k}=1
- \end{equation}&lt;/script&gt;
-
-        &lt;p&gt;Nice. It still satisfies the basic sum rule. The estimates in NB will now become:&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
- \phi_{j|y=1}&amp;=\frac{\sum_{i=1}^m{I\{x_{j}^{(i)}=1\land y^{(i)}=1\}}+1}{\sum_{i=1}^m{I\{y^{(i)}=1\}}+2} \\
- \phi_{j|y=0}&amp;=\frac{\sum_{i=1}^m{I\{x_{j}^{(i)}=1\land y^{(i)}=0\}}+1}{\sum_{i=1}^m{I\{y^{(i)}=0\}}+2} \\
- \end{align} %]]&gt;&lt;/script&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Intro</summary></entry><entry><title type="html">GLM</title><link href="http://localhost:4000/ML/GLM/" rel="alternate" type="text/html" title="GLM" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-GLM</id><content type="html" xml:base="http://localhost:4000/ML/GLM/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
-
-&lt;p&gt;This covers the basics of Generalized Linear Models together with Softmax Regression.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#glm&quot;&gt;GLM&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#softmax&quot;&gt;Softmax Regression&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;generalized-linear-models-glm&quot;&gt;&lt;a name=&quot;glm&quot;&gt;&lt;/a&gt;Generalized Linear Models (GLM)&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;What are &lt;strong&gt;GLM&lt;/strong&gt;s?&lt;/p&gt;
-
-    &lt;p&gt;Remember the two models we had in the last post?&lt;br /&gt;
-  Regression:      $p(y|x,w)\sim N(\mu,\sigma^2)$&lt;br /&gt;
-  Classification:   $p(y|x,w)\sim \text{Bernoulli}(\phi)$&lt;/p&gt;
-
-    &lt;p&gt;They belong to GLM, a collection of models that can be applied to Supervised Learning problems. We will show more examples of GLMs in this markdown.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Exponential Family&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  p(y,\eta)=b(y)\cdot e^{\eta^TT(y)-a(\eta)}
-  \end{equation}&lt;/script&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;
-        &lt;p&gt;$\eta$: natural parameter (i.e. canonical parameter)&lt;/p&gt;
-
-        &lt;p&gt; different $\eta \rightarrow$ different distributions within the family&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$T(y)$: sufficient statistic (usually, $T(y)=y$)&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$a(\eta)$: log partition function&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$e^{-a(\eta)}$: normalization constant (to ensure that $\int{p(y,\eta)dy}=1$)&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$T,a,b$: fixed choice that defines a family of distributions parametrized by $\eta$&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Example 1: &lt;strong&gt;Bernoulli Distribution (Classification)&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  p(y|\phi)&amp;=\phi^y(1-\phi)^{1-y} \\
-  &amp;=e^{y\log{\phi}+(1-y)\log{(1-\phi)}} \\
-  &amp;=e^{y\log{\frac{\phi}{1-\phi}}+\log{(1-\phi)}} \\
-  \end{align} %]]&gt;&lt;/script&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;
-        &lt;p&gt;$\eta=\log{\frac{\phi}{1-\phi}}\Leftrightarrow \phi=\frac{1}{1+e^{-\eta}}$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$T(y)=y$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$a(\eta)=\log{(1+e^\eta)}$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$b(y)=1$&lt;br /&gt;
-   &lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Example 2: &lt;strong&gt;Gaussian Distribution (Regression)&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  p(y|\mu,\sigma^2)&amp;=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{1}{2\sigma^2}(y-\mu)^2} \\
-  &amp;=\frac{1}{\sqrt{2\pi}}e^{\frac{\mu}{\sigma^2}y-\frac{1}{2\sigma^2}y^2-\frac{1}{2\sigma^2}\mu^2-\log{\sigma}}
-  \end{align} %]]&gt;&lt;/script&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;
-        &lt;p&gt;$\eta=\begin{bmatrix}
-    \frac{\mu}{\sigma^2} ;
-    \frac{-1}{2\sigma^2}
-   \end{bmatrix}$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$T(y)=\begin{bmatrix}
-    y;
-    y^2
-   \end{bmatrix}$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$a(\eta)=\frac{1}{2\sigma^2}\mu^2-\log{\sigma}=-\frac{\eta_1^2}{4\eta_2}-\frac{1}{2}\log{(-2\eta_2)}$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$b(y)=\frac{1}{\sqrt{2\pi}}$
-   &lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Example 3: &lt;strong&gt;Poisson Distribution&lt;/strong&gt; (count-data)&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  p(y|\lambda)&amp;=\frac{\lambda^ye^{-\lambda}}{y!}\\
-  &amp;=\frac{1}{y!}e^{y\log{\lambda}-\lambda}
-  \end{align} %]]&gt;&lt;/script&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;
-        &lt;p&gt;$\eta=\log{\lambda}$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$T(y)=y$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$a(\eta)=e^\eta$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$b(y)=\frac{1}{y!}$&lt;br /&gt;
-   &lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Example 4: &lt;strong&gt;Gamma Distribution&lt;/strong&gt; (continuous non-negative random variables)&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  p(y|\lambda,a)&amp;=\frac{\lambda^ay^{a-1}e^{-\lambda y}}{\Gamma(a)}\\
-  &amp;=\frac{y^{a-1}}{\Gamma(a)}e^{-\lambda y+a\log{\lambda}}
-  \end{align} %]]&gt;&lt;/script&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;
-        &lt;p&gt;$\eta=-\lambda$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$T(y)=y$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$a(\eta)=-a\log{(-\eta)}$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$b(y)=\frac{y^{a-1}}{\Gamma(a)}$&lt;br /&gt;
-   &lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Example 5: &lt;strong&gt;Beta Distribution&lt;/strong&gt; (distribution of probabilities)&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  p(y|\alpha,\beta)&amp;=\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}y^{\alpha-1}(1-y)^{\beta-1} \\
-  &amp;=\frac{(1-y)^\beta}{y(1-y)\Gamma(\beta)}e^{\alpha\log{y}- \log{\frac{\Gamma(\alpha)}{\Gamma(\alpha+\beta)}}} \\
-  &amp;=\frac{y^\alpha}{y(1-y)\Gamma(\alpha)}e^{\beta\log{(1-y)}- \log{\frac{\Gamma(\beta)}{\Gamma(\alpha+\beta)}}}
-  \end{align} %]]&gt;&lt;/script&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;
-        &lt;p&gt;$\eta=\alpha\ \text{or}\ \beta$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$T(y)=\log{y}\ \text{or}\ \log{(1-y)}$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$a(\eta)=\log{\frac{\Gamma(\eta)}{\Gamma(\alpha+\beta)}}$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$b(y)=\frac{(1-y)^\beta}{y(1-y)\Gamma(\beta)}\ \text{or}\ \frac{y^\alpha}{y(1-y)\Gamma(\alpha)}$&lt;br /&gt;
-   &lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Example 6: &lt;strong&gt;Dirichlet Distribution&lt;/strong&gt; (multivariate beta)&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  p(y|\alpha)&amp;=\frac{\Gamma(\sum_k\alpha_k)}{\prod_k\Gamma(\alpha_k)}\prod_k{y_k^{\alpha_k-1}} \\
-  &amp;=\exp{\big(\sum_k{(\alpha_k-1)\log{y_k}}-\big[\sum_k{\log{\Gamma(\alpha_k)}}-\log{\Gamma(\sum_k{\alpha_k})}\big]\big)}
-  \end{align} %]]&gt;&lt;/script&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;
-        &lt;p&gt;$\eta=\alpha-1$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$T(y)=\log{y}$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$a(\eta)=\sum_k{\log{\Gamma(\alpha_k)}}-\log{\Gamma(\sum_k{\alpha_k})}$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$b(y)=1$&lt;br /&gt;
-   &lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;method-of-constructing-glms&quot;&gt;Method of Constructing GLMs&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;3 Assumptions&lt;/p&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;
-        &lt;p&gt;$y|x,w \sim \text{ExponentialFamily}(\eta)$&lt;/p&gt;
-
-        &lt;p&gt;interpretation: $y$ given $x\&amp;amp;w$ follows some exponential family distribution with natural parameter $\eta$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$h(x)=\text{E}[y|x]$&lt;/p&gt;
-
-        &lt;p&gt;interpretation: our hypothetical model $h(x)$ should predict the expected value of $y$ given $x$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$\eta=w^Tx$&lt;/p&gt;
-
-        &lt;p&gt;interpretation: $\eta$ is linearly related to $x$&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Example 1: OLS (Ordinary Least Squares) (i.e. LinReg)&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  h(x)&amp;=\text{E}[y\|x,w]\ \ \ \ \ \ &amp;\text{(Assumption 2)} \\
-     &amp;=\mu \\
-     &amp;=\eta\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ &amp;\text{(Assumption 1)} \\
-     &amp;=w^Tx\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ &amp;\text{(Assumption 3)}
-  \end{align} %]]&gt;&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Example 2: Logistic Regression&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  h(x)&amp;=\text{E}[y\|x,w]\ \ \ \ \ \ &amp;\text{(Assumption 2)} \\
-     &amp;=\phi \\
-     &amp;=\frac{1}{1+e^{-\eta}}\ \ \ \ \ \ &amp;\text{(Assumption 1)} \\
-     &amp;=\frac{1}{1+e^{-w^Tx}}\ \ \ \ \ \ &amp;\text{(Assumption 3)}
-  \end{align} %]]&gt;&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Example 3: &lt;a name=&quot;softmax&quot;&gt;&lt;/a&gt;&lt;strong&gt;Softmax Regression&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;
-        &lt;p&gt;What is it?&lt;/p&gt;
-
-        &lt;p&gt;a method used in &lt;strong&gt;multiclass classification&lt;/strong&gt; to select one output value $\phi_i$ of the highest probability among all the output values.&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- \hat{y}=\begin{bmatrix}
- \phi_1 \\
- \vdots \\
- \phi_{k-1}
- \end{bmatrix}
- \end{equation}&lt;/script&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;&lt;strong&gt;One-hot Encoding&lt;/strong&gt;&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- y\in \{ 1,\cdots,k \} \Rightarrow T(y)\in \mathbb{R}^{k}
- \end{equation}&lt;/script&gt;
-
-        &lt;p&gt;where&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- T(1)=\begin{bmatrix}
- 1 \\ 0 \\ \vdots \\ 0
- \end{bmatrix},
- T(2)=\begin{bmatrix}
- 0 \\ 1 \\ \vdots \\ 0
- \end{bmatrix},\cdots,
- T(k)=\begin{bmatrix}
- 0 \\ 0 \\ \vdots \\ 1
- \end{bmatrix}
- \end{equation}&lt;/script&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;&lt;strong&gt;Dummy Encoding&lt;/strong&gt;&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- y\in \{ 1,\cdots,k \} \Rightarrow T(y)\in \mathbb{R}^{k-1}
- \end{equation}&lt;/script&gt;
-
-        &lt;p&gt;where&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- T(1)=\begin{bmatrix}
- 1 \\ 0 \\ \vdots \\ 0
- \end{bmatrix},
- T(2)=\begin{bmatrix}
- 0 \\ 1 \\ \vdots \\ 0
- \end{bmatrix},\cdots,
- T(k-1)=\begin{bmatrix}
- 0 \\ 0 \\ \vdots \\ 1
- \end{bmatrix},
- T(k)=\begin{bmatrix}
- 0 \\ 0 \\ \vdots \\ 0
- \end{bmatrix}
- \end{equation}&lt;/script&gt;
-
-        &lt;p&gt;Why Dummy Encoding &amp;gt; One-hot Encoding? It reduces 1 entire column!&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Indicator Function&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- \text{I}\{ \text{True} \}=1,\ \text{I}\{ \text{False} \}=0
- \end{equation}&lt;/script&gt;
-
-        &lt;p&gt;Therefore,&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- T(y)_i =\text{I}\{ y=i \}
- \end{equation}&lt;/script&gt;
-
-        &lt;p&gt;Therefore,&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- \text{E}[T(y)_i] =P(y=i)=\phi_i
- \end{equation}&lt;/script&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Exponential Family form&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
- p(y|\phi)&amp;=\prod_{i=1}^{k}{\phi_i^{\text{I}\{ y=i \}}} \\
- &amp;=\prod_{i=1}^{k-1}{\phi_i^{T(y)_i}} \cdot \phi_k^{1-\sum_{i=1}^{k-1}{T(y)_i}} \\
- &amp;=\exp{\big(\sum_{i=1}^{k-1}{T(y)_i\log{(\phi_i)}-\sum_{i=1}^{k-1}{T(y)_i}\log{(\phi_k)}}+\log{(\phi_k)}\big)} \\
- &amp;=\exp{\big(\sum_{i=1}^{k-1}{T(y)_i\log{\big(\frac{\phi_i}{\phi_k}\big)}+\log{(\phi_k)}\big)}} \\
- \end{align} %]]&gt;&lt;/script&gt;
-
-        &lt;ol&gt;
-          &lt;li&gt;
-            &lt;p&gt;$\eta=\begin{bmatrix}\log{\big(\frac{\phi_1}{\phi_k}\big)}\ ;\ \cdots\ ;\ \log{\big(\frac{\phi_{k-1}}{\phi_k}\big)}\end{bmatrix}$&lt;/p&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;p&gt;$T(y)=\begin{bmatrix}T(y)_1\ ;\ \cdots\ ;\ T(y)_k-1\end{bmatrix}$&lt;/p&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;p&gt;$a(\eta)=-\log{(\phi_k)}$&lt;/p&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;p&gt;$b(y)=1$&lt;br /&gt;
-  &lt;/p&gt;
-          &lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;&lt;strong&gt;Softmax Function&lt;/strong&gt; (derived from $\eta_i=\log{\big(\frac{\phi_i}{\phi_k}\big)}$)&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- \phi_i=\frac{e^{\eta_i}}{\sum_{j=1}^k{e^{\eta_j}}}
- \end{equation}&lt;/script&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Probabilistic Interpretation of Softmax Regression&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- p(y=i|x,w)=\frac{e^{w_i^Tx}}{\sum_{j=1}^k{e^{w_i^Tx}}}
- \end{equation}&lt;/script&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Log Likelihood&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
- l(w)&amp;=\sum_{i=1}^m{\log{p(y^{(i)}|x^{(i)},w)}} \\
- &amp;=\sum_{i=1}^m{\log{\prod_{i=1}^{k}{\Bigg(\frac{e^{w_l^Tx^{(i)}}}{\sum_{j=1}^k{e^{w_l^Tx^{(i)}}}}\Bigg)^{\text{I}\{ y^{(i)}=l \}}}}}
- \end{align} %]]&gt;&lt;/script&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Intro</summary></entry><entry><title type="html">Regression</title><link href="http://localhost:4000/ML/Regression/" rel="alternate" type="text/html" title="Regression" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-Regression</id><content type="html" xml:base="http://localhost:4000/ML/Regression/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+&lt;h2 id=&quot;activation-functions&quot;&gt;Activation Functions&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Sigmoid&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Tanh&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;ReLU&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Leaky ReLU&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;$g(z)=\frac{1}{1+e^{-z}}$&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;$g(z)=\frac{e^z-e^{-z}}{e^z+e^{-z}}$&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;$g(z)=\max{(0,z)}$&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;$g(z)=\max{(\varepsilon z,z)\ |\ \varepsilon « 1}$&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;col 2 is&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;centered&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;$12&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;try&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;zebra stripes&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;are neat&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;$1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;test&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name></name></author><summary type="html">Basics of NN Neural Network Representation Input Matrix Output Vector Weight Matrix Bias Vector Linear Combination Activation Vector Activation Functions Backward Propagation</summary></entry><entry><title type="html">Regression</title><link href="http://localhost:4000/ML/Regression/" rel="alternate" type="text/html" title="Regression" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-Regression</id><content type="html" xml:base="http://localhost:4000/ML/Regression/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;p&gt;This covers the basics of two basic regressions as the very basics of Machine Learning.&lt;/p&gt;
 &lt;ul&gt;
@@ -1238,5 +727,684 @@ g(z)=\begin{cases}
     &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
   \mathcal{L}(w,\alpha,\beta)=f(w)+\sum_{i=1}^{m}{\beta_ih_i(w)}+\sum_{i=1}^{n}{\alpha_ig_i(w)}
   \end{equation}&lt;/script&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Intro</summary></entry><entry><title type="html">GLM</title><link href="http://localhost:4000/ML/GLM/" rel="alternate" type="text/html" title="GLM" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-GLM</id><content type="html" xml:base="http://localhost:4000/ML/GLM/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+
+&lt;p&gt;This covers the basics of Generalized Linear Models together with Softmax Regression.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#glm&quot;&gt;GLM&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#softmax&quot;&gt;Softmax Regression&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;generalized-linear-models-glm&quot;&gt;&lt;a name=&quot;glm&quot;&gt;&lt;/a&gt;Generalized Linear Models (GLM)&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;What are &lt;strong&gt;GLM&lt;/strong&gt;s?&lt;/p&gt;
+
+    &lt;p&gt;Remember the two models we had in the last post?&lt;br /&gt;
+  Regression:      $p(y|x,w)\sim N(\mu,\sigma^2)$&lt;br /&gt;
+  Classification:   $p(y|x,w)\sim \text{Bernoulli}(\phi)$&lt;/p&gt;
+
+    &lt;p&gt;They belong to GLM, a collection of models that can be applied to Supervised Learning problems. We will show more examples of GLMs in this markdown.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Exponential Family&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  p(y,\eta)=b(y)\cdot e^{\eta^TT(y)-a(\eta)}
+  \end{equation}&lt;/script&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;$\eta$: natural parameter (i.e. canonical parameter)&lt;/p&gt;
+
+        &lt;p&gt; different $\eta \rightarrow$ different distributions within the family&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$T(y)$: sufficient statistic (usually, $T(y)=y$)&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$a(\eta)$: log partition function&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$e^{-a(\eta)}$: normalization constant (to ensure that $\int{p(y,\eta)dy}=1$)&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$T,a,b$: fixed choice that defines a family of distributions parametrized by $\eta$&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Example 1: &lt;strong&gt;Bernoulli Distribution (Classification)&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  p(y|\phi)&amp;=\phi^y(1-\phi)^{1-y} \\
+  &amp;=e^{y\log{\phi}+(1-y)\log{(1-\phi)}} \\
+  &amp;=e^{y\log{\frac{\phi}{1-\phi}}+\log{(1-\phi)}} \\
+  \end{align} %]]&gt;&lt;/script&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;$\eta=\log{\frac{\phi}{1-\phi}}\Leftrightarrow \phi=\frac{1}{1+e^{-\eta}}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$T(y)=y$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$a(\eta)=\log{(1+e^\eta)}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$b(y)=1$&lt;br /&gt;
+   &lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Example 2: &lt;strong&gt;Gaussian Distribution (Regression)&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  p(y|\mu,\sigma^2)&amp;=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{1}{2\sigma^2}(y-\mu)^2} \\
+  &amp;=\frac{1}{\sqrt{2\pi}}e^{\frac{\mu}{\sigma^2}y-\frac{1}{2\sigma^2}y^2-\frac{1}{2\sigma^2}\mu^2-\log{\sigma}}
+  \end{align} %]]&gt;&lt;/script&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;$\eta=\begin{bmatrix}
+    \frac{\mu}{\sigma^2} ;
+    \frac{-1}{2\sigma^2}
+   \end{bmatrix}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$T(y)=\begin{bmatrix}
+    y;
+    y^2
+   \end{bmatrix}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$a(\eta)=\frac{1}{2\sigma^2}\mu^2-\log{\sigma}=-\frac{\eta_1^2}{4\eta_2}-\frac{1}{2}\log{(-2\eta_2)}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$b(y)=\frac{1}{\sqrt{2\pi}}$
+   &lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Example 3: &lt;strong&gt;Poisson Distribution&lt;/strong&gt; (count-data)&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  p(y|\lambda)&amp;=\frac{\lambda^ye^{-\lambda}}{y!}\\
+  &amp;=\frac{1}{y!}e^{y\log{\lambda}-\lambda}
+  \end{align} %]]&gt;&lt;/script&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;$\eta=\log{\lambda}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$T(y)=y$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$a(\eta)=e^\eta$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$b(y)=\frac{1}{y!}$&lt;br /&gt;
+   &lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Example 4: &lt;strong&gt;Gamma Distribution&lt;/strong&gt; (continuous non-negative random variables)&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  p(y|\lambda,a)&amp;=\frac{\lambda^ay^{a-1}e^{-\lambda y}}{\Gamma(a)}\\
+  &amp;=\frac{y^{a-1}}{\Gamma(a)}e^{-\lambda y+a\log{\lambda}}
+  \end{align} %]]&gt;&lt;/script&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;$\eta=-\lambda$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$T(y)=y$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$a(\eta)=-a\log{(-\eta)}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$b(y)=\frac{y^{a-1}}{\Gamma(a)}$&lt;br /&gt;
+   &lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Example 5: &lt;strong&gt;Beta Distribution&lt;/strong&gt; (distribution of probabilities)&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  p(y|\alpha,\beta)&amp;=\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}y^{\alpha-1}(1-y)^{\beta-1} \\
+  &amp;=\frac{(1-y)^\beta}{y(1-y)\Gamma(\beta)}e^{\alpha\log{y}- \log{\frac{\Gamma(\alpha)}{\Gamma(\alpha+\beta)}}} \\
+  &amp;=\frac{y^\alpha}{y(1-y)\Gamma(\alpha)}e^{\beta\log{(1-y)}- \log{\frac{\Gamma(\beta)}{\Gamma(\alpha+\beta)}}}
+  \end{align} %]]&gt;&lt;/script&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;$\eta=\alpha\ \text{or}\ \beta$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$T(y)=\log{y}\ \text{or}\ \log{(1-y)}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$a(\eta)=\log{\frac{\Gamma(\eta)}{\Gamma(\alpha+\beta)}}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$b(y)=\frac{(1-y)^\beta}{y(1-y)\Gamma(\beta)}\ \text{or}\ \frac{y^\alpha}{y(1-y)\Gamma(\alpha)}$&lt;br /&gt;
+   &lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Example 6: &lt;strong&gt;Dirichlet Distribution&lt;/strong&gt; (multivariate beta)&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  p(y|\alpha)&amp;=\frac{\Gamma(\sum_k\alpha_k)}{\prod_k\Gamma(\alpha_k)}\prod_k{y_k^{\alpha_k-1}} \\
+  &amp;=\exp{\big(\sum_k{(\alpha_k-1)\log{y_k}}-\big[\sum_k{\log{\Gamma(\alpha_k)}}-\log{\Gamma(\sum_k{\alpha_k})}\big]\big)}
+  \end{align} %]]&gt;&lt;/script&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;$\eta=\alpha-1$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$T(y)=\log{y}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$a(\eta)=\sum_k{\log{\Gamma(\alpha_k)}}-\log{\Gamma(\sum_k{\alpha_k})}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$b(y)=1$&lt;br /&gt;
+   &lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;method-of-constructing-glms&quot;&gt;Method of Constructing GLMs&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;3 Assumptions&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;$y|x,w \sim \text{ExponentialFamily}(\eta)$&lt;/p&gt;
+
+        &lt;p&gt;interpretation: $y$ given $x\&amp;amp;w$ follows some exponential family distribution with natural parameter $\eta$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$h(x)=\text{E}[y|x]$&lt;/p&gt;
+
+        &lt;p&gt;interpretation: our hypothetical model $h(x)$ should predict the expected value of $y$ given $x$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$\eta=w^Tx$&lt;/p&gt;
+
+        &lt;p&gt;interpretation: $\eta$ is linearly related to $x$&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Example 1: OLS (Ordinary Least Squares) (i.e. LinReg)&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  h(x)&amp;=\text{E}[y\|x,w]\ \ \ \ \ \ &amp;\text{(Assumption 2)} \\
+     &amp;=\mu \\
+     &amp;=\eta\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ &amp;\text{(Assumption 1)} \\
+     &amp;=w^Tx\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ &amp;\text{(Assumption 3)}
+  \end{align} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Example 2: Logistic Regression&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  h(x)&amp;=\text{E}[y\|x,w]\ \ \ \ \ \ &amp;\text{(Assumption 2)} \\
+     &amp;=\phi \\
+     &amp;=\frac{1}{1+e^{-\eta}}\ \ \ \ \ \ &amp;\text{(Assumption 1)} \\
+     &amp;=\frac{1}{1+e^{-w^Tx}}\ \ \ \ \ \ &amp;\text{(Assumption 3)}
+  \end{align} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Example 3: &lt;a name=&quot;softmax&quot;&gt;&lt;/a&gt;&lt;strong&gt;Softmax Regression&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;What is it?&lt;/p&gt;
+
+        &lt;p&gt;a method used in &lt;strong&gt;multiclass classification&lt;/strong&gt; to select one output value $\phi_i$ of the highest probability among all the output values.&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ \hat{y}=\begin{bmatrix}
+ \phi_1 \\
+ \vdots \\
+ \phi_{k-1}
+ \end{bmatrix}
+ \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;One-hot Encoding&lt;/strong&gt;&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ y\in \{ 1,\cdots,k \} \Rightarrow T(y)\in \mathbb{R}^{k}
+ \end{equation}&lt;/script&gt;
+
+        &lt;p&gt;where&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ T(1)=\begin{bmatrix}
+ 1 \\ 0 \\ \vdots \\ 0
+ \end{bmatrix},
+ T(2)=\begin{bmatrix}
+ 0 \\ 1 \\ \vdots \\ 0
+ \end{bmatrix},\cdots,
+ T(k)=\begin{bmatrix}
+ 0 \\ 0 \\ \vdots \\ 1
+ \end{bmatrix}
+ \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;Dummy Encoding&lt;/strong&gt;&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ y\in \{ 1,\cdots,k \} \Rightarrow T(y)\in \mathbb{R}^{k-1}
+ \end{equation}&lt;/script&gt;
+
+        &lt;p&gt;where&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ T(1)=\begin{bmatrix}
+ 1 \\ 0 \\ \vdots \\ 0
+ \end{bmatrix},
+ T(2)=\begin{bmatrix}
+ 0 \\ 1 \\ \vdots \\ 0
+ \end{bmatrix},\cdots,
+ T(k-1)=\begin{bmatrix}
+ 0 \\ 0 \\ \vdots \\ 1
+ \end{bmatrix},
+ T(k)=\begin{bmatrix}
+ 0 \\ 0 \\ \vdots \\ 0
+ \end{bmatrix}
+ \end{equation}&lt;/script&gt;
+
+        &lt;p&gt;Why Dummy Encoding &amp;gt; One-hot Encoding? It reduces 1 entire column!&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Indicator Function&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ \text{I}\{ \text{True} \}=1,\ \text{I}\{ \text{False} \}=0
+ \end{equation}&lt;/script&gt;
+
+        &lt;p&gt;Therefore,&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ T(y)_i =\text{I}\{ y=i \}
+ \end{equation}&lt;/script&gt;
+
+        &lt;p&gt;Therefore,&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ \text{E}[T(y)_i] =P(y=i)=\phi_i
+ \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Exponential Family form&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ p(y|\phi)&amp;=\prod_{i=1}^{k}{\phi_i^{\text{I}\{ y=i \}}} \\
+ &amp;=\prod_{i=1}^{k-1}{\phi_i^{T(y)_i}} \cdot \phi_k^{1-\sum_{i=1}^{k-1}{T(y)_i}} \\
+ &amp;=\exp{\big(\sum_{i=1}^{k-1}{T(y)_i\log{(\phi_i)}-\sum_{i=1}^{k-1}{T(y)_i}\log{(\phi_k)}}+\log{(\phi_k)}\big)} \\
+ &amp;=\exp{\big(\sum_{i=1}^{k-1}{T(y)_i\log{\big(\frac{\phi_i}{\phi_k}\big)}+\log{(\phi_k)}\big)}} \\
+ \end{align} %]]&gt;&lt;/script&gt;
+
+        &lt;ol&gt;
+          &lt;li&gt;
+            &lt;p&gt;$\eta=\begin{bmatrix}\log{\big(\frac{\phi_1}{\phi_k}\big)}\ ;\ \cdots\ ;\ \log{\big(\frac{\phi_{k-1}}{\phi_k}\big)}\end{bmatrix}$&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;$T(y)=\begin{bmatrix}T(y)_1\ ;\ \cdots\ ;\ T(y)_k-1\end{bmatrix}$&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;$a(\eta)=-\log{(\phi_k)}$&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;$b(y)=1$&lt;br /&gt;
+  &lt;/p&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;Softmax Function&lt;/strong&gt; (derived from $\eta_i=\log{\big(\frac{\phi_i}{\phi_k}\big)}$)&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ \phi_i=\frac{e^{\eta_i}}{\sum_{j=1}^k{e^{\eta_j}}}
+ \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Probabilistic Interpretation of Softmax Regression&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ p(y=i|x,w)=\frac{e^{w_i^Tx}}{\sum_{j=1}^k{e^{w_i^Tx}}}
+ \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Log Likelihood&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ l(w)&amp;=\sum_{i=1}^m{\log{p(y^{(i)}|x^{(i)},w)}} \\
+ &amp;=\sum_{i=1}^m{\log{\prod_{i=1}^{k}{\Bigg(\frac{e^{w_l^Tx^{(i)}}}{\sum_{j=1}^k{e^{w_l^Tx^{(i)}}}}\Bigg)^{\text{I}\{ y^{(i)}=l \}}}}}
+ \end{align} %]]&gt;&lt;/script&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Intro</summary></entry><entry><title type="html">Generative Learning Algorithms</title><link href="http://localhost:4000/ML/GDA/" rel="alternate" type="text/html" title="Generative Learning Algorithms" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-GDA</id><content type="html" xml:base="http://localhost:4000/ML/GDA/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+
+&lt;p&gt;This covers the basics of Generative Learning Algorithms for classification&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#gda&quot;&gt;Gaussian Discrminant Analysis&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#nb&quot;&gt;Naive Bayes Classifier&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;learning-algorithms&quot;&gt;Learning Algorithms&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Discriminative Learning Algorithms&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+\text{model }p(y|x)\text{ directly}\ \ \ (X \Rightarrow Y)
+\end{equation}&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Generative Learning Algorithms&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+\text{model }p(x|y)\ \&amp;\ p(y)\Rightarrow\text{ use Bayes Theorem to get }p(y|x) 
+\end{equation} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt; 
+ &lt;/p&gt;
+
+&lt;h2 id=&quot;bayes-theorem&quot;&gt;Bayes Theorem&lt;/h2&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+p(y|x)=\frac{p(x|y)p(y)}{p(x)}
+\end{equation}&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Prior&lt;/strong&gt;:   $p(y)$&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Posterior&lt;/strong&gt;: $p(y|x)$&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Simplification:&lt;/p&gt;
+
+    &lt;p&gt;$\because$ we are trying to find the output $y$ with the highest probability given $x$&lt;br /&gt;
+  $\therefore$ we can simplify Bayes Theorem for our purpose:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  \mathop{\arg\max}_ {y}{p(y|x)}&amp;=\mathop{\arg\max}_ {y}{\frac{p(x|y)p(y)}{p(x)}} \\
+  &amp;=\mathop{\arg\max}_ {y}{p(x|y)p(y)}
+  \end{align} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Bayes Theorem = the core of Generative Learning Algorithms&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; 
+ &lt;/p&gt;
+
+&lt;h2 id=&quot;gaussian-discriminant-analysis-gda&quot;&gt;&lt;a name=&quot;gda&quot;&gt;&lt;/a&gt;Gaussian Discriminant Analysis (GDA)&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Assumption: Multivariate Gaussian Distribution&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  p(x|\mu,\Sigma)=\frac{1}{(2\pi)^{\frac{n}{2}}|\Sigma|^{\frac{1}{2}}}e^{\big(-\frac{1}{2}(x-\mu)^T\Sigma^{-1}(x-\mu)\big)}
+  \end{equation}&lt;/script&gt;
+
+    &lt;p&gt;It is literally the same as Gaussian Distribution but with vector parameters:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;mean vector:    $\mu\in\mathbb{R}^n$&lt;/li&gt;
+      &lt;li&gt;covariance matrix: $\Sigma\in\mathbb{R}^{n\times n}$&lt;br /&gt;
+   &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;As a reminder and a comparison, here is the univariate version:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  p(x|\mu,\sigma)=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}}
+  \end{equation}&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Model&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  y&amp;\sim \text{Bernoulli}{(\phi)} \\
+  x|y=0&amp;\sim N(\mu_0,\Sigma) \\
+  x|y=1&amp;\sim N(\mu_1,\Sigma) \\
+  \end{align} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Probabilistic Interpretation&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  p(y)&amp;=\phi^y(1-\phi)^{1-y} \\
+  p(x|y=0)&amp;=\frac{1}{(2\pi)^{\frac{n}{2}}|\Sigma|^{\frac{1}{2}}}e^{\big(-\frac{1}{2}(x-\mu_0)^T\Sigma^{-1}(x-\mu_0)\big)} \\
+  p(x|y=1)&amp;=\frac{1}{(2\pi)^{\frac{n}{2}}|\Sigma|^{\frac{1}{2}}}e^{\big(-\frac{1}{2}(x-\mu_1)^T\Sigma^{-1}(x-\mu_1)\big)}
+  \end{align} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;log likelihood&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  l(\phi,\mu_0,\mu_1,\Sigma)=\log{\prod_{i=1}^{m}{p(x^{(i)}|y^{(i)};\mu_0,\mu_1,\Sigma)p(y^{(i)};\phi)}}
+  \end{equation}&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;MLE&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  \phi &amp;= \frac{1}{m}\sum_{i=1}^m{\text{I}\{ y^{(i)}=l \}} \\
+  \mu_0 &amp;= \frac{\sum_{i=1}^m{\text{I}\{ y^{(i)}=0 \}x^{(i)}}}{\sum_{i=1}^m{\text{I}\{ y^{(i)}=0 \}}} \\
+  \mu_1 &amp;= \frac{\sum_{i=1}^m{\text{I}\{ y^{(i)}=1 \}x^{(i)}}}{\sum_{i=1}^m{\text{I}\{ y^{(i)}=1 \}}} \\
+  \Sigma &amp;= \frac{1}{m}\sum_{i=1}^m{(x^{(i)}-\mu_{y^{(i)}})(x^{(i)}-\mu_{y^{(i)}})^T}
+  \end{align} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;GDA vs LogReg&lt;/p&gt;
+    &lt;ol&gt;
+      &lt;li&gt;GDA
+        &lt;ul&gt;
+          &lt;li&gt;makes &lt;strong&gt;stronger&lt;/strong&gt; modeling assumptions about data&lt;/li&gt;
+          &lt;li&gt;data efficient when assumptions (Gaussian distributions) are approximately correct&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;LogReg
+        &lt;ul&gt;
+          &lt;li&gt;makes &lt;strong&gt;weaker&lt;/strong&gt; modeling assumptions about data&lt;/li&gt;
+          &lt;li&gt;data efficient when assumptions (Gaussian distributions) are not necessarily correct (e.g. $x|y\sim \text{Poisson}(\lambda_1)$ instead of $N(\mu_0,\Sigma)$)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; 
+ &lt;/p&gt;
+
+&lt;h2 id=&quot;naive-bayes-classifier&quot;&gt;&lt;a name=&quot;nb&quot;&gt;&lt;/a&gt;Naive Bayes Classifier&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;GDA vs NB&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;GDA: $x$ = continuous, real-valued vectors&lt;/li&gt;
+      &lt;li&gt;NB:   $x$ = discrete-valued vectors (e.g. text classification)&lt;br /&gt;
+   &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Text Encoding (more in DL/RNN)&lt;/p&gt;
+
+    &lt;p&gt;We encode a text sentence into a vector of the same length as our &lt;strong&gt;dictionary&lt;/strong&gt; (like a Python dictionary with vocabulary and their indices as key-value pairs):&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  x=\begin{bmatrix}
+  0 \\ 0 \\ \vdots \\ 1 \\ \vdots \\ 1 \\ 1 \\ \vdots \\ 0
+  \end{bmatrix}
+  \begin{matrix}
+  \text{a} \\ \text{abandon} \\ \vdots \\ \text{pewdiepie} \\ \vdots \\ \text{subscribe} \\ \text{to} \\ \vdots \\ \text{zuck}
+  \end{matrix}
+  \end{equation}&lt;/script&gt;
+
+    &lt;p&gt;The original sentence was “Subscribe to Pewdiepie!”, and this text encoding method uses lowercases, throws punctuations and ignores the order of the sentence. This is convenient in some cases (e.g. spam email classification) but awful in the other cases (e.g. news/report-writer bots)&lt;/p&gt;
+
+    &lt;p&gt;Notice that $x\in \{0,1\}^{\text{len(dict)}}$. Why notice this? Because we now have $2^\text{len(dict)}$ possible outcomes for $x$. When we have a dictionary of over 20000 words, we have a $(2^{20000}-1)$-dimensional parameter vector. Have fun with that, laptop.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Assumption: Conditional Independence&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  p(x_i|y)=p(x_i|y,x_j)\ \ \ \forall j\neq i
+  \end{equation}&lt;/script&gt;
+
+    &lt;p&gt;meaning: Given $y$ as the condition, $x_i$ is independent of $x_j$.&lt;/p&gt;
+
+    &lt;p&gt;In the case of spam email classification, if we know that the email is spam, then whether or not “pewdiepie” is in the sentence does not change our belief of whether or not “subscribe” is in the sentence.&lt;/p&gt;
+
+    &lt;p&gt;Therefore, we can simplify our $p(x|y)$ into:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  p(x_1,...,x_{\text{len(dict)}}|y)=\prod_{i=1}^{n}{p(x_i|y)}
+  \end{equation}&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Model&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  \phi_{i|y=1}&amp;=p(x_i=1|y=1) \\
+  \phi_{i|y=0}&amp;=p(x_i=1|y=0) \\
+  \phi_y&amp;=p(y=1)
+  \end{align} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Joint Likelihood&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  \mathcal{L}(\phi_y,\phi_{i|y=0},\phi_{i|y=1})=\prod_{i=1}^{m}{p(x^{(i)},y^{(i)})}
+  \end{equation}&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;MLE&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  \phi_{j|y=1}&amp;=\frac{\sum_{i=1}^m{I\{x_j^{(i)}=1\land y^{(i)}=1\}}}{\sum_{i=1}^m{I\{y^{(i)}=1\}}} \\
+  \phi_{j|y=0}&amp;=\frac{\sum_{i=1}^m{I\{x_j^{(i)}=1\land y^{(i)}=0\}}}{\sum_{i=1}^m{I\{y^{(i)}=0\}}} \\
+  \phi_y&amp;=\frac{\sum_{i=1}^m{I\{y^{(i)}=1\}}}{m}
+  \end{align} %]]&gt;&lt;/script&gt;
+
+    &lt;p&gt;Quite intuitive. For example, $\phi_{j|y=0}$ = the fraction of non-spam emails with the word $j$ in it.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Prediction&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  p(y=1|x_\text{new})&amp;=\frac{p(x_\text{new}|y=1)p(y=1)}{p(x_\text{new})} \\
+  &amp;=\frac{\prod_{i=1}^n{p(x_i|y=1)}\cdot p(y=1)}{\prod_{i=1}^n{p(x_i|y=1)}\cdot p(y=1)+\prod_{i=1}^n{p(x_i|y=0)}\cdot p(y=0)}
+  \end{align} %]]&gt;&lt;/script&gt;
+
+    &lt;p&gt;Again, the formula is tedious but very intuitive. The $y$ with the higher posterior probability will be chosen as the final prediction.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Apply NB in GDA cases?&lt;/p&gt;
+
+    &lt;p&gt;Discretize: Just cut the continuous, real-valued $x$ into small intervals and label them with a discrete-valued scale.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Laplace Smoothing&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;Problem with NB&lt;/p&gt;
+
+        &lt;p&gt;What if there is a new word “mrbeast” in the email for prediction that our NB classifier has never learnt ever since it was born?&lt;/p&gt;
+
+        &lt;p&gt;A human would look it up on a dictionary, and so would our NB classifier.&lt;/p&gt;
+
+        &lt;p&gt;Assume the word “mrbeast” is the 1234th word in the dictionary, then:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ \phi_{1234|y=1}&amp;=\frac{\sum_{i=1}^m{I\{x_{1234}^{(i)}=1\land y^{(i)}=1\}}}{\sum_{i=1}^m{I\{y^{(i)}=1\}}}=0 \\
+ \phi_{1234|y=0}&amp;=\frac{\sum_{i=1}^m{I\{x_{1234}^{(i)}=1\land y^{(i)}=0\}}}{\sum_{i=1}^m{I\{y^{(i)}=0\}}}=0 \\
+ \end{align} %]]&gt;&lt;/script&gt;
+
+        &lt;p&gt;Yes. NB thinks that the probability of seeing this word in either spam or non-spam email is $0$, and therefore it would predict that:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ p(y=1|x_\text{new})&amp;=\frac{\prod_{i=1}^n{p(x_i|y=1)}\cdot p(y=1)}{\prod_{i=1}^n{p(x_i|y=1)}\cdot p(y=1)+\prod_{i=1}^n{p(x_i|y=0)}\cdot p(y=0)} \\
+ &amp;=\frac{0}{0}
+ \end{align} %]]&gt;&lt;/script&gt;
+
+        &lt;p&gt;Because both numerator and denominator contains $p(x_{1234|y})=0$.&lt;/p&gt;
+
+        &lt;p&gt;In summary, during prediction, if NB has never learnt a word $j$, there will always $\phi_j=0$ ruining the entire prediction. How do we estimate the unknown?&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Laplace Smoothing&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ \phi_j=\frac{\sum_{i=1}^m{I\{z^{(i)}=j\}}+1}{m+k}
+ \end{equation}&lt;/script&gt;
+
+        &lt;p&gt;where $k=\text{#features}$ if you forget.&lt;/p&gt;
+
+        &lt;p&gt;Let’s check if it still satisfies our condition:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ \sum_{j=1}^k{\phi_j}=\sum_{j=1}^k{\frac{\sum_{i=1}^m{I\{z^{(i)}=j\}}+1}{m+k}}=\frac{m+k}{m+k}=1
+ \end{equation}&lt;/script&gt;
+
+        &lt;p&gt;Nice. It still satisfies the basic sum rule. The estimates in NB will now become:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ \phi_{j|y=1}&amp;=\frac{\sum_{i=1}^m{I\{x_{j}^{(i)}=1\land y^{(i)}=1\}}+1}{\sum_{i=1}^m{I\{y^{(i)}=1\}}+2} \\
+ \phi_{j|y=0}&amp;=\frac{\sum_{i=1}^m{I\{x_{j}^{(i)}=1\land y^{(i)}=0\}}+1}{\sum_{i=1}^m{I\{y^{(i)}=0\}}+2} \\
+ \end{align} %]]&gt;&lt;/script&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><summary type="html">Intro</summary></entry></feed>
