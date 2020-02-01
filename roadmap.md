@@ -31,7 +31,7 @@ Directories:
 <a name="DL"></a>
 ### Deep Learning
 
-- <a></a>[**Basics of NN**](/DL/ANN/)
+- [**Basics of NN**](/DL/ANN/)
     - [Neural Network Representation](/DL/ANN/#nn)
     - [Activation Functions](/DL/ANN/#af)
     - Training
@@ -41,6 +41,7 @@ Directories:
         - Example: [Forward & Backward Step: Mini-batch](/DL/ANN/#fbsb)
         - [Reverse Differentiation](/DL/ANN/#rd) (for a clearer understanding of backpropagation)
     - [Gradient Descent](/DL/ANN/#gd)
+- [**Improvements**](/DL/imp/)
 - CNN
 - RNN & Sequence Modeling
 
