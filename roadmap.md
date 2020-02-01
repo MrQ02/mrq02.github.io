@@ -19,11 +19,11 @@ Directories:
 ### Machine Learning
 
 - **Supervised Learning**
-    - Regression
+    - [Regression](/ML/Regression/)
     - Classification
-    - GDA (Gaussian Discriminant Analysis)
+    - [GDA (Gaussian Discriminant Analysis)](/ML/GDA/)
     - NB Classifier (Naive Bayes Classifier)
-    - GLM (Generalized Linear Models)
+    - [GLM (Generalized Linear Models)](/ML/GLM/)
     - [SVM (Support Vector Machine)](/ML/SVM/)
 - Unsupervised Learning
 
@@ -32,8 +32,15 @@ Directories:
 ### Deep Learning
 
 - <a></a>[**Basics of NN**](/DL/ANN/)
-    - Forward Propagation
-    - Backward Propagation
+    - [Neural Network Representation](/DL/ANN/#nn)
+    - [Activation Functions](/DL/ANN/#af)
+    - Training
+        - [Forward Propagation](/DL/ANN/#fp)
+        - [Backward Propagation](/DL/ANN/#bp)
+        - Example: [Forward & Backward Step: Stochastic](/DL/ANN/#fbss)
+        - Example: [Forward & Backward Step: Mini-batch](/DL/ANN/#fbsb)
+        - [Reverse Differentiation](/DL/ANN/#rd) (for a clearer understanding of backpropagation)
+    - [Gradient Descent](/DL/ANN/#gd)
 - CNN
 - RNN & Sequence Modeling
 

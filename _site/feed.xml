@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-01-31T18:13:32+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">Random Facts</title><link href="http://localhost:4000/blogs/random_facts/" rel="alternate" type="text/html" title="Random Facts" /><published>2020-01-27T21:32:00+09:00</published><updated>2020-01-27T21:32:00+09:00</updated><id>http://localhost:4000/blogs/random-facts</id><content type="html" xml:base="http://localhost:4000/blogs/random_facts/">&lt;p&gt;Just some random facts accumulated from my personal experiences.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-01T15:07:30+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">Random Facts</title><link href="http://localhost:4000/blogs/random_facts/" rel="alternate" type="text/html" title="Random Facts" /><published>2020-01-27T21:32:00+09:00</published><updated>2020-01-27T21:32:00+09:00</updated><id>http://localhost:4000/blogs/random-facts</id><content type="html" xml:base="http://localhost:4000/blogs/random_facts/">&lt;p&gt;Just some random facts accumulated from my personal experiences.&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -96,12 +96,16 @@
     &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#nn&quot;&gt;Neural Network Representation&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#af&quot;&gt;Activation Functions&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;Training Process
+      &lt;li&gt;Training
         &lt;ul&gt;
           &lt;li&gt;&lt;a href=&quot;#fp&quot;&gt;Forward Propagation&lt;/a&gt;&lt;/li&gt;
           &lt;li&gt;&lt;a href=&quot;#bp&quot;&gt;Backward Propagation&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;Example: &lt;a href=&quot;#fbss&quot;&gt;Forward &amp;amp; Backward Step: Stochastic&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;Example: &lt;a href=&quot;#fbsb&quot;&gt;Forward &amp;amp; Backward Step: Mini-batch&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#rd&quot;&gt;Reverse Differentiation&lt;/a&gt; (for a clearer understanding of backpropagation)&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#gd&quot;&gt;Gradient Descent&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -180,6 +184,16 @@ b_1^{[k]} \\ \vdots \\ b_{n_k}^{[k]}
 \end{bmatrix}\quad\quad\quad b^{[k]}\in\mathbb{R}^{n_k}
 \end{equation}&lt;/script&gt;
 
+&lt;p&gt;&lt;strong&gt;Linear Combination&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+z_j^{[k]}=w_j^{[k]}\cdot a^{[k-1]}+b_j^{[k]} \quad\quad\quad z_j^{[k]}\in\mathbb{R}^{n_k}
+\end{equation}&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;$z_j^{[k]}$: the unactivated output value from the $j$th node of the $k$th layer&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;p&gt;&lt;strong&gt;Activation&lt;/strong&gt;:&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
@@ -192,16 +206,6 @@ g(z_1^{[k]}) \\ \vdots \\ g(z_{n_k}^{[k]})
 
 &lt;ul&gt;
   &lt;li&gt;$g(z)$: Activation function (to add &lt;strong&gt;nonlinearity&lt;/strong&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Linear Combination&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-z_j^{[k]}=w_j^{[k]}\cdot a^{[k-1]}+b_j^{[k]} \quad\quad\quad z_j^{[k]}\in\mathbb{R}^{n_k}
-\end{equation}&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;$z_j^{[k]}$: the unactivated output value from the $j$th node of the $k$th layer&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt; &lt;a name=&quot;af&quot;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -264,26 +268,158 @@ z_j^{[k]}=w_j^{[k]}\cdot a^{[k-1]}+b_j^{[k]} \quad\quad\quad z_j^{[k]}\in\mathbb
 
 &lt;p&gt; &lt;/p&gt;
 &lt;h2 id=&quot;training&quot;&gt;Training&lt;/h2&gt;
-&lt;p&gt;&lt;a name=&quot;fp&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Forward Propagation&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;a name=&quot;fp&quot;&gt;&lt;/a&gt;
+&lt;strong&gt;Forward Propagation&lt;/strong&gt;&lt;/p&gt;
 
 &lt;center&gt;&lt;img src=&quot;../../images/DL/fp.png&quot; width=&quot;500&quot; /&gt;&lt;/center&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Backward Propagation&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name=&quot;bp&quot;&gt;&lt;/a&gt;
+&lt;strong&gt;Backward Propagation&lt;/strong&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;small&gt;
-&lt;script type=&quot;math/tex&quot;&gt;\begin{pmatrix} \cdots \\ dW^{[1]}=\frac{1}{m}dZ^{[1]}A^{[1]^T} \\ db^{[1]}=\frac{1}{m}\sum_{j=1}^{n}{dz_j^{[1]}} \end{pmatrix}
-\Leftarrow
-\begin{pmatrix} dZ^{[l-1]}=dW^{[l]^T}dZ^{[l]}g'^{[l]}(Z^{[l-1]}) \\ \cdots \\ \cdots \end{pmatrix}
-\Leftarrow
-\begin{pmatrix} dZ^{[L]}=\hat{Y}-Y \\ dW^{[L]}=\frac{1}{m}dZ^{[L]}A^{[L]^T} \\ db^{[L]}=\frac{1}{m}\sum_{j=1}^{n}{dz_j^{[L]}}\end{pmatrix}&lt;/script&gt;
-&lt;/small&gt;&lt;/p&gt;
+&lt;center&gt;&lt;img src=&quot;../../images/DL/bp.png&quot; width=&quot;500&quot; /&gt;&lt;/center&gt;
+
+&lt;p&gt;&lt;a name=&quot;fbsvs&quot;&gt;&lt;/a&gt;
+&lt;strong&gt;Example: Forward &amp;amp; Backward Step: Stochastic&lt;/strong&gt;: 2 nodes &amp;amp; 3 inputs &amp;amp; no bias&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Forward Step:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+\begin{bmatrix}
+w_{1,1} &amp; w_{1,2} &amp; w_{1,3} \\
+w_{2,1} &amp; w_{2,2} &amp; w_{2,3}
+\end{bmatrix}\begin{bmatrix}
+x_1 \\ x_2 \\ x_3
+\end{bmatrix}=\begin{bmatrix}
+z_1 \\ z_2
+\end{bmatrix}
+\end{equation} %]]&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Backward Step:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+\frac{\partial{\mathcal{L}}}{\partial{W}}=\begin{bmatrix}
+\frac{\partial{\mathcal{L}}}{\partial{w_{1,1}}} &amp; \frac{\partial{\mathcal{L}}}{\partial{w_{1,2}}} &amp; \frac{\partial{\mathcal{L}}}{\partial{w_{1,3}}} \\
+\frac{\partial{\mathcal{L}}}{\partial{w_{2,1}}} &amp; \frac{\partial{\mathcal{L}}}{\partial{w_{2,2}}} &amp; \frac{\partial{\mathcal{L}}}{\partial{w_{2,3}}}
+\end{bmatrix}=\begin{bmatrix}
+\frac{\partial{\mathcal{L}}}{\partial{z_1}}x_1 &amp; \frac{\partial{\mathcal{L}}}{\partial{z_1}}x_2 &amp; \frac{\partial{\mathcal{L}}}{\partial{z_1}}x_3 \\
+\frac{\partial{\mathcal{L}}}{\partial{z_2}}x_1 &amp; \frac{\partial{\mathcal{L}}}{\partial{z_2}}x_2 &amp; \frac{\partial{\mathcal{L}}}{\partial{z_2}}x_3
+\end{bmatrix}=\frac{\partial{\mathcal{L}}}{\partial{Z}}x^T
+\end{equation} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;a name=&quot;fbsvs&quot;&gt;&lt;/a&gt;
+&lt;strong&gt;Example: Forward &amp;amp; Backward Step: Mini-batch&lt;/strong&gt;: 2 nodes &amp;amp; 3 inputs &amp;amp; bias &amp;amp; 2 training examples&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Forward Step:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+\begin{bmatrix}
+w_{1,1} &amp; w_{1,2} &amp; w_{1,3} \\
+w_{2,1} &amp; w_{2,2} &amp; w_{2,3}
+\end{bmatrix}\begin{bmatrix}
+x_1^{(1)} &amp; x_1^{(2)} \\ 
+x_2^{(1)} &amp; x_2^{(2)} \\ 
+x_3^{(1)} &amp; x_3^{(2)}
+\end{bmatrix}+\begin{bmatrix}
+b_1 \\ b_2
+\end{bmatrix}=\begin{bmatrix}
+z_1^{(1)} &amp; z_1^{(2)} \\
+z_2^{(1)} &amp; z_2^{(2)}
+\end{bmatrix}
+\end{equation} %]]&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Backward Step:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;&lt;small&gt;$$\begin{equation}
+\frac{\partial{\mathcal{L}}}{\partial{W}}=\begin{bmatrix}
+\frac{\partial{\mathcal{L}}}{\partial{w_{1,1}}} &amp;amp; \frac{\partial{\mathcal{L}}}{\partial{w_{1,2}}} &amp;amp; \frac{\partial{\mathcal{L}}}{\partial{w_{1,3}}} \\
+\frac{\partial{\mathcal{L}}}{\partial{w_{2,1}}} &amp;amp; \frac{\partial{\mathcal{L}}}{\partial{w_{2,2}}} &amp;amp; \frac{\partial{\mathcal{L}}}{\partial{w_{2,3}}}
+\end{bmatrix}=\begin{bmatrix}
+\frac{\partial{\mathcal{L}}}{\partial{z_1^{(1)}}}x_1^{(1)}+\frac{\partial{\mathcal{L}}}{\partial{z_1^{(2)}}}x_1^{(2)} &amp;amp; \frac{\partial{\mathcal{L}}}{\partial{z_1^{(1)}}}x_2^{(1)}+\frac{\partial{\mathcal{L}}}{\partial{z_1^{(2)}}}x_2^{(2)} &amp;amp; \frac{\partial{\mathcal{L}}}{\partial{z_1^{(1)}}}x_3^{(1)}+\frac{\partial{\mathcal{L}}}{\partial{z_1^{(2)}}}x_3^{(2)} \\
+\frac{\partial{\mathcal{L}}}{\partial{z_2^{(1)}}}x_1^{(1)}+\frac{\partial{\mathcal{L}}}{\partial{z_2^{(2)}}}x_1^{(2)} &amp;amp; \frac{\partial{\mathcal{L}}}{\partial{z_2^{(1)}}}x_2^{(1)}+\frac{\partial{\mathcal{L}}}{\partial{z_2^{(2)}}}x_2^{(2)} &amp;amp; \frac{\partial{\mathcal{L}}}{\partial{z_2^{(1)}}}x_3^{(1)}+\frac{\partial{\mathcal{L}}}{\partial{z_2^{(2)}}}x_3^{(2)} \\
+\end{bmatrix}=\frac{\partial{\mathcal{L}}}{\partial{Z}}X^T
+\end{equation}$$&lt;/small&gt;&lt;/center&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+\frac{\partial{\mathcal{L}}}{\partial{b}}=\begin{bmatrix}
+\frac{\partial{\mathcal{L}}}{\partial{b_1}} \\ \frac{\partial{\mathcal{L}}}{\partial{b_2}}
+\end{bmatrix}=\begin{bmatrix}
+\frac{\partial{\mathcal{L}}}{\partial{z_1^{(1)}}}+\frac{\partial{\mathcal{L}}}{\partial{z_1^{(2)}}} \\ 
+\frac{\partial{\mathcal{L}}}{\partial{z_2^{(1)}}}+\frac{\partial{\mathcal{L}}}{\partial{z_2^{(2)}}}
+\end{bmatrix}=\sum_{i=1}^{2}{\frac{\partial{\mathcal{L}}}{\partial{z^{(i)}}}}
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;&lt;a name=&quot;rd&quot;&gt;&lt;/a&gt;
+&lt;strong&gt;Reverse Differentiation&lt;/strong&gt;: a simple procedure summarized for a clearer understanding of backprop from Node A to Node B:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Find one single path of “A$\rightarrow$B”&lt;/li&gt;
+  &lt;li&gt;Multiply all edge derivatives&lt;/li&gt;
+  &lt;li&gt;Add the multiple to the overall derivative&lt;/li&gt;
+  &lt;li&gt;Repeat 1-3&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;e.g.&lt;br /&gt;
+Path 1:&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;../../images/DL/rd1.png&quot; width=&quot;500&quot; /&gt;&lt;/center&gt;
+
+&lt;p&gt;Path 2:&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;../../images/DL/rd2.png&quot; width=&quot;500&quot; /&gt;&lt;/center&gt;
+
+&lt;p&gt;Path 3:&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;../../images/DL/rd3.png&quot; width=&quot;500&quot; /&gt;&lt;/center&gt;
+
+&lt;p&gt;And so on ……&lt;/p&gt;
+&lt;center&gt;&lt;strong&gt;&lt;i&gt;Reverse Differentiation $\times$ Backward Step = Backward Propagation&lt;/i&gt;&lt;/strong&gt;&lt;/center&gt;
+
+&lt;p&gt; &lt;a name=&quot;gd&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;gradient-descent&quot;&gt;Gradient Descent&lt;/h2&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+W := W-\alpha\frac{\partial\mathcal{L}}{\partial W}
+\end{equation}&lt;/script&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Stochastic GD&lt;/strong&gt; (using 1 training example for each GD step)&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ \mathcal{L}(\hat{Y},Y)&amp;=\frac{1}{2}(\hat{Y_i}-Y_i)^2 \\
+ W&amp;=W-\alpha\frac{\partial\mathcal{L}}{\partial W}
+ \end{align} %]]&gt;&lt;/script&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Basics of NN Neural Network Representation Activation Functions Training Process Forward Propagation Backward Propagation   Neural Network Representation</summary></entry><entry><title type="html">Regression</title><link href="http://localhost:4000/ML/Regression/" rel="alternate" type="text/html" title="Regression" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-Regression</id><content type="html" xml:base="http://localhost:4000/ML/Regression/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Mini-batch GD&lt;/strong&gt; (using mini-batches of size $m’\ (\text{s.t.}\ m=km’, k\in Z)$ for each GD step)&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ \mathcal{L}(\hat{Y},Y)&amp;=\frac{1}{2}\sum_{i=1}^{m'}{(\hat{Y_i}-Y_i)^2} \\
+ W&amp;=W-\alpha\frac{\partial\mathcal{L}}{\partial W}
+ \end{align} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Batch GD&lt;/strong&gt; (using the whole training set for each GD step)&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ \mathcal{L}(\hat{Y},Y)&amp;=\frac{1}{2}\sum_{i=1}^{m}{(\hat{Y_i}-Y_i)^2} \\
+ W&amp;=W-\alpha\frac{\partial\mathcal{L}}{\partial W}
+ \end{align} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Basics of NN Neural Network Representation Activation Functions Training Forward Propagation Backward Propagation Example: Forward &amp;amp; Backward Step: Stochastic Example: Forward &amp;amp; Backward Step: Mini-batch Reverse Differentiation (for a clearer understanding of backpropagation) Gradient Descent   Neural Network Representation</summary></entry><entry><title type="html">Regression</title><link href="http://localhost:4000/ML/Regression/" rel="alternate" type="text/html" title="Regression" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-Regression</id><content type="html" xml:base="http://localhost:4000/ML/Regression/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;p&gt;This covers the basics of two basic regressions as the very basics of Machine Learning.&lt;/p&gt;
 &lt;ul&gt;
