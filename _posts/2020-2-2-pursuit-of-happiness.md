@@ -16,7 +16,7 @@ At the night of Jan 31st, 2017, my family went broke. My "man-shall-never-cry" d
 
 I didn't check the college admission results because obviously I couldn't afford US colleges any more. The only thing I remember was that MIT deferred my early application. Owing to my best Finnish friend in high school, I got to know that Finland offers free college education, so I went there. 
   
-  
+&nbsp;  
 ## 2017 2nd half - 2018 1st half
 
 I was on the plane to Finland on Aug 15th, 2017. I was neither scared nor excited. I was lost. I had never faced uncertainties before, and I really don't know what "unknown" tastes like. 
@@ -35,7 +35,7 @@ But how? I desperately searched the entire internet for a solution, but there wa
 
 I started to make irrational decisions. I blamed all my depression on the country Finland and the major IT, so I decided to transfer. I blamed God for my useless aptitude in Mathematics, as I thought Mathematics couldn't make me rich. With insufficient information I found online, I falsely claimed to myself that Economics was the only "money-making" major, so I desperately listed out the top schools for Economics based on those rankings like QS, but it was April, during which most colleges do not accept applications. The only choice left for me was Keio University in Japan. Without a single hesitation or thorough research on this university and Japan, I went there for the sole purpose of "making money". 
   
-  
+&nbsp;  
 ## 2018 2nd half - 2019 2nd half
 
 What happens when a man makes irrational decisions? He regrets. 
@@ -50,22 +50,22 @@ The stubborn convention of Japanese academics hit me really hard. I literally we
 
 I had to learn Japanese just for Math credits. How ridiculous. There are many more strict rules regarding research opportunities and course selection that I was completely fed up with. By the end of November, I was crashed down by the situational constraints. 
   
-  
+&nbsp;  
 ## 2020 -- The Pursuit of Happiness
 
-"How could these 3 years of suffering ever help ypu pursue happiness?"
+"How could these 3 years of suffering ever help you pursue happiness?"
 
 They guided me towards my true passion. I haven't found it yet, but I am very close to it. 
 
 "But how is that possible? You don't even have the money to pursue any passion, and you are strictly restrained by your current conditions!"
 
-I guess life reveals your intrinsic self when you have nothing to lose. 
+**I guess life reveals your intrinsic self when you have nothing to lose.**
 
-I followed my desperate need for money, made irrational decisions, and ruined myself. I am now left with no options. If I keep myself entangled in the desperation of "I have no money. My family is broken.", I will keep making irrational decisions and eventually kill the very last possibility of my future.
+I followed my desperate need for money, made irrational decisions, and ruined my life. I am now left with no options, but I am also left with nothing to lose. If I keep myself entangled in the desperation of "I have no money. My family is broken.", I will keep making irrational decisions and eventually kill the very last possibility of my future.
 
-Instead of trying to optimize everything in life, if I just calmly accept the reality, get out of the desperation, make the most out of what I have, and just do my best in life,
+**Instead of trying to optimize everything in life, if I just calmly accept the reality, get out of the desperation, make the most out of what I have, and just do my best in life,**
 
-That, ladies and gentlemen, is happiness.
+That, ladies and gentlemen, is ***happiness***.
 
 I didn't think of Data Science as an option for no reason. I didn't work on an Object Detection project for a company for no reason. I didn't take online courses on Artificial Intelligence for no reason. Although the desperate need of money had driven me crazy, I never gave up on my dream of creating superintelligence.
 
@@ -73,4 +73,4 @@ It is impractical, I know. The global trend of AI development disappoints me qui
 
 But the goal is never the happiness. 
 
-The journey is.
+**The journey is.**
