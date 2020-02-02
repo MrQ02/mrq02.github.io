@@ -16,24 +16,26 @@ At the night of Jan 31st, 2017, my family went broke. My "man-shall-never-cry" d
 
 I didn't check the college admission results because obviously I couldn't afford US colleges any more. The only thing I remember was that MIT deferred my early application. Owing to my best Finnish friend in high school, I got to know that Finland offers free college education, so I went there. 
 
+  
 ## 2017 2nd half - 2018 1st half
 
 I was on the plane to Finland on Aug 15th, 2017. I was neither scared nor excited. I was lost. I had never faced uncertainties before, and I really don't know what "unknown" tastes like. 
 
-After school starts, I started pushing myself: taking online courses on finance & management, seeking research opportunities with various professors in different departments, working on inverse problem of radon transform, working in a tech company on Object Detection, following Behzad Razavi's youtube lectures on Microelectronics, volunteering in startup conferences, joining robotics laboratory.
+After school started, I started pushing myself: taking online courses on finance & management, seeking research opportunities with different professors, working on inverse problem of radon transform, working on Object Detection project in a tech company, following Behzad Razavi's youtube lectures on microelectronics, volunteering in startup conferences, joining robotics laboratory, ...
 
-I was not happy at all. The more I dig into such tech fields, the more I became confused with what the heck I was doing with my life. I sought happiness through pushing myself so hard into engineering, but I didn't find any. 
+I was not happy at all. The more I dig into such tech fields, the more I became confused with my life. I sought happiness by pushing myself so hard into engineering, but I didn't find any. 
 
-And one day, out of the blue, my father contacted me, and boom! He went into a financial fraud without realizing it! At shocked as I was, I had no idea that my life would change dramatically afterwards. 
+And one day, out of the blue, my father contacted me, and boom! He went into a financial fraud without realizing it! As shocked as I was, I had no idea that my life would change dramatically afterwards. 
 
-To briefly summarize it, there has been many fraudsters in China making huge money through selling some brainwashing bull\*\*\*\* of "successology". Such so-called "successology" has been proven to be completely useless and ineffective, but people who are brainwashed by it are addicted. My dad, desperately searching for a solution to save my family, believed in this bull\*\*\*\*, became a fully brainwashed fanatic, and took many more debts to pay for this bull\*\*\*\* course. 
+To briefly summarize it, there has been many fraudsters in China making huge profits by selling some brainwashing crap of "successology" which has been proven to be completely useless and ineffective, but people who are brainwashed by it are addicted. My dad, desperately searching for a solution to save my family, believed in this crap, became a fully brainwashed fanatic, and took many more debts to pay for this fraudulent course. 
 
-I raged and argued with him for the entire day. I searched everywhere on the internet for a way to anti-brainwash my dad throughout the entire March, but he became more and more resistant to my words. After accepting the fact that my dad has no future (as most people who became fanatic about such "successology" ended up with a dead future), I realized that I must save my family. 
+I raged and argued with him for the entire day. I searched everywhere on the internet for a way to anti-brainwash my dad throughout the entire March, but he became more and more resistant to my words and told me to get away. After accepting the fact that my dad has no future (as most people who became fanatic about such "successology" ended up with a dead future), I realized that I have to save my family. 
 
 But how? I desperately searched the entire internet for a solution, but there was none. I told my best friends about it, but they couldn't give me any suggestion. They tried to tell me to calm down and live the Scandinavian happy life, but I could not tolerate the word "happiness" at all as I believed that I didn't deserve any. With no solution and no optimization available for my future, all the insecurities hidden behind my "wonderful life" came out altogether and dragged me into depression. 
 
 I started to make irrational decisions. I blamed all my depression on the country Finland and the major IT, so I decided to transfer. I blamed God for my useless aptitude in Mathematics, as I thought Mathematics couldn't make me rich. With insufficient information I found online, I falsely claimed to myself that Economics was the only "money-making" major, and I desperately listed out the top schools for Economics based on those rankings like QS. However, it was April, during which most colleges do not accept applications. The only choice left for me was Keio University in Japan. Without a single hesitation or thorough research on this university and Japan, I applied and went there for the sole purpose of "making money". 
 
+  
 ## 2018 2nd half - 2019 1st half
 
 What happens when a man makes irrational decisions? He regrets. 
@@ -49,6 +51,7 @@ I got to know two options for my personal future: Quantitative Finance and Data 
 2. take English-taught Data Science courses and seminars in another city at the cost of 1.5-hour commuting. However, there is a conventional maximum credit requirement stating that I can only take a maximum of 2 English-taught courses from other faculties in the second year of my studies. 
 I had to learn Japanese just for Math credits. How ridiculous. There are many more strict rules regarding research opportunities and course selection that I was completely fed up with. But anyway, I was crashed down by situational constraints.
 
+  
 ## 2019 2nd half: The Pursuit of Happiness
 
 But how are these things related to the pursuit of happiness?
@@ -70,10 +73,3 @@ It is impractical, I know. The global trend of AI development disappoints me a l
 But the goal is never the happiness. 
 
 The journey is.
-
-
-
-
-
-
-
