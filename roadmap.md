@@ -7,31 +7,84 @@ header-includes:
 - \usepackage{amsmath}
 ---
 Directories:
-- [**Machine Learning**](#ML)
+- [**Data Mining (Machine Learning)**](#ML)
 - [**Deep Learning**](#DL)
 - [**Reinforcement Learning**](#RL)
 - [**Artificial Intelligence**](#AI)
 - [**Probability & Statistics**](#PS)
 - [**Econometrics**](#Econ)
+- [**Quantitative Finance**](#quant)
 
 &emsp;
 <a name="ML"></a>
-### Machine Learning
+### Data Mining
 
 - **Supervised Learning**
-    - [Regression](/ML/Regression/)
-    - Classification
-    - [GDA (Gaussian Discriminant Analysis)](/ML/GDA/)
-    - NB Classifier (Naive Bayes Classifier)
-    - [GLM (Generalized Linear Models)](/ML/GLM/)
-    - [SVM (Support Vector Machine)](/ML/SVM/)
-- Unsupervised Learning
+
+    - **Regression**
+    
+        - [Linear Regression](/ML/linreg/)
+        - [Generalized Linear Models (GLM)](/ML/GLM/)
+        - Nonlinear Regression  
+        <br/>
+    - **Classification**
+    
+        - [Logistic Regression](/ML/logreg/)
+        - [Gaussian Discriminant Analysis (GDA)](/ML/GDA/)
+        - Naive Bayes Classifier
+        - Perceptron
+        - [Support Vector Machine (SVM)](/ML/SVM/)
+        - k-Nearest Neighbor (k-NN)
+        - Decision Trees
+        - Boosting  
+<br/>
+- **Unsupervised Learning (Clustering)**  
+
+    - BIRCH
+    - CURE
+    - Hierarchical
+    - k-means
+    - Expectation-Maximization (EM)
+    - DBSCAN
+    - OPTICS
+    - Mean-shift  
+<br/>
+- Dimensionality Reduction  
+
+    - Factor Analysis
+    - PCA
+    - ICA
+    - CCA
+    - LDA
+    - NMF
+    - t-SNE  
+<br/>
+- Graphical Models 
+
+    - Bayesian Network
+    - Conditional Random Field
+    - Hidden Markov  
+<br/>
+- Association Rules
+
+    - Apriori
+    - ECLAT
+    - FP-growth  
+<br/>
+- Theory
+
+    - Bias-Variance Tradeoff
+    - (Computational) Learning Theory
+    - Empirical Risk Minimization (ERM)
+    - Occam Learning
+    - PAC Learning
+    - VC Theory  
 
 &emsp;
-<a name="DL"></a>
-### Deep Learning
+### <a name="DL"></a>Deep Learning
 
 - [**Basics of NN**](/DL/ANN/)
+    
     - [Neural Network Representation](/DL/ANN/#nn)
     - [Activation Functions](/DL/ANN/#af)
     - Training
@@ -39,10 +92,28 @@ Directories:
         - [Backward Propagation](/DL/ANN/#bp)
         - Example: [Forward & Backward Step: Stochastic](/DL/ANN/#fbss)
         - Example: [Forward & Backward Step: Mini-batch](/DL/ANN/#fbsb)
-        - [Reverse Differentiation](/DL/ANN/#rd) (for a clearer understanding of backpropagation)
-    - [Gradient Descent](/DL/ANN/#gd)
+        - [Reverse Differentiation](/DL/ANN/#rd)
+    - [Gradient Descent](/DL/ANN/#gd)  
+<br/>
 - [**Improvements**](/DL/imp/)
+
+    - [Train/Test Split](/DL/imp/#split)
+    - [Initialization](/DL/imp/#init)
+    - [Data Fitting](/DL/imp/#fit) with refined [procedure](/DL/imp/#pro)
+    - [Regularization](/DL/imp/#reg)
+        - Regularization on LogReg
+            - [L2 Regularization](/DL/imp/#L2)
+            - [L1 Regularization](/DL/imp/#L1)
+        - [Regularization on NN](/DL/imp/#nnreg)
+        - [Dropout](/DL/imp/#dp)
+        - [Data Augmentation](/DL/imp/#da)
+        - [Early Stopping](/DL/imp/#es)
+    - [Optimization](/DL/imp/#op)
+    - [Hyperparameter Tuning](/DL/imp/#gd)  
+<br/>
 - CNN
+ 
+<br/>
 - RNN & Sequence Modeling
 
 &emsp;
@@ -60,3 +131,17 @@ Directories:
 &emsp;
 <a name="Econ"></a>
 ### Econometrics
+
+&emsp;
+<a name="quant"></a>
+### Quantitative Finance
+
+- **Financial Foundations**
+    - [Products & Markets](/quant/promar/)
+    - [Derivatives](/quant/basicd)
+    - [Assets](/quant/assets/)
+- **Mathematical Foundations**
+    - [Stochastic Calculus](/quant/stocalc)
+    - [Black-Scholes Model](/quant/bsm)
+- **Numerical Methods**
+- **Advanced Topics**
