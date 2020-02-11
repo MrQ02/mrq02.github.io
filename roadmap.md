@@ -108,8 +108,21 @@ Directories:
         - [Dropout](/DL/imp/#dp)
         - [Data Augmentation](/DL/imp/#da)
         - [Early Stopping](/DL/imp/#es)
+        - [Orthogonalization](/DL/imp/#og)
+        - [Feature Scaling (normalization)](/DL/imp/#norm)
+        - [Gradient Checking](/DL/imp/#gc)
     - [Optimization](/DL/imp/#op)
-    - [Hyperparameter Tuning](/DL/imp/#gd)  
+        - [Mini-Batch Gradient Descent](/DL/imp/#mbgd)
+        - Gradient Descent with Momentum
+            - [Exponentially Weighted (Moving) Average](/DL/imp/#ema)
+                - [Bias Correction](/DL/imp/#bc)
+            - [Momentum](/DL/imp/#m)
+        - [RMSprop](/DL/imp/#rmsprop)
+        - [Adam](/DL/imp/#adam)
+        - [Learning Rate Decay](/DL/imp/#lrd)
+        - [Problems with optimization](/DL/imp/#po)
+    - [Hyperparameter Tuning](/DL/imp/#hpt)
+    - [Batch Normalization](/DL/imp/#bn) 
 <br/>
 - CNN
  
