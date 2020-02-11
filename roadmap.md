@@ -122,9 +122,9 @@ Directories:
         - [Learning Rate Decay](/DL/imp/#lrd)
         - [Problems with optimization](/DL/imp/#po)
     - [Hyperparameter Tuning](/DL/imp/#hpt)
-    - [Batch Normalization](/DL/imp/#bn) 
+    - [Batch Normalization](/DL/imp/#bn)  
 <br/>
-- CNN
+- [**CNN**](/DL/CNN/)
  
 <br/>
 - RNN & Sequence Modeling
