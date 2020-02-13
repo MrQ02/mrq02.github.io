@@ -125,9 +125,39 @@ Directories:
     - [Batch Normalization](/DL/imp/#bn)  
 <br/>
 - [**CNN**](/DL/CNN/)
- 
+    - Basics of CNN
+        - [Intuition of CNN](/DL/CNN/#cnn)
+        - [General Formula of Convolution](/DL/CNN/#formula)
+        - [CNN Layers](/DL/CNN/#layers)
+            - Convolution
+            - [Pooling](/DL/CNN/#pool)
+            - [Fully Connected](/DL/CNN/#fc)
+    - CNN Examples
+        - [LeNet-5](/DL/CNN/#lenet)
+        - [AlexNet](/DL/CNN/#alexnet)
+        - [VGG](/DL/CNN/#vgg)
+        - Inception
+            - [ResNets](/DL/CNN/#res)
+            - [1x1 Conv](/DL/CNN/#nin)
+            - [The Inception](/DL/CNN/#inception)
+        - [Conv1D & Conv3D](/DL/CNN/#conv1d)
+    - [Object Detection](/DL/CNN/#od)
+        - Bounding Box
+        - Landmark Detection
+        - Sliding Windows
+        - Intersection over Union
+        - [YOLO (You Only Look Once)](/DL/CNN/#yolo)
+            - Non-Max Suppression
+            - Anchor Boxes
+        - [R-CNN](/DL/CNN/#rcnn) (to be continued)
+    - [Face Recognition](/DL/CNN/#fr)
+        - [Siamese Network](/DL/CNN/#sn)
+            - [Triplet Loss](/DL/CNN/#tl)
+            - [Binary Classification](/DL/CNN/#bc)
+        - [Neural Style Transfer](/DL/CNN/#nst)  
 <br/>
-- RNN & Sequence Modeling
+- [**RNN**](/DL/RNN/)
+    - Basics of RNN
 
 &emsp;
 <a name="RL"></a>

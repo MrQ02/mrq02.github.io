@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-12T16:00:29+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">The Pursuit of Happiness</title><link href="http://localhost:4000/blogs/pursuit_of_happiness/" rel="alternate" type="text/html" title="The Pursuit of Happiness" /><published>2020-02-02T21:32:00+09:00</published><updated>2020-02-02T21:32:00+09:00</updated><id>http://localhost:4000/blogs/pursuit-of-happiness</id><content type="html" xml:base="http://localhost:4000/blogs/pursuit_of_happiness/">&lt;p&gt;There is only one thing I have been doing throughout the past 3 years – seeking happiness.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-13T13:56:21+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">The Pursuit of Happiness</title><link href="http://localhost:4000/blogs/pursuit_of_happiness/" rel="alternate" type="text/html" title="The Pursuit of Happiness" /><published>2020-02-02T21:32:00+09:00</published><updated>2020-02-02T21:32:00+09:00</updated><id>http://localhost:4000/blogs/pursuit-of-happiness</id><content type="html" xml:base="http://localhost:4000/blogs/pursuit_of_happiness/">&lt;p&gt;There is only one thing I have been doing throughout the past 3 years – seeking happiness.&lt;/p&gt;
 
 &lt;h2 id=&quot;2017-1st-half&quot;&gt;2017 1st half&lt;/h2&gt;
 
@@ -156,7 +156,660 @@
   &lt;li&gt;GRUs &amp;amp; LSTM&lt;/li&gt;
   &lt;li&gt;Word Embeddings&lt;/li&gt;
   &lt;li&gt;Applications in NLP&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Machine Learning</summary></entry><entry><title type="html">Generative Learning Algorithms</title><link href="http://localhost:4000/ML/GDA/" rel="alternate" type="text/html" title="Generative Learning Algorithms" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-GDA</id><content type="html" xml:base="http://localhost:4000/ML/GDA/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Machine Learning</summary></entry><entry><title type="html">Improvements on Neural Networks</title><link href="http://localhost:4000/DL/imp/" rel="alternate" type="text/html" title="Improvements on Neural Networks" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/DL/DL-imp</id><content type="html" xml:base="http://localhost:4000/DL/imp/">&lt;p&gt;Roadmap:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#split&quot;&gt;Train/Test Split&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#init&quot;&gt;Initialization&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#fit&quot;&gt;Data Fitting&lt;/a&gt; with refined &lt;a href=&quot;#pro&quot;&gt;procedure&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#reg&quot;&gt;Regularization&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Regularization on LogReg
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#L2&quot;&gt;L2 Regularization&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#L1&quot;&gt;L1 Regularization&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#nnreg&quot;&gt;Regularization on NN&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#dp&quot;&gt;Dropout&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#da&quot;&gt;Data Augmentation&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#es&quot;&gt;Early Stopping&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#og&quot;&gt;Orthogonalization&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#norm&quot;&gt;Feature Scaling (normalization)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#gc&quot;&gt;Gradient Checking&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#op&quot;&gt;Optimization&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#mbgd&quot;&gt;Mini-Batch Gradient Descent&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;Gradient Descent with Momentum
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#ema&quot;&gt;Exponentially Weighted (Moving) Average&lt;/a&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;#bc&quot;&gt;Bias Correction&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#m&quot;&gt;Momentum&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#rmsprop&quot;&gt;RMSprop&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#adam&quot;&gt;Adam&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#lrd&quot;&gt;Learning Rate Decay&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#po&quot;&gt;Problems with optimization&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#hpt&quot;&gt;Hyperparameter Tuning&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#bn&quot;&gt;Batch Normalization&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; &lt;a name=&quot;split&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;traintest-split&quot;&gt;Train/Test Split&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Dataset = training set + development/validation set + test set&lt;/li&gt;
+  &lt;li&gt;Split ratio:
+    &lt;ul&gt;
+      &lt;li&gt;old era: 70/0/30%, 60/20/20%, …&lt;/li&gt;
+      &lt;li&gt;big data era: 98/1/1%, 99.5/0.4/0.1%, 99.5/0.5/0%, … &lt;br /&gt;
+  (trend: testset as small as possible)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;All 3 subsets should come from the exact same distribution (&lt;strike&gt;mismatch&lt;strike&gt;)&lt;/strike&gt;&lt;/strike&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; &lt;a name=&quot;init&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;initialization&quot;&gt;Initialization&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;$W$ should be initialized with &lt;strong&gt;small random values&lt;/strong&gt; to break symmetry (to make sure that different hidden nodes can learn different things)&lt;/li&gt;
+  &lt;li&gt;$b$ can be initialized to &lt;strong&gt;zeros&lt;/strong&gt; ($\because$ symmetry is still broken when $W$ is randomly initialized)&lt;/li&gt;
+  &lt;li&gt;Different initializations $\rightarrow$ different results&lt;/li&gt;
+  &lt;li&gt;Refer to &lt;a href=&quot;https://keras.io/initializers/&quot;&gt;keras documentation&lt;/a&gt; for initializers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; &lt;a name=&quot;fit&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;data-fitting&quot;&gt;Data Fitting&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Underfitting&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;../../images/DL/uf.png&quot; width=&quot;300&quot; /&gt;&lt;/center&gt;
+
+&lt;p&gt;&lt;strong&gt;Proper fitting&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;../../images/DL/nof.png&quot; width=&quot;300&quot; /&gt;&lt;/center&gt;
+
+&lt;p&gt;&lt;strong&gt;Overfitting&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;../../images/DL/of.png&quot; width=&quot;300&quot; /&gt;&lt;/center&gt;
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Tradeoff: &lt;em&gt;train error&lt;/em&gt; vs &lt;em&gt;validation error&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;em&gt;train err&lt;/em&gt; too small $\longrightarrow$ high variance (overfitting)&lt;/strong&gt;&lt;br /&gt;
+(e.g. train err = 1%; val err = 11%)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;em&gt;train err&lt;/em&gt; too big $\longrightarrow$ high bias (underfitting)&lt;/strong&gt;&lt;br /&gt;
+(e.g. train err = 17%; val err = 16%)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;em&gt;train err&lt;/em&gt; too big &amp;amp; &lt;em&gt;val err&lt;/em&gt; even bigger $\longrightarrow$ both probs&lt;/strong&gt; &lt;br /&gt;
+(e.g. train err = 17%; val err = 34%)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;em&gt;train err&lt;/em&gt; too small &amp;amp; &lt;em&gt;val err&lt;/em&gt; also small $\longrightarrow$ congratulations!&lt;/strong&gt;&lt;br /&gt;
+(e.g. train err = 0.5%; val err = 1%)
+ &lt;br /&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a name=&quot;pro&quot;&gt;&lt;/a&gt;
+&lt;strong&gt;The Procedure&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;../../images/DL/fit.png&quot; width=&quot;500&quot; /&gt;&lt;/center&gt;
+
+&lt;p&gt; &lt;a name=&quot;reg&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;regularization&quot;&gt;Regularization&lt;/h2&gt;
+
+&lt;p&gt;Idea: add a regularization term to the original loss function:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+\mathcal{J}(w,b)=\frac{1}{m}\sum_{i=1}^{m}{\mathcal{L}(\hat{y}^{(i)},y^{(i)})}+\frac{\lambda}{2m}f(w)
+\end{equation}&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;$\lambda$: regularization parameter&lt;/li&gt;
+  &lt;li&gt;$f(w)$: regularization on $w$&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;How does regularization prevent overfitting?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;set $\lambda$ as big as possible $\Rightarrow w^{[l]}\approx 0$ $\Rightarrow z^{[l]}\approx 0$ $\Rightarrow$ as if some hidden nodes don’t exist any more&lt;/li&gt;
+  &lt;li&gt;$\Rightarrow$ less complexity $\Rightarrow$ variance $\downarrow$&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; &lt;br /&gt;
+&lt;strong&gt;Regularization on LogReg&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a name=&quot;L2&quot;&gt;&lt;/a&gt;&lt;strong&gt;L2 Regularization&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+\mathcal{J}(w,b)=\frac{1}{m}\sum_{i=1}^{m}{\mathcal{L}(\hat{y}^{(i)},y^{(i)})}+\frac{\lambda}{2m}\|w\|^2_2 \\
+\|w\|^2_2=\sum_{j=1}^{n_x}w_j^2=w^Tw
+\end{equation}&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a name=&quot;L1&quot;&gt;&lt;/a&gt;&lt;strong&gt;L1 Regularization&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+\mathcal{J}(w,b)=\frac{1}{m}\sum_{i=1}^{m}{\mathcal{L}(\hat{y}^{(i)},y^{(i)})}+\frac{\lambda}{2m}\|w\|_1 \\
+\|w\|_1=\sum_{j=1}^{n_x}{|w|}
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;&lt;a name=&quot;nnreg&quot;&gt;&lt;/a&gt;&lt;strong&gt;Regularization on NN&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+\mathcal{J}(W^{[k]},b^{[k]})=\frac{1}{m}\sum_{i=1}^{m}{\mathcal{L}(\hat{y}^{(i)},y^{(i)})}+\frac{\lambda}{2m}\sum_{l=1}^L{\|W^{[l]}\|^2_F}
+\end{equation}&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Frobenius Norm:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+\|W^{[l]}\|^2_F=\sum_{i=1}^{n_{l-1}}\sum_{j=1}^{n_l}{(w_{ij}^{[l]})^2}
+\end{equation}&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Weight Decay on GD:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+W^{[l]}&amp;:=w^{[l]}-\alpha\cdot\frac{\partial{\mathcal{L}}}{\partial{W^{[l]}}} \\
+&amp;=w^{[l]}-\alpha\cdot\Big(\frac{\partial{\mathcal{L}}}{\partial{W^{[l]}}}(\text{original})+\frac{\lambda}{m}W^{[l]}\Big)
+\end{align} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt; &lt;br /&gt;
+&lt;a name=&quot;dp&quot;&gt;&lt;/a&gt;&lt;strong&gt;Dropout&lt;/strong&gt;: each node has a probability to be kicked out of the NN ($\Rightarrow$ NN becomes smaller &amp;amp; simpler) [only used in training]&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Make a &lt;strong&gt;Boolean&lt;/strong&gt; matrix corresponding to the matrix of activation values:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ A^{[k]}&amp;=\begin{bmatrix}
+ a_{11}^{[k]} &amp; \cdots &amp; a_{1m}^{[k]} \\
+ \vdots &amp; \ddots &amp; \vdots \\ 
+ a_{n_k1}^{[k]} &amp; \cdots &amp; a_{n_km}^{[k]}
+ \end{bmatrix}\quad\quad\quad A^{[k]}\in\mathbb{R}^{n_k\times m} \\ \\
+ B^{[k]}&amp;=\begin{bmatrix}
+ b_{11}^{[k]} &amp; \cdots &amp; b_{1m}^{[k]} \\
+ \vdots &amp; \ddots &amp; \vdots \\ 
+ b_{n_k1}^{[k]} &amp; \cdots &amp; b_{n_km}^{[k]}
+ \end{bmatrix}\quad\quad\quad B^{[k]}\in\mathbb{R}^{n_k\times m}
+ \end{align} %]]&gt;&lt;/script&gt;
+
+    &lt;p&gt;where $b_{ji}^{[k]}\in\{\text{True}, \text{False}\}$. The Boolean values are assigned randomly based on a keep-probability $p$ (can be chosen differently for diff layers).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Multiply both matrices element-wise:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ A^{[k]}=A^{[k]}* B^{[k]}
+ \end{equation}&lt;/script&gt;
+
+    &lt;p&gt;so that some activation values are now zero (they are kicked out of the neural network)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Invert the matrix element-wise:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ A^{[k]}=A^{[k]}/p
+ \end{equation}&lt;/script&gt;
+
+    &lt;p&gt;to ensure consistency in activation values&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;a name=&quot;da&quot;&gt;&lt;/a&gt;&lt;strong&gt;Data Augmentation&lt;/strong&gt;: modify the dataset to get more data (mostly used in Computer Vision) [Benefit: a very low-cost regularization]&lt;/p&gt;
+
+&lt;p&gt;Examples:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;flip picture&lt;/li&gt;
+  &lt;li&gt;slight rotation&lt;/li&gt;
+  &lt;li&gt;zoom in/out&lt;/li&gt;
+  &lt;li&gt;distortions&lt;/li&gt;
+  &lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;a name=&quot;da&quot;&gt;&lt;/a&gt;&lt;strong&gt;Early Stopping&lt;/strong&gt;: stop the training iterations in the middle&lt;/p&gt;
+
+&lt;p&gt;Why do we stop in the middle?&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;../../images/DL/es.png&quot; width=&quot;400&quot; /&gt;&lt;/center&gt;
+
+&lt;p&gt;The goal of our training is NOT to finish training BUT to find the optimal weight parameters that minimizes the cost/error.&lt;/p&gt;
+
+&lt;p&gt;As shown in the figure, sometimes we should just stop in the middle with the minimal validation error instead of keeping the training going to get overfitting.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;a name=&quot;og&quot;&gt;&lt;/a&gt;&lt;strong&gt;Orthogonalization&lt;/strong&gt;: implement controls that only affect &lt;strong&gt;ONE single component&lt;/strong&gt; of your algorithms performance at a time&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;a name=&quot;norm&quot;&gt;&lt;/a&gt;&lt;strong&gt;Feature Scaling (normalization)&lt;/strong&gt;: normalize inputs for higher efficiency&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Set to zero mean:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ \mu&amp;=\frac{1}{m}\sum_{i=1}^{m}{x^{(i)}} \\
+ x&amp;=x-\mu
+ \end{align} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Normalize variance:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ \sigma^2&amp;=\frac{1}{m}\sum_{i=1}^{m}{x^{(i)}\text{**}2}\quad\quad \text{**: element-wise squaring} \\
+ x&amp;=x/\sigma^2
+ \end{align} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;a name=&quot;gc&quot;&gt;&lt;/a&gt;&lt;strong&gt;Gradient Checking&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Why?&lt;/p&gt;
+
+    &lt;p&gt;Backprop is a very complex system of mathematical computations. It is very possible that there might be some miscalculation or bugs in these tremendous differentiations, even though the entire training appears as if it’s working properly.&lt;/p&gt;
+
+    &lt;p&gt;Gradient Checking is the approach to prevent such issue by checking if each gradient is calculated properly.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Equation&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  \frac{\partial{\mathcal{J}}}{\partial{w}}=\lim_{\varepsilon\rightarrow 0}\frac{\mathcal{J}(w+\varepsilon)-\mathcal{J}(w-\varepsilon)}{2\varepsilon}\approx\frac{\mathcal{J}(w+\varepsilon)-\mathcal{J}(w-\varepsilon)}{2\varepsilon}
+  \end{equation}&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Implementation: Calculate the difference between actual gradient and approximated gradient to see if the difference is reasonable:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  \text{diff}=\frac{||g-g'||_ 2}{||g||_ 2+||g'||_ 2}
+  \end{equation}&lt;/script&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; &lt;a name=&quot;op&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;optimization&quot;&gt;Optimization&lt;/h2&gt;
+&lt;p&gt;&lt;a name=&quot;mbgd&quot;&gt;&lt;/a&gt;
+&lt;strong&gt;Mini-Batch Gradient Descent&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Why?&lt;/p&gt;
+
+    &lt;p&gt;To allow faster and more efficient computing when there is a large number of training examples (e.g. $m=10000000$)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Implementation (see &lt;a href=&quot;../../DL/ANN/#gd&quot;&gt;gradient descent&lt;/a&gt; for more details)&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  \mathcal{L}(\hat{Y},Y)&amp;=\frac{1}{2}\sum_{i=1}^{m'}{(\hat{Y_i}-Y_i)^2} \\
+  W&amp;=W-\alpha\frac{\partial\mathcal{L}}{\partial W}
+  \end{align} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Performance&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;BGD vs MBGD&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;center&gt;&lt;img src=&quot;../../images/DL/bgdvsmbgd.png&quot; width=&quot;500&quot; /&gt;&lt;/center&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;BGD vs SGD&lt;/p&gt;
+
+        &lt;center&gt;&lt;img src=&quot;../../images/DL/bgdvssgd.png&quot; width=&quot;400&quot; /&gt;&lt;/center&gt;
+        &lt;p&gt;&lt;br /&gt;
+  BGD: large steps, low noise, too long per iteration&lt;br /&gt;
+  SGD: small steps, insane noise, lose vectorization&lt;br /&gt;
+  MBGD: in between $\rightarrow$ optimal in most cases&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;strong&gt;Gradient Descent with Momentum&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a name=&quot;ema&quot;&gt;&lt;/a&gt;&lt;strong&gt;Exponentially Weighted (Moving) Average&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Intuition&lt;/p&gt;
+
+        &lt;center&gt;&lt;img src=&quot;../../images/DL/ema.png&quot; width=&quot;500&quot; /&gt;&lt;/center&gt;
+        &lt;p&gt;&lt;br /&gt;
+  The blue dots represent the raw data points, while the red and green curves represent the two EMAs of the blue dots. As clearly indicated by the figure, EMA is used to reduce the huge oscillation of such time-series data.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Formula&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  V_t=\beta V_{t-1}+(1-\beta)\theta_t
+  \end{equation}&lt;/script&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;$\theta_t$: the original time-series data point at time $t$&lt;/li&gt;
+          &lt;li&gt;$V_t$: the EMA data point at time $t$&lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;$\beta$: an indicator of how many time units (e.g. days) this algorithm is approximately averaging over:&lt;/p&gt;
+
+            &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  \text{#time units}=\frac{1}{1-\beta}
+  \end{equation}&lt;/script&gt;
+
+            &lt;p&gt;e.g. $\beta=0.9 \rightarrow$ average over 10 days; $\beta=0.96 \rightarrow$ average over 25 days&lt;/p&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Performance: easy computation + one-line code + memory efficiency&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;a name=&quot;bc&quot;&gt;&lt;/a&gt;&lt;strong&gt;Bias Correction&lt;/strong&gt;&lt;/p&gt;
+
+        &lt;p&gt;Assume $\beta=0.99$:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  &amp;V_0=0 \\
+  &amp;V_1=0.99 V_0+0.01\theta_1=0.01\theta_1 \\
+  &amp;V_2=0.99 V_2+0.01\theta_2=0.099\theta_1+0.01\theta_2 \\
+  &amp;...
+  \end{align} %]]&gt;&lt;/script&gt;
+
+        &lt;p&gt;Notice that $V_1 \&amp;amp; V_2$ are very tiny portions of $\theta_1 \&amp;amp; \theta_2$, meaning that they do not accurately represent the actual data points.&lt;/p&gt;
+
+        &lt;p&gt;Thus, it is necessary to rescale the early EMA values, with the following formula:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  V_t:=\frac{V_t}{1-\beta^t}
+  \end{equation}&lt;/script&gt;
+
+        &lt;p&gt;In the later calculations, bias correction is not so necessary.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a name=&quot;m&quot;&gt;&lt;/a&gt;&lt;strong&gt;Momentum&lt;/strong&gt;: application of EMA in GD&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;Compute $dW,db$ on the current MB&lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Compute EMA&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ &amp;V_{dW}:=\beta V_{dW}+(1-\beta)dW \\
+ &amp;V_{db}:=\beta V_{db}+(1-\beta)db
+ \end{align} %]]&gt;&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Compute GD&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ &amp;W:=W-\alpha V_{dW} \\
+ &amp;b:=b-\alpha V_{db}
+ \end{align} %]]&gt;&lt;/script&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+
+    &lt;p&gt;$\beta$ is often chosen as $0.9$ in GD with Momentum.&lt;/p&gt;
+
+    &lt;p&gt;Why named “momentum”? Think of $dW$ as acceleration, $V_{dW}$ as velocity, and $\beta$ as friction.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Performance&lt;/p&gt;
+
+    &lt;center&gt;&lt;img src=&quot;../../images/DL/momentum.png&quot; width=&quot;500&quot; /&gt;&lt;/center&gt;
+
+    &lt;p&gt;Red steps represent Momentum, while blue steps represent normal GD.&lt;/p&gt;
+
+    &lt;p&gt;Slower learning vertically + Faster learning horizontally&lt;/p&gt;
+
+    &lt;p&gt;$\rightarrow$ Momentum is always better than SGD&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;a name=&quot;rmsprop&quot;&gt;&lt;/a&gt;&lt;strong&gt;RMSprop (Root Mean Square Propagation)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Intuition: a modified version of GD with Momentum&lt;/p&gt;
+
+    &lt;p&gt;Why? To further minimize the oscillation of GD and maximize the speed of convergence.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Steps:&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;Compute $dW,db$ on the current MB&lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Compute RMS step&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ &amp;S_{dW}:=\beta S_{dW}+(1-\beta)dW^2 \\
+ &amp;S_{db}:=\beta S_{db}+(1-\beta)db^2
+ \end{align} %]]&gt;&lt;/script&gt;
+
+        &lt;p&gt;where $dW^2=dW* dW$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Compute GD&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ &amp;W:=W-\alpha \frac{dW}{\sqrt{S_{dW}}+\varepsilon} \\
+ &amp;b:=b-\alpha \frac{db}{\sqrt{S_{db}}+\varepsilon}
+ \end{align} %]]&gt;&lt;/script&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+
+    &lt;p&gt;$\varepsilon$ is added to ensure $\text{denominator}\neq0$ (normally $\varepsilon=10^{-8}$)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;a name=&quot;adam&quot;&gt;&lt;/a&gt;&lt;strong&gt;Adam&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Intuition: &lt;strong&gt;Momentum + RMSprop&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Steps:&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;Compute $dW,db$ on the current MB&lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Compute Momentum:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ &amp;V_{dW}:=\beta_1 V_{dW}+(1-\beta_1)dW \\
+ &amp;V_{db}:=\beta_1 V_{db}+(1-\beta_1)db
+ \end{align} %]]&gt;&lt;/script&gt;
+
+        &lt;p&gt;Compute RMSprop:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ &amp;S_{dW}:=\beta_2 S_{dW}+(1-\beta_2)dW^2 \\
+ &amp;S_{db}:=\beta_2 S_{db}+(1-\beta_2)db^2
+ \end{align} %]]&gt;&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Bias Correction:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ &amp;V_{dW}:=\frac{V_{dW}}{1-\beta_1^t}, V_{db}:=\frac{V_{db}}{1-\beta_1^t} \\
+ &amp;S_{dW}:=\frac{S_{dW}}{1-\beta_2^t}, S_{db}:=\frac{S_{db}}{1-\beta_2^t}
+ \end{align} %]]&gt;&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Compute GD:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ &amp;W:=W-\alpha \frac{V_{dW}}{\sqrt{S_{dW}}+\varepsilon} \\
+ &amp;b:=b-\alpha \frac{V_{db}}{\sqrt{S_{db}}+\varepsilon}
+ \end{align} %]]&gt;&lt;/script&gt;
+
+        &lt;p&gt;Hyperparameter choices:&lt;/p&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;$\alpha$: depends&lt;/li&gt;
+          &lt;li&gt;$\beta_1: 0.9$&lt;/li&gt;
+          &lt;li&gt;$\beta_2: 0.999$&lt;/li&gt;
+          &lt;li&gt;$\varepsilon: 10^{-8}$&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;a name=&quot;lrd&quot;&gt;&lt;/a&gt;&lt;strong&gt;Learning Rate Decay&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Intuition: as $\alpha$ slowly decreases, training steps become smaller $\rightarrow$ oscillating closely around the minimum (instead of jumping over the minimum)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Main Method:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  \alpha=\frac{1}{1+r_{\text{decay}}\cdot \text{#epoch}}\cdot\alpha_0
+  \end{equation}&lt;/script&gt;
+
+    &lt;p&gt;where 1 epoch means passing through data once.&lt;/p&gt;
+
+    &lt;p&gt;Normally, $\alpha_0=0.2,r_{\text{decay}}=1$&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Other Methods:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Exponential Decay:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  \alpha=0.95^{\text{#epoch}}\cdot\alpha_0
+  \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Root Decay:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  \alpha=\frac{k}{\sqrt{\text{#epoch}}}\cdot\alpha_0
+  \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Discrete Staircase:&lt;/p&gt;
+
+        &lt;center&gt;&lt;img src=&quot;../../images/DL/staircase.png&quot; width=&quot;150&quot; /&gt;&lt;/center&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Manual Decay&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;a name=&quot;po&quot;&gt;&lt;/a&gt;&lt;strong&gt;Problems with optimization&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;As learnt in Calculus, no matter how we try to find the optimum, we always have problems:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Local Optima: we get stuck in local optima instead of moving to global optima&lt;/li&gt;
+  &lt;li&gt;Saddle Points: we find GD=0 at saddle points before we find global optima&lt;/li&gt;
+  &lt;li&gt;Plateau: long saddle that makes learning super slow&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; &lt;a name=&quot;hpt&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;hyperparameter-tuning&quot;&gt;Hyperparameter Tuning&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Intuition&lt;/strong&gt;: try to find the optimal hyperparameter for the NN&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;List of Hyperparameters&lt;/strong&gt; (in the order of priority)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Tier 1: $\alpha$&lt;/li&gt;
+  &lt;li&gt;Tier 2: #hidden units, MB size&lt;/li&gt;
+  &lt;li&gt;Tier 3: #layers, $\alpha$ decay&lt;/li&gt;
+  &lt;li&gt;Tier 4: $\beta_1$, $\beta_2$, $\varepsilon$&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Random Picking&lt;/strong&gt;: e.g. $n^{[l]}\in [50,100], L\in [2,4]$&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Appropriate Scale&lt;/strong&gt;: e.g. $\alpha\in [0.0001,1]$ is obviously NOT an appropriate scale, because 90% of the values are in $[0.1,1]$.&lt;/p&gt;
+
+&lt;p&gt;Instead, $\alpha\in[0.0001,1]_ {\text{log}}$ is an appropriate scales because the random picking is equally distributed on the log scale.&lt;/p&gt;
+
+&lt;p&gt;e.g. for $\beta\in[0.9,0.999]$, the code implementation should be&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;$r\in[-3,-1]$&lt;/li&gt;
+  &lt;li&gt;$\beta=1-10^r$&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; &lt;a name=&quot;bn&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;batch-normalization&quot;&gt;Batch Normalization&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Intuition&lt;/strong&gt;: Feature scaling normalizes the inputs to speed up learning for the 1st layer. Similarly, can we normalize $a^{[l-1]}$ to train $W^{[l]} \&amp;amp; b^{[l]}$ faster? Obviously.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Implementation&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Calculate mean &amp;amp; variance&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ \mu&amp;=\frac{1}{m}\sum_{i=1}^{m}{z^{[l](i)}} \\
+ \sigma^2&amp;=\frac{1}{m}\sum_{i=1}^{m}{(z^{[l](i)}-\mu)^2}
+ \end{align} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Normalize Node Output:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ z_{\text{norm}}^{[l](i)}=\gamma\frac{z^{[l](i)}-\mu}{\sqrt{\sigma^2+\varepsilon}}+\beta
+ \end{equation}&lt;/script&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;$\gamma\ \&amp;amp;\ \beta$ = learnable parameters&lt;/li&gt;
+      &lt;li&gt;$\gamma\neq\sqrt{\sigma^2+\varepsilon}$ and $\beta\neq\mu$&lt;/li&gt;
+      &lt;li&gt;Make sure to add $\gamma\ \&amp;amp;\ \beta$ to the dictionary of parameter updates during coding&lt;/li&gt;
+      &lt;li&gt;Batch Normalization eliminates $b^{[l]}$ during $\mu$ calculation&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Roadmap: Train/Test Split Initialization Data Fitting with refined procedure Regularization Regularization on LogReg L2 Regularization L1 Regularization Regularization on NN Dropout Data Augmentation Early Stopping Orthogonalization Feature Scaling (normalization) Gradient Checking Optimization Mini-Batch Gradient Descent Gradient Descent with Momentum Exponentially Weighted (Moving) Average Bias Correction Momentum RMSprop Adam Learning Rate Decay Problems with optimization Hyperparameter Tuning Batch Normalization   Train/Test Split</summary></entry><entry><title type="html">Generative Learning Algorithms</title><link href="http://localhost:4000/ML/GDA/" rel="alternate" type="text/html" title="Generative Learning Algorithms" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-GDA</id><content type="html" xml:base="http://localhost:4000/ML/GDA/">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;p&gt;This covers the basics of Generative Learning Algorithms for classification&lt;/p&gt;
 &lt;ul&gt;
@@ -1745,657 +2398,4 @@ W := W-\alpha\frac{\partial\mathcal{L}}{\partial W}
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Products &amp;amp; Markets Time Value of Money Activation Functions Training Forward Propagation Backward Propagation Example: Forward &amp;amp; Backward Step: Stochastic Example: Forward &amp;amp; Backward Step: Mini-batch Reverse Differentiation (for a clearer understanding of backpropagation) Gradient Descent   Time Value of Money</summary></entry><entry><title type="html">Improvements on Neural Networks</title><link href="http://localhost:4000/DL/imp/" rel="alternate" type="text/html" title="Improvements on Neural Networks" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/DL/DL-imp</id><content type="html" xml:base="http://localhost:4000/DL/imp/">&lt;p&gt;Roadmap:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#split&quot;&gt;Train/Test Split&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#init&quot;&gt;Initialization&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#fit&quot;&gt;Data Fitting&lt;/a&gt; with refined &lt;a href=&quot;#pro&quot;&gt;procedure&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#reg&quot;&gt;Regularization&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Regularization on LogReg
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#L2&quot;&gt;L2 Regularization&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#L1&quot;&gt;L1 Regularization&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#nnreg&quot;&gt;Regularization on NN&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#dp&quot;&gt;Dropout&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#da&quot;&gt;Data Augmentation&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#es&quot;&gt;Early Stopping&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#og&quot;&gt;Orthogonalization&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#norm&quot;&gt;Feature Scaling (normalization)&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#gc&quot;&gt;Gradient Checking&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#op&quot;&gt;Optimization&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#mbgd&quot;&gt;Mini-Batch Gradient Descent&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;Gradient Descent with Momentum
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#ema&quot;&gt;Exponentially Weighted (Moving) Average&lt;/a&gt;
-            &lt;ul&gt;
-              &lt;li&gt;&lt;a href=&quot;#bc&quot;&gt;Bias Correction&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#m&quot;&gt;Momentum&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#rmsprop&quot;&gt;RMSprop&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#adam&quot;&gt;Adam&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#lrd&quot;&gt;Learning Rate Decay&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#po&quot;&gt;Problems with optimization&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#hpt&quot;&gt;Hyperparameter Tuning&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#bn&quot;&gt;Batch Normalization&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt; &lt;a name=&quot;split&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;traintest-split&quot;&gt;Train/Test Split&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Dataset = training set + development/validation set + test set&lt;/li&gt;
-  &lt;li&gt;Split ratio:
-    &lt;ul&gt;
-      &lt;li&gt;old era: 70/0/30%, 60/20/20%, …&lt;/li&gt;
-      &lt;li&gt;big data era: 98/1/1%, 99.5/0.4/0.1%, 99.5/0.5/0%, … &lt;br /&gt;
-  (trend: testset as small as possible)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;All 3 subsets should come from the exact same distribution (&lt;strike&gt;mismatch&lt;strike&gt;)&lt;/strike&gt;&lt;/strike&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt; &lt;a name=&quot;init&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;initialization&quot;&gt;Initialization&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;$W$ should be initialized with &lt;strong&gt;small random values&lt;/strong&gt; to break symmetry (to make sure that different hidden nodes can learn different things)&lt;/li&gt;
-  &lt;li&gt;$b$ can be initialized to &lt;strong&gt;zeros&lt;/strong&gt; ($\because$ symmetry is still broken when $W$ is randomly initialized)&lt;/li&gt;
-  &lt;li&gt;Different initializations $\rightarrow$ different results&lt;/li&gt;
-  &lt;li&gt;Refer to &lt;a href=&quot;https://keras.io/initializers/&quot;&gt;keras documentation&lt;/a&gt; for initializers.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt; &lt;a name=&quot;fit&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;data-fitting&quot;&gt;Data Fitting&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Underfitting&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;../../images/DL/uf.png&quot; width=&quot;300&quot; /&gt;&lt;/center&gt;
-
-&lt;p&gt;&lt;strong&gt;Proper fitting&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;../../images/DL/nof.png&quot; width=&quot;300&quot; /&gt;&lt;/center&gt;
-
-&lt;p&gt;&lt;strong&gt;Overfitting&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;../../images/DL/of.png&quot; width=&quot;300&quot; /&gt;&lt;/center&gt;
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;Tradeoff: &lt;em&gt;train error&lt;/em&gt; vs &lt;em&gt;validation error&lt;/em&gt;:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;em&gt;train err&lt;/em&gt; too small $\longrightarrow$ high variance (overfitting)&lt;/strong&gt;&lt;br /&gt;
-(e.g. train err = 1%; val err = 11%)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;em&gt;train err&lt;/em&gt; too big $\longrightarrow$ high bias (underfitting)&lt;/strong&gt;&lt;br /&gt;
-(e.g. train err = 17%; val err = 16%)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;em&gt;train err&lt;/em&gt; too big &amp;amp; &lt;em&gt;val err&lt;/em&gt; even bigger $\longrightarrow$ both probs&lt;/strong&gt; &lt;br /&gt;
-(e.g. train err = 17%; val err = 34%)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;em&gt;train err&lt;/em&gt; too small &amp;amp; &lt;em&gt;val err&lt;/em&gt; also small $\longrightarrow$ congratulations!&lt;/strong&gt;&lt;br /&gt;
-(e.g. train err = 0.5%; val err = 1%)
- &lt;br /&gt;
- &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a name=&quot;pro&quot;&gt;&lt;/a&gt;
-&lt;strong&gt;The Procedure&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;../../images/DL/fit.png&quot; width=&quot;500&quot; /&gt;&lt;/center&gt;
-
-&lt;p&gt; &lt;a name=&quot;reg&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;regularization&quot;&gt;Regularization&lt;/h2&gt;
-
-&lt;p&gt;Idea: add a regularization term to the original loss function:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-\mathcal{J}(w,b)=\frac{1}{m}\sum_{i=1}^{m}{\mathcal{L}(\hat{y}^{(i)},y^{(i)})}+\frac{\lambda}{2m}f(w)
-\end{equation}&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;$\lambda$: regularization parameter&lt;/li&gt;
-  &lt;li&gt;$f(w)$: regularization on $w$&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;How does regularization prevent overfitting?&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;set $\lambda$ as big as possible $\Rightarrow w^{[l]}\approx 0$ $\Rightarrow z^{[l]}\approx 0$ $\Rightarrow$ as if some hidden nodes don’t exist any more&lt;/li&gt;
-  &lt;li&gt;$\Rightarrow$ less complexity $\Rightarrow$ variance $\downarrow$&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt; &lt;br /&gt;
-&lt;strong&gt;Regularization on LogReg&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a name=&quot;L2&quot;&gt;&lt;/a&gt;&lt;strong&gt;L2 Regularization&lt;/strong&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-\mathcal{J}(w,b)=\frac{1}{m}\sum_{i=1}^{m}{\mathcal{L}(\hat{y}^{(i)},y^{(i)})}+\frac{\lambda}{2m}\|w\|^2_2 \\
-\|w\|^2_2=\sum_{j=1}^{n_x}w_j^2=w^Tw
-\end{equation}&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a name=&quot;L1&quot;&gt;&lt;/a&gt;&lt;strong&gt;L1 Regularization&lt;/strong&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-\mathcal{J}(w,b)=\frac{1}{m}\sum_{i=1}^{m}{\mathcal{L}(\hat{y}^{(i)},y^{(i)})}+\frac{\lambda}{2m}\|w\|_1 \\
-\|w\|_1=\sum_{j=1}^{n_x}{|w|}
-\end{equation}&lt;/script&gt;
-
-&lt;p&gt;&lt;a name=&quot;nnreg&quot;&gt;&lt;/a&gt;&lt;strong&gt;Regularization on NN&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-\mathcal{J}(W^{[k]},b^{[k]})=\frac{1}{m}\sum_{i=1}^{m}{\mathcal{L}(\hat{y}^{(i)},y^{(i)})}+\frac{\lambda}{2m}\sum_{l=1}^L{\|W^{[l]}\|^2_F}
-\end{equation}&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Frobenius Norm:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-\|W^{[l]}\|^2_F=\sum_{i=1}^{n_{l-1}}\sum_{j=1}^{n_l}{(w_{ij}^{[l]})^2}
-\end{equation}&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Weight Decay on GD:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-W^{[l]}&amp;:=w^{[l]}-\alpha\cdot\frac{\partial{\mathcal{L}}}{\partial{W^{[l]}}} \\
-&amp;=w^{[l]}-\alpha\cdot\Big(\frac{\partial{\mathcal{L}}}{\partial{W^{[l]}}}(\text{original})+\frac{\lambda}{m}W^{[l]}\Big)
-\end{align} %]]&gt;&lt;/script&gt;
-
-&lt;p&gt; &lt;br /&gt;
-&lt;a name=&quot;dp&quot;&gt;&lt;/a&gt;&lt;strong&gt;Dropout&lt;/strong&gt;: each node has a probability to be kicked out of the NN ($\Rightarrow$ NN becomes smaller &amp;amp; simpler) [only used in training]&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Make a &lt;strong&gt;Boolean&lt;/strong&gt; matrix corresponding to the matrix of activation values:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
- A^{[k]}&amp;=\begin{bmatrix}
- a_{11}^{[k]} &amp; \cdots &amp; a_{1m}^{[k]} \\
- \vdots &amp; \ddots &amp; \vdots \\ 
- a_{n_k1}^{[k]} &amp; \cdots &amp; a_{n_km}^{[k]}
- \end{bmatrix}\quad\quad\quad A^{[k]}\in\mathbb{R}^{n_k\times m} \\ \\
- B^{[k]}&amp;=\begin{bmatrix}
- b_{11}^{[k]} &amp; \cdots &amp; b_{1m}^{[k]} \\
- \vdots &amp; \ddots &amp; \vdots \\ 
- b_{n_k1}^{[k]} &amp; \cdots &amp; b_{n_km}^{[k]}
- \end{bmatrix}\quad\quad\quad B^{[k]}\in\mathbb{R}^{n_k\times m}
- \end{align} %]]&gt;&lt;/script&gt;
-
-    &lt;p&gt;where $b_{ji}^{[k]}\in\{\text{True}, \text{False}\}$. The Boolean values are assigned randomly based on a keep-probability $p$ (can be chosen differently for diff layers).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Multiply both matrices element-wise:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- A^{[k]}=A^{[k]}* B^{[k]}
- \end{equation}&lt;/script&gt;
-
-    &lt;p&gt;so that some activation values are now zero (they are kicked out of the neural network)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Invert the matrix element-wise:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- A^{[k]}=A^{[k]}/p
- \end{equation}&lt;/script&gt;
-
-    &lt;p&gt;to ensure consistency in activation values&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;a name=&quot;da&quot;&gt;&lt;/a&gt;&lt;strong&gt;Data Augmentation&lt;/strong&gt;: modify the dataset to get more data (mostly used in Computer Vision) [Benefit: a very low-cost regularization]&lt;/p&gt;
-
-&lt;p&gt;Examples:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;flip picture&lt;/li&gt;
-  &lt;li&gt;slight rotation&lt;/li&gt;
-  &lt;li&gt;zoom in/out&lt;/li&gt;
-  &lt;li&gt;distortions&lt;/li&gt;
-  &lt;li&gt;…&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;a name=&quot;da&quot;&gt;&lt;/a&gt;&lt;strong&gt;Early Stopping&lt;/strong&gt;: stop the training iterations in the middle&lt;/p&gt;
-
-&lt;p&gt;Why do we stop in the middle?&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;../../images/DL/es.png&quot; width=&quot;400&quot; /&gt;&lt;/center&gt;
-
-&lt;p&gt;The goal of our training is NOT to finish training BUT to find the optimal weight parameters that minimizes the cost/error.&lt;/p&gt;
-
-&lt;p&gt;As shown in the figure, sometimes we should just stop in the middle with the minimal validation error instead of keeping the training going to get overfitting.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;a name=&quot;og&quot;&gt;&lt;/a&gt;&lt;strong&gt;Orthogonalization&lt;/strong&gt;: implement controls that only affect &lt;strong&gt;ONE single component&lt;/strong&gt; of your algorithms performance at a time&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;a name=&quot;norm&quot;&gt;&lt;/a&gt;&lt;strong&gt;Feature Scaling (normalization)&lt;/strong&gt;: normalize inputs for higher efficiency&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Set to zero mean:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
- \mu&amp;=\frac{1}{m}\sum_{i=1}^{m}{x^{(i)}} \\
- x&amp;=x-\mu
- \end{align} %]]&gt;&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Normalize variance:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
- \sigma^2&amp;=\frac{1}{m}\sum_{i=1}^{m}{x^{(i)}\text{**}2}\quad\quad \text{**: element-wise squaring} \\
- x&amp;=x/\sigma^2
- \end{align} %]]&gt;&lt;/script&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;a name=&quot;gc&quot;&gt;&lt;/a&gt;&lt;strong&gt;Gradient Checking&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Why?&lt;/p&gt;
-
-    &lt;p&gt;Backprop is a very complex system of mathematical computations. It is very possible that there might be some miscalculation or bugs in these tremendous differentiations, even though the entire training appears as if it’s working properly.&lt;/p&gt;
-
-    &lt;p&gt;Gradient Checking is the approach to prevent such issue by checking if each gradient is calculated properly.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Equation&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  \frac{\partial{\mathcal{J}}}{\partial{w}}=\lim_{\varepsilon\rightarrow 0}\frac{\mathcal{J}(w+\varepsilon)-\mathcal{J}(w-\varepsilon)}{2\varepsilon}\approx\frac{\mathcal{J}(w+\varepsilon)-\mathcal{J}(w-\varepsilon)}{2\varepsilon}
-  \end{equation}&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Implementation: Calculate the difference between actual gradient and approximated gradient to see if the difference is reasonable:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  \text{diff}=\frac{||g-g'||_ 2}{||g||_ 2+||g'||_ 2}
-  \end{equation}&lt;/script&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt; &lt;a name=&quot;op&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;optimization&quot;&gt;Optimization&lt;/h2&gt;
-&lt;p&gt;&lt;a name=&quot;mbgd&quot;&gt;&lt;/a&gt;
-&lt;strong&gt;Mini-Batch Gradient Descent&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Why?&lt;/p&gt;
-
-    &lt;p&gt;To allow faster and more efficient computing when there is a large number of training examples (e.g. $m=10000000$)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Implementation (see &lt;a href=&quot;../../DL/ANN/#gd&quot;&gt;gradient descent&lt;/a&gt; for more details)&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  \mathcal{L}(\hat{Y},Y)&amp;=\frac{1}{2}\sum_{i=1}^{m'}{(\hat{Y_i}-Y_i)^2} \\
-  W&amp;=W-\alpha\frac{\partial\mathcal{L}}{\partial W}
-  \end{align} %]]&gt;&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Performance&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;BGD vs MBGD&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;center&gt;&lt;img src=&quot;../../images/DL/bgdvsmbgd.png&quot; width=&quot;500&quot; /&gt;&lt;/center&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;BGD vs SGD&lt;/p&gt;
-
-        &lt;center&gt;&lt;img src=&quot;../../images/DL/bgdvssgd.png&quot; width=&quot;400&quot; /&gt;&lt;/center&gt;
-        &lt;p&gt;&lt;br /&gt;
-  BGD: large steps, low noise, too long per iteration&lt;br /&gt;
-  SGD: small steps, insane noise, lose vectorization&lt;br /&gt;
-  MBGD: in between $\rightarrow$ optimal in most cases&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;strong&gt;Gradient Descent with Momentum&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a name=&quot;ema&quot;&gt;&lt;/a&gt;&lt;strong&gt;Exponentially Weighted (Moving) Average&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;Intuition&lt;/p&gt;
-
-        &lt;center&gt;&lt;img src=&quot;../../images/DL/ema.png&quot; width=&quot;500&quot; /&gt;&lt;/center&gt;
-        &lt;p&gt;&lt;br /&gt;
-  The blue dots represent the raw data points, while the red and green curves represent the two EMAs of the blue dots. As clearly indicated by the figure, EMA is used to reduce the huge oscillation of such time-series data.&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Formula&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  V_t=\beta V_{t-1}+(1-\beta)\theta_t
-  \end{equation}&lt;/script&gt;
-
-        &lt;ul&gt;
-          &lt;li&gt;$\theta_t$: the original time-series data point at time $t$&lt;/li&gt;
-          &lt;li&gt;$V_t$: the EMA data point at time $t$&lt;/li&gt;
-          &lt;li&gt;
-            &lt;p&gt;$\beta$: an indicator of how many time units (e.g. days) this algorithm is approximately averaging over:&lt;/p&gt;
-
-            &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  \text{#time units}=\frac{1}{1-\beta}
-  \end{equation}&lt;/script&gt;
-
-            &lt;p&gt;e.g. $\beta=0.9 \rightarrow$ average over 10 days; $\beta=0.96 \rightarrow$ average over 25 days&lt;/p&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Performance: easy computation + one-line code + memory efficiency&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;&lt;a name=&quot;bc&quot;&gt;&lt;/a&gt;&lt;strong&gt;Bias Correction&lt;/strong&gt;&lt;/p&gt;
-
-        &lt;p&gt;Assume $\beta=0.99$:&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  &amp;V_0=0 \\
-  &amp;V_1=0.99 V_0+0.01\theta_1=0.01\theta_1 \\
-  &amp;V_2=0.99 V_2+0.01\theta_2=0.099\theta_1+0.01\theta_2 \\
-  &amp;...
-  \end{align} %]]&gt;&lt;/script&gt;
-
-        &lt;p&gt;Notice that $V_1 \&amp;amp; V_2$ are very tiny portions of $\theta_1 \&amp;amp; \theta_2$, meaning that they do not accurately represent the actual data points.&lt;/p&gt;
-
-        &lt;p&gt;Thus, it is necessary to rescale the early EMA values, with the following formula:&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  V_t:=\frac{V_t}{1-\beta^t}
-  \end{equation}&lt;/script&gt;
-
-        &lt;p&gt;In the later calculations, bias correction is not so necessary.&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a name=&quot;m&quot;&gt;&lt;/a&gt;&lt;strong&gt;Momentum&lt;/strong&gt;: application of EMA in GD&lt;/p&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;Compute $dW,db$ on the current MB&lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Compute EMA&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
- &amp;V_{dW}:=\beta V_{dW}+(1-\beta)dW \\
- &amp;V_{db}:=\beta V_{db}+(1-\beta)db
- \end{align} %]]&gt;&lt;/script&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Compute GD&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
- &amp;W:=W-\alpha V_{dW} \\
- &amp;b:=b-\alpha V_{db}
- \end{align} %]]&gt;&lt;/script&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-
-    &lt;p&gt;$\beta$ is often chosen as $0.9$ in GD with Momentum.&lt;/p&gt;
-
-    &lt;p&gt;Why named “momentum”? Think of $dW$ as acceleration, $V_{dW}$ as velocity, and $\beta$ as friction.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Performance&lt;/p&gt;
-
-    &lt;center&gt;&lt;img src=&quot;../../images/DL/momentum.png&quot; width=&quot;500&quot; /&gt;&lt;/center&gt;
-
-    &lt;p&gt;Red steps represent Momentum, while blue steps represent normal GD.&lt;/p&gt;
-
-    &lt;p&gt;Slower learning vertically + Faster learning horizontally&lt;/p&gt;
-
-    &lt;p&gt;$\rightarrow$ Momentum is always better than SGD&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;a name=&quot;rmsprop&quot;&gt;&lt;/a&gt;&lt;strong&gt;RMSprop (Root Mean Square Propagation)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Intuition: a modified version of GD with Momentum&lt;/p&gt;
-
-    &lt;p&gt;Why? To further minimize the oscillation of GD and maximize the speed of convergence.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Steps:&lt;/p&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;Compute $dW,db$ on the current MB&lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Compute RMS step&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
- &amp;S_{dW}:=\beta S_{dW}+(1-\beta)dW^2 \\
- &amp;S_{db}:=\beta S_{db}+(1-\beta)db^2
- \end{align} %]]&gt;&lt;/script&gt;
-
-        &lt;p&gt;where $dW^2=dW* dW$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Compute GD&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
- &amp;W:=W-\alpha \frac{dW}{\sqrt{S_{dW}}+\varepsilon} \\
- &amp;b:=b-\alpha \frac{db}{\sqrt{S_{db}}+\varepsilon}
- \end{align} %]]&gt;&lt;/script&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-
-    &lt;p&gt;$\varepsilon$ is added to ensure $\text{denominator}\neq0$ (normally $\varepsilon=10^{-8}$)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;a name=&quot;adam&quot;&gt;&lt;/a&gt;&lt;strong&gt;Adam&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Intuition: &lt;strong&gt;Momentum + RMSprop&lt;/strong&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Steps:&lt;/p&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;Compute $dW,db$ on the current MB&lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Compute Momentum:&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
- &amp;V_{dW}:=\beta_1 V_{dW}+(1-\beta_1)dW \\
- &amp;V_{db}:=\beta_1 V_{db}+(1-\beta_1)db
- \end{align} %]]&gt;&lt;/script&gt;
-
-        &lt;p&gt;Compute RMSprop:&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
- &amp;S_{dW}:=\beta_2 S_{dW}+(1-\beta_2)dW^2 \\
- &amp;S_{db}:=\beta_2 S_{db}+(1-\beta_2)db^2
- \end{align} %]]&gt;&lt;/script&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Bias Correction:&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
- &amp;V_{dW}:=\frac{V_{dW}}{1-\beta_1^t}, V_{db}:=\frac{V_{db}}{1-\beta_1^t} \\
- &amp;S_{dW}:=\frac{S_{dW}}{1-\beta_2^t}, S_{db}:=\frac{S_{db}}{1-\beta_2^t}
- \end{align} %]]&gt;&lt;/script&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Compute GD:&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
- &amp;W:=W-\alpha \frac{V_{dW}}{\sqrt{S_{dW}}+\varepsilon} \\
- &amp;b:=b-\alpha \frac{V_{db}}{\sqrt{S_{db}}+\varepsilon}
- \end{align} %]]&gt;&lt;/script&gt;
-
-        &lt;p&gt;Hyperparameter choices:&lt;/p&gt;
-
-        &lt;ul&gt;
-          &lt;li&gt;$\alpha$: depends&lt;/li&gt;
-          &lt;li&gt;$\beta_1: 0.9$&lt;/li&gt;
-          &lt;li&gt;$\beta_2: 0.999$&lt;/li&gt;
-          &lt;li&gt;$\varepsilon: 10^{-8}$&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;a name=&quot;lrd&quot;&gt;&lt;/a&gt;&lt;strong&gt;Learning Rate Decay&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Intuition: as $\alpha$ slowly decreases, training steps become smaller $\rightarrow$ oscillating closely around the minimum (instead of jumping over the minimum)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Main Method:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  \alpha=\frac{1}{1+r_{\text{decay}}\cdot \text{#epoch}}\cdot\alpha_0
-  \end{equation}&lt;/script&gt;
-
-    &lt;p&gt;where 1 epoch means passing through data once.&lt;/p&gt;
-
-    &lt;p&gt;Normally, $\alpha_0=0.2,r_{\text{decay}}=1$&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Other Methods:&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;Exponential Decay:&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  \alpha=0.95^{\text{#epoch}}\cdot\alpha_0
-  \end{equation}&lt;/script&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Root Decay:&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  \alpha=\frac{k}{\sqrt{\text{#epoch}}}\cdot\alpha_0
-  \end{equation}&lt;/script&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Discrete Staircase:&lt;/p&gt;
-
-        &lt;center&gt;&lt;img src=&quot;../../images/DL/staircase.png&quot; width=&quot;150&quot; /&gt;&lt;/center&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Manual Decay&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;
-&lt;a name=&quot;po&quot;&gt;&lt;/a&gt;&lt;strong&gt;Problems with optimization&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;As learnt in Calculus, no matter how we try to find the optimum, we always have problems:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Local Optima: we get stuck in local optima instead of moving to global optima&lt;/li&gt;
-  &lt;li&gt;Saddle Points: we find GD=0 at saddle points before we find global optima&lt;/li&gt;
-  &lt;li&gt;Plateau: long saddle that makes learning super slow&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt; &lt;a name=&quot;hpt&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;hyperparameter-tuning&quot;&gt;Hyperparameter Tuning&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Intuition&lt;/strong&gt;: try to find the optimal hyperparameter for the NN&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;List of Hyperparameters&lt;/strong&gt; (in the order of priority)&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Tier 1: $\alpha$&lt;/li&gt;
-  &lt;li&gt;Tier 2: #hidden units, MB size&lt;/li&gt;
-  &lt;li&gt;Tier 3: #layers, $\alpha$ decay&lt;/li&gt;
-  &lt;li&gt;Tier 4: $\beta_1$, $\beta_2$, $\varepsilon$&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Random Picking&lt;/strong&gt;: e.g. $n^{[l]}\in [50,100], L\in [2,4]$&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Appropriate Scale&lt;/strong&gt;: e.g. $\alpha\in [0.0001,1]$ is obviously NOT an appropriate scale, because 90% of the values are in $[0.1,1]$.&lt;/p&gt;
-
-&lt;p&gt;Instead, $\alpha\in[0.0001,1]_ {\text{log}}$ is an appropriate scales because the random picking is equally distributed on the log scale.&lt;/p&gt;
-
-&lt;p&gt;e.g. for $\beta\in[0.9,0.999]$, the code implementation should be&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;$r\in[-3,-1]$&lt;/li&gt;
-  &lt;li&gt;$\beta=1-10^r$&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt; &lt;a name=&quot;bn&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;batch-normalization&quot;&gt;Batch Normalization&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Intuition&lt;/strong&gt;: Feature scaling normalizes the inputs to speed up learning for the 1st layer. Similarly, can we normalize $a^{[l-1]}$ to train $W^{[l]} \&amp;amp; b^{[l]}$ faster? Obviously.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Implementation&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Calculate mean &amp;amp; variance&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
- \mu&amp;=\frac{1}{m}\sum_{i=1}^{m}{z^{[l](i)}} \\
- \sigma^2&amp;=\frac{1}{m}\sum_{i=1}^{m}{(z^{[l](i)}-\mu)^2}
- \end{align} %]]&gt;&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Normalize Node Output:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- z_{\text{norm}}^{[l](i)}=\gamma\frac{z^{[l](i)}-\mu}{\sqrt{\sigma^2+\varepsilon}}+\beta
- \end{equation}&lt;/script&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;$\gamma\ \&amp;amp;\ \beta$ = learnable parameters&lt;/li&gt;
-      &lt;li&gt;$\gamma\neq\sqrt{\sigma^2+\varepsilon}$ and $\beta\neq\mu$&lt;/li&gt;
-      &lt;li&gt;Make sure to add $\gamma\ \&amp;amp;\ \beta$ to the dictionary of parameter updates during coding&lt;/li&gt;
-      &lt;li&gt;Batch Normalization eliminates $b^{[l]}$ during $\mu$ calculation&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">Roadmap: Train/Test Split Initialization Data Fitting with refined procedure Regularization Regularization on LogReg L2 Regularization L1 Regularization Regularization on NN Dropout Data Augmentation Early Stopping Orthogonalization Feature Scaling (normalization) Gradient Checking Optimization Mini-Batch Gradient Descent Gradient Descent with Momentum Exponentially Weighted (Moving) Average Bias Correction Momentum RMSprop Adam Learning Rate Decay Problems with optimization Hyperparameter Tuning Batch Normalization   Train/Test Split</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Products &amp;amp; Markets Time Value of Money Activation Functions Training Forward Propagation Backward Propagation Example: Forward &amp;amp; Backward Step: Stochastic Example: Forward &amp;amp; Backward Step: Mini-batch Reverse Differentiation (for a clearer understanding of backpropagation) Gradient Descent   Time Value of Money</summary></entry></feed>
