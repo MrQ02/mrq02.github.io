@@ -6,18 +6,27 @@ permalink: /roadmap/
 header-includes:
 - \usepackage{amsmath}
 ---
-Directories:
-- [**Data Mining (Machine Learning)**](#ML)
+**Data Science (AI)**
+- [**Machine Learning**](#ML)
 - [**Deep Learning**](#DL)
 - [**Reinforcement Learning**](#RL)
 - [**Artificial Intelligence**](#AI)
 - [**Probability & Statistics**](#PS)
+
+**Economics & Finance (Quantitative)**
 - [**Econometrics**](#Econ)
 - [**Quantitative Finance**](#quant)
+- [**Game Theory**](#game)
+
+**Mathematics**
+- [**Real Analysis**](#reala)
+- [**Complex Analysis**](#compa)
+- [**Functional Analysis**](#funca)
+- [**Optimization**](#opt)
 
 &emsp;
 <a name="ML"></a>
-### Data Mining
+### Machine Learning
 
 - **Supervised Learning**
 
@@ -125,6 +134,7 @@ Directories:
     - [Batch Normalization](/DL/imp/#bn)  
 <br/>
 - [**CNN**](/DL/CNN/)
+
     - Basics of CNN
         - [Intuition of CNN](/DL/CNN/#cnn)
         - [General Formula of Convolution](/DL/CNN/#formula)
@@ -157,6 +167,7 @@ Directories:
         - [Neural Style Transfer](/DL/CNN/#nst)  
 <br/>
 - [**RNN**](/DL/RNN/)
+
     - Basics of RNN
 
 &emsp;
