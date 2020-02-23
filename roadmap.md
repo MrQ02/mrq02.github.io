@@ -6,20 +6,20 @@ permalink: /roadmap/
 header-includes:
 - \usepackage{amsmath}
 ---
-**Data Science (AI)**
+**Artificial Intelligence**
 - [**Machine Learning**](#ML)
 - [**Deep Learning**](#DL)
 - [**Reinforcement Learning**](#RL)
 - [**Artificial Intelligence**](#AI)
-- [**Probability & Statistics**](#PS)
 
-**Economics & Finance (Quantitative)**
+**Economics & Finance**
+- [**Mathematical Economics**]
 - [**Econometrics**](#Econ)
 - [**Quantitative Finance**](#quant)
 - [**Game Theory**](#game)
 
 **Mathematics**
-- [**Real Analysis**](#reala)
+- [**Probability & Statistics**](#PS)
 - [**Complex Analysis**](#compa)
 - [**Functional Analysis**](#funca)
 - [**Optimization**](#opt)
@@ -88,6 +88,12 @@ header-includes:
     - Occam Learning
     - PAC Learning
     - VC Theory  
+
+References:
+* ColumbiaX. <a href="https://www.edx.org/micromasters/columbiax-artificial-intelligence" target="__blank">Artificial Intelligence MicroMasters Program</a>. edX Inc.
+* Andrew Ng. <a href="https://see.stanford.edu/Course/CS229" target="__blank">CS229 - Machine Learning</a>. Stanford University.
+* Mitchell, T. <a href="http://www.cs.cmu.edu/~tom/10701_sp11/lectures.shtml" target="__blank">10-701 - Machine Learning</a>. Carnegie Mellon University.
+
 
 &emsp;
 ### <a name="DL"></a>Deep Learning
@@ -169,6 +175,31 @@ header-includes:
 - [**RNN**](/DL/RNN/)
 
     - Basics of RNN
+        - [Intuition of Sequence Models](/DL/RNN/#intsm)
+        - [Intuition of RNN](/DL/RNN/#intrnn)
+        - [RNN Types](/DL/RNN/#layers)
+        - [Language Model](/DL/RNN/#lm)
+    - [RNN Variations](/DL/RNN/#var)
+        - [GRU](/DL/RNN/#gru)
+        - [LSTM](/DL/RNN/#lstm)
+        - [Bidirectional RNN](/DL/RNN/#birnn)
+        - [Deep RNN](/DL/RNN/#drnn)
+    - Word Embeddings
+        - [One-hot representation](/DL/RNN/#ohr)
+        - [Featurized representation](/DL/RNN/#fr)
+        - [Learning 1: Word2Vec](/DL/RNN/#word2vec)
+        - [Learning 2: Negative Sampling](/DL/RNN/#negsam)
+        - [Learning 3: GloVe](/DL/RNN/#glove)
+    - Sequence Modeling
+        - [Sentiment Classification](/DL/RNN/#sent)
+        - [Sequence to Sequence](/DL/RNN/#seq2seq)
+        - [Beam Search](/DL/RNN/#beam)
+        - [Bleu Score](/DL/RNN/#bleu)
+        - [Attention Model](/DL/RNN/#attention)  
+
+References:
+* Andrew Ng. <a href="https://www.coursera.org/specializations/deep-learning" target="__blank">Deep Learning Specialization</a>. Coursera Inc.
+* Goodfellow, I. Bengio, Y. Courville, A. <a href="https://www.coursera.org/specializations/deep-learning" target="__blank">Deep Learning</a>. MIT Press.
 
 &emsp;
 <a name="RL"></a>
