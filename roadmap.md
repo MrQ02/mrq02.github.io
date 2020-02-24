@@ -13,8 +13,8 @@ header-includes:
 - [**Artificial Intelligence**](#AI)
 
 **Economics & Finance**
-- [**Mathematical Economics**]
-- [**Econometrics**](#Econ)
+- [**Mathematical Economics**](#mathecon)
+- [**Econometrics**](#econo)
 - [**Quantitative Finance**](#quant)
 - [**Game Theory**](#game)
 
@@ -210,8 +210,12 @@ References:
 ### Artificial Intelligence
 
 &emsp;
-<a name="PS"></a>
-### Probability & Statistics
+<a name="mathecon"></a>
+### Mathematical Economics (経済数学)
+
+- [Mathematics for Economics: 経済数学](../../assets/keizai.pdf)
+
+Claim: This chapter is an English-translated summary of the book "経済数学" published by Keio University in order for me to learn Japanese in order to take Japanese-taught Math courses.
 
 &emsp;
 <a name="Econ"></a>
