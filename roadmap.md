@@ -7,7 +7,7 @@ header-includes:
 - \usepackage{amsmath}
 ---
 **Artificial Intelligence**
-- [**Machine Learning**](#ML)
+- [**Machine Learning**](#ML) (or Statistical Learning or Data Mining or whatever)
 - [**Deep Learning**](#DL)
 - [**Reinforcement Learning**](#RL)
 - [**Artificial Intelligence**](#AI)
@@ -32,17 +32,30 @@ header-includes:
 
     - **Regression**
     
-        - [Linear Regression](/ML/linreg/)
-        - [Generalized Linear Models (GLM)](/ML/GLM/)
-        - Nonlinear Regression  
-        <br/>
+        - [Linear Regression](/ML/regression/#linreg)
+            - [Locally Weighted Linear Regression](/ML/regression/#lwr)
+            - [Newton's Method](/ML/regression/#newton)
+        - [Generalized Linear Models (GLM)](/ML/regression/#glm)
+            - [Bernoulli Distribution](/ML/regression/#bernoulli)
+            - [Gaussian Distribution](/ML/regression/#gaussian)
+            - [Poisson Distribution](/ML/regression/#poisson)
+            - [Gamma Distribution](/ML/regression/#gamma)
+            - [Beta Distribution](/ML/regression/#beta)
+            - [Dirichlet Distribution](/ML/regression/#dirichlet)
+            - [Method of Constructing GLMs](/ML/regression/#construct)  
+    <br/>
     - **Classification**
     
-        - [Logistic Regression](/ML/logreg/)
-        - [Gaussian Discriminant Analysis (GDA)](/ML/GDA/)
-        - Naive Bayes Classifier
-        - Perceptron
+        - [Logistic Regression](/ML/regression/#logreg)
+        - [Softmax Regression](/ML/regression/#softmax)
+        - [Generative Learning Algorithms](/ML/GLA/)
+            - [Gaussian Discrminant Analysis](/ML/GLA/#gda)
+            - [Naive Bayes Classifier](/ML/GLA/#nb)
+                - [Laplace Smoothing](/ML/GLA/#laplace)
         - [Support Vector Machine (SVM)](/ML/SVM/)
+            - [Functional & Geometric Margins](/ML/SVM/#margin)
+            - [Lagrange Duality](/ML/SVM/#lagrange)
+        - Perceptron
         - k-Nearest Neighbor (k-NN)
         - Decision Trees
         - Boosting  
@@ -199,7 +212,7 @@ References:
 
 References:
 * Andrew Ng. <a href="https://www.coursera.org/specializations/deep-learning" target="__blank">Deep Learning Specialization</a>. Coursera Inc.
-* Goodfellow, I. Bengio, Y. Courville, A. <a href="https://www.coursera.org/specializations/deep-learning" target="__blank">Deep Learning</a>. MIT Press.
+* Goodfellow, I. Bengio, Y. Courville, A. <a href="http://www.deeplearningbook.org/" target="__blank">Deep Learning</a>. MIT Press.
 
 &emsp;
 <a name="RL"></a>
