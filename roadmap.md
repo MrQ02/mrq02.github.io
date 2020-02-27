@@ -32,22 +32,22 @@ header-includes:
 
     - **Regression**
     
-        - [Linear Regression](/ML/regression/#linreg)
-            - [Locally Weighted Linear Regression](/ML/regression/#lwr)
-            - [Newton's Method](/ML/regression/#newton)
-        - [Generalized Linear Models (GLM)](/ML/regression/#glm)
-            - [Bernoulli Distribution](/ML/regression/#bernoulli)
-            - [Gaussian Distribution](/ML/regression/#gaussian)
-            - [Poisson Distribution](/ML/regression/#poisson)
-            - [Gamma Distribution](/ML/regression/#gamma)
-            - [Beta Distribution](/ML/regression/#beta)
-            - [Dirichlet Distribution](/ML/regression/#dirichlet)
-            - [Method of Constructing GLMs](/ML/regression/#construct)  
+        - [Linear Regression](/ML/reg/#linreg)
+            - [Locally Weighted Linear Regression](/ML/reg/#lwr)
+            - [Newton's Method](/ML/reg/#newton)
+        - [Generalized Linear Models (GLM)](/ML/reg/#glm)
+            - [Bernoulli Distribution](/ML/reg/#bernoulli)
+            - [Gaussian Distribution](/ML/reg/#gaussian)
+            - [Poisson Distribution](/ML/reg/#poisson)
+            - [Gamma Distribution](/ML/reg/#gamma)
+            - [Beta Distribution](/ML/reg/#beta)
+            - [Dirichlet Distribution](/ML/reg/#dirichlet)
+            - [Method of Constructing GLMs](/ML/reg/#construct)  
     <br/>
     - **Classification**
     
-        - [Logistic Regression](/ML/regression/#logreg)
-        - [Softmax Regression](/ML/regression/#softmax)
+        - [Logistic Regression](/ML/reg/#logreg)
+        - [Softmax Regression](/ML/reg/#softmax)
         - [Generative Learning Algorithms](/ML/GLA/)
             - [Gaussian Discriminant Analysis](/ML/GLA/#gda)
             - [Naive Bayes Classifier](/ML/GLA/#nb)
