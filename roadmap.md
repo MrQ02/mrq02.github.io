@@ -49,12 +49,13 @@ header-includes:
         - [Logistic Regression](/ML/regression/#logreg)
         - [Softmax Regression](/ML/regression/#softmax)
         - [Generative Learning Algorithms](/ML/GLA/)
-            - [Gaussian Discrminant Analysis](/ML/GLA/#gda)
+            - [Gaussian Discriminant Analysis](/ML/GLA/#gda)
             - [Naive Bayes Classifier](/ML/GLA/#nb)
                 - [Laplace Smoothing](/ML/GLA/#laplace)
         - [Support Vector Machine (SVM)](/ML/SVM/)
             - [Functional & Geometric Margins](/ML/SVM/#margin)
             - [Lagrange Duality](/ML/SVM/#lagrange)
+            - to be continued...
         - Perceptron
         - k-Nearest Neighbor (k-NN)
         - Decision Trees

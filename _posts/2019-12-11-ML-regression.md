@@ -2,7 +2,7 @@
 layout: post
 title: "Regression"
 date: 2019-12-01 22:29:53 +0900
-permalink: /ML/Regression/
+permalink: /ML/regression/
 header-includes:
 - \usepackage{amsmath}
 - \usepackage{mathtools}
