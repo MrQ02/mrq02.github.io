@@ -6,23 +6,19 @@ permalink: /roadmap/
 header-includes:
 - \usepackage{amsmath}
 ---
-**Artificial Intelligence**
-- [**Machine Learning**](#ML) (or Statistical Learning or Data Mining or whatever)
+#### Statistical Learning / Data Science / Data Mining
+- [**Machine Learning**](#ML)
 - [**Deep Learning**](#DL)
 - [**Reinforcement Learning**](#RL)
+
+#### Artificial Intelligence
 - [**Artificial Intelligence**](#AI)
+- [**Robotics**](#robot)
 
-**Economics & Finance**
-- [**Mathematical Economics**](#mathecon)
+#### Economics & Finance
 - [**Econometrics**](#econo)
+- [**Time Series Analysis**](#ts)
 - [**Quantitative Finance**](#quant)
-- [**Game Theory**](#game)
-
-**Mathematics**
-- [**Probability & Statistics**](#PS)
-- [**Complex Analysis**](#compa)
-- [**Functional Analysis**](#funca)
-- [**Optimization**](#opt)
 
 &emsp;
 <a name="ML"></a>
@@ -107,7 +103,6 @@ References:
 * ColumbiaX. <a href="https://www.edx.org/micromasters/columbiax-artificial-intelligence" target="__blank">Artificial Intelligence MicroMasters Program</a>. edX Inc.
 * Andrew Ng. <a href="https://see.stanford.edu/Course/CS229" target="__blank">CS229 - Machine Learning</a>. Stanford University.
 * Mitchell, T. <a href="http://www.cs.cmu.edu/~tom/10701_sp11/lectures.shtml" target="__blank">10-701 - Machine Learning</a>. Carnegie Mellon University.
-
 
 &emsp;
 ### <a name="DL"></a>Deep Learning
@@ -222,29 +217,40 @@ References:
 &emsp;
 <a name="AI"></a>
 ### Artificial Intelligence
+- Problem-solving (search)
+- Logic
+- Planning
+- Reasoning & Uncertainty
 
 &emsp;
-<a name="mathecon"></a>
-### Mathematical Economics (経済数学)
-
-- [Mathematics for Economics: 経済数学](../../assets/keizai.pdf)
-
-Claim: This chapter is an English-translated summary of the book "経済数学" published by Keio University in order for me to learn Japanese in order to take Japanese-taught Math courses.
+<a name="robot"></a>
+### Robotics
 
 &emsp;
-<a name="Econ"></a>
+<a name="econo"></a>
 ### Econometrics
+
+&emsp;
+<a name="ts"></a>
+### Time Series Analysis
 
 &emsp;
 <a name="quant"></a>
 ### Quantitative Finance
 
-- **Financial Foundations**
+- **Finance Glossary**
     - [Products & Markets](/quant/promar/)
-    - [Derivatives](/quant/basicd)
-    - [Assets](/quant/assets/)
-- **Mathematical Foundations**
-    - [Stochastic Calculus](/quant/stocalc)
-    - [Black-Scholes Model](/quant/bsm)
-- **Numerical Methods**
+- **Maths Glossary**
+    - [Linear Algebra](/quant/linalg/)
+    - [Probability Theory](/quant/prob/)
+    - [Stochastic Processes](/quant/stopro/)
+    - [Ito Calculus](/quant/ito/)
+    - [Black-Scholes Model](/quant/bsm/)
+    - [Stochastic Differential Equations](/quant/stocalc)
+- **Derivatives**
+- **Risks**
+- **Volatility**
+- **Commodity Models**
+- **Portfolio**
+- **Factor Models**
 - **Advanced Topics**
