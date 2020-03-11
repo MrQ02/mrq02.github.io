@@ -6,22 +6,19 @@ permalink: /roadmap/
 header-includes:
 - \usepackage{amsmath}
 ---
-#### Statistical Learning / Data Science / Data Mining
+#### Data Mining / Statistical Learning
 - [**Machine Learning**](#ML)
 - [**Deep Learning**](#DL)
 - [**Reinforcement Learning**](#RL)
 
-#### Artificial Intelligence
-- [**Artificial Intelligence**](#AI)
-- [**Robotics**](#robot)
-
 #### Economics & Finance
-- [**Econometrics**](#econo)
-- [**Time Series Analysis**](#ts)
+- [**Investment Science**](#invest)
 - [**Quantitative Finance**](#quant)
 
-&emsp;
-<a name="ML"></a>
+#### Artificial Intelligence
+- [**Artificial Intelligence**](#AI)
+
+&emsp;<a name="ML"></a>
 ### Machine Learning
 
 - **Supervised Learning**
@@ -104,8 +101,8 @@ References:
 * Andrew Ng. <a href="https://see.stanford.edu/Course/CS229" target="__blank">CS229 - Machine Learning</a>. Stanford University.
 * Mitchell, T. <a href="http://www.cs.cmu.edu/~tom/10701_sp11/lectures.shtml" target="__blank">10-701 - Machine Learning</a>. Carnegie Mellon University.
 
-&emsp;
-### <a name="DL"></a>Deep Learning
+&emsp;<a name="DL"></a>
+### Deep Learning
 
 - [**Basics of NN**](/DL/ANN/)
     
@@ -210,47 +207,45 @@ References:
 * Andrew Ng. <a href="https://www.coursera.org/specializations/deep-learning" target="__blank">Deep Learning Specialization</a>. Coursera Inc.
 * Goodfellow, I. Bengio, Y. Courville, A. <a href="http://www.deeplearningbook.org/" target="__blank">Deep Learning</a>. MIT Press.
 
-&emsp;
-<a name="RL"></a>
+&emsp;<a name="RL"></a>
 ### Reinforcement Learning
 
-&emsp;
-<a name="AI"></a>
+&emsp;<a name="AI"></a>
 ### Artificial Intelligence
 - Problem-solving (search)
 - Logic
 - Planning
 - Reasoning & Uncertainty
 
-&emsp;
-<a name="robot"></a>
-### Robotics
+&emsp;<a name="invest"></a>
+### Investment Science
 
-&emsp;
-<a name="econo"></a>
-### Econometrics
+- [Deterministic Cash Flows](/invest/deterministic_cf/)    
+- [Single-Period Random Cash Flows](/invest/random_cf/)  
+- [Derivative Securities](/invest/devsec/)  
+- [General Cash Flow Streams](/invest/general_cf/)
 
-&emsp;
-<a name="ts"></a>
-### Time Series Analysis
+References:
+* Luenberger, D. G., <i>Investment Science</i>. Oxford University Press.
 
-&emsp;
-<a name="quant"></a>
+&emsp;<a name="quant"></a>
 ### Quantitative Finance
 
-- **Finance Glossary**
-    - [Products & Markets](/quant/promar/)
-- **Maths Glossary**
-    - [Linear Algebra](/quant/linalg/)
-    - [Probability Theory](/quant/prob/)
-    - [Stochastic Processes](/quant/stopro/)
-    - [Ito Calculus](/quant/ito/)
-    - [Black-Scholes Model](/quant/bsm/)
-    - [Stochastic Differential Equations](/quant/stocalc)
-- **Derivatives**
-- **Risks**
-- **Volatility**
-- **Commodity Models**
-- **Portfolio**
-- **Factor Models**
-- **Advanced Topics**
+- [Preliminary Math]
+- [Stochastic Calculus]
+- [Time Series Analysis]
+- [Regression Analysis]
+- [Volatility Modeling]
+- [Risk Models]
+- [Pricing Models]
+- [Commodity Models]
+- [Portfolio Theory]
+- [Factor Models]
+- [Ito Calculus]
+- [Black-Scholes Model]
+- [Quanto Credit Hedging]
+
+References:
+* Wilmott, P. <i>Paul Wilmott on Quantitative Finance Vol 1-3</i>. 2nd Ed. John Wiley & Sons, Ltd.
+* Hull, J.C. <i>Options, Futures, and Other Derivatives</i>. 9th Global Ed. Pearson Education Limited.
+* Xia, J., Strela, V., Lee, C., Kempthorne, P. <a href="https://ocw.mit.edu/courses/mathematics/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/index.htm" target="__blank">18.S096 Topics in Mathematics with Applications in Finance</a>. Massachusetts Institute of Technology.
