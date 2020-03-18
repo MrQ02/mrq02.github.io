@@ -6,61 +6,43 @@ permalink: /roadmap/
 header-includes:
 - \usepackage{amsmath}
 ---
-#### Data Mining / Statistical Learning
+#### Artificial Intelligence
 - [**Machine Learning**](#ML)
 - [**Deep Learning**](#DL)
 - [**Reinforcement Learning**](#RL)
 
-#### Economics & Finance
-- [**Investment Science**](#invest)
-- [**Quantitative Finance**](#quant)
-
-#### Artificial Intelligence
-- [**Artificial Intelligence**](#AI)
-
 &emsp;<a name="ML"></a>
-### Machine Learning
+## Machine Learning
 
 - **Supervised Learning**
 
     - **Regression**
     
-        - [Linear Regression](/ML/reg/#linreg)
-            - [Locally Weighted Linear Regression](/ML/reg/#lwr)
-            - [Newton's Method](/ML/reg/#newton)
-        - [Generalized Linear Models (GLM)](/ML/reg/#glm)
-            - [Bernoulli Distribution](/ML/reg/#bernoulli)
-            - [Gaussian Distribution](/ML/reg/#gaussian)
-            - [Poisson Distribution](/ML/reg/#poisson)
-            - [Gamma Distribution](/ML/reg/#gamma)
-            - [Beta Distribution](/ML/reg/#beta)
-            - [Dirichlet Distribution](/ML/reg/#dirichlet)
-            - [Method of Constructing GLMs](/ML/reg/#construct)  
+        - [Linear Regression](/ML/linreg/)
+        - [Logistic Regression](/ML/logreg/)
+        - [Polynomial Regression](/ML/poly/)
+        - [Ridge Regression](/ML/ridge/)
+        - [LASSO Regression](/ML/lasso/)
+        - [Generalized Linear Models](/ML/GLM/)  
     <br/>
     - **Classification**
     
-        - [Logistic Regression](/ML/reg/#logreg)
-        - [Softmax Regression](/ML/reg/#softmax)
-        - [Generative Learning Algorithms](/ML/GLA/)
-            - [Gaussian Discriminant Analysis](/ML/GLA/#gda)
-            - [Naive Bayes Classifier](/ML/GLA/#nb)
-                - [Laplace Smoothing](/ML/GLA/#laplace)
-        - [Support Vector Machine (SVM)](/ML/SVM/)
-            - [Functional & Geometric Margins](/ML/SVM/#margin)
-            - [Lagrange Duality](/ML/SVM/#lagrange)
-            - to be continued...
-        - Perceptron
-        - k-Nearest Neighbor (k-NN)
-        - Decision Trees
-        - Boosting  
+        - [Logistic Regression](/ML/logreg)
+        - [Softmax Regression](/ML/softmax)
+        - [k-NN (k-Nearest Neighbors)](/ML/kNN/)
+        - [SVM (Support Vector Machine)](/ML/SVM/)
+        - [Naive Bayes Classifier](/ML/NB/)
+        - [Perceptron](/ML/perc/)
+        - [Decision Trees](/ML/trees/)
+        - [Ensembles](/ML/boost/)  
 <br/>
 - **Unsupervised Learning (Clustering)**  
 
+    - k-means
+    - Hierarchical
+    - EM (Expectation-Maximization)
     - BIRCH
     - CURE
-    - Hierarchical
-    - k-means
-    - Expectation-Maximization (EM)
     - DBSCAN
     - OPTICS
     - Mean-shift  
@@ -102,7 +84,7 @@ References:
 * Mitchell, T. <a href="http://www.cs.cmu.edu/~tom/10701_sp11/lectures.shtml" target="__blank">10-701 - Machine Learning</a>. Carnegie Mellon University.
 
 &emsp;<a name="DL"></a>
-### Deep Learning
+## Deep Learning
 
 - [**Basics of NN**](/DL/ANN/)
     
@@ -208,44 +190,4 @@ References:
 * Goodfellow, I. Bengio, Y. Courville, A. <a href="http://www.deeplearningbook.org/" target="__blank">Deep Learning</a>. MIT Press.
 
 &emsp;<a name="RL"></a>
-### Reinforcement Learning
-
-&emsp;<a name="AI"></a>
-### Artificial Intelligence
-- Problem-solving (search)
-- Logic
-- Planning
-- Reasoning & Uncertainty
-
-&emsp;<a name="invest"></a>
-### Investment Science
-
-- [Deterministic Cash Flows](/invest/deterministic_cf/)    
-- [Single-Period Random Cash Flows](/invest/random_cf/)  
-- [Derivative Securities](/invest/devsec/)  
-- [General Cash Flow Streams](/invest/general_cf/)
-
-References:
-* Luenberger, D. G., <i>Investment Science</i>. Oxford University Press.
-
-&emsp;<a name="quant"></a>
-### Quantitative Finance
-
-- [Preliminary Math]
-- [Stochastic Calculus]
-- [Time Series Analysis]
-- [Regression Analysis]
-- [Volatility Modeling]
-- [Risk Models]
-- [Pricing Models]
-- [Commodity Models]
-- [Portfolio Theory]
-- [Factor Models]
-- [Ito Calculus]
-- [Black-Scholes Model]
-- [Quanto Credit Hedging]
-
-References:
-* Wilmott, P. <i>Paul Wilmott on Quantitative Finance Vol 1-3</i>. 2nd Ed. John Wiley & Sons, Ltd.
-* Hull, J.C. <i>Options, Futures, and Other Derivatives</i>. 9th Global Ed. Pearson Education Limited.
-* Xia, J., Strela, V., Lee, C., Kempthorne, P. <a href="https://ocw.mit.edu/courses/mathematics/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/index.htm" target="__blank">18.S096 Topics in Mathematics with Applications in Finance</a>. Massachusetts Institute of Technology.
+## Reinforcement Learning
