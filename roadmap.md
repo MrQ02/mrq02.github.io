@@ -16,11 +16,12 @@ header-includes:
 
 - **Supervised Learning**
 
-    - **Regression**
+    - [**Regression**](/ML/reg/)
     
-        - [Linear Regression](/ML/linreg/)
+        - [Linear Regression](/ML/reg/#linreg)
+        - [Polynomial Regression](/ML/reg/#poly)
+        - [Locally Weighted Linear Regression](/ML/reg/#lwr)
         - [Logistic Regression](/ML/logreg/)
-        - [Polynomial Regression](/ML/poly/)
         - [Ridge Regression](/ML/ridge/)
         - [LASSO Regression](/ML/lasso/)
         - [Generalized Linear Models](/ML/GLM/)  
