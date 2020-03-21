@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-19T22:31:47+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">Financial Foundations</title><link href="http://localhost:4000/quant/foundation/" rel="alternate" type="text/html" title="Financial Foundations" /><published>2020-03-18T22:29:53+09:00</published><updated>2020-03-18T22:29:53+09:00</updated><id>http://localhost:4000/quant/quant-foundation</id><content type="html" xml:base="http://localhost:4000/quant/foundation/">&lt;p&gt;Roadmap:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-21T15:19:10+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">Financial Foundations</title><link href="http://localhost:4000/quant/foundation/" rel="alternate" type="text/html" title="Financial Foundations" /><published>2020-03-18T22:29:53+09:00</published><updated>2020-03-18T22:29:53+09:00</updated><id>http://localhost:4000/quant/quant-foundation</id><content type="html" xml:base="http://localhost:4000/quant/foundation/">&lt;p&gt;Roadmap:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#tvm&quot;&gt;Time Value of Money&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#ff&quot;&gt;Forwards &amp;amp; Futures&lt;/a&gt;&lt;/li&gt;
@@ -1943,7 +1943,143 @@ W := W-\alpha\frac{\partial\mathcal{L}}{\partial W}
  W&amp;=W-\alpha\frac{\partial\mathcal{L}}{\partial W}
  \end{align} %]]&gt;&lt;/script&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">Claim: The dimensions used in this notebook are of my personal preference. They can be modified in whatever way you want as long as they are in consistency.</summary></entry><entry><title type="html">Regression</title><link href="http://localhost:4000/ML/reg/" rel="alternate" type="text/html" title="Regression" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-linreg</id><content type="html" xml:base="http://localhost:4000/ML/reg/">&lt;p&gt;Claim: some of the images in this session are cited from ColumbiaX’s &lt;a href=&quot;https://www.edx.org/micromasters/columbiax-artificial-intelligence&quot; target=&quot;__blank&quot;&gt;Artificial Intelligence MicroMasters Program&lt;/a&gt;.&lt;/p&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Claim: The dimensions used in this notebook are of my personal preference. They can be modified in whatever way you want as long as they are in consistency.</summary></entry><entry><title type="html">Regression</title><link href="http://localhost:4000/ML/logreg/" rel="alternate" type="text/html" title="Regression" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-logreg</id><content type="html" xml:base="http://localhost:4000/ML/logreg/">&lt;p&gt;Roadmap:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#linreg&quot;&gt;Linear Regression&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#linreg&quot;&gt;Problem Setting&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#linreg&quot;&gt;Model&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#learn&quot;&gt;Learning&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#gd&quot;&gt;Gradient Descent&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#newton&quot;&gt;Newton’s Method&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#normal&quot;&gt;Normal Equation&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#prob&quot;&gt;Probabilistic Interpretation&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#code&quot;&gt;Code Template&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; &lt;a name=&quot;logreg&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;logistic-regression-classification&quot;&gt;Logistic Regression (Classification)&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Model&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  \hat{y}=g(w^Tx)
+  \end{equation}&lt;/script&gt;
+
+    &lt;p&gt;$g(z)$: a function that converts $w^Tx$ to binary value&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Sigmoid Function (see Deep Learning for more funcs)&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  g(z)=\sigma(z)=\frac{1}{1+e^{-z}}
+  \end{equation}&lt;/script&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Derivative (you will know why we need this in Deep Learning)&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  g'(z)&amp;=\frac{d}{dz}\frac{1}{1+e^{-z}} \\
+  &amp;=\frac{e^{-z}(+1-1)}{(1+e^{-z})^2} \\
+  &amp;=g(z)(1-g(z))
+  \end{align} %]]&gt;&lt;/script&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Cost Function&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;single training example (derivation later)&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ \mathcal{L}(\hat{y},y)=-(y\log{\hat{y}}+(1-y)\log{(1-\hat{y})})
+ \end{equation}&lt;/script&gt;
+
+        &lt;p&gt;If $y=1\rightarrow\mathcal{L}(\hat{y},y)=-\log{\hat{y}}\rightarrow$ want “$\mathcal{L}\downarrow\leftrightarrow\hat{y}\uparrow$”$\rightarrow\hat{y}=1$ &lt;br /&gt;
+ If $y=0\rightarrow\mathcal{L}(\hat{y},y)=-\log{(1-\hat{y})}\rightarrow$ want “$\mathcal{L}\downarrow\leftrightarrow\hat{y}\downarrow$”$\rightarrow\hat{y}=0$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;entire training set&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ \mathcal{J}(w)=\frac{1}{m}\sum_{i=1}^{m}\mathcal{L}(\hat{y}^{(i)},y^{(i)})=\text{mean}(\mathcal{L})
+ \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Probabilistic Interpretation&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;Assumptions&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ P(y=1|x,w)&amp;=\hat{y} \\
+ P(y=0|x,w)&amp;=1-\hat{y}
+ \end{align} %]]&gt;&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Probabilistic Model of LogReg&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ p(y|x,w)=\hat{y}^y(1-\hat{y})^{1-y}
+ \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Likelihood Function&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ L(w)=\prod_{i=1}^{m}(\hat{y}^{(i)})^{y^{(i)}}(1-\hat{y}^{(i)})^{1-y^{(i)}}
+ \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Log Likelihood&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ l(w)&amp;=\sum_{i=1}^{m}(y^{(i)}\log{\hat{y}^{(i)}}+(1-y^{(i)})\log{(1-\hat{y}^{(i)})}) \\
+ l(w)&amp;=-\sum_{i=1}^{m}\mathcal{L}(\hat{y},y)
+ \end{align} %]]&gt;&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;MLE&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ \frac{\partial l(w)}{\partial w_j}&amp;=(\frac{y}{g(w^Tx)}-\frac{1-y}{1-g(w^Tx)})\frac{\partial g(w^Tx)}{\partial w_j} \\
+ &amp;=(\frac{y}{g(w^Tx)}-\frac{1-y}{1-g(w^Tx)})g(w^Tx)(1-g(w^Tx))\frac{\partial(w^Tx)}{\partial w_j} \\
+ &amp;=(y(1-g(w^Tx))-(1-y)g(w^Tx))x_j \\
+ &amp;=(y-\hat{y})x_j
+ \end{align} %]]&gt;&lt;/script&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Gradient Descent&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  w_j &amp;:= w_j-\alpha\frac{\partial\mathcal{L}(w)}{\partial w_j} \\
+  &amp;=w_j+\alpha(y-\hat{y})x_j
+  \end{align} %]]&gt;&lt;/script&gt;
+
+    &lt;p&gt;Why is it also called “Gradient Ascent”?&lt;br /&gt;
+  $\because$ we are trying to minimize the loss function $\Leftrightarrow$ maximize the likelihood function&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Roadmap: Linear Regression Problem Setting Model Learning Gradient Descent Newton’s Method Normal Equation Probabilistic Interpretation Code Template</summary></entry><entry><title type="html">Regression</title><link href="http://localhost:4000/ML/reg/" rel="alternate" type="text/html" title="Regression" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-reg</id><content type="html" xml:base="http://localhost:4000/ML/reg/">&lt;p&gt;Claim: some of the images in this session are cited from ColumbiaX’s &lt;a href=&quot;https://www.edx.org/micromasters/columbiax-artificial-intelligence&quot; target=&quot;__blank&quot;&gt;Artificial Intelligence MicroMasters Program&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Roadmap:&lt;/p&gt;
 &lt;ul&gt;
@@ -1958,7 +2094,8 @@ W := W-\alpha\frac{\partial\mathcal{L}}{\partial W}
           &lt;li&gt;&lt;a href=&quot;#normal&quot;&gt;Normal Equation&lt;/a&gt;&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#prob&quot;&gt;Probabilistic Interpretation&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#probabi&quot;&gt;Probabilistic Interpretation&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#regular&quot;&gt;Regularization&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#code&quot;&gt;Code Template&lt;/a&gt;&lt;br /&gt;
 &lt;br /&gt;&lt;/li&gt;
     &lt;/ul&gt;
@@ -1974,7 +2111,17 @@ W := W-\alpha\frac{\partial\mathcal{L}}{\partial W}
   &lt;li&gt;&lt;a href=&quot;#lwr&quot;&gt;Locally Weighted Linear Regression&lt;/a&gt;
     &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#lwrprob&quot;&gt;Problem Setting &amp;amp; Intuition&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#lwrloss&quot;&gt;Loss function: weighted LS&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#lwrmodel&quot;&gt;Model: Weighted LS&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#lwrcode&quot;&gt;Code Template&lt;/a&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#ridge&quot;&gt;Ridge Regression&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#ridgeprob&quot;&gt;Problem Setting&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ridgemodel&quot;&gt;Model&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ridgesol&quot;&gt;Solution&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ridgeprep&quot;&gt;Preprocessing&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -2178,7 +2325,7 @@ W := W-\alpha\frac{\partial\mathcal{L}}{\partial W}
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a name=&quot;prob&quot;&gt;&lt;/a&gt;&lt;strong&gt;Probabilistic Interpretation&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a name=&quot;probabi&quot;&gt;&lt;/a&gt;&lt;strong&gt;Probabilistic Interpretation&lt;/strong&gt;&lt;/p&gt;
 
     &lt;ol&gt;
       &lt;li&gt;
@@ -2233,10 +2380,84 @@ W := W-\alpha\frac{\partial\mathcal{L}}{\partial W}
 \begin{align}
  \mathop{\arg\max}_ {w}\mathcal{l}(w)&amp;=\mathop{\arg\max}_ {w}(m\log{\frac{1}{\sqrt{2\pi}\sigma}}-\frac{1}{2\sigma^2}\sum_{i=1}^{m}(y_i-w^Tx_i)^2) \\
  &amp;=\mathop{\arg\max}_ {w}(-\sum_{i=1}^{m}(y_i-w^Tx_i)^2) \\
- &amp;=\mathop{\arg\min}_ {w}\sum_{i=1}^{m}(y_i-w^Tx_i)^2
+ &amp;=\mathop{\arg\min}_ {w}\sum_{i=1}^{m}(y_i-w^Tx_i)^2 \\
+ &amp;=\mathop{\arg\min}_ {w}\|{y-Xw}\|^2
+ \end{align} %]]&gt;&lt;/script&gt;
+
+        &lt;p&gt;$\Rightarrow$ Least Squares &amp;amp; Maximum Likelihood share the exact same solution.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;Expected Value&lt;/strong&gt;:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ \mathbb{E}[w_{ML}]&amp;=\mathbb{E}[(X^TX)^{-1}X^Ty] \\
+ &amp;=(X^TX)^{-1}X^TXw \\
+ &amp;=w
  \end{align} %]]&gt;&lt;/script&gt;
       &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;Variance&lt;/strong&gt;:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ \text{Var}[w_{ML}]&amp;=\mathbb{E}[(w_{ML}-\mathbb{E}[w_{ML}])(w_{ML}-\mathbb{E}[w_{ML}])^T] \\
+ &amp;=\mathbb{E}[w_{ML}w_{ML}^T]-\mathbb{E}[w_{ML}]\mathbb{E}[w_{ML}]^T \\
+ &amp;=(X^TX)^{-1}X^T\mathbb{E}[yy^T]X(X^TX)^{-1}-ww^T \\
+ &amp;=(X^TX)^{-1}X^T(\sigma^2I+Xww^TX^T)X(X^TX)^{-1}-ww^T\ \ (1) \\
+ &amp;=\sigma^2(X^TX)^{-1} \\
+ \end{align} %]]&gt;&lt;/script&gt;
+
+        &lt;p&gt;$(1)$:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ \sigma=\text{Var}[y]&amp;=\mathbb{E}[(y-\mu)(y-\mu)^T] \\
+ &amp;=\mathbb{E}[yy^T]-2\mu\mu^T+\mu\mu^T \\
+ \Rightarrow \mathbb{E}[yy^T]&amp;=\sigma+\mu\mu^T \\
+ \end{align} %]]&gt;&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;Summary&lt;/strong&gt;:&lt;/p&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;p&gt;Assumption: Gaussian - $y\ ~\ N(Xw, \sigma^2I)$&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;Expected Value: $\mathbb{E}[w_{ML}]=w$&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;Variance: $\text{Var}[w_{ML}]=\sigma^2(X^TX)^{-1}$&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;Problem: Notice how $w_{ML}$ becomes huge when our variance $\sigma^2(X^TX)^{-1}$ is too large.&lt;/p&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
     &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a name=&quot;regular&quot;&gt;&lt;/a&gt;&lt;strong&gt;Regularization&lt;/strong&gt;:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;u&gt;Intuition&lt;/u&gt;: in order to prevent the problem above, we want to constrain our model parameters $w$:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  w_{op}=\mathop{\arg\min}_ {w}\|{y-Xw}\|^2+\lambda g(w)
+  \end{equation}&lt;/script&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;$\lambda&amp;gt;0$: regularization parameter&lt;/li&gt;
+          &lt;li&gt;$g(w)&amp;gt;0$: penalty function&lt;br /&gt;
+  &lt;br /&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;u&gt;Sample Regularizations&lt;/u&gt;: Ridge Regression, LASSO Regression, …&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a name=&quot;code&quot;&gt;&lt;/a&gt;&lt;strong&gt;Code Template&lt;/strong&gt;:&lt;/p&gt;
@@ -2330,7 +2551,7 @@ W := W-\alpha\frac{\partial\mathcal{L}}{\partial W}
     &lt;p&gt;&lt;a name=&quot;polyex&quot;&gt;&lt;/a&gt;&lt;strong&gt;Further Extensions&lt;/strong&gt;: we can generalize our linear regression model as:&lt;/p&gt;
 
     &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  \hat{y}_ i\approx f(x_i,w)=\sum_{s=1}^S{g_s(x_i)}w_s)
+  \hat{y}_ i\approx f(x_i,w)=\sum_{s=1}^S{g_s(x_i)w_s}
   \end{equation}&lt;/script&gt;
 
     &lt;p&gt;where $g_s(x_i)$ can be any function of $x_i$, such as $e^{x_{ij}},\ \log{x_{ij}},\ …$.&lt;/p&gt;
@@ -2367,7 +2588,7 @@ W := W-\alpha\frac{\partial\mathcal{L}}{\partial W}
     &lt;p&gt;&lt;strong&gt;Intuition&lt;/strong&gt;: When we would like to estimate $y$ at a certain $x$, instead of applying the original LinReg, we take a subset of data points $(x_i,y_i)$ around $x$ and try to do LinReg on that subset only so that we can get a more accurate estimation.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a name=&quot;lwrloss&quot;&gt;&lt;/a&gt;&lt;strong&gt;Loss Function: Weighted LS&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a name=&quot;lwrmodel&quot;&gt;&lt;/a&gt;&lt;strong&gt;Model: Weighted LS&lt;/strong&gt;&lt;/p&gt;
 
     &lt;ul&gt;
       &lt;li&gt;
@@ -2390,7 +2611,7 @@ W := W-\alpha\frac{\partial\mathcal{L}}{\partial W}
 
         &lt;ul&gt;
           &lt;li&gt;
-            &lt;p&gt;&lt;strong&gt;numerator&lt;/strong&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;strong&gt;Numerator&lt;/strong&gt;:&lt;/p&gt;
 
             &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
 \begin{align}
@@ -2399,149 +2620,132 @@ W := W-\alpha\frac{\partial\mathcal{L}}{\partial W}
   \end{align} %]]&gt;&lt;/script&gt;
           &lt;/li&gt;
           &lt;li&gt;
-            &lt;p&gt;&lt;strong&gt;bandwidth parameter&lt;/strong&gt;: $\tau$ (how fast the weight of $x_i$ falls off the query point $x$)&lt;/p&gt;
+            &lt;p&gt;&lt;strong&gt;Bandwidth Parameter&lt;/strong&gt;: $\tau$ (how fast the weight of $x_i$ falls off the query point $x$)&lt;/p&gt;
+
+            &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  &amp;\text{When}\ \tau &gt; &gt; 1, \text{LWR} \approx \text{LinReg} \\
+  &amp;\text{When}\ \tau &lt; &lt; 1, \text{LWR} \rightarrow \text{overfitting}
+  \end{align} %]]&gt;&lt;/script&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;&lt;strong&gt;Exact Solution&lt;/strong&gt;:&lt;/p&gt;
+
+            &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  \DeclareMathOperator{\Tr}{tr}
+  \nabla_w\mathcal{L}(w)&amp;=\nabla_w \mathcal{W}(Xw-y)^T(Xw-y) \\
+  &amp;\Rightarrow X^T\mathcal{W}Xw-X^T\mathcal{W}y=0 \\
+  \Rightarrow w&amp;=(X^T\mathcal{W}X)^{-1}X^T\mathcal{W}y
+  \end{align} %]]&gt;&lt;/script&gt;
           &lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Claim: some of the images in this session are cited from ColumbiaX’s Artificial Intelligence MicroMasters Program.</summary></entry><entry><title type="html">Regression</title><link href="http://localhost:4000/ML/logreg/" rel="alternate" type="text/html" title="Regression" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-logreg</id><content type="html" xml:base="http://localhost:4000/ML/logreg/">&lt;p&gt;Roadmap:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#linreg&quot;&gt;Linear Regression&lt;/a&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a name=&quot;lwrcode&quot;&gt;&lt;/a&gt;&lt;strong&gt;Code Template&lt;/strong&gt;&lt;/p&gt;
+
     &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#linreg&quot;&gt;Problem Setting&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#linreg&quot;&gt;Model&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#learn&quot;&gt;Learning&lt;/a&gt;
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#gd&quot;&gt;Gradient Descent&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#newton&quot;&gt;Newton’s Method&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#normal&quot;&gt;Normal Equation&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Python: for simple linreg ($n=1$)&lt;/p&gt;
+
+        &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;get_weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_ref&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tau&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zeros&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;exp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_ref&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tau&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;
+            
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;lwr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tau&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;y_est&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zeros&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get_weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tau&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linalg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;inv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;y_est&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Change this line when n&amp;gt;1
+&lt;/span&gt;      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y_est&lt;/span&gt;
+        
+  &lt;span class=&quot;o&quot;&gt;......&lt;/span&gt;
+        
+  &lt;span class=&quot;n&quot;&gt;tau&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# The optimal is 1 imo but change whenever necessary
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;y_lwr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lwr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tau&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
       &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#prob&quot;&gt;Probabilistic Interpretation&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#code&quot;&gt;Code Template&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt; &lt;a name=&quot;logreg&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;logistic-regression-classification&quot;&gt;Logistic Regression (Classification)&lt;/h2&gt;
+&lt;p&gt; &lt;a name=&quot;ridge&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;ridge-regression&quot;&gt;Ridge Regression&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;Model&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  \hat{y}=g(w^Tx)
-  \end{equation}&lt;/script&gt;
-
-    &lt;p&gt;$g(z)$: a function that converts $w^Tx$ to binary value&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Sigmoid Function (see Deep Learning for more funcs)&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  g(z)=\sigma(z)=\frac{1}{1+e^{-z}}
-  \end{equation}&lt;/script&gt;
+    &lt;p&gt;&lt;a name=&quot;ridgeprob&quot;&gt;&lt;/a&gt;&lt;strong&gt;Problem Setting&lt;/strong&gt;&lt;/p&gt;
 
     &lt;ul&gt;
       &lt;li&gt;
-        &lt;p&gt;Derivative (you will know why we need this in Deep Learning)&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  g'(z)&amp;=\frac{d}{dz}\frac{1}{1+e^{-z}} \\
-  &amp;=\frac{e^{-z}(+1-1)}{(1+e^{-z})^2} \\
-  &amp;=g(z)(1-g(z))
-  \end{align} %]]&gt;&lt;/script&gt;
+        &lt;p&gt;The OLS LinReg method gives us an accurate expected value: $\mathbb{E}[w_{ML}]=w$.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;However, the &lt;strong&gt;variance&lt;/strong&gt; $\text{Var}[w_{ML}]=\sigma^2(X^TX)^{-1}$ could be &lt;strong&gt;too large&lt;/strong&gt; that it ruins our model parameters.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Ridge Regression $\in$ &lt;a href=&quot;#regular&quot;&gt;regularization&lt;/a&gt; methods&lt;/p&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Cost Function&lt;/p&gt;
+    &lt;p&gt;&lt;a name=&quot;ridgemodel&quot;&gt;&lt;/a&gt;&lt;strong&gt;Model&lt;/strong&gt;&lt;/p&gt;
 
-    &lt;ol&gt;
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  w_{RR}=\mathop{\arg\min}_ {w}\|{y-Xw}\|^2+\lambda\|w\|^2
+  \end{equation}&lt;/script&gt;
+
+    &lt;ul&gt;
       &lt;li&gt;
-        &lt;p&gt;single training example (derivation later)&lt;/p&gt;
+        &lt;p&gt;$\lambda$: regularization parameter:&lt;/p&gt;
 
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- \mathcal{L}(\hat{y},y)=-(y\log{\hat{y}}+(1-y)\log{(1-\hat{y})})
- \end{equation}&lt;/script&gt;
-
-        &lt;p&gt;If $y=1\rightarrow\mathcal{L}(\hat{y},y)=-\log{\hat{y}}\rightarrow$ want “$\mathcal{L}\downarrow\leftrightarrow\hat{y}\uparrow$”$\rightarrow\hat{y}=1$ &lt;br /&gt;
- If $y=0\rightarrow\mathcal{L}(\hat{y},y)=-\log{(1-\hat{y})}\rightarrow$ want “$\mathcal{L}\downarrow\leftrightarrow\hat{y}\downarrow$”$\rightarrow\hat{y}=0$&lt;/p&gt;
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  &amp;\text{If}\ \lambda\rightarrow0\ \ \Longrightarrow w_{RR}\rightarrow w_{LS} \\
+  &amp;\text{If}\ \lambda\rightarrow\infty \Longrightarrow w_{RR}\rightarrow \bf{0}
+  \end{align} %]]&gt;&lt;/script&gt;
       &lt;/li&gt;
       &lt;li&gt;
-        &lt;p&gt;entire training set&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- \mathcal{J}(w)=\frac{1}{m}\sum_{i=1}^{m}\mathcal{L}(\hat{y}^{(i)},y^{(i)})=\text{mean}(\mathcal{L})
- \end{equation}&lt;/script&gt;
+        &lt;p&gt;$g(w)=\|w\|^2$: penalty function&lt;/p&gt;
       &lt;/li&gt;
-    &lt;/ol&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Probabilistic Interpretation&lt;/p&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;
-        &lt;p&gt;Assumptions&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
- P(y=1|x,w)&amp;=\hat{y} \\
- P(y=0|x,w)&amp;=1-\hat{y}
- \end{align} %]]&gt;&lt;/script&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Probabilistic Model of LogReg&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- p(y|x,w)=\hat{y}^y(1-\hat{y})^{1-y}
- \end{equation}&lt;/script&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Likelihood Function&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- L(w)=\prod_{i=1}^{m}(\hat{y}^{(i)})^{y^{(i)}}(1-\hat{y}^{(i)})^{1-y^{(i)}}
- \end{equation}&lt;/script&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Log Likelihood&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
- l(w)&amp;=\sum_{i=1}^{m}(y^{(i)}\log{\hat{y}^{(i)}}+(1-y^{(i)})\log{(1-\hat{y}^{(i)})}) \\
- l(w)&amp;=-\sum_{i=1}^{m}\mathcal{L}(\hat{y},y)
- \end{align} %]]&gt;&lt;/script&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;MLE&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
- \frac{\partial l(w)}{\partial w_j}&amp;=(\frac{y}{g(w^Tx)}-\frac{1-y}{1-g(w^Tx)})\frac{\partial g(w^Tx)}{\partial w_j} \\
- &amp;=(\frac{y}{g(w^Tx)}-\frac{1-y}{1-g(w^Tx)})g(w^Tx)(1-g(w^Tx))\frac{\partial(w^Tx)}{\partial w_j} \\
- &amp;=(y(1-g(w^Tx))-(1-y)g(w^Tx))x_j \\
- &amp;=(y-\hat{y})x_j
- \end{align} %]]&gt;&lt;/script&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Gradient Descent&lt;/p&gt;
+    &lt;p&gt;&lt;a name=&quot;ridgesol&quot;&gt;&lt;/a&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/p&gt;
 
     &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
 \begin{align}
-  w_j &amp;:= w_j-\alpha\frac{\partial\mathcal{L}(w)}{\partial w_j} \\
-  &amp;=w_j+\alpha(y-\hat{y})x_j
+  \mathcal{L}&amp;=(y-Xw)^T(y-Xw)+\lambda w^Tw \\
+  \nabla_w\mathcal{L}&amp;=-2X^Ty+2X^TXw+2\lambda w=0 \\
+  \Rightarrow w_{RR}&amp;=(X^TX+\lambda I)^{-1}X^yT
   \end{align} %]]&gt;&lt;/script&gt;
-
-    &lt;p&gt;Why is it also called “Gradient Ascent”?&lt;br /&gt;
-  $\because$ we are trying to minimize the loss function $\Leftrightarrow$ maximize the likelihood function&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Roadmap: Linear Regression Problem Setting Model Learning Gradient Descent Newton’s Method Normal Equation Probabilistic Interpretation Code Template</summary></entry><entry><title type="html">Glossary of Finance</title><link href="http://localhost:4000/quant/finance/" rel="alternate" type="text/html" title="Glossary of Finance" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/quant/quant-finance</id><content type="html" xml:base="http://localhost:4000/quant/finance/">&lt;p&gt;Roadmap:&lt;/p&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a name=&quot;ridgeprep&quot;&gt;&lt;/a&gt;&lt;strong&gt;Data Preprocessing: Standardization&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;$y$:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  y\leftarrow y-\frac{1}{n}\sum_{i=1}^n{y_i}
+  \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$x$:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  x_{ij}\leftarrow \frac{x_{ij}-\bar{x}_ j}{\sqrt{\frac{1}{n}\sum_{i=1}^n{(x_{ij}-\bar{x}_ j)^2}}}
+  \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Claim: some of the images in this session are cited from ColumbiaX’s Artificial Intelligence MicroMasters Program.</summary></entry><entry><title type="html">Glossary of Finance</title><link href="http://localhost:4000/quant/finance/" rel="alternate" type="text/html" title="Glossary of Finance" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/quant/quant-finance</id><content type="html" xml:base="http://localhost:4000/quant/finance/">&lt;p&gt;Roadmap:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Financial Markets&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#ff&quot;&gt;Forwards &amp;amp; Futures&lt;/a&gt;&lt;/li&gt;
