@@ -21,8 +21,7 @@ header-includes:
         - [Linear Regression](/ML/reg/#linreg)
         - [Polynomial Regression](/ML/reg/#poly)
         - [Locally Weighted Linear Regression](/ML/reg/#lwr)
-        - [Logistic Regression](/ML/logreg/)
-        - [Ridge Regression](/ML/ridge/)
+        - [Ridge Regression](/ML/reg/#ridge)
         - [LASSO Regression](/ML/lasso/)
         - [Generalized Linear Models](/ML/GLM/)  
     <br/>

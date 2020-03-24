@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-23T17:49:29+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">Financial Foundations</title><link href="http://localhost:4000/quant/foundation/" rel="alternate" type="text/html" title="Financial Foundations" /><published>2020-03-18T22:29:53+09:00</published><updated>2020-03-18T22:29:53+09:00</updated><id>http://localhost:4000/quant/quant-foundation</id><content type="html" xml:base="http://localhost:4000/quant/foundation/">&lt;p&gt;Roadmap:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-24T18:41:40+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">Financial Foundations</title><link href="http://localhost:4000/quant/foundation/" rel="alternate" type="text/html" title="Financial Foundations" /><published>2020-03-18T22:29:53+09:00</published><updated>2020-03-18T22:29:53+09:00</updated><id>http://localhost:4000/quant/quant-foundation</id><content type="html" xml:base="http://localhost:4000/quant/foundation/">&lt;p&gt;Roadmap:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#tvm&quot;&gt;Time Value of Money&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#ff&quot;&gt;Forwards &amp;amp; Futures&lt;/a&gt;&lt;/li&gt;
@@ -2130,7 +2130,7 @@ W := W-\alpha\frac{\partial\mathcal{L}}{\partial W}
 &lt;/ul&gt;
 
 &lt;p&gt; &lt;a name=&quot;linreg&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;linear-regression&quot;&gt;Linear Regression&lt;/h3&gt;
+&lt;h2 id=&quot;linear-regression&quot;&gt;Linear Regression&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -2458,7 +2458,8 @@ W := W-\alpha\frac{\partial\mathcal{L}}{\partial W}
         &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li&gt;
-        &lt;p&gt;&lt;u&gt;Sample Regularizations&lt;/u&gt;: Ridge Regression, LASSO Regression, …&lt;/p&gt;
+        &lt;p&gt;&lt;u&gt;Sample Regularizations&lt;/u&gt;: Ridge Regression, LASSO Regression, …&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
@@ -2487,7 +2488,7 @@ W := W-\alpha\frac{\partial\mathcal{L}}{\partial W}
 &lt;/ul&gt;
 
 &lt;p&gt; &lt;a name=&quot;poly&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;polynomial-regression&quot;&gt;Polynomial Regression&lt;/h3&gt;
+&lt;h2 id=&quot;polynomial-regression&quot;&gt;Polynomial Regression&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -2564,7 +2565,7 @@ W := W-\alpha\frac{\partial\mathcal{L}}{\partial W}
 &lt;/ul&gt;
 
 &lt;p&gt; &lt;a name=&quot;lwr&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;locally-weighted-linear-regression&quot;&gt;Locally Weighted Linear Regression&lt;/h3&gt;
+&lt;h2 id=&quot;locally-weighted-linear-regression&quot;&gt;Locally Weighted Linear Regression&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -2678,7 +2679,7 @@ W := W-\alpha\frac{\partial\mathcal{L}}{\partial W}
 &lt;/ul&gt;
 
 &lt;p&gt; &lt;a name=&quot;ridge&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;ridge-regression&quot;&gt;Ridge Regression&lt;/h3&gt;
+&lt;h2 id=&quot;ridge-regression&quot;&gt;Ridge Regression&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -2700,7 +2701,7 @@ W := W-\alpha\frac{\partial\mathcal{L}}{\partial W}
     &lt;p&gt;&lt;strong&gt;Model&lt;/strong&gt;&lt;/p&gt;
 
     &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  w_{RR}=\mathop{\arg\min}_ {w}\|{y-Xw}\|^2+\lambda\|w\|^2
+  w_{RR}=\mathop{\arg\min}_ {w}\|{y-Xw}\|^2+\lambda\|w\|^2_2
   \end{equation}&lt;/script&gt;
 
     &lt;ul&gt;
@@ -2714,7 +2715,7 @@ W := W-\alpha\frac{\partial\mathcal{L}}{\partial W}
   \end{align} %]]&gt;&lt;/script&gt;
       &lt;/li&gt;
       &lt;li&gt;
-        &lt;p&gt;$g(w)=\|w\|^2$: penalty function&lt;/p&gt;
+        &lt;p&gt;$g(w)=\|w\|^2_2$: L2 penalty function&lt;/p&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
@@ -2736,18 +2737,22 @@ W := W-\alpha\frac{\partial\mathcal{L}}{\partial W}
         &lt;p&gt;$y$:&lt;/p&gt;
 
         &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  y\leftarrow y-\frac{1}{n}\sum_{i=1}^n{y_i}
+  y\leftarrow y-\frac{1}{m}\sum_{i=1}^m{y_i}
   \end{equation}&lt;/script&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;$x$:&lt;/p&gt;
 
         &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  x_{ij}\leftarrow \frac{x_{ij}-\bar{x}_ j}{\sqrt{\frac{1}{n}\sum_{i=1}^n{(x_{ij}-\bar{x}_ j)^2}}}
+  x_{ij}\leftarrow \frac{x_{ij}-\bar{x}_ j}{\sqrt{\frac{1}{m}\sum_{i=1}^m{(x_{ij}-\bar{x}_ j)^2}}}
   \end{equation}&lt;/script&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a name=&quot;svd&quot;&gt;&lt;/a&gt;&lt;strong&gt;Singular Value Decomposition&lt;/strong&gt;&lt;/p&gt;
 
@@ -2756,7 +2761,7 @@ W := W-\alpha\frac{\partial\mathcal{L}}{\partial W}
         &lt;p&gt;&lt;u&gt;Definition&lt;/u&gt;: We can write any $n\times d\ (n&amp;gt;d)$ matrix $X$ as $X=USV^T$.&lt;/p&gt;
 
         &lt;ul&gt;
-          &lt;li&gt;$U$: left singular vectors $(n\times r)$
+          &lt;li&gt;$U$: left singular vectors $(m\times r)$
             &lt;ul&gt;
               &lt;li&gt;orthonormal in cols (i.e. $U^TU=I$)&lt;/li&gt;
             &lt;/ul&gt;
@@ -2767,13 +2772,13 @@ W := W-\alpha\frac{\partial\mathcal{L}}{\partial W}
               &lt;li&gt;sorted in decreasing order (i.e. $\sigma_1\geq\sigma_2\geq\cdots\geq0$)&lt;/li&gt;
             &lt;/ul&gt;
           &lt;/li&gt;
-          &lt;li&gt;$V$: right singular vectors $(d\times r)$
+          &lt;li&gt;$V$: right singular vectors $(n\times r)$
             &lt;ul&gt;
               &lt;li&gt;orthonormal (i.e. $V^TV=VV^T=I$)&lt;/li&gt;
             &lt;/ul&gt;
           &lt;/li&gt;
-          &lt;li&gt;$n$: #samples&lt;/li&gt;
-          &lt;li&gt;$d$: #features&lt;/li&gt;
+          &lt;li&gt;$m$: #samples&lt;/li&gt;
+          &lt;li&gt;$n$: #features&lt;/li&gt;
           &lt;li&gt;$r$: #concepts $(r=\text{rank}(X))$&lt;/li&gt;
           &lt;li&gt;$\sigma_i$: the strength of the $i$th concept&lt;br /&gt;
   &lt;br /&gt;&lt;/li&gt;
@@ -2851,7 +2856,7 @@ W := W-\alpha\frac{\partial\mathcal{L}}{\partial W}
           &lt;/li&gt;
           &lt;li&gt;$XV=US^2\Rightarrow$ calculate $U$&lt;/li&gt;
           &lt;li&gt;GG.&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
         &lt;/ol&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
@@ -2865,7 +2870,7 @@ W := W-\alpha\frac{\partial\mathcal{L}}{\partial W}
 
     &lt;ul&gt;
       &lt;li&gt;
-        &lt;p&gt;&lt;u&gt;Problems&lt;/u&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;u&gt;Problems with LS&lt;/u&gt;:&lt;/p&gt;
 
         &lt;ol&gt;
           &lt;li&gt;
@@ -2874,9 +2879,94 @@ W := W-\alpha\frac{\partial\mathcal{L}}{\partial W}
             &lt;p&gt;When $S_{ii}$ is very small for some values of $i$, $\text{Var}[w_{ML}]$ is very large.&lt;/p&gt;
           &lt;/li&gt;
           &lt;li&gt;
-            &lt;p&gt;$y_{\text{new}}=$&lt;/p&gt;
+            &lt;p&gt;$y_{\text{new}}=x_{\text{new}}^Tw_{LS}=x_{\text{new}}^T(X^TX)^{-1}X^Ty=x_{\text{new}}^TVS^{-1}U^Ty$&lt;/p&gt;
+
+            &lt;p&gt;When $S^{-1}$ has very large values, our prediction will be very unstable.
+  &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
           &lt;/li&gt;
         &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;u&gt;LS = a special case of RR&lt;/u&gt;:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  w_{\text{RR}}&amp;=(\lambda I+X^TX)^{-1}X^Ty \\
+  &amp;=(\lambda I+X^TX)^{-1}(X^TX)(X^TX)^{-1}X^Ty \\
+  &amp;=[(X^TX)(\lambda(X^TX)^{-1}+I)]^{-1}(X^TX)w_{\text{LS}} \\
+  &amp;=(\lambda(X^TX)^{-1}+I)^{-1}w_{\text{LS}} \\
+  &amp;=(\lambda VS^{-2}V^T+I)^{-1}w_{\text{LS}} \\
+  &amp;=V(\lambda S^{-2}+I)^{-1}V^Tw_{\text{LS}}\ \ \ \ \ \ \ \ \ |\ \ \ VV^T=I\\
+  &amp;:=VMV^Tw_{\text{LS}}
+  \end{align} %]]&gt;&lt;/script&gt;
+
+        &lt;p&gt;where $M=(\lambda S^{-2}+I)^{-1}$ is a diagonal matrix with $M_{ii}=\frac{S_{ii}^2}{\lambda+S_{ii}^2}$,&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  w_{\text{RR}}&amp;:=VMV^Tw_{\text{LS}} \\
+  &amp;=V(\lambda S^{-2}+I)^{-1}V^T(VS^{-1}U^Ty) \\
+  &amp;=VS^{-1}_ \lambda U^Ty \\
+  \end{align} %]]&gt;&lt;/script&gt;
+
+        &lt;p&gt;where $S_\lambda^{-1}$ is a diagonal matrix with $S_{ii}=\frac{S_{ii}}{\lambda+S_{ii}^2}$.&lt;/p&gt;
+
+        &lt;p&gt;Therefore, we get another clearer expression of the relationship between RR and LS:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  w_{\text{LS}}=VS^{-1}U^Ty\ \Leftrightarrow\ w_{\text{RR}}=VS_\lambda^{-1}U^Ty
+  \end{equation}&lt;/script&gt;
+
+        &lt;p&gt;And $w_{LS}$ is simply a special case of $w_{RR}$ where $\lambda=0$.
+  &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;u&gt;RR = a special case of LS&lt;/u&gt;:&lt;/p&gt;
+
+        &lt;p&gt;If we do some preprocessing to our model $\hat{y}\approx\hat{X}w$:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{equation}\begin{bmatrix}
+  y \\ 0 \\ \vdots \\ 0
+  \end{bmatrix}\approx\begin{bmatrix}
+  - &amp; X &amp; - \\ \sqrt{\lambda} &amp; &amp; 0 \\ &amp; \ddots &amp; \\ 0 &amp; &amp; \sqrt{\lambda}
+  \end{bmatrix}\begin{bmatrix}
+  w_1 \\ \vdots \\ w_n
+  \end{bmatrix}\end{equation} %]]&gt;&lt;/script&gt;
+
+        &lt;p&gt;Now we have the exact same loss function:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  (\hat{y}-\hat{X}w)^T(\hat{y}-\hat{X}w)=\|y-Xw\|^2+\lambda\|w\|^2
+  \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a name=&quot;code&quot;&gt;&lt;/a&gt;&lt;strong&gt;Code Template&lt;/strong&gt;:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Python&lt;/p&gt;
+
+        &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.linear_model&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Ridge&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;ridge_reg&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Ridge&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alpha&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;ridge_reg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;y_pred&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ridge_reg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;R&lt;/p&gt;
+
+        &lt;div class=&quot;language-R highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;glmnet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ridge_reg&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;glmnet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alpha&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lambda&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lambda&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;summary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pred&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ridge_reg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lambda&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
