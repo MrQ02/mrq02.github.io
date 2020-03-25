@@ -22,7 +22,7 @@ header-includes:
         - [Polynomial Regression](/ML/reg/#poly)
         - [Locally Weighted Linear Regression](/ML/reg/#lwr)
         - [Ridge Regression](/ML/reg/#ridge)
-        - [LASSO Regression](/ML/lasso/)
+        - [LASSO Regression](/ML/reg/#lasso)
         - [Generalized Linear Models](/ML/GLM/)  
     <br/>
     - **Classification**
