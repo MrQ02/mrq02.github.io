@@ -6,10 +6,14 @@ permalink: /roadmap/
 header-includes:
 - \usepackage{amsmath}
 ---
-#### Artificial Intelligence
+<br>
+**Main Directories:**
+- [**Probability & Statistics**](#PS)
 - [**Machine Learning**](#ML)
 - [**Deep Learning**](#DL)
-- [**Reinforcement Learning**](#RL)
+- Reinforcement Learning
+- [**Quantitative Finance**](#qf)
+- [**Neuroscience**](#neuro)
 
 &emsp;<a name="ML"></a>
 ## Machine Learning
@@ -25,16 +29,17 @@ header-includes:
         - [LASSO Regression](/ML/reg/#lasso)
         - [Generalized Linear Models](/ML/GLM/)  
     <br/>
-    - **Classification**
+    - [**Classification**](/ML/class/)
     
-        - [Logistic Regression](/ML/logreg)
-        - [Softmax Regression](/ML/softmax)
-        - [k-NN (k-Nearest Neighbors)](/ML/kNN/)
+        - [Logistic Regression](/ML/class/#logreg)
+        - [Softmax Regression](/ML/GLM/#softmax)
+        - [k-NN (k-Nearest Neighbors)](/ML/class/#knn)
+        - [GDA (Gaussian Discriminant Analysis)](/ML/class/#gda)
+        - [Naive Bayes Classifier](/ML/class/#nb)
         - [SVM (Support Vector Machine)](/ML/SVM/)
-        - [Naive Bayes Classifier](/ML/NB/)
-        - [Perceptron](/ML/perc/)
-        - [Decision Trees](/ML/trees/)
-        - [Ensembles](/ML/boost/)  
+        - Perceptron
+        - Decision Trees
+        - Ensembles (boosting)  
 <br/>
 - **Unsupervised Learning (Clustering)**  
 
@@ -189,5 +194,22 @@ References:
 * Andrew Ng. <a href="https://www.coursera.org/specializations/deep-learning" target="__blank">Deep Learning Specialization</a>. Coursera Inc.
 * Goodfellow, I. Bengio, Y. Courville, A. <a href="http://www.deeplearningbook.org/" target="__blank">Deep Learning</a>. MIT Press.
 
-&emsp;<a name="RL"></a>
-## Reinforcement Learning
+&emsp;<a name="qf"></a>
+## Quantitative Finance
+
+- [**Financial Foundations**](/quant/foundation/)
+
+References:
+* Wilmott, P. *Paul Wilmott on Quantitative Finance Vol 1-3, 2nd Ed*. John Wiley & Sons Ltd.
+
+&emsp;<a name="neuro"></a>
+## Neuroscience
+
+- [**Neuroanatomy**]
+- [**Neural Signaling**]
+- [**Sensory Systems**]
+- [**Motor Control**]
+- [**Brain**]
+
+References:
+* Leonard E. White. <a href="https://www.coursera.org/learn/medical-neuroscience" target="__blank">Medical Neuroscience</a>. Duke University. Coursera Inc.
