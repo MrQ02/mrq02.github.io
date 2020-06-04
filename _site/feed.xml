@@ -1,4 +1,135 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-24T23:02:04+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">Financial Foundations</title><link href="http://localhost:4000/quant/foundation/" rel="alternate" type="text/html" title="Financial Foundations" /><published>2020-03-18T22:29:53+09:00</published><updated>2020-03-18T22:29:53+09:00</updated><id>http://localhost:4000/quant/quant-foundation</id><content type="html" xml:base="http://localhost:4000/quant/foundation/">&lt;p&gt;Roadmap:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-04T23:04:24+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">Probability</title><link href="http://localhost:4000/PS/prob/" rel="alternate" type="text/html" title="Probability" /><published>2020-04-25T12:47:53+09:00</published><updated>2020-04-25T12:47:53+09:00</updated><id>http://localhost:4000/PS/PS-prob</id><content type="html" xml:base="http://localhost:4000/PS/prob/">&lt;p&gt;Roadmap:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Basics
+    &lt;ul&gt;
+      &lt;li&gt;Sampling Table&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; &lt;a name=&quot;basics&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;basics&quot;&gt;Basics&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a name=&quot;prob&quot;&gt;&lt;/a&gt;&lt;strong&gt;Sampling Table&lt;/strong&gt;: #diff ways to take a sample of $k$ out of a population $n$&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;Order&lt;/th&gt;
+          &lt;th style=&quot;text-align: center&quot;&gt;No Order&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;Replacement&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;$n^k$&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\begin{pmatrix}n+k-1 \\ k \end{pmatrix}=\frac{(n+k-1)!}{k!(n-1)!}&lt;/script&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;No replacement&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\frac{n!}{(n-k)!}&lt;/script&gt;&lt;/td&gt;
+          &lt;td style=&quot;text-align: center&quot;&gt;&lt;script type=&quot;math/tex&quot;&gt;\begin{pmatrix}n \\ k \end{pmatrix}=\frac{n!}{k!(n-k)!}&lt;/script&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Examples:&lt;/p&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;Draw 1 card out of 5 cards and put it back for 2 times with order: $5^2=25$&lt;/li&gt;
+          &lt;li&gt;Draw 1 card out of 5 cards and put it back for 2 times with no order: &lt;script type=&quot;math/tex&quot;&gt;\begin{pmatrix}5+2-1 \\ 2\end{pmatrix}=15&lt;/script&gt;&lt;/li&gt;
+          &lt;li&gt;Draw 2 cards out of 5 cards at once with order: $\frac{5!}{(5-2)!}=20$&lt;/li&gt;
+          &lt;li&gt;Draw 2 cards out of 5 cards at once with no order: &lt;script type=&quot;math/tex&quot;&gt;\begin{pmatrix}5 \\ 2 \end{pmatrix}=10&lt;/script&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Roadmap: Basics Sampling Table</summary></entry><entry><title type="html">Differential Equations</title><link href="http://localhost:4000/math/diffeq/" rel="alternate" type="text/html" title="Differential Equations" /><published>2020-04-25T12:47:53+09:00</published><updated>2020-04-25T12:47:53+09:00</updated><id>http://localhost:4000/math/math-diffeq</id><content type="html" xml:base="http://localhost:4000/math/diffeq/">&lt;p&gt;Roadmap:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#1oode&quot;&gt;Linear 1st-Order ODE&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#2oode&quot;&gt;Linear 2nd-Order ODE&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; &lt;a name=&quot;1oode&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;linear-1st-order-ode&quot;&gt;Linear 1st-Order ODE&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Problem&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  y'+p(x)y=q(x)
+  \end{equation}&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Solution&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  y=Ce^{-\int{p(x)dx}}+e^{-\int{p(x)dx}}\times\int{q(x)e^{\int{p(x)dx}}}dx
+  \end{equation}&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Derivation&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;Solve for $y_h$:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ y_h'+p(x)y_h&amp;=0 \\
+ \int{\frac{dy_h}{y_h}}&amp;=\int{-p(x)dx} \\
+ y_h&amp;=e^{-\int{p(x)dx}}
+ \end{align} %]]&gt;&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Let $u(x)$ be an integrating factor. Multiply this on both sides:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ u(x)y'+u(x)p(x)y=u(x)q(x)
+ \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Recall product rule $(fg)’=f’g+fg’$. Notice:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ f=y &amp;\Rightarrow f'=y'\\
+ g=u(x) &amp;\Rightarrow g'=u(x)p(x) \\
+ (fg)'&amp;=u(x)q(x)
+ \end{align} %]]&gt;&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Solve for $u(x)$:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ u'(x)&amp;=u(x)p(x) \\
+ \int{\frac{du}{u}}&amp;=\int{p(x)dx} \\
+ u(x)&amp;=e^{\int{p(x)dx}}
+ \end{align} %]]&gt;&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Solve for $y_g$:&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ \big(u(x)y_g\big)'&amp;=u(x)q(x) \\
+ u(x)y_g&amp;=\int{u(x)q(x)dx} \\
+ y_g&amp;=\frac{\int{u(x)q(x)dx}}{u(x)} \\
+ y_g&amp;=\frac{\int{e^{\int{p(x)dx}}q(x)dx}}{e^{\int{p(x)dx}}}
+ \end{align} %]]&gt;&lt;/script&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Roadmap: Linear 1st-Order ODE Linear 2nd-Order ODE</summary></entry><entry><title type="html">Financial Foundations</title><link href="http://localhost:4000/quant/foundation/" rel="alternate" type="text/html" title="Financial Foundations" /><published>2020-03-18T22:29:53+09:00</published><updated>2020-03-18T22:29:53+09:00</updated><id>http://localhost:4000/quant/quant-foundation</id><content type="html" xml:base="http://localhost:4000/quant/foundation/">&lt;p&gt;Roadmap:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#tvm&quot;&gt;Time Value of Money&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#ff&quot;&gt;Forwards &amp;amp; Futures&lt;/a&gt;&lt;/li&gt;
@@ -381,867 +512,7 @@
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Roadmap: Time Value of Money Forwards &amp;amp; Futures Options</summary></entry><entry><title type="html">The Pursuit of Happiness</title><link href="http://localhost:4000/blogs/pursuit_of_happiness/" rel="alternate" type="text/html" title="The Pursuit of Happiness" /><published>2020-02-02T21:32:00+09:00</published><updated>2020-02-02T21:32:00+09:00</updated><id>http://localhost:4000/blogs/pursuit-of-happiness</id><content type="html" xml:base="http://localhost:4000/blogs/pursuit_of_happiness/">&lt;p&gt;There is only one thing I have been doing throughout the past 3 years – seeking happiness.&lt;/p&gt;
-
-&lt;h2 id=&quot;2017-1st-half&quot;&gt;2017 1st half&lt;/h2&gt;
-
-&lt;p&gt;I have lived a pretty decent life before. I was given everything I wanted: barbecues, high-class foods, finest wines, field trips, parties, netflix &amp;amp; chill, easy grades &amp;amp; math achievements, … I barely put any effort in life, and I never took anything seriously. I had searched for challenges at certain times, but I always gave up immediately as I saw no necessity of challenging myself.&lt;/p&gt;
-
-&lt;p&gt;I was happy, but I was bored. What was the point of living when everything came as granted? I applied to those so-called “top unis” in the US to seek changes in life, but I actually didn’t know what kind of changes I was seeking. I chose Electrical Engineering as my major simply because I wanted to be as cool as Tony Stark. I was pretty childish.&lt;/p&gt;
-
-&lt;p&gt;At the night of Jan 31st, 2017, my family went broke. My “man-shall-never-cry” dad shed tears. My mom went crazy. My sister was scared by my parents and cried. But as stupid as I was, I had no idea that my life would change dramatically afterwards.&lt;/p&gt;
-
-&lt;p&gt;I didn’t check the college admission results because obviously I couldn’t afford US colleges any more. The only thing I remember was that MIT deferred my early application. Owing to my best Finnish friend in high school, I got to know that Finland offers free college education, so I went there.&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-&lt;h2 id=&quot;2017-2nd-half---2018-1st-half&quot;&gt;2017 2nd half - 2018 1st half&lt;/h2&gt;
-
-&lt;p&gt;I was on the plane to Finland on Aug 15th, 2017. I was neither scared nor excited. I was lost. I had never faced uncertainties before, and I really don’t know what “unknown” tastes like.&lt;/p&gt;
-
-&lt;p&gt;After school started, I started pushing myself: taking online courses on finance &amp;amp; management, seeking research opportunities with different professors, working on inverse problem of radon transform, working on Object Detection project in a tech company, following Behzad Razavi’s youtube lectures on microelectronics, volunteering in startup conferences, joining robotics laboratory, …&lt;/p&gt;
-
-&lt;p&gt;I was not happy at all. The more I dig into such tech fields, the more I became confused with my life. I sought happiness by pushing myself so hard into engineering, but I didn’t find any.&lt;/p&gt;
-
-&lt;p&gt;And one day, out of the blue, my father contacted me, and boom! He went into a financial fraud without realizing it! As shocked as I was, I had no idea that my life would change dramatically afterwards.&lt;/p&gt;
-
-&lt;p&gt;To briefly summarize it, there has been many fraudsters in China making huge profits by selling some brainwashing crap of “successology” which has been proven to be completely useless and ineffective, but people who are brainwashed by it are addicted. My dad, desperately searching for a solution to save my family, believed in this crap, became a fully brainwashed fanatic, and took many more debts to pay for this fraudulent course.&lt;/p&gt;
-
-&lt;p&gt;I raged and argued with him for the entire day. I searched everywhere on the internet for a way to anti-brainwash my dad throughout the entire March, but he became more and more resistant to my words and told me to get away. After accepting the fact that my dad has no future (as most people who became fanatic about such “successology” ended up with a dead future), I realized that I have to save my family.&lt;/p&gt;
-
-&lt;p&gt;But how? I desperately searched the entire internet for a solution, but there was none. I told my best friends about it, but they couldn’t give me any suggestion. They tried to calm me down and let me enjoy the “Scandinavian” happy life, but I could not tolerate the word “happiness” at all as I believed that I didn’t deserve any. With no solution and no optimization available for my future, all the insecurities hidden behind my “happy life” came out at once and dragged me into depression.&lt;/p&gt;
-
-&lt;p&gt;I started to make irrational decisions. I blamed all my depression on the country Finland and the major IT, so I decided to transfer. I blamed God for my useless aptitude in Mathematics, as I thought Mathematics couldn’t make me rich. With insufficient information I found online, I falsely claimed to myself that Economics was the only “money-making” major, so I desperately listed out the top schools for Economics based on those rankings like QS, but it was April, during which most colleges do not accept applications. The only choice left for me was Keio University in Japan. Without a single hesitation or thorough research on this university and Japan, I went there for the sole purpose of “making money”.&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-&lt;h2 id=&quot;2018-2nd-half---2019-2nd-half&quot;&gt;2018 2nd half - 2019 2nd half&lt;/h2&gt;
-
-&lt;p&gt;What happens when a man makes irrational decisions? He regrets.&lt;/p&gt;
-
-&lt;p&gt;Just like one year ago, I started pushing myself hard. But this time, I was pushing myself desperately for connections and money-making opportunities. Little did I know that Japan is actually a very bad choice for money-making because of its conventional, outdated management system and social structure. As a matter of fact, Finland offers many more opportunities for gaining wealth than Japan in my opinion. What’s worse, I found my math aptitude completely useless in this program of Keio University, as this program offers a Bachelor of Arts in Economics. I had to take mandatory history classes that I had absolutely zero interest in. The fact that I might have already ruined my future led me to suicidal thoughts at the end of 2018. I did not know why I didn’t kill myself, but I did have a very thorough re-consideration of my life choices and applied to Bocconi University in Italy.&lt;/p&gt;
-
-&lt;p&gt;But little did I know, 2019 was even worse! I was accepted to Bocconi, but some of my friends told me that Italy is not a good place for Chinese to work in and that I had a higher chance to become wealthy in Japan than in Italy. Without further consideration or research, I foolishly believed in my friends’ words and chose to stay in Japan, a decision that I regretted throughout the entire 2019.&lt;/p&gt;
-
-&lt;p&gt;The stubborn convention of Japanese academics hit me really hard. I literally went to the Student Office for over 100 times throughout the year. Why? Because I got to know two fields in which both my Math talents and Economics major will pay off: Quantitative Finance and Data Science. However, this PEARL program does not have sufficient English teachers to offer Math courses in English. Therefore, I have 2 options:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;take Japanese-taught Math courses. But I don’t speak Japanese, and these courses are NOT counted into credits or GPA calculation.&lt;/li&gt;
-  &lt;li&gt;take English-taught Data Science courses and seminars in another city at the cost of 1.5-hour commuting. However, there is a conventional maximum credit requirement stating that I can only take a maximum of 2 English-taught courses from other faculties in the second year of my studies.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I had to learn Japanese just for Math credits. How ridiculous. There are many more strict rules regarding research opportunities and course selection that I was completely fed up with. By the end of November, I was crashed down by the situational constraints.&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-&lt;h2 id=&quot;2020--the-pursuit-of-happiness&quot;&gt;2020 – The Pursuit of Happiness&lt;/h2&gt;
-
-&lt;p&gt;“How could these 3 years of suffering ever help you pursue happiness?”&lt;/p&gt;
-
-&lt;p&gt;They guided me towards my true passion. I haven’t found it yet, but I am very close to it.&lt;/p&gt;
-
-&lt;p&gt;“But how is that possible? You don’t even have the money to pursue any passion, and you are strictly restrained by your current conditions!”&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I guess life reveals your intrinsic self when you have nothing to lose.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;I followed my desperate need for money, made irrational decisions, and ruined my life. I am now left with no options, but I am also left with nothing to lose. If I keep myself entangled in the desperation of “I have no money. My family is broken.”, I will keep making irrational decisions and eventually kill the very last possibility of my future.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Instead of trying to optimize everything in life, if I just calmly accept the reality, get out of the desperation, make the most out of what I have, and just do my best in life,&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;That, ladies and gentlemen, is &lt;strong&gt;&lt;em&gt;happiness&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;I didn’t think of Data Science as an option for no reason. I didn’t work on an Object Detection project for a company for no reason. I didn’t take online courses on Artificial Intelligence for no reason. Although the desperate need of money had driven me crazy, I never gave up on my dream of creating superintelligence.&lt;/p&gt;
-
-&lt;p&gt;It is impractical, I know. The global trend of AI development disappoints me quite a lot, because data-driven statistical methods should never be considered as a form of intelligence in my opinion – they are pattern recognition algorithms. The market finds statistical learning useful for optimization in various aspects, and they overhype it. The actual Artificial Intelligence is still at the research stage.&lt;/p&gt;
-
-&lt;p&gt;But the goal is never the happiness.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;The journey is.&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">There is only one thing I have been doing throughout the past 3 years – seeking happiness.</summary></entry><entry><title type="html">Recurrent Neural Networks</title><link href="http://localhost:4000/DL/RNN/" rel="alternate" type="text/html" title="Recurrent Neural Networks" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/DL/DL-RNN</id><content type="html" xml:base="http://localhost:4000/DL/RNN/">&lt;p&gt;Claim: some of the images in this session are cited from Andrew Ng’s &lt;a href=&quot;https://www.coursera.org/specializations/deep-learning&quot; target=&quot;_blank&quot;&gt;Deep Learning&lt;/a&gt; specialization, but most are created by myself.&lt;/p&gt;
-
-&lt;p&gt;Roadmap:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Basics of RNN
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#intsm&quot;&gt;Intuition of Sequence Models&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#intrnn&quot;&gt;Intuition of RNN&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#layers&quot;&gt;RNN Types&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#lm&quot;&gt;Language Model&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#var&quot;&gt;RNN Variations&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#gru&quot;&gt;GRU&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#lstm&quot;&gt;LSTM&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#birnn&quot;&gt;Bidirectional RNN&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#drnn&quot;&gt;Deep RNN&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Word Embeddings
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#ohr&quot;&gt;One-hot representation&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#fr&quot;&gt;Featurized representation&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#word2vec&quot;&gt;Learning 1: Word2Vec&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#negsam&quot;&gt;Learning 2: Negative Sampling&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#glove&quot;&gt;Learning 3: GloVe&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Sequence Modeling
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#sent&quot;&gt;Sentiment Classification&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#seq2seq&quot;&gt;Sequence to Sequence&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#beam&quot;&gt;Beam Search&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#bleu&quot;&gt;Bleu Score&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#attention&quot;&gt;Attention Model&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt; &lt;/p&gt;
-&lt;h2 id=&quot;basics-of-rnn&quot;&gt;Basics of RNN&lt;/h2&gt;
-
-&lt;p&gt;&lt;a name=&quot;intsm&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;intuition-of-sequence-models&quot;&gt;&lt;strong&gt;Intuition of Sequence Models&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;These are called sequence modeling:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Speech recognition&lt;/li&gt;
-  &lt;li&gt;Music generation&lt;/li&gt;
-  &lt;li&gt;Sentiment classification&lt;/li&gt;
-  &lt;li&gt;DNA sequence analysis&lt;/li&gt;
-  &lt;li&gt;Machine translation&lt;/li&gt;
-  &lt;li&gt;Video activity recognition&lt;/li&gt;
-  &lt;li&gt;Name entity recognition&lt;/li&gt;
-  &lt;li&gt;……&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Forget about the tedious definitions. As a basic intuition of what we are doing in sequence modeling, here is a very simple example:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;We have a sentence: “Pewdiepie and MrBeast are two of the greatest youtubers in human history.”&lt;/li&gt;
-  &lt;li&gt;We want to know: where are the “names” in this sentence? (i.e. name entity recognition)&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;We convert the input sentence into $X$: $x^{\langle 1 \rangle}x^{\langle 2 \rangle}…x^{\langle t \rangle}…x^{\langle 12 \rangle}$&lt;/p&gt;
-
-    &lt;p&gt;where $x^{\langle t \rangle}$ represents each word in the sentence.&lt;/p&gt;
-
-    &lt;p&gt;But how does it represent a word? Notice that we used the capitalized $X$ for a single sentence. Actually, $X.\text{shape}=5000\times12$, and $x.\text{shape}=5000\times1$. Why?&lt;/p&gt;
-
-    &lt;p&gt;We first make a vocabulary list like $\text{list}=[\text{a; and; …; history; …; MrBeast; …}]$.&lt;/p&gt;
-
-    &lt;p&gt;Then, we convert each word into a one-hot vector representing the index of the word in the dictionary, e.g.:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  x^{\langle 1 \rangle}=\begin{bmatrix}
-  0 \\ \vdots \\ 1 \\ \vdots \\ 0
-  \end{bmatrix}\longleftarrow 425,\ 
-  x^{\langle 2 \rangle}=\begin{bmatrix}
-  0 \\ \vdots \\ 1 \\ \vdots \\ 0
-  \end{bmatrix}\longleftarrow 3578,\ \cdots\cdots
-  \end{equation}&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;We then label the output as $y: 1\ 0\ 1\ 0\ 0\ 0\ 0\ 0\ 0\ 0\ 0\ 0$ and train our NN on this.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Accordingly, we can use most of the sequences in our daily life as datasets and build our NN models on them to solve such ML problems.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;intrnn&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;intuition-of-rnn&quot;&gt;&lt;strong&gt;Intuition of RNN&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;We have very briefly mentioned that Conv1D can be used to scan through a sequence, extract features and make predictions. Then why don’t we just stick to Conv1D or use normal ANNs?&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;The scope of sequence modeling is not necessarily recognition or classification, meaning that our inputs &amp;amp; outputs can be in very diff lengths for diff examples.&lt;/li&gt;
-  &lt;li&gt;Neither ANNs nor CNNs share features learned across diff positions of a text or a sequence, whereas context matters quite a lot in most sequence modeling problems.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Therefore, we need to define a brand new NN structure that can perfectly align with sequence modeling - RNN:&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;../../images/DL/rnn.jpg&quot; height=&quot;200&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;
-Forward propagation:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;$a^{\langle 0 \rangle}=\textbf{0}$&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;$a^{\langle t \rangle}=g(W_{a}[a^{\langle t-1 \rangle}; x^{\langle t \rangle}]+b_a)\ \ \ \ |\ g:\ \text{tanh/ReLU}$&lt;/p&gt;
-
-    &lt;p&gt;where $W_a=[W_{aa}\ W_{ax}]$ with a shape of $(100,10100)$ if we assume a dictionary of 10000 words (i.e. $x^{\langle t \rangle}.\text{shape}=(10000,100)$) and the activation length of 100.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;$\hat{y}^{\langle t \rangle}=g(W_{y}a^{\langle t \rangle}+b_y)\ \ \ \ |\ g:\ \text{sigmoid}$&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Backward propagation:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;$\mathcal{L}^{\langle t \rangle}(\hat{y}^{\langle t \rangle},y^{\langle t \rangle})=-\sum_i{y_i^{\langle t \rangle}\log{\hat{y}_ i^{\langle t \rangle}}}\ \ \ \ |\ $Same loss function as LogReg&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;layers&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;rnn-types&quot;&gt;&lt;strong&gt;RNN Types&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;center&gt;&lt;img src=&quot;../../images/DL/rnntypes.png&quot; width=&quot;550&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;
-There is nothing much to explain here. The images are pretty clear.&lt;br /&gt;
-&lt;br /&gt;&lt;a name=&quot;lm&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;language-model&quot;&gt;&lt;strong&gt;Language Model&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;u&gt;Intuition of Softmax &amp;amp; Conditional Probability&lt;/u&gt;&lt;/p&gt;
-
-    &lt;p&gt;The core of RNN is to calculate the likelihood of a sequence: $P(y^{\langle 1 \rangle},y^{\langle 2 \rangle},…,y^{\langle t \rangle})$ and output the one with the highest probability.&lt;/p&gt;
-
-    &lt;p&gt;For example, the sequence “&lt;u&gt;the apple and pair salad&lt;/u&gt;” has a much smaller possibility to occur than the sequence “&lt;u&gt;the apple and pear salad&lt;/u&gt;”. Therefore, RNN will output the latter. This seems much like &lt;strong&gt;Softmax&lt;/strong&gt;, and indeed it is.&lt;/p&gt;
-
-    &lt;p&gt;Recall from the formula of conditional probability, we can separate the likelihood into:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  P\big(y^{\langle 1 \rangle},y^{\langle 2 \rangle},...,y^{\langle t \rangle}\big)=P\big(y^{\langle 1 \rangle}\big)P\big(y^{\langle 2 \rangle}|y^{\langle 1 \rangle}\big)...P\big(y^{\langle t \rangle}|y^{\langle 1 \rangle},y^{\langle 2 \rangle},...,y^{\langle t-1 \rangle}\big)
-  \end{equation}&lt;/script&gt;
-
-    &lt;p&gt;For example, to generate the sentence “I like cats.”, we calculate:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  P\big(\text{&quot;I like cats&quot;}\big)=P\big(\text{&quot;I&quot;}\big)P\big(\text{&quot;like&quot;}|\text{&quot;I&quot;}\big)P\big(\text{&quot;cats&quot;}|\text{&quot;I like&quot;}\big)
-  \end{equation}&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;u&gt;Language Modeling Procedure&lt;/u&gt;
-    &lt;ol&gt;
-      &lt;li&gt;Data Preparation
-        &lt;ul&gt;
-          &lt;li&gt;Training set: large corpus of English text (or other languages)&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;Tokenize&lt;/strong&gt;: mark every word into a token
-            &lt;ul&gt;
-              &lt;li&gt;&amp;lt;EOS&amp;gt;: End of Sentence token&lt;/li&gt;
-              &lt;li&gt;&amp;lt;UNK&amp;gt;: Unknown word token&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;e.g. “I hate Minecraft and kids.” $\Rightarrow$ “I hate &amp;lt;UNK&amp;gt; and kids. &amp;lt;EOS&amp;gt;”&lt;br /&gt;
-  &lt;br /&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Training
-        &lt;center&gt;&lt;img src=&quot;../../images/DL/rnnlm.png&quot; width=&quot;700&quot; /&gt;&lt;/center&gt;
-        &lt;p&gt;&lt;br /&gt;
- We use the sentence “I hate Minecraft and kids. &amp;lt;EOS&amp;gt;” as one training example.&lt;br /&gt;
- At the beginning, we initialize $a^{&amp;lt;0&amp;gt;}$ and $x^{&amp;lt;1&amp;gt;}$ as $\vec{0}$ and let the RNN try to guess the first word.&lt;br /&gt;
- At each step, we use the original word at the same index $y^{&amp;lt;i-1&amp;gt;}$ and the previous activation $a^{&amp;lt;i-1&amp;gt;}$ to let the RNN try to guess the next word $\hat{y}^{&amp;lt;i&amp;gt;}$ from Softmax regression.&lt;br /&gt;
- During the training process, we try to minimize the loss function $\mathcal{L}(\hat{y},y)$ to ensure the training is effective to predict the sentence correctly.
-  &lt;br /&gt;&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Sequence Sampling
-        &lt;center&gt;&lt;img src=&quot;../../images/DL/rnnsample.png&quot; width=&quot;700&quot; /&gt;&lt;/center&gt;
-        &lt;p&gt;&lt;br /&gt;
- After the RNN is trained, we can use it to generate a sentence by itself. In each step, the RNN will take the previous word it generated $\hat{y}^{&amp;lt;i-1&amp;gt;}$ as $x^{&amp;lt;i&amp;gt;}$ to generate the next word $\hat{y}^{&amp;lt;i&amp;gt;}$.&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;u&gt;Character-level LM&lt;/u&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Dictionary
-        &lt;ul&gt;
-          &lt;li&gt;Normal LM: [a, abandon, …, zoo, &amp;lt;UNK&amp;gt;]&lt;/li&gt;
-          &lt;li&gt;Char-lv LM: [a, b, c, …, z]&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Pros &amp;amp; Cons
-        &lt;ul&gt;
-          &lt;li&gt;Pros: never need to worry about unknown words &amp;lt;UNK&amp;gt;&lt;/li&gt;
-          &lt;li&gt;Cons: sequence becomes much much longer; the RNN doesn’t really learn anything about the words.&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;u&gt;Problems with current RNN&lt;/u&gt;&lt;br /&gt;
-  One of the most significant problems with our current simple RNN is &lt;strong&gt;vanishing gradients&lt;/strong&gt;. As shown in the figures above, the next word always has a very strong dependency on the previous word, and the dependency between two words weakens as the distance between them gets longer. In other words, the current RNN are very bad at catching long-line dependencies, for example,&lt;/p&gt;
-
-    &lt;center&gt;the &lt;strong&gt;cat&lt;/strong&gt;, which already ......, &lt;strong&gt;was&lt;/strong&gt; full.&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/center&gt;
-    &lt;center&gt;the &lt;strong&gt;cats&lt;/strong&gt;, which already ......, &lt;strong&gt;were&lt;/strong&gt; full.&lt;/center&gt;
-    &lt;p&gt;&lt;br /&gt;
-  “be” verbs have high dependencies on the “subject”, but RNN doesn’t know that. Since the distance between these two words are too long, the gradient on the “subject” nouns would barely affect the training on the “be” verbs.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt; &lt;a name=&quot;var&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;rnn-variations&quot;&gt;RNN Variations&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;RNN&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;GRU&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;LSTM&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;../../images/DL/rnnblock.png&quot; width=&quot;330&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;../../images/DL/gru.png&quot; width=&quot;330&quot; /&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;../../images/DL/lstm.png&quot; width=&quot;330&quot; /&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;As shown above, there are currently 3 most used RNN blocks. The original RNN block activates the linear combination of $a^{&amp;lt;t-1&amp;gt;}$ and $x^{&amp;lt;t&amp;gt;}$ with a $\text{tanh}$ function and then passes the output value onto the next block.&lt;/p&gt;
-
-&lt;p&gt;However, because of the previously mentioned problem with the original RNN, scholars have created some variations, such as GRU &amp;amp; LSTM.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;gru&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;gru-gated-recurrent-unit&quot;&gt;&lt;strong&gt;GRU&lt;/strong&gt; (Gated Recurrent Unit)&lt;/h3&gt;
-
-&lt;center&gt;&lt;img src=&quot;../../images/DL/gru.png&quot; width=&quot;400&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;
-As the name implies, GRU is an advancement of normal RNN block with “gates”. There are 2 gates in GRU:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;R gate&lt;/strong&gt;: (Remember) determine whether to remember the previous cell&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;U gate&lt;/strong&gt;: (Update) determine whether to update the computation with the candidate&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Computing process of GRU:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Compute R gate:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{equation}
- \Gamma_r=\sigma\big(w_r\big[a^{&lt;t-1&gt;};x^{&lt;t&gt;}\big]+b_r\big)
- \end{equation} %]]&gt;&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Compute U gate:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{equation}
- \Gamma_u=\sigma\big(w_u\big[a^{&lt;t-1&gt;};x^{&lt;t&gt;}\big]+b_u\big)
- \end{equation} %]]&gt;&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Compute Candidate:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{equation}
- \tilde{c}^{&lt;t&gt;}=\tanh{\big(w_c\big[\Gamma_r * a^{&lt;t-1&gt;};x^{&lt;t&gt;}\big]+b_c\big)}
- \end{equation} %]]&gt;&lt;/script&gt;
-
-    &lt;p&gt;When $\Gamma_r=0$, $\tilde{c}^{&amp;lt;t&amp;gt;}=\tanh{\big(w_cx^{&amp;lt;t&amp;gt;}+b_c\big)}$, the previous word has no effect on the word choice of this cell.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Compute Memory Cell:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{equation}
- c^{&lt;t&gt;}=\Gamma_u \cdot \tilde{c}^{&lt;t&gt;} + (1-\Gamma_u) \cdot c^{&lt;t-1&gt;}
- \end{equation} %]]&gt;&lt;/script&gt;
-
-    &lt;p&gt;When $\Gamma_u=1$,  $c^{&amp;lt;t&amp;gt;}=\tilde{c}^{&amp;lt;t&amp;gt;}$. The candidate updates.&lt;br /&gt;
- When $\Gamma_u=0$,  $c^{&amp;lt;t&amp;gt;}=c^{&amp;lt;t-1&amp;gt;}$. The candidate does not update.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Output:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{equation}
- a^{&lt;t&gt;}=c^{&lt;t&gt;}
- \end{equation} %]]&gt;&lt;/script&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;lstm&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;lstm-long-short-term-memory&quot;&gt;&lt;strong&gt;LSTM&lt;/strong&gt; (Long Short-Term Memory)&lt;/h3&gt;
-
-&lt;center&gt;&lt;img src=&quot;../../images/DL/lstm.png&quot; width=&quot;400&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;
-LSTM is an advancement of GRU. While GRU relatively saves more computing power, LSTM is more powerful. There are 3 gates in LSTM:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;F gate&lt;/strong&gt;: (Forget) determine whether to forget the previous cell&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;U gate&lt;/strong&gt;: (Update) determine whether to update the computation with the candidate&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;O gate&lt;/strong&gt;: (Update) Compute the normal activation&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Computing process of GRU:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Compute F gate:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{equation}
- \Gamma_f=\sigma\big(w_f\big[a^{&lt;t-1&gt;};x^{&lt;t&gt;}\big]+b_f\big)
- \end{equation} %]]&gt;&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Compute U gate:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{equation}
- \Gamma_u=\sigma\big(w_u\big[a^{&lt;t-1&gt;};x^{&lt;t&gt;}\big]+b_u\big)
- \end{equation} %]]&gt;&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Compute O gate:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{equation}
- \Gamma_o=\sigma\big(w_o\big[a^{&lt;t-1&gt;};x^{&lt;t&gt;}\big]+b_o\big)
- \end{equation} %]]&gt;&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Compute Candidate:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{equation}
- \tilde{c}^{&lt;t&gt;}=\tanh{\big(w_c\big[a^{&lt;t-1&gt;};x^{&lt;t&gt;}\big]+b_c\big)}
- \end{equation} %]]&gt;&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Compute Memory Cell:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{equation}
- c^{&lt;t&gt;}=\Gamma_u \cdot \tilde{c}^{&lt;t&gt;} + \Gamma_f \cdot c^{&lt;t-1&gt;}
- \end{equation} %]]&gt;&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Output:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{equation}
- a^{&lt;t&gt;}=\Gamma_o \cdot \tanh{c^{&lt;t&gt;}}
- \end{equation} %]]&gt;&lt;/script&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Peephole Connection&lt;/strong&gt;: as shown in the formulae, the gate values $\Gamma \propto c^{&amp;lt;t-1&amp;gt;}$, therefore, we can always include $c^{&amp;lt;t-1&amp;gt;}$ into gate calculations to simplify the computing.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;birnn&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;bidirectional-rnn&quot;&gt;&lt;strong&gt;Bidirectional RNN&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;u&gt;Problem&lt;/u&gt;: Sometimes, our choices of previous words are dependent on the latter words. For example,&lt;/p&gt;
-
-&lt;center&gt;&lt;strong&gt;Teddy&lt;/strong&gt; Roosevelt was a nice president.&lt;/center&gt;
-&lt;center&gt;&lt;strong&gt;Teddy&lt;/strong&gt; bears are now on sale!!!&amp;emsp;&amp;emsp;&amp;emsp;&amp;nbsp;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;
-The word “Teddy” represents two completely different things, but without the context from the latter part, we cannot determine what the “Teddy” stands for. (This example is cited from Andrew Ng’s Coursera Specialization)&lt;/p&gt;
-
-&lt;p&gt;&lt;u&gt;Solution&lt;/u&gt;: We make the RNN bidirectional:&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;../../images/DL/birnn.png&quot; height=&quot;250&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;
-Each output is calculated as: $\hat{y}^{&amp;lt;t&amp;gt;}=g\Big(W_y\Big[\overrightarrow{a}^{&amp;lt;t&amp;gt;};\overleftarrow{a}^{&amp;lt;t&amp;gt;}\Big]+b_y\Big)$&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;drnn&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;deep-rnn&quot;&gt;&lt;strong&gt;Deep RNN&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;Don’t be fascinated by the name. It’s just stacks of RNN layers:&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;../../images/DL/drnn.png&quot; width=&quot;700&quot; /&gt;&lt;/center&gt;
-
-&lt;p&gt; &lt;/p&gt;
-&lt;h2 id=&quot;word-embeddings&quot;&gt;Word Embeddings&lt;/h2&gt;
-
-&lt;p&gt;Word embedding is a vectorized representation of a word. Because our PC cannot directly understand the meaning of words, we need to convert these words into numerical values first. So far, we have been using &lt;a name=&quot;ohr&quot;&gt;&lt;/a&gt;&lt;strong&gt;One-hot Encoding&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{equation}
-x^{&lt;1&gt;}=\begin{bmatrix}
-0 \\ \vdots \\ 1 \\ \vdots \\ 0
-\end{bmatrix}\longleftarrow 425,\ 
-x^{&lt;2&gt;}=\begin{bmatrix}
-0 \\ \vdots \\ 1 \\ \vdots \\ 0
-\end{bmatrix}\longleftarrow 3578,\ \cdots\cdots
-\end{equation} %]]&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;u&gt;Problem&lt;/u&gt;: our RNN doesn’t really learn anything about these words from one-hot representation.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;fr&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;featurized-representation&quot;&gt;&lt;strong&gt;Featurized Representation&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;u&gt;&lt;strong&gt;Intuition:&lt;/strong&gt;&lt;/u&gt; Suppose we have an online shopping review: “Love this dress! Sexy and comfy!”, we can represent this sentence as:&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;../../images/DL/fr.png&quot; width=&quot;600&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;
-We predefine a certain number of features (e.g. gender, royalty, food, size, cost, etc.).&lt;/p&gt;
-
-&lt;p&gt;Then, we give each word (column categories) their relevance to each feature (row categories). As shown in the picture for example, “dress” is very closely related to the feature “gender”, therefore given the value “1”. Meanwhile, “love” is very closely related to the feature “positive”, therefore given the value “0.99”.&lt;/p&gt;
-
-&lt;p&gt;After we define all the featurized values for the words, we get a vectorized representation of each word:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-\text{love}=e_ {1479}=\begin{bmatrix}
-0.03 \\ 0.01 \\ 0.99 \\ 1.00 \\ \vdots
-\end{bmatrix},\text{comfy}=e_ {987}=\begin{bmatrix}
-0.01 \\ 0.56 \\ 0.98 \\ 0.00 \\ \vdots
-\end{bmatrix},\cdots\cdots\end{equation}&lt;/script&gt;
-
-&lt;p&gt;This way, our RNN will get to know the rough meanings of these words.&lt;/p&gt;
-
-&lt;p&gt;For example, when it needs to generate the next word of this sentence: &lt;strong&gt;“I want a glass of orange _____.”&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Since it knows that &lt;strong&gt;“orange”&lt;/strong&gt; is a &lt;strong&gt;fruit&lt;/strong&gt; and that &lt;strong&gt;“glass”&lt;/strong&gt; is closely related to &lt;strong&gt;liquid&lt;/strong&gt;, there is a much higher possibility that our RNN will choose &lt;strong&gt;“juice”&lt;/strong&gt; to fill in the blank.&lt;/p&gt;
-
-&lt;p&gt;&lt;u&gt;&lt;strong&gt;Embedding matrix:&lt;/strong&gt;&lt;/u&gt; To acquire the word embeddings such as $\vec{e}_ {1479}$ and $\vec{e}_ {987}$ above, we can multiply our embedding matrix with the one-hot encoding:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-E\times \vec{o}_ j=\vec{e}_ j
-\end{equation}&lt;/script&gt;
-
-&lt;p&gt;where $E$ is our featurized representation (i.e. embedding matrix) and $\vec{o}_ j$ is the one-hot encoding of the word (i.e. the index of the word).&lt;/p&gt;
-
-&lt;p&gt;In practice, this is too troublesome since the dimensions of our $E$ tend to be huge (e.g. $(500,10000)$). Thus, we use specialized function to look up an embedding directly from the embedding matrix.&lt;/p&gt;
-
-&lt;p&gt;&lt;u&gt;&lt;strong&gt;Analogies:&lt;/strong&gt;&lt;/u&gt; One of the most useful properties of word embeddings is analogies. For example, &lt;strong&gt;“man $\rightarrow$ woman”=”king $\rightarrow$ ?”&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Suppose we have the following featurized representation:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;man&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;woman&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;king&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;queen&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;gender&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;-1&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;-0.99&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0.99&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;royal&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0.01&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0.02&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0.97&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0.96&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;age&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0.01&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0.01&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0.78&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0.77&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;food&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0.03&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0.04&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0.04&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0.02&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;In order to learn the analogy, our RNN will have the following thinking process:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-&amp;\text{Goal: look for}\ w: \mathop{\arg\max}_ w{sim(e_w, e_{\text{king}}-(e_{\text{man}}-e_{\text{woman}}))} \\
-&amp;\because e_{\text{man}}-e_{\text{woman}}\approx\begin{bmatrix}-2 \\ 0 \\ 0 \\ 0\end{bmatrix}, e_{\text{king}}-e_{\text{queen}}\approx\begin{bmatrix}-2 \\ 0 \\ 0 \\ 0\end{bmatrix} \\
-&amp;\therefore e_{\text{man}}-e_{\text{woman}}\approx e_{\text{king}}-e_{\text{queen}} \\
-&amp;\text{Calculate cosine similarity: } sim(\vec{u},\vec{v})=\cos{\phi}=\frac{\vec{u}^T\vec{v}}{\|\vec{u}\|_ 2\|\vec{v}\|_ 2} \\
-&amp;\text{Confirm: }e_w\approx e_{queen}
-\end{align} %]]&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;word2vec&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;learning-1-word2vec&quot;&gt;Learning 1: &lt;strong&gt;Word2Vec&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;u&gt;Problem&lt;/u&gt;: We definitely do not want to write the embedding matrix by ourselves. Instead, we train a NN model to learn the word embeddings.&lt;/p&gt;
-
-&lt;p&gt;Suppose we have a sentence “Pewdiepie and MrBeast are two of the greatest youtubers in human history”. Before Word2Vec, let’s define context &amp;amp; target:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Context&lt;/strong&gt;: words around target word
-    &lt;ul&gt;
-      &lt;li&gt;last 4 words: “two of the greatest &lt;strong&gt;__&lt;/strong&gt;”&lt;/li&gt;
-      &lt;li&gt;4 words on both sides: “two of the greatest &lt;strong&gt;__&lt;/strong&gt; in human history.”&lt;/li&gt;
-      &lt;li&gt;last 1 word: “greatest &lt;strong&gt;__&lt;/strong&gt;”&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;skip-gram&lt;/strong&gt;: (any nearby word) “… MrBeast … &lt;strong&gt;__&lt;/strong&gt; …”&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Target&lt;/strong&gt;: the word we want our NN to generate
-    &lt;ul&gt;
-      &lt;li&gt;“youtubers”&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;u&gt;Algorithm&lt;/u&gt;:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Randomly&lt;/strong&gt; choose context &amp;amp; target words with &lt;strong&gt;skip-gram&lt;/strong&gt;. (e.g. context “MrBeast” &amp;amp; target “youtubers”)&lt;/li&gt;
-  &lt;li&gt;Learn &lt;strong&gt;mapping&lt;/strong&gt; of “$c\ (\text{“mrbeast”}[1234])\rightarrow t\ (\text{“youtubers”}[765])$”&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Use &lt;strong&gt;softmax&lt;/strong&gt; to calculate the probability of appearance of target given context:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- \hat{y}=P(t|c)=\frac{e^{\theta_t^Te_c}}{\sum_{j=1}^{n}{e^{\theta_j^Te_c}}}
- \end{equation}&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Minimize the &lt;strong&gt;loss&lt;/strong&gt; function:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- \mathcal{L}(\hat{y},y)=-\sum_{i=1}^{n}{y_i\log{\hat{y}_ i}}
- \end{equation}&lt;/script&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Notes:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Computation of softmax is very slow: Hierarchical Softmax (i.e. Huffman Tree + LogReg) can solve this problem - with common words at the top and useless words at the bottom.&lt;/li&gt;
-  &lt;li&gt;$c\ \&amp;amp;\ t$ should not be entirely random: words like “the/at/on/it/…” should not be chosen.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;negsam&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;learning-2-negative-sampling&quot;&gt;Learning 2: &lt;strong&gt;Negative Sampling&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;u&gt;Problem&lt;/u&gt;: Given a pair of words, predict whether it’s a context-target pair.&lt;/p&gt;
-
-&lt;p&gt;For example, given the word “orange” as the context, we want our model to know that “orange &amp;amp; juice” is a context-target pair but “orange &amp;amp; king” is not.&lt;/p&gt;
-
-&lt;p&gt;&lt;u&gt;Algorithm&lt;/u&gt;:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Pick a context-target pair $(c,t)$ (the target should be near the context) from the text corpus as a &lt;strong&gt;positive example&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Pick random words $\{t_1,\cdots,t_k\}$ from the dictionary and form word pairs $\{(c,t_1),\cdots,(c,t_k)\}$ as &lt;strong&gt;negative examples&lt;/strong&gt; based on the following probability that the creator recommended:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- P(w_i)=\frac{f(w_i)^{\frac{3}{4}}}{\sum_{j=1}^{n}{f(w_i)^{\frac{3}{4}}}}
- \end{equation}&lt;/script&gt;
-
-    &lt;p&gt;where $w_i$ is the $i$th word in the dictionary.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Train a &lt;strong&gt;binary classifier&lt;/strong&gt; based on the training examples from previous steps:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- \hat{y}_ i=P(y=1|c,t_i)=\sigma(\theta_{t_i}^Te_c)
- \end{equation}&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Repeat Step 1-3 till we form our final embedding matrix $E$.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Negative Sampling is relatively faster and less costly compared to Word2Vec, since it replaces softmax with binary classification.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;glove&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;learning-3-glove-global-vectors&quot;&gt;Learning 3: &lt;strong&gt;GloVe&lt;/strong&gt; (Global Vectors)&lt;/h3&gt;
-
-&lt;p&gt;&lt;u&gt;Problem&lt;/u&gt;: Learn word embeddings based on how many times target $i$ appears in context of word $j$.&lt;/p&gt;
-
-&lt;p&gt;&lt;u&gt;Algorithm&lt;/u&gt;:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Minimize&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- \sum_{i=1}^{n}{\sum_{j=1}^{n}{f\big(X_{ij}\big)\big(\theta_i^Te_j+b_i+b'_ j-\log{X_{ij}}\big)^2}}
- \end{equation}&lt;/script&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;$X_{ij}$: #times $i$ appears in context of $j$&lt;/li&gt;
-      &lt;li&gt;$f\big(X_{ij}\big)$: weighing term
-        &lt;ul&gt;
-          &lt;li&gt;$f\big(X_{ij}\big)=0$ if $X_{ij}=0$&lt;/li&gt;
-          &lt;li&gt;$f\big(X_{ij}\big)$ high for uncommon words&lt;/li&gt;
-          &lt;li&gt;$f\big(X_{ij}\big)$ low for too-common words&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;$b_i:t$, $b’_ j:c$&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Compute the final embedding of word $w$:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- e_w^{\text{final}}=\frac{e_w+\theta_w}{2}
- \end{equation}&lt;/script&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt; &lt;/p&gt;
-&lt;h2 id=&quot;sequence-modeling&quot;&gt;Sequence Modeling&lt;/h2&gt;
-
-&lt;p&gt;&lt;a name=&quot;sent&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;sentiment-classification&quot;&gt;&lt;strong&gt;Sentiment Classification&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;u&gt;Problem Setting&lt;/u&gt;: (many-to-one) given text, predict sentiment.&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;../../images/DL/sent.png&quot; width=&quot;550&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;
-&lt;u&gt;Model&lt;/u&gt;:&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;../../images/DL/sentrnn.png&quot; width=&quot;550&quot; /&gt;&lt;/center&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;seq2seq&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;seq2seq&quot;&gt;&lt;strong&gt;Seq2Seq&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;u&gt;Problem Setting&lt;/u&gt;: (many-to-many) given an entire sequence, generate a new sequence.&lt;/p&gt;
-
-&lt;p&gt;&lt;u&gt;Example 1: Machine Translation&lt;/u&gt;:&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;../../images/DL/seq2seq.png&quot; width=&quot;550&quot; /&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br /&gt;
-Machine Translation vs Language Model:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Language Model: maximize $P(y^{&amp;lt;1&amp;gt;},\cdots,y^{&amp;lt;T_y&amp;gt;})$&lt;/li&gt;
-  &lt;li&gt;Machine Translation: maximize $P(y^{&amp;lt;1&amp;gt;},\cdots,y^{&amp;lt;T_y&amp;gt;} | \vec{x})$&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;u&gt;Example 2: Image Captioning&lt;/u&gt;&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;../../images/DL/seq2seqic.png&quot; width=&quot;550&quot; /&gt;&lt;/center&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;beam&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;beam-search&quot;&gt;&lt;strong&gt;Beam Search&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;u&gt;Problem&lt;/u&gt;: So far, when we choose a word from softmax for each RNN block, we are doing &lt;strong&gt;greedy search&lt;/strong&gt;, that we only look for &lt;strong&gt;local optimum&lt;/strong&gt; instead of &lt;strong&gt;global optimum&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;That is, we only choose the word with the highest $P(y^{&amp;lt;1&amp;gt;}|\vec{x})$ and then the word with the highest $P(y^{&amp;lt;2&amp;gt;}|\vec{x})$ and then …&lt;/p&gt;
-
-&lt;p&gt;As we already know, local optimum does not necessarily represent global optimum. In the world of NLP, the word &lt;strong&gt;“going”&lt;/strong&gt; always has a much higher probability to appear than the word &lt;strong&gt;“visiting”&lt;/strong&gt;, but in certain situations when we need to use “visiting”, the algorithm will still choose “going”, therefore generating a weird sequence as a whole.&lt;/p&gt;
-
-&lt;p&gt;&lt;u&gt;Beam Search Algorithm&lt;/u&gt;:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Define a beam size of $B$ (usually $B\in\{1\times10^n,3\times10^n\},\ n\in\mathbb{Z}^+$).&lt;/li&gt;
-  &lt;li&gt;Look at the top $B$ words with the highest $P$s for the first word. (i.e. look for $P(\vec{y}^{&amp;lt;1&amp;gt;}|\vec{x})$)&lt;/li&gt;
-  &lt;li&gt;Repeat till &amp;lt;EOS&amp;gt;. Choose the sequence with the highest combined probability.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;u&gt;Improvement&lt;/u&gt;: The original Beam Search is very costly in computing, therefore it is necessary to refine it:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-&amp;\because P(y^{&lt;1&gt;},\cdots,y^{&lt;T_y&gt;}|x)=\prod_{t=1}^{T_y}{P(y^{&lt;t&gt;}|x,y^{&lt;1&gt;},\cdots,y^{&lt;t-1&gt;})} \\
-&amp;\therefore \text{goal}=\mathop{\arg\max}_ y{\prod_{t=1}^{T_y}{P(y^{&lt;t&gt;}|x,y^{&lt;1&gt;},\cdots,y^{&lt;t-1&gt;})}} \\
-&amp;\Rightarrow \mathop{\arg\max}_ y{\sum_{t=1}^{T_y}{\log{P(y^{&lt;t&gt;}|x,y^{&lt;1&gt;},\cdots,y^{&lt;t-1&gt;})}}} \\
-&amp;\Rightarrow \mathop{\arg\max}_ y{\frac{1}{T_y^{\alpha}}\sum_{t=1}^{T_y}{\log{P(y^{&lt;t&gt;}|x,y^{&lt;1&gt;},\cdots,y^{&lt;t-1&gt;})}}}
-\end{align} %]]&gt;&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;$\prod\rightarrow\sum{\log}$: log scaling&lt;/li&gt;
-  &lt;li&gt;$\frac{1}{T_y^{\alpha}}$: length normalization (when you add more negative values ($\log{(P&amp;lt;1)}&amp;lt;0$), the sum becomes more negative)&lt;/li&gt;
-  &lt;li&gt;$\alpha$: &lt;strike&gt;learning rate&lt;/strike&gt; just a coefficient&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;u&gt;Error Analysis&lt;/u&gt;: Suppose we want to analyze the following error:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Human: Jimmy visits Africa in September. ($y^*$)&lt;/li&gt;
-  &lt;li&gt;Algorithm: Jimmy visited Africa last September. ($\hat{y}$)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If $P(y^*|x)&amp;gt;P(\hat{y}|x)$, Beam search is at fault $\rightarrow$ increase $B$&lt;br /&gt;
-If $P(y^*|x)\leq P(\hat{y}|x)$, RNN is at fault $\rightarrow$ improve RNN (data augmentation, regularization, architecture, etc.)&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;bleu&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;bleu-score&quot;&gt;&lt;strong&gt;Bleu Score&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;u&gt;Problem&lt;/u&gt;: For many sequence modeling problems (especially seq2seq), there is no fixed correct answer. For example, there are many different Chinese translated versions of the same fiction Sherlock Holmes, and they are all correct. In this case, how do we define “correctness” for machine translation?&lt;/p&gt;
-
-&lt;p&gt;&lt;u&gt;Bilingual Evaluation Understudy&lt;/u&gt;:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-p_n=\frac{\sum_{\text{n-gram}\in\hat{y}}{\text{count}_ {clip}(\text{n-gram})}}{\sum_{\text{n-gram}\in\hat{y}}{\text{count}(\text{n-gram})}}
-\end{equation}&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;$\text{n-gram}$: $n$ consecutive words (e.g. bigram: “I have a pen.” $\rightarrow$ “I have”, “have a”, “a pen”)&lt;/li&gt;
-  &lt;li&gt;$\text{count}_ {clip}(\text{n-gram})$: maximal #times an n-gram appears in one of the reference sequences&lt;/li&gt;
-  &lt;li&gt;$\text{count}(\text{n-gram})$: #times an n-gram appears in $\hat{y}$&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;For example,&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;input: “Le chat est sur le tapis.”&lt;/li&gt;
-  &lt;li&gt;Reference 1: “The cat is on the mat.”&lt;/li&gt;
-  &lt;li&gt;Reference 2: “There is a cat on the mat.”&lt;/li&gt;
-  &lt;li&gt;MT output: “the cat the cat on the mat.”&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The unigrams here are: “the”, “cat”, “on”, “mat”. Then,&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-p_1=\frac{2+1+1+1}{3+2+1+1}=\frac{5}{7}
-\end{equation}&lt;/script&gt;
-
-&lt;p&gt;The bigrams here are: “the cat”, “cat the”, “cat on”, “on the”, “the mat”. Then,&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-p_2=\frac{1+0+1+1+1}{2+1+1+1+1}=\frac{2}{3}
-\end{equation}&lt;/script&gt;
-
-&lt;p&gt;The final Bleu score will be calculated as:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-\text{BLEU}=BP\times e^{\frac{1}{4}\sum_{n=1}^{4}{p_n}}
-\end{equation}&lt;/script&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;usually we take $n=4$ as the upper limit for n-grams.&lt;/li&gt;
-  &lt;li&gt;$BP$: param to penalize short outputs ($\because$ short outputs tend to have high BLEU scores.)&lt;/li&gt;
-  &lt;li&gt;$BP=1$ if $\text{len}(\hat{y})&amp;gt;\text{len}(\text{ref})$&lt;/li&gt;
-  &lt;li&gt;$BP=e^{\frac{1-\text{len}(\hat{y})}{\text{len}(\text{ref})}}$ if $\text{len}(\hat{y})\leq\text{len}(\text{ref})$&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;attention&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;attention-model&quot;&gt;&lt;strong&gt;Attention Model&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;u&gt;Problem&lt;/u&gt;: Our Seq2Seq model memorizes the entire sequence and then start to generate output sequence. However, a better approach to such problems like machine translation is actually to memorize part of the sequence, translate it, then memorize the next part of the sequence, translate it, and then keep going. Memorizing the entire fiction series of Sherlock Holmes and then translate it is just inefficient.&lt;/p&gt;
-
-&lt;p&gt;&lt;u&gt;Model&lt;/u&gt;:&lt;/p&gt;
-
-&lt;center&gt;&lt;img src=&quot;../../images/DL/attention.png&quot; width=&quot;400&quot; /&gt;&lt;/center&gt;
-&lt;center&gt;Attention Model = Encoding BRNN + Decoding RNN&lt;/center&gt;
-
-&lt;p&gt;&lt;u&gt;Algorithm&lt;/u&gt;:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Combine BRNN activations:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{equation}
- a^{&lt;t'&gt;}=\Big(\overleftarrow{a}^{&lt;t'&gt;},\overrightarrow{a}^{&lt;t'&gt;}\Big)
- \end{equation} %]]&gt;&lt;/script&gt;
-
-    &lt;p&gt;where $t’$ refers to the index of the encoding BRNN layer.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Calculate the amount of “attention” that $y^{&amp;lt;t&amp;gt;}$ should pay to $a^{&amp;lt;t’&amp;gt;}$:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{equation}
- \alpha^{&lt;t,t'&gt;}=\frac{e^{(e^{&lt;t,t'&gt;})}}{\sum_{t'=1}^{T_x}{e^{(e^{&lt;t,t'&gt;})}}}
- \end{equation} %]]&gt;&lt;/script&gt;
-
-    &lt;p&gt;where $e^{&amp;lt;t,t’&amp;gt;}=W_e^{&amp;lt;t,t’&amp;gt;}[s^{&amp;lt;t-1&amp;gt;};a^{&amp;lt;t’&amp;gt;}] +b_e^{&amp;lt;t,t’&amp;gt;}$ is a linear combination of both encoding activation $a^{&amp;lt;t’&amp;gt;}$ and decoding activation $s^{&amp;lt;t-1&amp;gt;}$. $t$ refers to the index of the decoding RNN layer.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Calculate the total attention at $t$:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{equation}
- c^{&lt;t&gt;}=\sum_{t'}{\alpha^{&lt;t,t'&gt;}a^{&lt;t'&gt;}}
- \end{equation} %]]&gt;&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Include the total attention into the input for output calculation:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{equation}
- \hat{y}^{&lt;t&gt;}=s^{&lt;t&gt;}=g\big(W_y[\hat{y}^{&lt;t-1&gt;};c^{&lt;t&gt;}]+b_y\big)
- \end{equation} %]]&gt;&lt;/script&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">Claim: some of the images in this session are cited from Andrew Ng’s Deep Learning specialization, but most are created by myself.</summary></entry><entry><title type="html">Improvements on Neural Networks</title><link href="http://localhost:4000/DL/imp/" rel="alternate" type="text/html" title="Improvements on Neural Networks" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/DL/DL-imp</id><content type="html" xml:base="http://localhost:4000/DL/imp/">&lt;p&gt;Roadmap:&lt;/p&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Roadmap: Time Value of Money Forwards &amp;amp; Futures Options</summary></entry><entry><title type="html">Improvements on Neural Networks</title><link href="http://localhost:4000/DL/imp/" rel="alternate" type="text/html" title="Improvements on Neural Networks" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/DL/DL-imp</id><content type="html" xml:base="http://localhost:4000/DL/imp/">&lt;p&gt;Roadmap:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#split&quot;&gt;Train/Test Split&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#init&quot;&gt;Initialization&lt;/a&gt;&lt;/li&gt;
@@ -1894,7 +1165,417 @@ W^{[l]}&amp;:=w^{[l]}-\alpha\cdot\frac{\partial{\mathcal{L}}}{\partial{W^{[l]}}}
       &lt;li&gt;Batch Normalization eliminates $b^{[l]}$ during $\mu$ calculation&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">Roadmap: Train/Test Split Initialization Data Fitting with refined procedure Regularization Regularization on LogReg L2 Regularization L1 Regularization Regularization on NN Dropout Data Augmentation Early Stopping Orthogonalization Feature Scaling (normalization) Gradient Checking Optimization Mini-Batch Gradient Descent Gradient Descent with Momentum Exponentially Weighted (Moving) Average Bias Correction Momentum RMSprop Adam Learning Rate Decay Problems with optimization Hyperparameter Tuning Batch Normalization   Train/Test Split</summary></entry><entry><title type="html">Basics of Artificial Neural Networks</title><link href="http://localhost:4000/DL/ANN/" rel="alternate" type="text/html" title="Basics of Artificial Neural Networks" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/DL/DL-Basics</id><content type="html" xml:base="http://localhost:4000/DL/ANN/">&lt;p&gt;Claim:&lt;br /&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Roadmap: Train/Test Split Initialization Data Fitting with refined procedure Regularization Regularization on LogReg L2 Regularization L1 Regularization Regularization on NN Dropout Data Augmentation Early Stopping Orthogonalization Feature Scaling (normalization) Gradient Checking Optimization Mini-Batch Gradient Descent Gradient Descent with Momentum Exponentially Weighted (Moving) Average Bias Correction Momentum RMSprop Adam Learning Rate Decay Problems with optimization Hyperparameter Tuning Batch Normalization   Train/Test Split</summary></entry><entry><title type="html">Generalized Linear Models</title><link href="http://localhost:4000/ML/GLM/" rel="alternate" type="text/html" title="Generalized Linear Models" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-GLM</id><content type="html" xml:base="http://localhost:4000/ML/GLM/">&lt;p&gt;Roadmap:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#bernoulli&quot;&gt;Bernoulli Distribution&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#gaussian&quot;&gt;Gaussian Distribution&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#poisson&quot;&gt;Poisson Distribution&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#gamma&quot;&gt;Gamma Distribution&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#beta&quot;&gt;Beta Distribution&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#dirichlet&quot;&gt;Dirichlet Distribution&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#construct&quot;&gt;Method of Constructing GLMs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#softmax&quot;&gt;Softmax Regression&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; &lt;/p&gt;
+&lt;h3 id=&quot;glm&quot;&gt;GLM&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;What are &lt;strong&gt;GLM&lt;/strong&gt;s?&lt;/p&gt;
+
+    &lt;p&gt;Remember the two models we had in the last post?&lt;br /&gt;
+  Regression:      $p(y|x,w)\sim N(\mu,\sigma^2)$&lt;br /&gt;
+  Classification:   $p(y|x,w)\sim \text{Bernoulli}(\phi)$&lt;/p&gt;
+
+    &lt;p&gt;They belong to GLM, a collection of models that can be applied to Supervised Learning problems. We will show more examples of GLMs in this markdown.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Exponential Family&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  p(y,\eta)=b(y)\cdot e^{\eta^TT(y)-a(\eta)}
+  \end{equation}&lt;/script&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;$\eta$: natural parameter (i.e. canonical parameter)&lt;/p&gt;
+
+        &lt;p&gt; different $\eta \rightarrow$ different distributions within the family&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$T(y)$: sufficient statistic (usually, $T(y)=y$)&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$a(\eta)$: log partition function&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$e^{-a(\eta)}$: normalization constant (to ensure that $\int{p(y,\eta)dy}=1$)&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$T,a,b$: fixed choice that defines a family of distributions parametrized by $\eta$&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;bernoulli&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Bernoulli Distribution&lt;/strong&gt; (Classification)&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  p(y|\phi)&amp;=\phi^y(1-\phi)^{1-y} \\
+  &amp;=e^{y\log{\phi}+(1-y)\log{(1-\phi)}} \\
+  &amp;=e^{y\log{\frac{\phi}{1-\phi}}+\log{(1-\phi)}} \\
+  \end{align} %]]&gt;&lt;/script&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;$\eta=\log{\frac{\phi}{1-\phi}}\Leftrightarrow \phi=\frac{1}{1+e^{-\eta}}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$T(y)=y$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$a(\eta)=\log{(1+e^\eta)}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$b(y)=1$&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;gaussian&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Gaussian Distribution&lt;/strong&gt; (Regression)&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  p(y|\mu,\sigma^2)&amp;=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{1}{2\sigma^2}(y-\mu)^2} \\
+  &amp;=\frac{1}{\sqrt{2\pi}}e^{\frac{\mu}{\sigma^2}y-\frac{1}{2\sigma^2}y^2-\frac{1}{2\sigma^2}\mu^2-\log{\sigma}}
+  \end{align} %]]&gt;&lt;/script&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;$\eta=\begin{bmatrix}
+    \frac{\mu}{\sigma^2} ;
+    \frac{-1}{2\sigma^2}
+   \end{bmatrix}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$T(y)=\begin{bmatrix}
+    y;
+    y^2
+   \end{bmatrix}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$a(\eta)=\frac{1}{2\sigma^2}\mu^2-\log{\sigma}=-\frac{\eta_1^2}{4\eta_2}-\frac{1}{2}\log{(-2\eta_2)}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$b(y)=\frac{1}{\sqrt{2\pi}}$&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;poisson&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Poisson Distribution&lt;/strong&gt; (count-data)&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  p(y|\lambda)&amp;=\frac{\lambda^ye^{-\lambda}}{y!}\\
+  &amp;=\frac{1}{y!}e^{y\log{\lambda}-\lambda}
+  \end{align} %]]&gt;&lt;/script&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;$\eta=\log{\lambda}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$T(y)=y$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$a(\eta)=e^\eta$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$b(y)=\frac{1}{y!}$&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;gamma&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Gamma Distribution&lt;/strong&gt; (continuous non-negative random variables)&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  p(y|\lambda,a)&amp;=\frac{\lambda^ay^{a-1}e^{-\lambda y}}{\Gamma(a)}\\
+  &amp;=\frac{y^{a-1}}{\Gamma(a)}e^{-\lambda y+a\log{\lambda}}
+  \end{align} %]]&gt;&lt;/script&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;$\eta=-\lambda$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$T(y)=y$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$a(\eta)=-a\log{(-\eta)}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$b(y)=\frac{y^{a-1}}{\Gamma(a)}$&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;beta&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Beta Distribution&lt;/strong&gt; (distribution of probabilities)&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  p(y|\alpha,\beta)&amp;=\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}y^{\alpha-1}(1-y)^{\beta-1} \\
+  &amp;=\frac{(1-y)^\beta}{y(1-y)\Gamma(\beta)}e^{\alpha\log{y}- \log{\frac{\Gamma(\alpha)}{\Gamma(\alpha+\beta)}}} \\
+  &amp;=\frac{y^\alpha}{y(1-y)\Gamma(\alpha)}e^{\beta\log{(1-y)}- \log{\frac{\Gamma(\beta)}{\Gamma(\alpha+\beta)}}}
+  \end{align} %]]&gt;&lt;/script&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;$\eta=\alpha\ \text{or}\ \beta$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$T(y)=\log{y}\ \text{or}\ \log{(1-y)}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$a(\eta)=\log{\frac{\Gamma(\eta)}{\Gamma(\alpha+\beta)}}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$b(y)=\frac{(1-y)^\beta}{y(1-y)\Gamma(\beta)}\ \text{or}\ \frac{y^\alpha}{y(1-y)\Gamma(\alpha)}$&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;dirichlet&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Dirichlet Distribution&lt;/strong&gt; (multivariate beta)&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  p(y|\alpha)&amp;=\frac{\Gamma(\sum_k\alpha_k)}{\prod_k\Gamma(\alpha_k)}\prod_k{y_k^{\alpha_k-1}} \\
+  &amp;=\exp{\big(\sum_k{(\alpha_k-1)\log{y_k}}-\big[\sum_k{\log{\Gamma(\alpha_k)}}-\log{\Gamma(\sum_k{\alpha_k})}\big]\big)}
+  \end{align} %]]&gt;&lt;/script&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;$\eta=\alpha-1$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$T(y)=\log{y}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$a(\eta)=\sum_k{\log{\Gamma(\alpha_k)}}-\log{\Gamma(\sum_k{\alpha_k})}$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$b(y)=1$&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;construct&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;method-of-constructing-glms&quot;&gt;Method of Constructing GLMs&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;3 Assumptions&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;$y|x,w \sim \text{ExponentialFamily}(\eta)$&lt;/p&gt;
+
+        &lt;p&gt;$y$ given $x\&amp;amp;w$ follows some exponential family distribution with natural parameter $\eta$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$h(x)=\text{E}[y|x]$&lt;/p&gt;
+
+        &lt;p&gt;Our hypothetical model $h(x)$ should predict the expected value of $y$ given $x$&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;$\eta=w^Tx$&lt;/p&gt;
+
+        &lt;p&gt;$\eta$ is linearly related to $x$&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Example 1: OLS (Ordinary Least Squares) (i.e. LinReg)&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  h(x)&amp;=\text{E}[y\|x,w]\ \ \ \ \ \ &amp;\text{(Assumption 2)} \\
+     &amp;=\mu \\
+     &amp;=\eta\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ &amp;\text{(Assumption 1)} \\
+     &amp;=w^Tx\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ &amp;\text{(Assumption 3)}
+  \end{align} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Example 2: Logistic Regression&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  h(x)&amp;=\text{E}[y\|x,w]\ \ \ \ \ \ &amp;\text{(Assumption 2)} \\
+     &amp;=\phi \\
+     &amp;=\frac{1}{1+e^{-\eta}}\ \ \ \ \ \ &amp;\text{(Assumption 1)} \\
+     &amp;=\frac{1}{1+e^{-w^Tx}}\ \ \ \ \ \ &amp;\text{(Assumption 3)}
+  \end{align} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Example 3: &lt;a name=&quot;softmax&quot;&gt;&lt;/a&gt;&lt;strong&gt;Softmax Regression&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;Softmax is a method used in &lt;strong&gt;multiclass classification&lt;/strong&gt; to select one output value $\phi_i$ of the highest probability among all the output values.&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ \hat{y}=\begin{bmatrix}
+ \phi_1 \\
+ \vdots \\
+ \phi_{k-1}
+ \end{bmatrix}
+ \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;One-hot Encoding&lt;/strong&gt;&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ y\in \{ 1,\cdots,k \} \Rightarrow T(y)\in \mathbb{R}^{k}
+ \end{equation}&lt;/script&gt;
+
+        &lt;p&gt;where&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ T(1)=\begin{bmatrix}
+ 1 \\ 0 \\ \vdots \\ 0
+ \end{bmatrix},
+ T(2)=\begin{bmatrix}
+ 0 \\ 1 \\ \vdots \\ 0
+ \end{bmatrix},\cdots,
+ T(k)=\begin{bmatrix}
+ 0 \\ 0 \\ \vdots \\ 1
+ \end{bmatrix}
+ \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;Dummy Encoding&lt;/strong&gt;&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ y\in \{ 1,\cdots,k \} \Rightarrow T(y)\in \mathbb{R}^{k-1}
+ \end{equation}&lt;/script&gt;
+
+        &lt;p&gt;where&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ T(1)=\begin{bmatrix}
+ 1 \\ 0 \\ \vdots \\ 0
+ \end{bmatrix},
+ T(2)=\begin{bmatrix}
+ 0 \\ 1 \\ \vdots \\ 0
+ \end{bmatrix},\cdots,
+ T(k-1)=\begin{bmatrix}
+ 0 \\ 0 \\ \vdots \\ 1
+ \end{bmatrix},
+ T(k)=\begin{bmatrix}
+ 0 \\ 0 \\ \vdots \\ 0
+ \end{bmatrix}
+ \end{equation}&lt;/script&gt;
+
+        &lt;p&gt;Why Dummy Encoding &amp;gt; One-hot Encoding? It reduces 1 entire column!&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Indicator Function&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ \text{I}\{ \text{True} \}=1,\ \text{I}\{ \text{False} \}=0
+ \end{equation}&lt;/script&gt;
+
+        &lt;p&gt;Therefore,&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ T(y)_i =\text{I}\{ y=i \}
+ \end{equation}&lt;/script&gt;
+
+        &lt;p&gt;Therefore,&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ \text{E}[T(y)_i] =P(y=i)=\phi_i
+ \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Exponential Family form&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ p(y|\phi)&amp;=\prod_{i=1}^{k}{\phi_i^{\text{I}\{ y=i \}}} \\
+ &amp;=\prod_{i=1}^{k-1}{\phi_i^{T(y)_i}} \cdot \phi_k^{1-\sum_{i=1}^{k-1}{T(y)_i}} \\
+ &amp;=\exp{\big(\sum_{i=1}^{k-1}{T(y)_i\log{(\phi_i)}-\sum_{i=1}^{k-1}{T(y)_i}\log{(\phi_k)}}+\log{(\phi_k)}\big)} \\
+ &amp;=\exp{\big(\sum_{i=1}^{k-1}{T(y)_i\log{\big(\frac{\phi_i}{\phi_k}\big)}+\log{(\phi_k)}\big)}} \\
+ \end{align} %]]&gt;&lt;/script&gt;
+
+        &lt;ol&gt;
+          &lt;li&gt;
+            &lt;p&gt;$\eta=\begin{bmatrix}\log{\big(\frac{\phi_1}{\phi_k}\big)}\ ;\ \cdots\ ;\ \log{\big(\frac{\phi_{k-1}}{\phi_k}\big)}\end{bmatrix}$&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;$T(y)=\begin{bmatrix}T(y)_1\ ;\ \cdots\ ;\ T(y)_k-1\end{bmatrix}$&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;$a(\eta)=-\log{(\phi_k)}$&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;$b(y)=1$&lt;br /&gt;
+  &lt;/p&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;Softmax Function&lt;/strong&gt; (derived from $\eta_i=\log{\big(\frac{\phi_i}{\phi_k}\big)}$)&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ \phi_i=\frac{e^{\eta_i}}{\sum_{j=1}^k{e^{\eta_j}}}
+ \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Probabilistic Interpretation of Softmax Regression&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ p(y=i|x,w)=\frac{e^{w_i^Tx}}{\sum_{j=1}^k{e^{w_i^Tx}}}
+ \end{equation}&lt;/script&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Log Likelihood&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+ l(w)&amp;=\sum_{i=1}^m{\log{p(y^{(i)}|x^{(i)},w)}} \\
+ &amp;=\sum_{i=1}^m{\log{\prod_{i=1}^{k}{\Bigg(\frac{e^{w_l^Tx^{(i)}}}{\sum_{j=1}^k{e^{w_l^Tx^{(i)}}}}\Bigg)^{\text{I}\{ y^{(i)}=l \}}}}}
+ \end{align} %]]&gt;&lt;/script&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Roadmap: Bernoulli Distribution Gaussian Distribution Poisson Distribution Gamma Distribution Beta Distribution Dirichlet Distribution Method of Constructing GLMs Softmax Regression</summary></entry><entry><title type="html">Basics of Artificial Neural Networks</title><link href="http://localhost:4000/DL/ANN/" rel="alternate" type="text/html" title="Basics of Artificial Neural Networks" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/DL/DL-Basics</id><content type="html" xml:base="http://localhost:4000/DL/ANN/">&lt;p&gt;Claim:&lt;br /&gt;
 The dimensions used in this notebook are of my personal preference. They can be modified in whatever way you want as long as they are in consistency.&lt;/p&gt;
 
 &lt;p&gt;Roadmap:&lt;/p&gt;
@@ -2222,197 +1903,10 @@ W := W-\alpha\frac{\partial\mathcal{L}}{\partial W}
  W&amp;=W-\alpha\frac{\partial\mathcal{L}}{\partial W}
  \end{align} %]]&gt;&lt;/script&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">Claim: The dimensions used in this notebook are of my personal preference. They can be modified in whatever way you want as long as they are in consistency.</summary></entry><entry><title type="html">SVM</title><link href="http://localhost:4000/ML/SVM/" rel="alternate" type="text/html" title="SVM" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-SVM</id><content type="html" xml:base="http://localhost:4000/ML/SVM/">&lt;p&gt;Roadmap:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#margin&quot;&gt;Functional &amp;amp; Geometric Margins&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#lagrange&quot;&gt;Lagrange Duality&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#KKT&quot;&gt;KKT Conditions&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Problem with Classification:&lt;/p&gt;
-
-    &lt;center&gt;&lt;img src=&quot;../../images/ML/SVM1.png&quot; width=&quot;300&quot; /&gt;&lt;/center&gt;
-
-    &lt;p&gt;This is a binary classification. The circles &amp;amp; crosses are training examples with two different labels. The black line is the classifier, and it is able to classify “circle” and “cross”. For points like $\text{A}$ that are distant from the classifier, we are quite confident that they belong to “cross”.&lt;/p&gt;
-
-    &lt;p&gt;However, what about $\text{B}$ and $\text{C}$ that are super close to the decision boundary? Based on this classifier, $\text{B}$ belongs to “cross” and $\text{C}$ belongs to “circle”, but how confident are we about our classifier? What if our classifier is just slightly off and $\text{C}$ was actually “cross”?&lt;/p&gt;
-
-    &lt;center&gt;&lt;img src=&quot;../../images/ML/SVM2.png&quot; width=&quot;300&quot; /&gt;&lt;/center&gt;
-
-    &lt;p&gt;This, is SVM in a nutshell.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt; &lt;a name=&quot;margin&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;margins&quot;&gt;Margins&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Functional Margin&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  \hat{\gamma}^{(i)}=y^{(i)}(w^Tx+b)\ \ \ \ \ \ \|\ y\in\{-1,1\}
-  \end{equation}&lt;/script&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;Intuition: $\hat{\gamma}^{(i)}\uparrow\uparrow\ \rightarrow\text{confidence}\uparrow\uparrow$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;When $y=1\ \rightarrow w^Tx+b &amp;gt;&amp;gt; 0$.&lt;br /&gt;
-  When $y=-1\rightarrow w^Tx+b &amp;lt;&amp;lt; 0$.&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Problem with functional margin:&lt;/p&gt;
-
-        &lt;p&gt;if $w\rightarrow kw$ and $b\rightarrow kb$ (where $k&amp;gt;0$), then $g(w^Tx+b)=g(k(w^Tx+b))$&lt;/p&gt;
-
-        &lt;p&gt;but our $g(z)$ here follows:&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-g(z)=\begin{cases}
--1&amp; \text{if $z&lt;0$} \\
-1&amp; \text{if $z&gt;0$} \\
-\end{cases} %]]&gt;&lt;/script&gt;
-
-        &lt;p&gt;that is, $z$ and $kz$ makes no difference for $g(z)$.&lt;/p&gt;
-
-        &lt;p&gt;HOWEVER, the functional margin does change by a factor of $k$ here, meaning that a large functional margin does not necessarily represent a confident prediction in this case.&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;p&gt; &lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Geometric Margin&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;p&gt;Refer back to the figure above. If we want to find the distance between point $A$ and the decision boundary, which is $AA’=\gamma^{(i)}$, what should we do?&lt;/p&gt;
-
-    &lt;center&gt;&lt;img src=&quot;../../images/ML/SVM3.png&quot; width=&quot;300&quot; /&gt;&lt;/center&gt;
-
-    &lt;p&gt;We normalize $w$ to find the unit vector $\frac{w}{\lVert w \rVert}$, and we also have $A=x^{(i)}$. Because $AA’\parallel \overrightarrow{w}$, we can find $A’$ by:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  A'=x^{(i)}-\gamma^{(i)}\frac{w}{\lVert w \rVert}
-  \end{equation}&lt;/script&gt;
-
-    &lt;p&gt;and because $A’$ is on the decision boundary $w^Tx+b=0$, we get&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  &amp;w^TA'+b=0 \\
-  \Longrightarrow\ &amp;w^Tx^{(i)}+b=w^T\frac{w}{\lVert w \rVert}\gamma^{(i)} \ \ \ \ \ \ \ \ \ \bigg(w^T\frac{w}{\lVert w \rVert}=\frac{\lVert w \rVert^2}{\lVert w \rVert}\bigg) \\
-  \Longrightarrow\ &amp;\gamma^{(i)}=\bigg(\frac{w}{\lVert w \rVert}\bigg)^Tx^{(i)}+\frac{b}{\lVert w \rVert}
-  \end{align} %]]&gt;&lt;/script&gt;
-
-    &lt;p&gt;and if we generalize it with both classes of $y^{(i)}$:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  \gamma^{(i)}=y^{(i)}\Bigg(\bigg(\frac{w}{\lVert w \rVert}\bigg)^Tx^{(i)}+\frac{b}{\lVert w \rVert}\Bigg)
-  \end{equation}&lt;/script&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt; &lt;a name=&quot;lagrange&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;optimization-lagrange-duality&quot;&gt;Optimization: Lagrange Duality&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Constrained optimization problem&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  \mathop{\min}_ {w} f(w)\ \ \text{s.t.}\ h_i(w)=0\ \ \forall i\in\{1,...,m\}
-  \end{equation}&lt;/script&gt;
-
-    &lt;p&gt;&lt;u&gt;Interpretation&lt;/u&gt;: Minimize a function $f(w)$ on the set $\{w\ |\ h_i(w)=0\ \forall i\in\{1,…,m\}\}$ where $w$ satisfies the equality constraints.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Lagrangian&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  \mathcal{L}(w,\beta)=f(w)+\sum_{i=1}^{m}{\beta_ih_i(w)}
-  \end{equation}&lt;/script&gt;
-
-    &lt;p&gt;where $\beta_i=$ Lagrange multipliers, and then we solve it by $\frac{\partial{\mathcal{L}}}{\partial{w_i}}=0$ and $\frac{\partial{\mathcal{L}}}{\partial{\beta_i}}=0$&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Generalized constrained optimization problem&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  \mathop{\min}_ {w} f(w)\ \ \text{s.t.}\ h_i(w)=0\ \ &amp;\forall i\in\{1,...,m\} \\
-  g_i(w)\leq 0\ \ &amp;\forall i\in\{1,...,n\}
-  \end{align} %]]&gt;&lt;/script&gt;
-
-    &lt;p&gt;&lt;u&gt;Interpretation&lt;/u&gt;: Add an inequality constraint to the original optimization problem.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Generalized Lagrangian&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  \mathcal{L}(w,\alpha,\beta)=f(w)+\sum_{i=1}^{m}{\beta_ih_i(w)}+\sum_{i=1}^{n}{\alpha_ig_i(w)}
-  \end{equation}&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Primal optimization problem&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  p^* =\mathop{\min}_ {w} \theta_{\mathcal{P}}(w)=\mathop{\min}_ {w} \mathop{\max}_ {\alpha,\beta:\alpha_i\geq0} \mathcal{L}(w,\alpha,\beta)
-  \end{equation}&lt;/script&gt;
-
-    &lt;p&gt;&lt;u&gt;Interpretation&lt;/u&gt;: Under the 2 primal constraints above, the maximum of our generalized lagrangian (labeled as $\theta_{\mathcal{P}}(w)$) is basically just $f(w)$ as long as $\alpha_i\geq0\ \forall i\in\{1,…,m\}$:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  &amp;\sum_{i=1}^{m}{\beta_ih_i(w)}\longrightarrow\sum_{i=1}^{m}{\beta_i\cdot0}\longrightarrow0 \\
-  &amp;\sum_{i=1}^{m}{\alpha_ig_i(w)}\xrightarrow{\alpha\geq0,g(w)\leq0}\sum_{i=1}^{m}{(+0\cdot-0)}\longrightarrow0
-  \end{align} %]]&gt;&lt;/script&gt;
-
-    &lt;p&gt;Therefore, this is just another way to write our generalized optimization problem.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Dual optimization problem&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  d^* =\mathop{\max}_ {\alpha,\beta:\alpha_i\geq0} \theta_{\mathcal{D}}(\alpha,\beta)=\mathop{\max}_ {\alpha,\beta:\alpha_i\geq0} \mathop{\min}_ {w} \mathcal{L}(w,\alpha,\beta)
-  \end{equation}&lt;/script&gt;
-
-    &lt;p&gt;&lt;u&gt;Interpretation&lt;/u&gt;: This is basically the same problem as primal except that $\mathop{\max}$ and $\mathop{\min}$ are exchanged. However, their values are not necessarily equal. Instead, they follow the following relationship:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  d^* \leq p^*
-  \end{equation}&lt;/script&gt;
-
-    &lt;p&gt;The intuition is simple. Suppose we have a function $f(x,y)$, then:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align}
-  \mathop{\min}_ {w} f(x,w)\leq f(x,y)\leq \mathop{\max}_ {v} f(v,y) \\
-  \mathop{\min}_ {u} f(u,y)\leq f(x,y)\leq \mathop{\max}_ {t} f(x,t)
-  \end{align}&lt;/script&gt;
-
-    &lt;p&gt;This definitely holds for all functions in the world. Therefore, the following also holds:&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  \mathop{\max}_ {x} \big(\mathop{\min}_ {w} f(x,w)\big)\leq \mathop{\min}_ {y} \big(\mathop{\max}_ {v} f(v,y)\big)
-  \end{equation}&lt;/script&gt;
-
-    &lt;p&gt;which is basically saying that “$\mathop{\max}\mathop{\min}\leq\mathop{\min}\mathop{\max}$” for all multivariate functions, including our Lagrangian.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a name=&quot;KKT&quot;&gt;&lt;/a&gt;&lt;strong&gt;Karush-Kuhn-Tucker Conditions (KKT)&lt;/strong&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Roadmap: Functional &amp;amp; Geometric Margins Lagrange Duality KKT Conditions</summary></entry><entry><title type="html">Classification</title><link href="http://localhost:4000/ML/class/" rel="alternate" type="text/html" title="Classification" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-class</id><content type="html" xml:base="http://localhost:4000/ML/class/">&lt;p&gt;Roadmap:&lt;/p&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Claim: The dimensions used in this notebook are of my personal preference. They can be modified in whatever way you want as long as they are in consistency.</summary></entry><entry><title type="html">Classification</title><link href="http://localhost:4000/ML/class/" rel="alternate" type="text/html" title="Classification" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-class</id><content type="html" xml:base="http://localhost:4000/ML/class/">&lt;p&gt;Roadmap:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#logreg&quot;&gt;Logistic Regression&lt;/a&gt;
     &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#model&quot;&gt;Problem Setting &amp;amp; Model&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#learn&quot;&gt;Learning&lt;/a&gt;
         &lt;ul&gt;
           &lt;li&gt;&lt;a href=&quot;#gd&quot;&gt;Gradient Descent&lt;/a&gt;&lt;/li&gt;
@@ -2420,16 +1914,19 @@ g(z)=\begin{cases}
           &lt;li&gt;&lt;a href=&quot;#normal&quot;&gt;Normal Equation&lt;/a&gt;&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#prob&quot;&gt;Probabilistic Interpretation&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#code&quot;&gt;Code Template&lt;/a&gt;&lt;br /&gt;
 &lt;br /&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#knn&quot;&gt;k-Nearest Neighbors&lt;/a&gt;&lt;br /&gt;
+  &lt;li&gt;&lt;a href=&quot;#knn&quot;&gt;k-Nearest Neighbors&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#statsclass&quot;&gt;Statistical Setting for Classification&lt;/a&gt;&lt;br /&gt;
 &lt;br /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#gda&quot;&gt;Gaussian Discriminant Analysis&lt;/a&gt;
     &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#bayes&quot;&gt;2 Types of Learning Algorithms &amp;amp; Bayes Theorem&lt;/a&gt;
+      &lt;li&gt;&lt;a href=&quot;#bayes&quot;&gt;2 Types of Learning Algorithms &amp;amp; Bayes Theorem&lt;/a&gt;&lt;br /&gt;
 &lt;br /&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
@@ -2445,7 +1942,7 @@ g(z)=\begin{cases}
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a name=&quot;model&quot;&gt;&lt;/a&gt;&lt;strong&gt;Problem Setting&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Problem Setting&lt;/strong&gt;&lt;/p&gt;
 
     &lt;ul&gt;
       &lt;li&gt;&lt;strong&gt;Data&lt;/strong&gt;: Observed pairs $(x,y)$, where $x\in\mathcal{X}$ &amp;amp; $y\in\mathcal{Y}$
@@ -2514,7 +2011,7 @@ g(z)=\begin{cases}
     &lt;/ol&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a name=&quot;prob&quot;&gt;&lt;/a&gt;Probabilistic Interpretation&lt;/p&gt;
+    &lt;p&gt;Probabilistic Interpretation&lt;/p&gt;
 
     &lt;ol&gt;
       &lt;li&gt;
@@ -2628,7 +2125,34 @@ g(z)=\begin{cases}
 
     &lt;ul&gt;
       &lt;li&gt;Smaller $k$ $\Rightarrow$ smaller training error but could lead to overfitting&lt;/li&gt;
-      &lt;li&gt;Larger $k$ $\Rightarrow$ more stable predictions due to voting&lt;/li&gt;
+      &lt;li&gt;Larger $k$ $\Rightarrow$ more stable predictions due to voting&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Statistical Setting for Classification&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;Performance&lt;/strong&gt;&lt;/p&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;Prediction accuracy: $P(f(x)=y)$&lt;/li&gt;
+          &lt;li&gt;Prediction error: $P(f(x)\neq y)$&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;Key Assumption for Supervised Learning&lt;/strong&gt;&lt;/p&gt;
+
+        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  (x_i,y_i)\sim\mathcal{P}\ \ \ |\ \ \ i=1,\cdots,n
+  \end{equation}&lt;/script&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;i.i.d. (independent &amp;amp; identically distributed)&lt;/li&gt;
+          &lt;li&gt;We assume that the future should look like the past.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -2905,7 +2429,7 @@ p(y=1|x_\text{new})&amp;=\frac{\prod_{i=1}^n{p(x_i|y=1)}\cdot p(y=1)}{\prod_{i=1
 \begin{align}
 \phi_{j|y=1}&amp;=\frac{\sum_{i=1}^m{I\{x_{j}^{(i)}=1\land y^{(i)}=1\}}+1}{\sum_{i=1}^m{I\{y^{(i)}=1\}}+2} \\
 \phi_{j|y=0}&amp;=\frac{\sum_{i=1}^m{I\{x_{j}^{(i)}=1\land y^{(i)}=0\}}+1}{\sum_{i=1}^m{I\{y^{(i)}=0\}}+2} \\
-\end{align} %]]&gt;&lt;/script&gt;</content><author><name></name></author><summary type="html">Roadmap: Logistic Regression Problem Setting &amp;amp; Model Learning Gradient Descent Newton’s Method Normal Equation Probabilistic Interpretation Code Template k-Nearest Neighbors Gaussian Discriminant Analysis 2 Types of Learning Algorithms &amp;amp; Bayes Theorem Naive Bayes Classifier Laplace Smoothing</summary></entry><entry><title type="html">Regression</title><link href="http://localhost:4000/ML/reg/" rel="alternate" type="text/html" title="Regression" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-reg</id><content type="html" xml:base="http://localhost:4000/ML/reg/">&lt;p&gt;Claim: some of the images in this session are cited from ColumbiaX’s &lt;a href=&quot;https://www.edx.org/micromasters/columbiax-artificial-intelligence&quot; target=&quot;__blank&quot;&gt;Artificial Intelligence MicroMasters Program&lt;/a&gt;.&lt;/p&gt;
+\end{align} %]]&gt;&lt;/script&gt;</content><author><name></name></author><summary type="html">Roadmap: Logistic Regression Learning Gradient Descent Newton’s Method Normal Equation Code Template k-Nearest Neighbors Statistical Setting for Classification Gaussian Discriminant Analysis 2 Types of Learning Algorithms &amp;amp; Bayes Theorem Naive Bayes Classifier Laplace Smoothing</summary></entry><entry><title type="html">Regression</title><link href="http://localhost:4000/ML/reg/" rel="alternate" type="text/html" title="Regression" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-reg</id><content type="html" xml:base="http://localhost:4000/ML/reg/">&lt;p&gt;Claim: some of the images in this session are cited from ColumbiaX’s &lt;a href=&quot;https://www.edx.org/micromasters/columbiax-artificial-intelligence&quot; target=&quot;__blank&quot;&gt;Artificial Intelligence MicroMasters Program&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Roadmap:&lt;/p&gt;
 &lt;ul&gt;
@@ -2950,8 +2474,11 @@ p(y=1|x_\text{new})&amp;=\frac{\prod_{i=1}^n{p(x_i|y=1)}\cdot p(y=1)}{\prod_{i=1
         &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#ridgevsls&quot;&gt;Ridge Regression vs Least Squares LinReg&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ridgecode&quot;&gt;Code Template&lt;/a&gt;
+&lt;br /&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#lasso&quot;&gt;Lasso Regression&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt; &lt;a name=&quot;linreg&quot;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -3930,7 +3457,796 @@ p(y=1|x_\text{new})&amp;=\frac{\prod_{i=1}^n{p(x_i|y=1)}\cdot p(y=1)}{\prod_{i=1
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Claim: some of the images in this session are cited from ColumbiaX’s Artificial Intelligence MicroMasters Program.</summary></entry><entry><title type="html">Convolutional Neural Networks</title><link href="http://localhost:4000/DL/CNN/" rel="alternate" type="text/html" title="Convolutional Neural Networks" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/DL/DL-CNN</id><content type="html" xml:base="http://localhost:4000/DL/CNN/">&lt;p&gt;Claim: some of the images in this session are cited from Andrew Ng’s &lt;a href=&quot;https://www.coursera.org/specializations/deep-learning&quot; target=&quot;_blank&quot;&gt;Deep Learning&lt;/a&gt; specialization.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Claim: some of the images in this session are cited from ColumbiaX’s Artificial Intelligence MicroMasters Program.</summary></entry><entry><title type="html">Recurrent Neural Networks</title><link href="http://localhost:4000/DL/RNN/" rel="alternate" type="text/html" title="Recurrent Neural Networks" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/DL/DL-RNN</id><content type="html" xml:base="http://localhost:4000/DL/RNN/">&lt;p&gt;Claim: some of the images in this session are cited from Andrew Ng’s &lt;a href=&quot;https://www.coursera.org/specializations/deep-learning&quot; target=&quot;_blank&quot;&gt;Deep Learning&lt;/a&gt; specialization, but most are created by myself.&lt;/p&gt;
+
+&lt;p&gt;Roadmap:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Basics of RNN
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#intsm&quot;&gt;Intuition of Sequence Models&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#intrnn&quot;&gt;Intuition of RNN&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#layers&quot;&gt;RNN Types&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#lm&quot;&gt;Language Model&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#var&quot;&gt;RNN Variations&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#gru&quot;&gt;GRU&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#lstm&quot;&gt;LSTM&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#birnn&quot;&gt;Bidirectional RNN&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#drnn&quot;&gt;Deep RNN&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Word Embeddings
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#ohr&quot;&gt;One-hot representation&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#fr&quot;&gt;Featurized representation&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#word2vec&quot;&gt;Learning 1: Word2Vec&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#negsam&quot;&gt;Learning 2: Negative Sampling&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#glove&quot;&gt;Learning 3: GloVe&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Sequence Modeling
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#sent&quot;&gt;Sentiment Classification&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#seq2seq&quot;&gt;Sequence to Sequence&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#beam&quot;&gt;Beam Search&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#bleu&quot;&gt;Bleu Score&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#attention&quot;&gt;Attention Model&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&quot;basics-of-rnn&quot;&gt;Basics of RNN&lt;/h2&gt;
+
+&lt;p&gt;&lt;a name=&quot;intsm&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;intuition-of-sequence-models&quot;&gt;&lt;strong&gt;Intuition of Sequence Models&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;These are called sequence modeling:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Speech recognition&lt;/li&gt;
+  &lt;li&gt;Music generation&lt;/li&gt;
+  &lt;li&gt;Sentiment classification&lt;/li&gt;
+  &lt;li&gt;DNA sequence analysis&lt;/li&gt;
+  &lt;li&gt;Machine translation&lt;/li&gt;
+  &lt;li&gt;Video activity recognition&lt;/li&gt;
+  &lt;li&gt;Name entity recognition&lt;/li&gt;
+  &lt;li&gt;……&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Forget about the tedious definitions. As a basic intuition of what we are doing in sequence modeling, here is a very simple example:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We have a sentence: “Pewdiepie and MrBeast are two of the greatest youtubers in human history.”&lt;/li&gt;
+  &lt;li&gt;We want to know: where are the “names” in this sentence? (i.e. name entity recognition)&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;We convert the input sentence into $X$: $x^{\langle 1 \rangle}x^{\langle 2 \rangle}…x^{\langle t \rangle}…x^{\langle 12 \rangle}$&lt;/p&gt;
+
+    &lt;p&gt;where $x^{\langle t \rangle}$ represents each word in the sentence.&lt;/p&gt;
+
+    &lt;p&gt;But how does it represent a word? Notice that we used the capitalized $X$ for a single sentence. Actually, $X.\text{shape}=5000\times12$, and $x.\text{shape}=5000\times1$. Why?&lt;/p&gt;
+
+    &lt;p&gt;We first make a vocabulary list like $\text{list}=[\text{a; and; …; history; …; MrBeast; …}]$.&lt;/p&gt;
+
+    &lt;p&gt;Then, we convert each word into a one-hot vector representing the index of the word in the dictionary, e.g.:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  x^{\langle 1 \rangle}=\begin{bmatrix}
+  0 \\ \vdots \\ 1 \\ \vdots \\ 0
+  \end{bmatrix}\longleftarrow 425,\ 
+  x^{\langle 2 \rangle}=\begin{bmatrix}
+  0 \\ \vdots \\ 1 \\ \vdots \\ 0
+  \end{bmatrix}\longleftarrow 3578,\ \cdots\cdots
+  \end{equation}&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;We then label the output as $y: 1\ 0\ 1\ 0\ 0\ 0\ 0\ 0\ 0\ 0\ 0\ 0$ and train our NN on this.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Accordingly, we can use most of the sequences in our daily life as datasets and build our NN models on them to solve such ML problems.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;intrnn&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;intuition-of-rnn&quot;&gt;&lt;strong&gt;Intuition of RNN&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;We have very briefly mentioned that Conv1D can be used to scan through a sequence, extract features and make predictions. Then why don’t we just stick to Conv1D or use normal ANNs?&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;The scope of sequence modeling is not necessarily recognition or classification, meaning that our inputs &amp;amp; outputs can be in very diff lengths for diff examples.&lt;/li&gt;
+  &lt;li&gt;Neither ANNs nor CNNs share features learned across diff positions of a text or a sequence, whereas context matters quite a lot in most sequence modeling problems.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Therefore, we need to define a brand new NN structure that can perfectly align with sequence modeling - RNN:&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;../../images/DL/rnn.jpg&quot; height=&quot;200&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;
+Forward propagation:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;$a^{\langle 0 \rangle}=\textbf{0}$&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$a^{\langle t \rangle}=g(W_{a}[a^{\langle t-1 \rangle}; x^{\langle t \rangle}]+b_a)\ \ \ \ |\ g:\ \text{tanh/ReLU}$&lt;/p&gt;
+
+    &lt;p&gt;where $W_a=[W_{aa}\ W_{ax}]$ with a shape of $(100,10100)$ if we assume a dictionary of 10000 words (i.e. $x^{\langle t \rangle}.\text{shape}=(10000,100)$) and the activation length of 100.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;$\hat{y}^{\langle t \rangle}=g(W_{y}a^{\langle t \rangle}+b_y)\ \ \ \ |\ g:\ \text{sigmoid}$&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Backward propagation:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;$\mathcal{L}^{\langle t \rangle}(\hat{y}^{\langle t \rangle},y^{\langle t \rangle})=-\sum_i{y_i^{\langle t \rangle}\log{\hat{y}_ i^{\langle t \rangle}}}\ \ \ \ |\ $Same loss function as LogReg&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;layers&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;rnn-types&quot;&gt;&lt;strong&gt;RNN Types&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;center&gt;&lt;img src=&quot;../../images/DL/rnntypes.png&quot; width=&quot;550&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;
+There is nothing much to explain here. The images are pretty clear.&lt;br /&gt;
+&lt;br /&gt;&lt;a name=&quot;lm&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;language-model&quot;&gt;&lt;strong&gt;Language Model&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;u&gt;Intuition of Softmax &amp;amp; Conditional Probability&lt;/u&gt;&lt;/p&gt;
+
+    &lt;p&gt;The core of RNN is to calculate the likelihood of a sequence: $P(y^{\langle 1 \rangle},y^{\langle 2 \rangle},…,y^{\langle t \rangle})$ and output the one with the highest probability.&lt;/p&gt;
+
+    &lt;p&gt;For example, the sequence “&lt;u&gt;the apple and pair salad&lt;/u&gt;” has a much smaller possibility to occur than the sequence “&lt;u&gt;the apple and pear salad&lt;/u&gt;”. Therefore, RNN will output the latter. This seems much like &lt;strong&gt;Softmax&lt;/strong&gt;, and indeed it is.&lt;/p&gt;
+
+    &lt;p&gt;Recall from the formula of conditional probability, we can separate the likelihood into:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  P\big(y^{\langle 1 \rangle},y^{\langle 2 \rangle},...,y^{\langle t \rangle}\big)=P\big(y^{\langle 1 \rangle}\big)P\big(y^{\langle 2 \rangle}|y^{\langle 1 \rangle}\big)...P\big(y^{\langle t \rangle}|y^{\langle 1 \rangle},y^{\langle 2 \rangle},...,y^{\langle t-1 \rangle}\big)
+  \end{equation}&lt;/script&gt;
+
+    &lt;p&gt;For example, to generate the sentence “I like cats.”, we calculate:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+  P\big(\text{&quot;I like cats&quot;}\big)=P\big(\text{&quot;I&quot;}\big)P\big(\text{&quot;like&quot;}|\text{&quot;I&quot;}\big)P\big(\text{&quot;cats&quot;}|\text{&quot;I like&quot;}\big)
+  \end{equation}&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;u&gt;Language Modeling Procedure&lt;/u&gt;
+    &lt;ol&gt;
+      &lt;li&gt;Data Preparation
+        &lt;ul&gt;
+          &lt;li&gt;Training set: large corpus of English text (or other languages)&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;Tokenize&lt;/strong&gt;: mark every word into a token
+            &lt;ul&gt;
+              &lt;li&gt;&amp;lt;EOS&amp;gt;: End of Sentence token&lt;/li&gt;
+              &lt;li&gt;&amp;lt;UNK&amp;gt;: Unknown word token&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;e.g. “I hate Minecraft and kids.” $\Rightarrow$ “I hate &amp;lt;UNK&amp;gt; and kids. &amp;lt;EOS&amp;gt;”&lt;br /&gt;
+  &lt;br /&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Training
+        &lt;center&gt;&lt;img src=&quot;../../images/DL/rnnlm.png&quot; width=&quot;700&quot; /&gt;&lt;/center&gt;
+        &lt;p&gt;&lt;br /&gt;
+ We use the sentence “I hate Minecraft and kids. &amp;lt;EOS&amp;gt;” as one training example.&lt;br /&gt;
+ At the beginning, we initialize $a^{&amp;lt;0&amp;gt;}$ and $x^{&amp;lt;1&amp;gt;}$ as $\vec{0}$ and let the RNN try to guess the first word.&lt;br /&gt;
+ At each step, we use the original word at the same index $y^{&amp;lt;i-1&amp;gt;}$ and the previous activation $a^{&amp;lt;i-1&amp;gt;}$ to let the RNN try to guess the next word $\hat{y}^{&amp;lt;i&amp;gt;}$ from Softmax regression.&lt;br /&gt;
+ During the training process, we try to minimize the loss function $\mathcal{L}(\hat{y},y)$ to ensure the training is effective to predict the sentence correctly.
+  &lt;br /&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Sequence Sampling
+        &lt;center&gt;&lt;img src=&quot;../../images/DL/rnnsample.png&quot; width=&quot;700&quot; /&gt;&lt;/center&gt;
+        &lt;p&gt;&lt;br /&gt;
+ After the RNN is trained, we can use it to generate a sentence by itself. In each step, the RNN will take the previous word it generated $\hat{y}^{&amp;lt;i-1&amp;gt;}$ as $x^{&amp;lt;i&amp;gt;}$ to generate the next word $\hat{y}^{&amp;lt;i&amp;gt;}$.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;u&gt;Character-level LM&lt;/u&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Dictionary
+        &lt;ul&gt;
+          &lt;li&gt;Normal LM: [a, abandon, …, zoo, &amp;lt;UNK&amp;gt;]&lt;/li&gt;
+          &lt;li&gt;Char-lv LM: [a, b, c, …, z]&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Pros &amp;amp; Cons
+        &lt;ul&gt;
+          &lt;li&gt;Pros: never need to worry about unknown words &amp;lt;UNK&amp;gt;&lt;/li&gt;
+          &lt;li&gt;Cons: sequence becomes much much longer; the RNN doesn’t really learn anything about the words.&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;u&gt;Problems with current RNN&lt;/u&gt;&lt;br /&gt;
+  One of the most significant problems with our current simple RNN is &lt;strong&gt;vanishing gradients&lt;/strong&gt;. As shown in the figures above, the next word always has a very strong dependency on the previous word, and the dependency between two words weakens as the distance between them gets longer. In other words, the current RNN are very bad at catching long-line dependencies, for example,&lt;/p&gt;
+
+    &lt;center&gt;the &lt;strong&gt;cat&lt;/strong&gt;, which already ......, &lt;strong&gt;was&lt;/strong&gt; full.&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/center&gt;
+    &lt;center&gt;the &lt;strong&gt;cats&lt;/strong&gt;, which already ......, &lt;strong&gt;were&lt;/strong&gt; full.&lt;/center&gt;
+    &lt;p&gt;&lt;br /&gt;
+  “be” verbs have high dependencies on the “subject”, but RNN doesn’t know that. Since the distance between these two words are too long, the gradient on the “subject” nouns would barely affect the training on the “be” verbs.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt; &lt;a name=&quot;var&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;rnn-variations&quot;&gt;RNN Variations&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;RNN&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;GRU&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;LSTM&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;../../images/DL/rnnblock.png&quot; width=&quot;330&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;../../images/DL/gru.png&quot; width=&quot;330&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;../../images/DL/lstm.png&quot; width=&quot;330&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;As shown above, there are currently 3 most used RNN blocks. The original RNN block activates the linear combination of $a^{&amp;lt;t-1&amp;gt;}$ and $x^{&amp;lt;t&amp;gt;}$ with a $\text{tanh}$ function and then passes the output value onto the next block.&lt;/p&gt;
+
+&lt;p&gt;However, because of the previously mentioned problem with the original RNN, scholars have created some variations, such as GRU &amp;amp; LSTM.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;gru&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;gru-gated-recurrent-unit&quot;&gt;&lt;strong&gt;GRU&lt;/strong&gt; (Gated Recurrent Unit)&lt;/h3&gt;
+
+&lt;center&gt;&lt;img src=&quot;../../images/DL/gru.png&quot; width=&quot;400&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;
+As the name implies, GRU is an advancement of normal RNN block with “gates”. There are 2 gates in GRU:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;R gate&lt;/strong&gt;: (Remember) determine whether to remember the previous cell&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;U gate&lt;/strong&gt;: (Update) determine whether to update the computation with the candidate&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Computing process of GRU:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Compute R gate:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+ \Gamma_r=\sigma\big(w_r\big[a^{&lt;t-1&gt;};x^{&lt;t&gt;}\big]+b_r\big)
+ \end{equation} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Compute U gate:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+ \Gamma_u=\sigma\big(w_u\big[a^{&lt;t-1&gt;};x^{&lt;t&gt;}\big]+b_u\big)
+ \end{equation} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Compute Candidate:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+ \tilde{c}^{&lt;t&gt;}=\tanh{\big(w_c\big[\Gamma_r * a^{&lt;t-1&gt;};x^{&lt;t&gt;}\big]+b_c\big)}
+ \end{equation} %]]&gt;&lt;/script&gt;
+
+    &lt;p&gt;When $\Gamma_r=0$, $\tilde{c}^{&amp;lt;t&amp;gt;}=\tanh{\big(w_cx^{&amp;lt;t&amp;gt;}+b_c\big)}$, the previous word has no effect on the word choice of this cell.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Compute Memory Cell:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+ c^{&lt;t&gt;}=\Gamma_u \cdot \tilde{c}^{&lt;t&gt;} + (1-\Gamma_u) \cdot c^{&lt;t-1&gt;}
+ \end{equation} %]]&gt;&lt;/script&gt;
+
+    &lt;p&gt;When $\Gamma_u=1$,  $c^{&amp;lt;t&amp;gt;}=\tilde{c}^{&amp;lt;t&amp;gt;}$. The candidate updates.&lt;br /&gt;
+ When $\Gamma_u=0$,  $c^{&amp;lt;t&amp;gt;}=c^{&amp;lt;t-1&amp;gt;}$. The candidate does not update.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Output:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+ a^{&lt;t&gt;}=c^{&lt;t&gt;}
+ \end{equation} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;lstm&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;lstm-long-short-term-memory&quot;&gt;&lt;strong&gt;LSTM&lt;/strong&gt; (Long Short-Term Memory)&lt;/h3&gt;
+
+&lt;center&gt;&lt;img src=&quot;../../images/DL/lstm.png&quot; width=&quot;400&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;
+LSTM is an advancement of GRU. While GRU relatively saves more computing power, LSTM is more powerful. There are 3 gates in LSTM:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;F gate&lt;/strong&gt;: (Forget) determine whether to forget the previous cell&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;U gate&lt;/strong&gt;: (Update) determine whether to update the computation with the candidate&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;O gate&lt;/strong&gt;: (Update) Compute the normal activation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Computing process of GRU:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Compute F gate:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+ \Gamma_f=\sigma\big(w_f\big[a^{&lt;t-1&gt;};x^{&lt;t&gt;}\big]+b_f\big)
+ \end{equation} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Compute U gate:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+ \Gamma_u=\sigma\big(w_u\big[a^{&lt;t-1&gt;};x^{&lt;t&gt;}\big]+b_u\big)
+ \end{equation} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Compute O gate:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+ \Gamma_o=\sigma\big(w_o\big[a^{&lt;t-1&gt;};x^{&lt;t&gt;}\big]+b_o\big)
+ \end{equation} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Compute Candidate:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+ \tilde{c}^{&lt;t&gt;}=\tanh{\big(w_c\big[a^{&lt;t-1&gt;};x^{&lt;t&gt;}\big]+b_c\big)}
+ \end{equation} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Compute Memory Cell:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+ c^{&lt;t&gt;}=\Gamma_u \cdot \tilde{c}^{&lt;t&gt;} + \Gamma_f \cdot c^{&lt;t-1&gt;}
+ \end{equation} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Output:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+ a^{&lt;t&gt;}=\Gamma_o \cdot \tanh{c^{&lt;t&gt;}}
+ \end{equation} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Peephole Connection&lt;/strong&gt;: as shown in the formulae, the gate values $\Gamma \propto c^{&amp;lt;t-1&amp;gt;}$, therefore, we can always include $c^{&amp;lt;t-1&amp;gt;}$ into gate calculations to simplify the computing.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;birnn&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;bidirectional-rnn&quot;&gt;&lt;strong&gt;Bidirectional RNN&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;u&gt;Problem&lt;/u&gt;: Sometimes, our choices of previous words are dependent on the latter words. For example,&lt;/p&gt;
+
+&lt;center&gt;&lt;strong&gt;Teddy&lt;/strong&gt; Roosevelt was a nice president.&lt;/center&gt;
+&lt;center&gt;&lt;strong&gt;Teddy&lt;/strong&gt; bears are now on sale!!!&amp;emsp;&amp;emsp;&amp;emsp;&amp;nbsp;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;
+The word “Teddy” represents two completely different things, but without the context from the latter part, we cannot determine what the “Teddy” stands for. (This example is cited from Andrew Ng’s Coursera Specialization)&lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;Solution&lt;/u&gt;: We make the RNN bidirectional:&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;../../images/DL/birnn.png&quot; height=&quot;250&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;
+Each output is calculated as: $\hat{y}^{&amp;lt;t&amp;gt;}=g\Big(W_y\Big[\overrightarrow{a}^{&amp;lt;t&amp;gt;};\overleftarrow{a}^{&amp;lt;t&amp;gt;}\Big]+b_y\Big)$&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;drnn&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;deep-rnn&quot;&gt;&lt;strong&gt;Deep RNN&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Don’t be fascinated by the name. It’s just stacks of RNN layers:&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;../../images/DL/drnn.png&quot; width=&quot;700&quot; /&gt;&lt;/center&gt;
+
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&quot;word-embeddings&quot;&gt;Word Embeddings&lt;/h2&gt;
+
+&lt;p&gt;Word embedding is a vectorized representation of a word. Because our PC cannot directly understand the meaning of words, we need to convert these words into numerical values first. So far, we have been using &lt;a name=&quot;ohr&quot;&gt;&lt;/a&gt;&lt;strong&gt;One-hot Encoding&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+x^{&lt;1&gt;}=\begin{bmatrix}
+0 \\ \vdots \\ 1 \\ \vdots \\ 0
+\end{bmatrix}\longleftarrow 425,\ 
+x^{&lt;2&gt;}=\begin{bmatrix}
+0 \\ \vdots \\ 1 \\ \vdots \\ 0
+\end{bmatrix}\longleftarrow 3578,\ \cdots\cdots
+\end{equation} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;u&gt;Problem&lt;/u&gt;: our RNN doesn’t really learn anything about these words from one-hot representation.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;fr&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;featurized-representation&quot;&gt;&lt;strong&gt;Featurized Representation&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;u&gt;&lt;strong&gt;Intuition:&lt;/strong&gt;&lt;/u&gt; Suppose we have an online shopping review: “Love this dress! Sexy and comfy!”, we can represent this sentence as:&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;../../images/DL/fr.png&quot; width=&quot;600&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;
+We predefine a certain number of features (e.g. gender, royalty, food, size, cost, etc.).&lt;/p&gt;
+
+&lt;p&gt;Then, we give each word (column categories) their relevance to each feature (row categories). As shown in the picture for example, “dress” is very closely related to the feature “gender”, therefore given the value “1”. Meanwhile, “love” is very closely related to the feature “positive”, therefore given the value “0.99”.&lt;/p&gt;
+
+&lt;p&gt;After we define all the featurized values for the words, we get a vectorized representation of each word:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+\text{love}=e_ {1479}=\begin{bmatrix}
+0.03 \\ 0.01 \\ 0.99 \\ 1.00 \\ \vdots
+\end{bmatrix},\text{comfy}=e_ {987}=\begin{bmatrix}
+0.01 \\ 0.56 \\ 0.98 \\ 0.00 \\ \vdots
+\end{bmatrix},\cdots\cdots\end{equation}&lt;/script&gt;
+
+&lt;p&gt;This way, our RNN will get to know the rough meanings of these words.&lt;/p&gt;
+
+&lt;p&gt;For example, when it needs to generate the next word of this sentence: &lt;strong&gt;“I want a glass of orange _____.”&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Since it knows that &lt;strong&gt;“orange”&lt;/strong&gt; is a &lt;strong&gt;fruit&lt;/strong&gt; and that &lt;strong&gt;“glass”&lt;/strong&gt; is closely related to &lt;strong&gt;liquid&lt;/strong&gt;, there is a much higher possibility that our RNN will choose &lt;strong&gt;“juice”&lt;/strong&gt; to fill in the blank.&lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;&lt;strong&gt;Embedding matrix:&lt;/strong&gt;&lt;/u&gt; To acquire the word embeddings such as $\vec{e}_ {1479}$ and $\vec{e}_ {987}$ above, we can multiply our embedding matrix with the one-hot encoding:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+E\times \vec{o}_ j=\vec{e}_ j
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;where $E$ is our featurized representation (i.e. embedding matrix) and $\vec{o}_ j$ is the one-hot encoding of the word (i.e. the index of the word).&lt;/p&gt;
+
+&lt;p&gt;In practice, this is too troublesome since the dimensions of our $E$ tend to be huge (e.g. $(500,10000)$). Thus, we use specialized function to look up an embedding directly from the embedding matrix.&lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;&lt;strong&gt;Analogies:&lt;/strong&gt;&lt;/u&gt; One of the most useful properties of word embeddings is analogies. For example, &lt;strong&gt;“man $\rightarrow$ woman”=”king $\rightarrow$ ?”&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Suppose we have the following featurized representation:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;man&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;woman&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;king&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;queen&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;gender&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-0.99&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0.99&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;royal&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0.01&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0.02&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0.97&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0.96&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;age&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0.01&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0.01&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0.78&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0.77&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;food&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0.03&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0.04&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0.04&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0.02&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;In order to learn the analogy, our RNN will have the following thinking process:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+&amp;\text{Goal: look for}\ w: \mathop{\arg\max}_ w{sim(e_w, e_{\text{king}}-(e_{\text{man}}-e_{\text{woman}}))} \\
+&amp;\because e_{\text{man}}-e_{\text{woman}}\approx\begin{bmatrix}-2 \\ 0 \\ 0 \\ 0\end{bmatrix}, e_{\text{king}}-e_{\text{queen}}\approx\begin{bmatrix}-2 \\ 0 \\ 0 \\ 0\end{bmatrix} \\
+&amp;\therefore e_{\text{man}}-e_{\text{woman}}\approx e_{\text{king}}-e_{\text{queen}} \\
+&amp;\text{Calculate cosine similarity: } sim(\vec{u},\vec{v})=\cos{\phi}=\frac{\vec{u}^T\vec{v}}{\|\vec{u}\|_ 2\|\vec{v}\|_ 2} \\
+&amp;\text{Confirm: }e_w\approx e_{queen}
+\end{align} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;word2vec&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;learning-1-word2vec&quot;&gt;Learning 1: &lt;strong&gt;Word2Vec&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;u&gt;Problem&lt;/u&gt;: We definitely do not want to write the embedding matrix by ourselves. Instead, we train a NN model to learn the word embeddings.&lt;/p&gt;
+
+&lt;p&gt;Suppose we have a sentence “Pewdiepie and MrBeast are two of the greatest youtubers in human history”. Before Word2Vec, let’s define context &amp;amp; target:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Context&lt;/strong&gt;: words around target word
+    &lt;ul&gt;
+      &lt;li&gt;last 4 words: “two of the greatest &lt;strong&gt;__&lt;/strong&gt;”&lt;/li&gt;
+      &lt;li&gt;4 words on both sides: “two of the greatest &lt;strong&gt;__&lt;/strong&gt; in human history.”&lt;/li&gt;
+      &lt;li&gt;last 1 word: “greatest &lt;strong&gt;__&lt;/strong&gt;”&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;skip-gram&lt;/strong&gt;: (any nearby word) “… MrBeast … &lt;strong&gt;__&lt;/strong&gt; …”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Target&lt;/strong&gt;: the word we want our NN to generate
+    &lt;ul&gt;
+      &lt;li&gt;“youtubers”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;u&gt;Algorithm&lt;/u&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Randomly&lt;/strong&gt; choose context &amp;amp; target words with &lt;strong&gt;skip-gram&lt;/strong&gt;. (e.g. context “MrBeast” &amp;amp; target “youtubers”)&lt;/li&gt;
+  &lt;li&gt;Learn &lt;strong&gt;mapping&lt;/strong&gt; of “$c\ (\text{“mrbeast”}[1234])\rightarrow t\ (\text{“youtubers”}[765])$”&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use &lt;strong&gt;softmax&lt;/strong&gt; to calculate the probability of appearance of target given context:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ \hat{y}=P(t|c)=\frac{e^{\theta_t^Te_c}}{\sum_{j=1}^{n}{e^{\theta_j^Te_c}}}
+ \end{equation}&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Minimize the &lt;strong&gt;loss&lt;/strong&gt; function:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ \mathcal{L}(\hat{y},y)=-\sum_{i=1}^{n}{y_i\log{\hat{y}_ i}}
+ \end{equation}&lt;/script&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Notes:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Computation of softmax is very slow: Hierarchical Softmax (i.e. Huffman Tree + LogReg) can solve this problem - with common words at the top and useless words at the bottom.&lt;/li&gt;
+  &lt;li&gt;$c\ \&amp;amp;\ t$ should not be entirely random: words like “the/at/on/it/…” should not be chosen.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;negsam&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;learning-2-negative-sampling&quot;&gt;Learning 2: &lt;strong&gt;Negative Sampling&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;u&gt;Problem&lt;/u&gt;: Given a pair of words, predict whether it’s a context-target pair.&lt;/p&gt;
+
+&lt;p&gt;For example, given the word “orange” as the context, we want our model to know that “orange &amp;amp; juice” is a context-target pair but “orange &amp;amp; king” is not.&lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;Algorithm&lt;/u&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Pick a context-target pair $(c,t)$ (the target should be near the context) from the text corpus as a &lt;strong&gt;positive example&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Pick random words $\{t_1,\cdots,t_k\}$ from the dictionary and form word pairs $\{(c,t_1),\cdots,(c,t_k)\}$ as &lt;strong&gt;negative examples&lt;/strong&gt; based on the following probability that the creator recommended:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ P(w_i)=\frac{f(w_i)^{\frac{3}{4}}}{\sum_{j=1}^{n}{f(w_i)^{\frac{3}{4}}}}
+ \end{equation}&lt;/script&gt;
+
+    &lt;p&gt;where $w_i$ is the $i$th word in the dictionary.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Train a &lt;strong&gt;binary classifier&lt;/strong&gt; based on the training examples from previous steps:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ \hat{y}_ i=P(y=1|c,t_i)=\sigma(\theta_{t_i}^Te_c)
+ \end{equation}&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Repeat Step 1-3 till we form our final embedding matrix $E$.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Negative Sampling is relatively faster and less costly compared to Word2Vec, since it replaces softmax with binary classification.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;glove&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;learning-3-glove-global-vectors&quot;&gt;Learning 3: &lt;strong&gt;GloVe&lt;/strong&gt; (Global Vectors)&lt;/h3&gt;
+
+&lt;p&gt;&lt;u&gt;Problem&lt;/u&gt;: Learn word embeddings based on how many times target $i$ appears in context of word $j$.&lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;Algorithm&lt;/u&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Minimize&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ \sum_{i=1}^{n}{\sum_{j=1}^{n}{f\big(X_{ij}\big)\big(\theta_i^Te_j+b_i+b'_ j-\log{X_{ij}}\big)^2}}
+ \end{equation}&lt;/script&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;$X_{ij}$: #times $i$ appears in context of $j$&lt;/li&gt;
+      &lt;li&gt;$f\big(X_{ij}\big)$: weighing term
+        &lt;ul&gt;
+          &lt;li&gt;$f\big(X_{ij}\big)=0$ if $X_{ij}=0$&lt;/li&gt;
+          &lt;li&gt;$f\big(X_{ij}\big)$ high for uncommon words&lt;/li&gt;
+          &lt;li&gt;$f\big(X_{ij}\big)$ low for too-common words&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;$b_i:t$, $b’_ j:c$&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Compute the final embedding of word $w$:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+ e_w^{\text{final}}=\frac{e_w+\theta_w}{2}
+ \end{equation}&lt;/script&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&quot;sequence-modeling&quot;&gt;Sequence Modeling&lt;/h2&gt;
+
+&lt;p&gt;&lt;a name=&quot;sent&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;sentiment-classification&quot;&gt;&lt;strong&gt;Sentiment Classification&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;u&gt;Problem Setting&lt;/u&gt;: (many-to-one) given text, predict sentiment.&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;../../images/DL/sent.png&quot; width=&quot;550&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;u&gt;Model&lt;/u&gt;:&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;../../images/DL/sentrnn.png&quot; width=&quot;550&quot; /&gt;&lt;/center&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;seq2seq&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;seq2seq&quot;&gt;&lt;strong&gt;Seq2Seq&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;u&gt;Problem Setting&lt;/u&gt;: (many-to-many) given an entire sequence, generate a new sequence.&lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;Example 1: Machine Translation&lt;/u&gt;:&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;../../images/DL/seq2seq.png&quot; width=&quot;550&quot; /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;
+Machine Translation vs Language Model:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Language Model: maximize $P(y^{&amp;lt;1&amp;gt;},\cdots,y^{&amp;lt;T_y&amp;gt;})$&lt;/li&gt;
+  &lt;li&gt;Machine Translation: maximize $P(y^{&amp;lt;1&amp;gt;},\cdots,y^{&amp;lt;T_y&amp;gt;} | \vec{x})$&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;u&gt;Example 2: Image Captioning&lt;/u&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;../../images/DL/seq2seqic.png&quot; width=&quot;550&quot; /&gt;&lt;/center&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;beam&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;beam-search&quot;&gt;&lt;strong&gt;Beam Search&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;u&gt;Problem&lt;/u&gt;: So far, when we choose a word from softmax for each RNN block, we are doing &lt;strong&gt;greedy search&lt;/strong&gt;, that we only look for &lt;strong&gt;local optimum&lt;/strong&gt; instead of &lt;strong&gt;global optimum&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;That is, we only choose the word with the highest $P(y^{&amp;lt;1&amp;gt;}|\vec{x})$ and then the word with the highest $P(y^{&amp;lt;2&amp;gt;}|\vec{x})$ and then …&lt;/p&gt;
+
+&lt;p&gt;As we already know, local optimum does not necessarily represent global optimum. In the world of NLP, the word &lt;strong&gt;“going”&lt;/strong&gt; always has a much higher probability to appear than the word &lt;strong&gt;“visiting”&lt;/strong&gt;, but in certain situations when we need to use “visiting”, the algorithm will still choose “going”, therefore generating a weird sequence as a whole.&lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;Beam Search Algorithm&lt;/u&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Define a beam size of $B$ (usually $B\in\{1\times10^n,3\times10^n\},\ n\in\mathbb{Z}^+$).&lt;/li&gt;
+  &lt;li&gt;Look at the top $B$ words with the highest $P$s for the first word. (i.e. look for $P(\vec{y}^{&amp;lt;1&amp;gt;}|\vec{x})$)&lt;/li&gt;
+  &lt;li&gt;Repeat till &amp;lt;EOS&amp;gt;. Choose the sequence with the highest combined probability.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;u&gt;Improvement&lt;/u&gt;: The original Beam Search is very costly in computing, therefore it is necessary to refine it:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+&amp;\because P(y^{&lt;1&gt;},\cdots,y^{&lt;T_y&gt;}|x)=\prod_{t=1}^{T_y}{P(y^{&lt;t&gt;}|x,y^{&lt;1&gt;},\cdots,y^{&lt;t-1&gt;})} \\
+&amp;\therefore \text{goal}=\mathop{\arg\max}_ y{\prod_{t=1}^{T_y}{P(y^{&lt;t&gt;}|x,y^{&lt;1&gt;},\cdots,y^{&lt;t-1&gt;})}} \\
+&amp;\Rightarrow \mathop{\arg\max}_ y{\sum_{t=1}^{T_y}{\log{P(y^{&lt;t&gt;}|x,y^{&lt;1&gt;},\cdots,y^{&lt;t-1&gt;})}}} \\
+&amp;\Rightarrow \mathop{\arg\max}_ y{\frac{1}{T_y^{\alpha}}\sum_{t=1}^{T_y}{\log{P(y^{&lt;t&gt;}|x,y^{&lt;1&gt;},\cdots,y^{&lt;t-1&gt;})}}}
+\end{align} %]]&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;$\prod\rightarrow\sum{\log}$: log scaling&lt;/li&gt;
+  &lt;li&gt;$\frac{1}{T_y^{\alpha}}$: length normalization (when you add more negative values ($\log{(P&amp;lt;1)}&amp;lt;0$), the sum becomes more negative)&lt;/li&gt;
+  &lt;li&gt;$\alpha$: &lt;strike&gt;learning rate&lt;/strike&gt; just a coefficient&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;u&gt;Error Analysis&lt;/u&gt;: Suppose we want to analyze the following error:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Human: Jimmy visits Africa in September. ($y^*$)&lt;/li&gt;
+  &lt;li&gt;Algorithm: Jimmy visited Africa last September. ($\hat{y}$)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If $P(y^*|x)&amp;gt;P(\hat{y}|x)$, Beam search is at fault $\rightarrow$ increase $B$&lt;br /&gt;
+If $P(y^*|x)\leq P(\hat{y}|x)$, RNN is at fault $\rightarrow$ improve RNN (data augmentation, regularization, architecture, etc.)&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;bleu&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;bleu-score&quot;&gt;&lt;strong&gt;Bleu Score&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;u&gt;Problem&lt;/u&gt;: For many sequence modeling problems (especially seq2seq), there is no fixed correct answer. For example, there are many different Chinese translated versions of the same fiction Sherlock Holmes, and they are all correct. In this case, how do we define “correctness” for machine translation?&lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;Bilingual Evaluation Understudy&lt;/u&gt;:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+p_n=\frac{\sum_{\text{n-gram}\in\hat{y}}{\text{count}_ {clip}(\text{n-gram})}}{\sum_{\text{n-gram}\in\hat{y}}{\text{count}(\text{n-gram})}}
+\end{equation}&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;$\text{n-gram}$: $n$ consecutive words (e.g. bigram: “I have a pen.” $\rightarrow$ “I have”, “have a”, “a pen”)&lt;/li&gt;
+  &lt;li&gt;$\text{count}_ {clip}(\text{n-gram})$: maximal #times an n-gram appears in one of the reference sequences&lt;/li&gt;
+  &lt;li&gt;$\text{count}(\text{n-gram})$: #times an n-gram appears in $\hat{y}$&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For example,&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;input: “Le chat est sur le tapis.”&lt;/li&gt;
+  &lt;li&gt;Reference 1: “The cat is on the mat.”&lt;/li&gt;
+  &lt;li&gt;Reference 2: “There is a cat on the mat.”&lt;/li&gt;
+  &lt;li&gt;MT output: “the cat the cat on the mat.”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The unigrams here are: “the”, “cat”, “on”, “mat”. Then,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+p_1=\frac{2+1+1+1}{3+2+1+1}=\frac{5}{7}
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;The bigrams here are: “the cat”, “cat the”, “cat on”, “on the”, “the mat”. Then,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+p_2=\frac{1+0+1+1+1}{2+1+1+1+1}=\frac{2}{3}
+\end{equation}&lt;/script&gt;
+
+&lt;p&gt;The final Bleu score will be calculated as:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
+\text{BLEU}=BP\times e^{\frac{1}{4}\sum_{n=1}^{4}{p_n}}
+\end{equation}&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;usually we take $n=4$ as the upper limit for n-grams.&lt;/li&gt;
+  &lt;li&gt;$BP$: param to penalize short outputs ($\because$ short outputs tend to have high BLEU scores.)&lt;/li&gt;
+  &lt;li&gt;$BP=1$ if $\text{len}(\hat{y})&amp;gt;\text{len}(\text{ref})$&lt;/li&gt;
+  &lt;li&gt;$BP=e^{\frac{1-\text{len}(\hat{y})}{\text{len}(\text{ref})}}$ if $\text{len}(\hat{y})\leq\text{len}(\text{ref})$&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;attention&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;attention-model&quot;&gt;&lt;strong&gt;Attention Model&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;u&gt;Problem&lt;/u&gt;: Our Seq2Seq model memorizes the entire sequence and then start to generate output sequence. However, a better approach to such problems like machine translation is actually to memorize part of the sequence, translate it, then memorize the next part of the sequence, translate it, and then keep going. Memorizing the entire fiction series of Sherlock Holmes and then translate it is just inefficient.&lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;Model&lt;/u&gt;:&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;../../images/DL/attention.png&quot; width=&quot;400&quot; /&gt;&lt;/center&gt;
+&lt;center&gt;Attention Model = Encoding BRNN + Decoding RNN&lt;/center&gt;
+
+&lt;p&gt;&lt;u&gt;Algorithm&lt;/u&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Combine BRNN activations:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+ a^{&lt;t'&gt;}=\Big(\overleftarrow{a}^{&lt;t'&gt;},\overrightarrow{a}^{&lt;t'&gt;}\Big)
+ \end{equation} %]]&gt;&lt;/script&gt;
+
+    &lt;p&gt;where $t’$ refers to the index of the encoding BRNN layer.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Calculate the amount of “attention” that $y^{&amp;lt;t&amp;gt;}$ should pay to $a^{&amp;lt;t’&amp;gt;}$:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+ \alpha^{&lt;t,t'&gt;}=\frac{e^{(e^{&lt;t,t'&gt;})}}{\sum_{t'=1}^{T_x}{e^{(e^{&lt;t,t'&gt;})}}}
+ \end{equation} %]]&gt;&lt;/script&gt;
+
+    &lt;p&gt;where $e^{&amp;lt;t,t’&amp;gt;}=W_e^{&amp;lt;t,t’&amp;gt;}[s^{&amp;lt;t-1&amp;gt;};a^{&amp;lt;t’&amp;gt;}] +b_e^{&amp;lt;t,t’&amp;gt;}$ is a linear combination of both encoding activation $a^{&amp;lt;t’&amp;gt;}$ and decoding activation $s^{&amp;lt;t-1&amp;gt;}$. $t$ refers to the index of the decoding RNN layer.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Calculate the total attention at $t$:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+ c^{&lt;t&gt;}=\sum_{t'}{\alpha^{&lt;t,t'&gt;}a^{&lt;t'&gt;}}
+ \end{equation} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Include the total attention into the input for output calculation:&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{equation}
+ \hat{y}^{&lt;t&gt;}=s^{&lt;t&gt;}=g\big(W_y[\hat{y}^{&lt;t-1&gt;};c^{&lt;t&gt;}]+b_y\big)
+ \end{equation} %]]&gt;&lt;/script&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Claim: some of the images in this session are cited from Andrew Ng’s Deep Learning specialization, but most are created by myself.</summary></entry><entry><title type="html">Convolutional Neural Networks</title><link href="http://localhost:4000/DL/CNN/" rel="alternate" type="text/html" title="Convolutional Neural Networks" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/DL/DL-CNN</id><content type="html" xml:base="http://localhost:4000/DL/CNN/">&lt;p&gt;Claim: some of the images in this session are cited from Andrew Ng’s &lt;a href=&quot;https://www.coursera.org/specializations/deep-learning&quot; target=&quot;_blank&quot;&gt;Deep Learning&lt;/a&gt; specialization.&lt;/p&gt;
 
 &lt;p&gt;Roadmap:&lt;/p&gt;
 &lt;ul&gt;
@@ -4855,414 +5171,4 @@ p(y=1|x_\text{new})&amp;=\frac{\prod_{i=1}^n{p(x_i|y=1)}\cdot p(y=1)}{\prod_{i=1
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Claim: some of the images in this session are cited from Andrew Ng’s Deep Learning specialization.</summary></entry><entry><title type="html">Generalized Linear Models</title><link href="http://localhost:4000/ML/GLM/" rel="alternate" type="text/html" title="Generalized Linear Models" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-GLM</id><content type="html" xml:base="http://localhost:4000/ML/GLM/">&lt;p&gt;Roadmap:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#bernoulli&quot;&gt;Bernoulli Distribution&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#gaussian&quot;&gt;Gaussian Distribution&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#poisson&quot;&gt;Poisson Distribution&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#gamma&quot;&gt;Gamma Distribution&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#beta&quot;&gt;Beta Distribution&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#dirichlet&quot;&gt;Dirichlet Distribution&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#construct&quot;&gt;Method of Constructing GLMs&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#softmax&quot;&gt;Softmax Regression&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt; &lt;/p&gt;
-&lt;h3 id=&quot;glm&quot;&gt;GLM&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;What are &lt;strong&gt;GLM&lt;/strong&gt;s?&lt;/p&gt;
-
-    &lt;p&gt;Remember the two models we had in the last post?&lt;br /&gt;
-  Regression:      $p(y|x,w)\sim N(\mu,\sigma^2)$&lt;br /&gt;
-  Classification:   $p(y|x,w)\sim \text{Bernoulli}(\phi)$&lt;/p&gt;
-
-    &lt;p&gt;They belong to GLM, a collection of models that can be applied to Supervised Learning problems. We will show more examples of GLMs in this markdown.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Exponential Family&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
-  p(y,\eta)=b(y)\cdot e^{\eta^TT(y)-a(\eta)}
-  \end{equation}&lt;/script&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;
-        &lt;p&gt;$\eta$: natural parameter (i.e. canonical parameter)&lt;/p&gt;
-
-        &lt;p&gt; different $\eta \rightarrow$ different distributions within the family&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$T(y)$: sufficient statistic (usually, $T(y)=y$)&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$a(\eta)$: log partition function&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$e^{-a(\eta)}$: normalization constant (to ensure that $\int{p(y,\eta)dy}=1$)&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$T,a,b$: fixed choice that defines a family of distributions parametrized by $\eta$&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;bernoulli&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Bernoulli Distribution&lt;/strong&gt; (Classification)&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  p(y|\phi)&amp;=\phi^y(1-\phi)^{1-y} \\
-  &amp;=e^{y\log{\phi}+(1-y)\log{(1-\phi)}} \\
-  &amp;=e^{y\log{\frac{\phi}{1-\phi}}+\log{(1-\phi)}} \\
-  \end{align} %]]&gt;&lt;/script&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;
-        &lt;p&gt;$\eta=\log{\frac{\phi}{1-\phi}}\Leftrightarrow \phi=\frac{1}{1+e^{-\eta}}$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$T(y)=y$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$a(\eta)=\log{(1+e^\eta)}$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$b(y)=1$&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;gaussian&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Gaussian Distribution&lt;/strong&gt; (Regression)&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  p(y|\mu,\sigma^2)&amp;=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{1}{2\sigma^2}(y-\mu)^2} \\
-  &amp;=\frac{1}{\sqrt{2\pi}}e^{\frac{\mu}{\sigma^2}y-\frac{1}{2\sigma^2}y^2-\frac{1}{2\sigma^2}\mu^2-\log{\sigma}}
-  \end{align} %]]&gt;&lt;/script&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;
-        &lt;p&gt;$\eta=\begin{bmatrix}
-    \frac{\mu}{\sigma^2} ;
-    \frac{-1}{2\sigma^2}
-   \end{bmatrix}$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$T(y)=\begin{bmatrix}
-    y;
-    y^2
-   \end{bmatrix}$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$a(\eta)=\frac{1}{2\sigma^2}\mu^2-\log{\sigma}=-\frac{\eta_1^2}{4\eta_2}-\frac{1}{2}\log{(-2\eta_2)}$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$b(y)=\frac{1}{\sqrt{2\pi}}$&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;poisson&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Poisson Distribution&lt;/strong&gt; (count-data)&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  p(y|\lambda)&amp;=\frac{\lambda^ye^{-\lambda}}{y!}\\
-  &amp;=\frac{1}{y!}e^{y\log{\lambda}-\lambda}
-  \end{align} %]]&gt;&lt;/script&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;
-        &lt;p&gt;$\eta=\log{\lambda}$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$T(y)=y$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$a(\eta)=e^\eta$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$b(y)=\frac{1}{y!}$&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;gamma&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Gamma Distribution&lt;/strong&gt; (continuous non-negative random variables)&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  p(y|\lambda,a)&amp;=\frac{\lambda^ay^{a-1}e^{-\lambda y}}{\Gamma(a)}\\
-  &amp;=\frac{y^{a-1}}{\Gamma(a)}e^{-\lambda y+a\log{\lambda}}
-  \end{align} %]]&gt;&lt;/script&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;
-        &lt;p&gt;$\eta=-\lambda$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$T(y)=y$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$a(\eta)=-a\log{(-\eta)}$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$b(y)=\frac{y^{a-1}}{\Gamma(a)}$&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;beta&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Beta Distribution&lt;/strong&gt; (distribution of probabilities)&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  p(y|\alpha,\beta)&amp;=\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}y^{\alpha-1}(1-y)^{\beta-1} \\
-  &amp;=\frac{(1-y)^\beta}{y(1-y)\Gamma(\beta)}e^{\alpha\log{y}- \log{\frac{\Gamma(\alpha)}{\Gamma(\alpha+\beta)}}} \\
-  &amp;=\frac{y^\alpha}{y(1-y)\Gamma(\alpha)}e^{\beta\log{(1-y)}- \log{\frac{\Gamma(\beta)}{\Gamma(\alpha+\beta)}}}
-  \end{align} %]]&gt;&lt;/script&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;
-        &lt;p&gt;$\eta=\alpha\ \text{or}\ \beta$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$T(y)=\log{y}\ \text{or}\ \log{(1-y)}$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$a(\eta)=\log{\frac{\Gamma(\eta)}{\Gamma(\alpha+\beta)}}$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$b(y)=\frac{(1-y)^\beta}{y(1-y)\Gamma(\beta)}\ \text{or}\ \frac{y^\alpha}{y(1-y)\Gamma(\alpha)}$&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;dirichlet&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Dirichlet Distribution&lt;/strong&gt; (multivariate beta)&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  p(y|\alpha)&amp;=\frac{\Gamma(\sum_k\alpha_k)}{\prod_k\Gamma(\alpha_k)}\prod_k{y_k^{\alpha_k-1}} \\
-  &amp;=\exp{\big(\sum_k{(\alpha_k-1)\log{y_k}}-\big[\sum_k{\log{\Gamma(\alpha_k)}}-\log{\Gamma(\sum_k{\alpha_k})}\big]\big)}
-  \end{align} %]]&gt;&lt;/script&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;
-        &lt;p&gt;$\eta=\alpha-1$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$T(y)=\log{y}$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$a(\eta)=\sum_k{\log{\Gamma(\alpha_k)}}-\log{\Gamma(\sum_k{\alpha_k})}$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$b(y)=1$&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;a name=&quot;construct&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;method-of-constructing-glms&quot;&gt;Method of Constructing GLMs&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;3 Assumptions&lt;/p&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;
-        &lt;p&gt;$y|x,w \sim \text{ExponentialFamily}(\eta)$&lt;/p&gt;
-
-        &lt;p&gt;$y$ given $x\&amp;amp;w$ follows some exponential family distribution with natural parameter $\eta$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$h(x)=\text{E}[y|x]$&lt;/p&gt;
-
-        &lt;p&gt;Our hypothetical model $h(x)$ should predict the expected value of $y$ given $x$&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;$\eta=w^Tx$&lt;/p&gt;
-
-        &lt;p&gt;$\eta$ is linearly related to $x$&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Example 1: OLS (Ordinary Least Squares) (i.e. LinReg)&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  h(x)&amp;=\text{E}[y\|x,w]\ \ \ \ \ \ &amp;\text{(Assumption 2)} \\
-     &amp;=\mu \\
-     &amp;=\eta\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ &amp;\text{(Assumption 1)} \\
-     &amp;=w^Tx\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ &amp;\text{(Assumption 3)}
-  \end{align} %]]&gt;&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Example 2: Logistic Regression&lt;/p&gt;
-
-    &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
-  h(x)&amp;=\text{E}[y\|x,w]\ \ \ \ \ \ &amp;\text{(Assumption 2)} \\
-     &amp;=\phi \\
-     &amp;=\frac{1}{1+e^{-\eta}}\ \ \ \ \ \ &amp;\text{(Assumption 1)} \\
-     &amp;=\frac{1}{1+e^{-w^Tx}}\ \ \ \ \ \ &amp;\text{(Assumption 3)}
-  \end{align} %]]&gt;&lt;/script&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Example 3: &lt;a name=&quot;softmax&quot;&gt;&lt;/a&gt;&lt;strong&gt;Softmax Regression&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;
-        &lt;p&gt;Softmax is a method used in &lt;strong&gt;multiclass classification&lt;/strong&gt; to select one output value $\phi_i$ of the highest probability among all the output values.&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- \hat{y}=\begin{bmatrix}
- \phi_1 \\
- \vdots \\
- \phi_{k-1}
- \end{bmatrix}
- \end{equation}&lt;/script&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;&lt;strong&gt;One-hot Encoding&lt;/strong&gt;&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- y\in \{ 1,\cdots,k \} \Rightarrow T(y)\in \mathbb{R}^{k}
- \end{equation}&lt;/script&gt;
-
-        &lt;p&gt;where&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- T(1)=\begin{bmatrix}
- 1 \\ 0 \\ \vdots \\ 0
- \end{bmatrix},
- T(2)=\begin{bmatrix}
- 0 \\ 1 \\ \vdots \\ 0
- \end{bmatrix},\cdots,
- T(k)=\begin{bmatrix}
- 0 \\ 0 \\ \vdots \\ 1
- \end{bmatrix}
- \end{equation}&lt;/script&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;&lt;strong&gt;Dummy Encoding&lt;/strong&gt;&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- y\in \{ 1,\cdots,k \} \Rightarrow T(y)\in \mathbb{R}^{k-1}
- \end{equation}&lt;/script&gt;
-
-        &lt;p&gt;where&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- T(1)=\begin{bmatrix}
- 1 \\ 0 \\ \vdots \\ 0
- \end{bmatrix},
- T(2)=\begin{bmatrix}
- 0 \\ 1 \\ \vdots \\ 0
- \end{bmatrix},\cdots,
- T(k-1)=\begin{bmatrix}
- 0 \\ 0 \\ \vdots \\ 1
- \end{bmatrix},
- T(k)=\begin{bmatrix}
- 0 \\ 0 \\ \vdots \\ 0
- \end{bmatrix}
- \end{equation}&lt;/script&gt;
-
-        &lt;p&gt;Why Dummy Encoding &amp;gt; One-hot Encoding? It reduces 1 entire column!&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Indicator Function&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- \text{I}\{ \text{True} \}=1,\ \text{I}\{ \text{False} \}=0
- \end{equation}&lt;/script&gt;
-
-        &lt;p&gt;Therefore,&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- T(y)_i =\text{I}\{ y=i \}
- \end{equation}&lt;/script&gt;
-
-        &lt;p&gt;Therefore,&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- \text{E}[T(y)_i] =P(y=i)=\phi_i
- \end{equation}&lt;/script&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Exponential Family form&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
- p(y|\phi)&amp;=\prod_{i=1}^{k}{\phi_i^{\text{I}\{ y=i \}}} \\
- &amp;=\prod_{i=1}^{k-1}{\phi_i^{T(y)_i}} \cdot \phi_k^{1-\sum_{i=1}^{k-1}{T(y)_i}} \\
- &amp;=\exp{\big(\sum_{i=1}^{k-1}{T(y)_i\log{(\phi_i)}-\sum_{i=1}^{k-1}{T(y)_i}\log{(\phi_k)}}+\log{(\phi_k)}\big)} \\
- &amp;=\exp{\big(\sum_{i=1}^{k-1}{T(y)_i\log{\big(\frac{\phi_i}{\phi_k}\big)}+\log{(\phi_k)}\big)}} \\
- \end{align} %]]&gt;&lt;/script&gt;
-
-        &lt;ol&gt;
-          &lt;li&gt;
-            &lt;p&gt;$\eta=\begin{bmatrix}\log{\big(\frac{\phi_1}{\phi_k}\big)}\ ;\ \cdots\ ;\ \log{\big(\frac{\phi_{k-1}}{\phi_k}\big)}\end{bmatrix}$&lt;/p&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;p&gt;$T(y)=\begin{bmatrix}T(y)_1\ ;\ \cdots\ ;\ T(y)_k-1\end{bmatrix}$&lt;/p&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;p&gt;$a(\eta)=-\log{(\phi_k)}$&lt;/p&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;p&gt;$b(y)=1$&lt;br /&gt;
-  &lt;/p&gt;
-          &lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;&lt;strong&gt;Softmax Function&lt;/strong&gt; (derived from $\eta_i=\log{\big(\frac{\phi_i}{\phi_k}\big)}$)&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- \phi_i=\frac{e^{\eta_i}}{\sum_{j=1}^k{e^{\eta_j}}}
- \end{equation}&lt;/script&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Probabilistic Interpretation of Softmax Regression&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation}
- p(y=i|x,w)=\frac{e^{w_i^Tx}}{\sum_{j=1}^k{e^{w_i^Tx}}}
- \end{equation}&lt;/script&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;Log Likelihood&lt;/p&gt;
-
-        &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align}
- l(w)&amp;=\sum_{i=1}^m{\log{p(y^{(i)}|x^{(i)},w)}} \\
- &amp;=\sum_{i=1}^m{\log{\prod_{i=1}^{k}{\Bigg(\frac{e^{w_l^Tx^{(i)}}}{\sum_{j=1}^k{e^{w_l^Tx^{(i)}}}}\Bigg)^{\text{I}\{ y^{(i)}=l \}}}}}
- \end{align} %]]&gt;&lt;/script&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Roadmap: Bernoulli Distribution Gaussian Distribution Poisson Distribution Gamma Distribution Beta Distribution Dirichlet Distribution Method of Constructing GLMs Softmax Regression</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Claim: some of the images in this session are cited from Andrew Ng’s Deep Learning specialization.</summary></entry></feed>

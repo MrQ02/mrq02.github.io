@@ -8,12 +8,14 @@ header-includes:
 ---
 <br>
 **Main Directories:**
-- [**Probability & Statistics**](#PS)
 - [**Machine Learning**](#ML)
 - [**Deep Learning**](#DL)
-- Reinforcement Learning
+- [**Reinforcement Learning**](#RL)
 - [**Quantitative Finance**](#qf)
+- [**Mathematics**](#math)
+- [**Statistics**](#stats)
 - [**Neuroscience**](#neuro)
+
 
 &emsp;<a name="ML"></a>
 ## Machine Learning
@@ -194,13 +196,43 @@ References:
 * Andrew Ng. <a href="https://www.coursera.org/specializations/deep-learning" target="__blank">Deep Learning Specialization</a>. Coursera Inc.
 * Goodfellow, I. Bengio, Y. Courville, A. <a href="http://www.deeplearningbook.org/" target="__blank">Deep Learning</a>. MIT Press.
 
-&emsp;<a name="qf"></a>
-## Quantitative Finance
+&emsp;<a name="DL"></a>
+## Reinforcement Learning
 
-- [**Financial Foundations**](/quant/foundation/)
+References:
+* Sutton, R.S., Barto, A.G., *Reinforcement Learning: An Introduction*. The MIT Press.
+
+
+&emsp;<a name="qf"></a>
+## Quantitative Investments
+
+- [**Introduction**](../../assets/quant/intro.pdf)
 
 References:
 * Wilmott, P. *Paul Wilmott on Quantitative Finance Vol 1-3, 2nd Ed*. John Wiley & Sons Ltd.
+* Gallati, R. <a href="https://ocw.mit.edu/courses/sloan-school-of-management/15-433-investments-spring-2003/" target="__blank">15.433 Investments</a>. MIT OCW.
+* Bodie, Z., Kane, A., Marcus, A.J. *Investments 11th edition*. McGraw Hill Education.
+
+&emsp;<a name="math"></a>
+## Mathematics
+
+- [**Differential Equations**](/math/diffeq/)
+- [**Fourier Analysis**](/math/fourier/)
+- [**Complex Analysis**](/math/comp/)
+- [**Real Analysis**](/math/real/)
+
+References:  
+* Stein, E.M. & Shakarchi, R. *Princeton Lectures in Analysis*. Princeton University Press.
+
+&emsp;<a name="stats"></a>
+## Statistics
+
+- [**Probability Theory**](/PS/prob/)
+
+References:
+* Tsitsiklis, J. <a href="https://ocw.mit.edu/resources/res-6-012-introduction-to-probability-spring-2018/" target="__blank">RES 6.012 Introduction to Probability</a>. MIT OCW.
+* Hamming, R.W. *The Art of Probability*. Addison-Wesley Publishing Company Inc.
+* Wzchen. <a href="https://github.com/wzchen/probability_cheatsheet" target="__blank">Probability Cheatsheet</a>. Github.
 
 &emsp;<a name="neuro"></a>
 ## Neuroscience
