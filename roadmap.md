@@ -12,7 +12,6 @@ header-includes:
 - [**Deep Learning**](#DL)
 - [**Reinforcement Learning**](#RL)
 - [**Quantitative Finance**](#qf)
-- [**Mathematics**](#math)
 - [**Statistics**](#stats)
 - [**Neuroscience**](#neuro)
 
@@ -22,13 +21,13 @@ header-includes:
 
 - **Supervised Learning**
 
-    - [**Regression**](/ML/reg/)
+    - [**Regression**](../../assets/ML/regression.pdf)
     
-        - [Linear Regression](/ML/reg/#linreg)
-        - [Polynomial Regression](/ML/reg/#poly)
-        - [Locally Weighted Linear Regression](/ML/reg/#lwr)
-        - [Ridge Regression](/ML/reg/#ridge)
-        - [LASSO Regression](/ML/reg/#lasso)
+        - Linear Regression
+        - Polynomial Regression
+        - Locally Weighted Linear Regression
+        - Ridge Regression
+        - LASSO Regression
         - [Generalized Linear Models](/ML/GLM/)  
     <br/>
     - [**Classification**](/ML/class/)
@@ -213,16 +212,6 @@ References:
 * Gallati, R. <a href="https://ocw.mit.edu/courses/sloan-school-of-management/15-433-investments-spring-2003/" target="__blank">15.433 Investments</a>. MIT OCW.
 * Bodie, Z., Kane, A., Marcus, A.J. *Investments 11th edition*. McGraw Hill Education.
 
-&emsp;<a name="math"></a>
-## Mathematics
-
-- [**Differential Equations**](/math/diffeq/)
-- [**Fourier Analysis**](/math/fourier/)
-- [**Complex Analysis**](/math/comp/)
-- [**Real Analysis**](/math/real/)
-
-References:  
-* Stein, E.M. & Shakarchi, R. *Princeton Lectures in Analysis*. Princeton University Press.
 
 &emsp;<a name="stats"></a>
 ## Statistics
