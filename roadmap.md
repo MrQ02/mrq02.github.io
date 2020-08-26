@@ -12,8 +12,7 @@ header-includes:
 - [**Deep Learning**](#DL)
 - [**Reinforcement Learning**](#RL)
 - [**Quantitative Finance**](#qf)
-- [**Statistics**](#stats)
-- [**Neuroscience**](#neuro)
+- [**Econometrics**](#em)
 
 
 &emsp;<a name="ML"></a>
@@ -195,15 +194,34 @@ References:
 * Andrew Ng. <a href="https://www.coursera.org/specializations/deep-learning" target="__blank">Deep Learning Specialization</a>. Coursera Inc.
 * Goodfellow, I. Bengio, Y. Courville, A. <a href="http://www.deeplearningbook.org/" target="__blank">Deep Learning</a>. MIT Press.
 
-&emsp;<a name="DL"></a>
+&emsp;<a name="RL"></a>
 ## Reinforcement Learning
 
+- [**Fundamentals**](../../assets/RL/fundamentals.pdf)
+    
+    - K-armed Bandit Problem
+        - Exploration-Exploitation Dilemma
+            - Epsilon-Greedy action selection
+            - UCB action selection
+    - Markov Decision Processes
+    - Goal of RL
+    - Policies & Optimality
+        - Bellman Equation
+        - Bellman Optimality Equation
+    - Dynamic Programming
+        - Policy Evaluation (Prediction)
+        - Policy Iteration (Control)
+        - Generalized Policy Iteration
+            - Monte-Carlo Method vs Bootstrapping
+            - Brute-Force Search vs Policy Improvement
+
 References:
+* University of Alberta <a href="https://www.coursera.org/specializations/reinforcement-learning" target="__blank">Reinforcement Learning Specialization</a>. Coursera Inc.
 * Sutton, R.S., Barto, A.G., *Reinforcement Learning: An Introduction*. The MIT Press.
 
 
 &emsp;<a name="qf"></a>
-## Quantitative Investments
+## Quantitative Finance
 
 - [**Introduction**](../../assets/quant/intro.pdf)
 
@@ -211,26 +229,3 @@ References:
 * Wilmott, P. *Paul Wilmott on Quantitative Finance Vol 1-3, 2nd Ed*. John Wiley & Sons Ltd.
 * Gallati, R. <a href="https://ocw.mit.edu/courses/sloan-school-of-management/15-433-investments-spring-2003/" target="__blank">15.433 Investments</a>. MIT OCW.
 * Bodie, Z., Kane, A., Marcus, A.J. *Investments 11th edition*. McGraw Hill Education.
-
-
-&emsp;<a name="stats"></a>
-## Statistics
-
-- [**Probability Theory**](/PS/prob/)
-
-References:
-* Tsitsiklis, J. <a href="https://ocw.mit.edu/resources/res-6-012-introduction-to-probability-spring-2018/" target="__blank">RES 6.012 Introduction to Probability</a>. MIT OCW.
-* Hamming, R.W. *The Art of Probability*. Addison-Wesley Publishing Company Inc.
-* Wzchen. <a href="https://github.com/wzchen/probability_cheatsheet" target="__blank">Probability Cheatsheet</a>. Github.
-
-&emsp;<a name="neuro"></a>
-## Neuroscience
-
-- [**Neuroanatomy**]
-- [**Neural Signaling**]
-- [**Sensory Systems**]
-- [**Motor Control**]
-- [**Brain**]
-
-References:
-* Leonard E. White. <a href="https://www.coursera.org/learn/medical-neuroscience" target="__blank">Medical Neuroscience</a>. Duke University. Coursera Inc.
