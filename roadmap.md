@@ -223,7 +223,42 @@ References:
 &emsp;<a name="qf"></a>
 ## Quantitative Finance
 
-- [**Introduction**](../../assets/quant/intro.pdf)
+- [**Fixed-Income Securities**](../../assets/quant/fixed_income.pdf)
+
+    - Time Value of Money
+        - Interest Rate
+        - NPV
+        - IRR
+    - Bond
+        - Price Sensitivity & Duration
+        - Convexity & Dispersion
+        - Yield Curve Estimation
+        - Defaultable Bond & Credit Spread  
+<br/>
+- [**Portfolio Theory**](../../assets/quant/portfolio_theory.pdf)
+
+    - Concepts
+        - Limit of Diversification
+        - Tradeoff of Risk & Return
+    - Mean-Variance Approach
+        - Risk-free
+        - Minimum Variance Frontier
+            - Two Fund Theorem
+            - One Fund Theorem
+        - Closed-form solution
+        - Estimation under unknown risk & return
+    - Alternative Risk Measures
+        - Mean Absolute Deviation
+        - Semivariance
+        - Expected Shortfall
+            - Coherent Risk Measure
+    - Risk Parity Approach
+        - 1/N Portfolio
+        - Global Minimum Variance Portfolio
+        - Risk Parity Portfolio
+        - Maximum Diversification Portfolio
+    - Passive Management
+        - Tracking Error Minimization
 
 References:
 * Wilmott, P. *Paul Wilmott on Quantitative Finance Vol 1-3, 2nd Ed*. John Wiley & Sons Ltd.
