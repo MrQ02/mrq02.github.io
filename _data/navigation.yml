@@ -2,9 +2,7 @@
   link: /
 - name: CV
   link: /cv/
-- name: Roadmap
-  link: /roadmap/
+- name: Guide
+  link: /guide/
 - name: Projects
   link: 'http://github.com/mrq02'
-- name: About
-  link: /about/

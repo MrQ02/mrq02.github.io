@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Roadmap"
+title: "Guide"
 date: 2019-12-11 22:29:53 +0900
-permalink: /roadmap/
+permalink: /guide/
 header-includes:
 - \usepackage{amsmath}
 ---
@@ -21,7 +21,7 @@ header-includes:
 - **Supervised Learning**
 
     - [**Regression**](../../assets/ML/regression.pdf)
-    
+
         - Linear Regression
         - Polynomial Regression
         - Locally Weighted Linear Regression
@@ -29,19 +29,19 @@ header-includes:
         - LASSO Regression
         - [Generalized Linear Models](/ML/GLM/)  
     <br/>
-    - [**Classification**](/ML/class/)
-    
-        - [Logistic Regression](/ML/class/#logreg)
+    - [**Classification**](../../assets/ML/classification.pdf)
+
+        - Logistic Regression
         - [Softmax Regression](/ML/GLM/#softmax)
-        - [k-NN (k-Nearest Neighbors)](/ML/class/#knn)
-        - [GDA (Gaussian Discriminant Analysis)](/ML/class/#gda)
-        - [Naive Bayes Classifier](/ML/class/#nb)
-        - [SVM (Support Vector Machine)](/ML/SVM/)
+        - k-NN (k-Nearest Neighbors)
+        - Gaussian Discriminant Analysis
+        - Naive Bayes Classifier
+        - SVM (Support Vector Machine)
         - Perceptron
         - Decision Trees
         - Ensembles (boosting)  
 <br/>
-- **Unsupervised Learning (Clustering)**  
+- **Unsupervised Learning (Clustering)**
 
     - k-means
     - Hierarchical
@@ -52,7 +52,7 @@ header-includes:
     - OPTICS
     - Mean-shift  
 <br/>
-- Dimensionality Reduction  
+- Dimensionality Reduction
 
     - Factor Analysis
     - PCA
@@ -62,7 +62,7 @@ header-includes:
     - NMF
     - t-SNE  
 <br/>
-- Graphical Models 
+- Graphical Models
 
     - Bayesian Network
     - Conditional Random Field
@@ -81,7 +81,7 @@ header-includes:
     - Empirical Risk Minimization (ERM)
     - Occam Learning
     - PAC Learning
-    - VC Theory  
+    - VC Theory
 
 References:
 * ColumbiaX. <a href="https://www.edx.org/micromasters/columbiax-artificial-intelligence" target="__blank">Artificial Intelligence MicroMasters Program</a>. edX Inc.
@@ -92,7 +92,7 @@ References:
 ## Deep Learning
 
 - [**Basics of NN**](/DL/ANN/)
-    
+
     - [Neural Network Representation](/DL/ANN/#nn)
     - [Activation Functions](/DL/ANN/#af)
     - Training
@@ -188,7 +188,7 @@ References:
         - [Sequence to Sequence](/DL/RNN/#seq2seq)
         - [Beam Search](/DL/RNN/#beam)
         - [Bleu Score](/DL/RNN/#bleu)
-        - [Attention Model](/DL/RNN/#attention)  
+        - [Attention Model](/DL/RNN/#attention)
 
 References:
 * Andrew Ng. <a href="https://www.coursera.org/specializations/deep-learning" target="__blank">Deep Learning Specialization</a>. Coursera Inc.
@@ -198,7 +198,7 @@ References:
 ## Reinforcement Learning
 
 - [**Fundamentals**](../../assets/RL/fundamentals.pdf)
-    
+
     - K-armed Bandit Problem
         - Exploration-Exploitation Dilemma
             - Epsilon-Greedy action selection
