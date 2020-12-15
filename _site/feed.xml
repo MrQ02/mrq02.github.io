@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-09-14T18:05:18+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">Probability</title><link href="http://localhost:4000/PS/prob/" rel="alternate" type="text/html" title="Probability" /><published>2020-04-25T12:47:53+09:00</published><updated>2020-04-25T12:47:53+09:00</updated><id>http://localhost:4000/PS/PS-prob</id><content type="html" xml:base="http://localhost:4000/PS/prob/">&lt;p&gt;Roadmap:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-15T22:37:26+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mr.Q’s HUB</title><entry><title type="html">Probability</title><link href="http://localhost:4000/PS/prob/" rel="alternate" type="text/html" title="Probability" /><published>2020-04-25T11:47:53+08:00</published><updated>2020-04-25T11:47:53+08:00</updated><id>http://localhost:4000/PS/PS-prob</id><content type="html" xml:base="http://localhost:4000/PS/prob/">&lt;p&gt;Roadmap:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Basics
     &lt;ul&gt;
@@ -51,7 +51,7 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Roadmap: Basics Sampling Table</summary></entry><entry><title type="html">Differential Equations</title><link href="http://localhost:4000/math/diffeq/" rel="alternate" type="text/html" title="Differential Equations" /><published>2020-04-25T12:47:53+09:00</published><updated>2020-04-25T12:47:53+09:00</updated><id>http://localhost:4000/math/math-diffeq</id><content type="html" xml:base="http://localhost:4000/math/diffeq/">&lt;p&gt;Roadmap:&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Roadmap: Basics Sampling Table</summary></entry><entry><title type="html">Differential Equations</title><link href="http://localhost:4000/math/diffeq/" rel="alternate" type="text/html" title="Differential Equations" /><published>2020-04-25T11:47:53+08:00</published><updated>2020-04-25T11:47:53+08:00</updated><id>http://localhost:4000/math/math-diffeq</id><content type="html" xml:base="http://localhost:4000/math/diffeq/">&lt;p&gt;Roadmap:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#1oode&quot;&gt;Linear 1st-Order ODE&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#2oode&quot;&gt;Linear 2nd-Order ODE&lt;/a&gt;&lt;/li&gt;
@@ -129,7 +129,7 @@
       &lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Roadmap: Linear 1st-Order ODE Linear 2nd-Order ODE</summary></entry><entry><title type="html">Recurrent Neural Networks</title><link href="http://localhost:4000/DL/RNN/" rel="alternate" type="text/html" title="Recurrent Neural Networks" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/DL/DL-RNN</id><content type="html" xml:base="http://localhost:4000/DL/RNN/">&lt;p&gt;Claim: some of the images in this session are cited from Andrew Ng’s &lt;a href=&quot;https://www.coursera.org/specializations/deep-learning&quot; target=&quot;_blank&quot;&gt;Deep Learning&lt;/a&gt; specialization, but most are created by myself.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Roadmap: Linear 1st-Order ODE Linear 2nd-Order ODE</summary></entry><entry><title type="html">Recurrent Neural Networks</title><link href="http://localhost:4000/DL/RNN/" rel="alternate" type="text/html" title="Recurrent Neural Networks" /><published>2019-12-01T21:29:53+08:00</published><updated>2019-12-01T21:29:53+08:00</updated><id>http://localhost:4000/DL/DL-RNN</id><content type="html" xml:base="http://localhost:4000/DL/RNN/">&lt;p&gt;Claim: some of the images in this session are cited from Andrew Ng’s &lt;a href=&quot;https://www.coursera.org/specializations/deep-learning&quot; target=&quot;_blank&quot;&gt;Deep Learning&lt;/a&gt; specialization, but most are created by myself.&lt;/p&gt;
 
 &lt;p&gt;Roadmap:&lt;/p&gt;
 &lt;ul&gt;
@@ -918,7 +918,7 @@ p_2=\frac{1+0+1+1+1}{2+1+1+1+1}=\frac{2}{3}
  \hat{y}^{&lt;t&gt;}=s^{&lt;t&gt;}=g\big(W_y[\hat{y}^{&lt;t-1&gt;};c^{&lt;t&gt;}]+b_y\big)
  \end{equation} %]]&gt;&lt;/script&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">Claim: some of the images in this session are cited from Andrew Ng’s Deep Learning specialization, but most are created by myself.</summary></entry><entry><title type="html">Improvements on Neural Networks</title><link href="http://localhost:4000/DL/imp/" rel="alternate" type="text/html" title="Improvements on Neural Networks" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/DL/DL-imp</id><content type="html" xml:base="http://localhost:4000/DL/imp/">&lt;p&gt;Roadmap:&lt;/p&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Claim: some of the images in this session are cited from Andrew Ng’s Deep Learning specialization, but most are created by myself.</summary></entry><entry><title type="html">Improvements on Neural Networks</title><link href="http://localhost:4000/DL/imp/" rel="alternate" type="text/html" title="Improvements on Neural Networks" /><published>2019-12-01T21:29:53+08:00</published><updated>2019-12-01T21:29:53+08:00</updated><id>http://localhost:4000/DL/DL-imp</id><content type="html" xml:base="http://localhost:4000/DL/imp/">&lt;p&gt;Roadmap:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#split&quot;&gt;Train/Test Split&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#init&quot;&gt;Initialization&lt;/a&gt;&lt;/li&gt;
@@ -1571,7 +1571,7 @@ W^{[l]}&amp;:=w^{[l]}-\alpha\cdot\frac{\partial{\mathcal{L}}}{\partial{W^{[l]}}}
       &lt;li&gt;Batch Normalization eliminates $b^{[l]}$ during $\mu$ calculation&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">Roadmap: Train/Test Split Initialization Data Fitting with refined procedure Regularization Regularization on LogReg L2 Regularization L1 Regularization Regularization on NN Dropout Data Augmentation Early Stopping Orthogonalization Feature Scaling (normalization) Gradient Checking Optimization Mini-Batch Gradient Descent Gradient Descent with Momentum Exponentially Weighted (Moving) Average Bias Correction Momentum RMSprop Adam Learning Rate Decay Problems with optimization Hyperparameter Tuning Batch Normalization   Train/Test Split</summary></entry><entry><title type="html">Basics of Artificial Neural Networks</title><link href="http://localhost:4000/DL/ANN/" rel="alternate" type="text/html" title="Basics of Artificial Neural Networks" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/DL/DL-Basics</id><content type="html" xml:base="http://localhost:4000/DL/ANN/">&lt;p&gt;Claim:&lt;br /&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Roadmap: Train/Test Split Initialization Data Fitting with refined procedure Regularization Regularization on LogReg L2 Regularization L1 Regularization Regularization on NN Dropout Data Augmentation Early Stopping Orthogonalization Feature Scaling (normalization) Gradient Checking Optimization Mini-Batch Gradient Descent Gradient Descent with Momentum Exponentially Weighted (Moving) Average Bias Correction Momentum RMSprop Adam Learning Rate Decay Problems with optimization Hyperparameter Tuning Batch Normalization   Train/Test Split</summary></entry><entry><title type="html">Basics of Artificial Neural Networks</title><link href="http://localhost:4000/DL/ANN/" rel="alternate" type="text/html" title="Basics of Artificial Neural Networks" /><published>2019-12-01T21:29:53+08:00</published><updated>2019-12-01T21:29:53+08:00</updated><id>http://localhost:4000/DL/DL-Basics</id><content type="html" xml:base="http://localhost:4000/DL/ANN/">&lt;p&gt;Claim:&lt;br /&gt;
 The dimensions used in this notebook are of my personal preference. They can be modified in whatever way you want as long as they are in consistency.&lt;/p&gt;
 
 &lt;p&gt;Roadmap:&lt;/p&gt;
@@ -1899,7 +1899,7 @@ W := W-\alpha\frac{\partial\mathcal{L}}{\partial W}
  W&amp;=W-\alpha\frac{\partial\mathcal{L}}{\partial W}
  \end{align} %]]&gt;&lt;/script&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><summary type="html">Claim: The dimensions used in this notebook are of my personal preference. They can be modified in whatever way you want as long as they are in consistency.</summary></entry><entry><title type="html">SVM</title><link href="http://localhost:4000/ML/SVM/" rel="alternate" type="text/html" title="SVM" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-SVM</id><content type="html" xml:base="http://localhost:4000/ML/SVM/">&lt;p&gt;Roadmap:&lt;/p&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Claim: The dimensions used in this notebook are of my personal preference. They can be modified in whatever way you want as long as they are in consistency.</summary></entry><entry><title type="html">SVM</title><link href="http://localhost:4000/ML/SVM/" rel="alternate" type="text/html" title="SVM" /><published>2019-12-01T21:29:53+08:00</published><updated>2019-12-01T21:29:53+08:00</updated><id>http://localhost:4000/ML/ML-SVM</id><content type="html" xml:base="http://localhost:4000/ML/SVM/">&lt;p&gt;Roadmap:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#margin&quot;&gt;Functional &amp;amp; Geometric Margins&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#lagrange&quot;&gt;Lagrange Duality&lt;/a&gt;
@@ -2109,7 +2109,7 @@ g(z)=\begin{cases}
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Roadmap: Functional &amp;amp; Geometric Margins Lagrange Duality KKT Conditions</summary></entry><entry><title type="html">Classification</title><link href="http://localhost:4000/ML/class/" rel="alternate" type="text/html" title="Classification" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-class</id><content type="html" xml:base="http://localhost:4000/ML/class/">&lt;p&gt;Roadmap:&lt;/p&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Roadmap: Functional &amp;amp; Geometric Margins Lagrange Duality KKT Conditions</summary></entry><entry><title type="html">Classification</title><link href="http://localhost:4000/ML/class/" rel="alternate" type="text/html" title="Classification" /><published>2019-12-01T21:29:53+08:00</published><updated>2019-12-01T21:29:53+08:00</updated><id>http://localhost:4000/ML/ML-class</id><content type="html" xml:base="http://localhost:4000/ML/class/">&lt;p&gt;Roadmap:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#logreg&quot;&gt;Logistic Regression&lt;/a&gt;
     &lt;ul&gt;
@@ -2635,7 +2635,7 @@ p(y=1|x_\text{new})&amp;=\frac{\prod_{i=1}^n{p(x_i|y=1)}\cdot p(y=1)}{\prod_{i=1
 \begin{align}
 \phi_{j|y=1}&amp;=\frac{\sum_{i=1}^m{I\{x_{j}^{(i)}=1\land y^{(i)}=1\}}+1}{\sum_{i=1}^m{I\{y^{(i)}=1\}}+2} \\
 \phi_{j|y=0}&amp;=\frac{\sum_{i=1}^m{I\{x_{j}^{(i)}=1\land y^{(i)}=0\}}+1}{\sum_{i=1}^m{I\{y^{(i)}=0\}}+2} \\
-\end{align} %]]&gt;&lt;/script&gt;</content><author><name></name></author><summary type="html">Roadmap: Logistic Regression Learning Gradient Descent Newton’s Method Normal Equation Code Template k-Nearest Neighbors Statistical Setting for Classification Gaussian Discriminant Analysis 2 Types of Learning Algorithms &amp;amp; Bayes Theorem Naive Bayes Classifier Laplace Smoothing</summary></entry><entry><title type="html">Convolutional Neural Networks</title><link href="http://localhost:4000/DL/CNN/" rel="alternate" type="text/html" title="Convolutional Neural Networks" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/DL/DL-CNN</id><content type="html" xml:base="http://localhost:4000/DL/CNN/">&lt;p&gt;Claim: some of the images in this session are cited from Andrew Ng’s &lt;a href=&quot;https://www.coursera.org/specializations/deep-learning&quot; target=&quot;_blank&quot;&gt;Deep Learning&lt;/a&gt; specialization.&lt;/p&gt;
+\end{align} %]]&gt;&lt;/script&gt;</content><author><name></name></author><summary type="html">Roadmap: Logistic Regression Learning Gradient Descent Newton’s Method Normal Equation Code Template k-Nearest Neighbors Statistical Setting for Classification Gaussian Discriminant Analysis 2 Types of Learning Algorithms &amp;amp; Bayes Theorem Naive Bayes Classifier Laplace Smoothing</summary></entry><entry><title type="html">Convolutional Neural Networks</title><link href="http://localhost:4000/DL/CNN/" rel="alternate" type="text/html" title="Convolutional Neural Networks" /><published>2019-12-01T21:29:53+08:00</published><updated>2019-12-01T21:29:53+08:00</updated><id>http://localhost:4000/DL/DL-CNN</id><content type="html" xml:base="http://localhost:4000/DL/CNN/">&lt;p&gt;Claim: some of the images in this session are cited from Andrew Ng’s &lt;a href=&quot;https://www.coursera.org/specializations/deep-learning&quot; target=&quot;_blank&quot;&gt;Deep Learning&lt;/a&gt; specialization.&lt;/p&gt;
 
 &lt;p&gt;Roadmap:&lt;/p&gt;
 &lt;ul&gt;
@@ -3560,7 +3560,7 @@ p(y=1|x_\text{new})&amp;=\frac{\prod_{i=1}^n{p(x_i|y=1)}\cdot p(y=1)}{\prod_{i=1
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Claim: some of the images in this session are cited from Andrew Ng’s Deep Learning specialization.</summary></entry><entry><title type="html">Generalized Linear Models</title><link href="http://localhost:4000/ML/GLM/" rel="alternate" type="text/html" title="Generalized Linear Models" /><published>2019-12-01T22:29:53+09:00</published><updated>2019-12-01T22:29:53+09:00</updated><id>http://localhost:4000/ML/ML-GLM</id><content type="html" xml:base="http://localhost:4000/ML/GLM/">&lt;p&gt;Roadmap:&lt;/p&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Claim: some of the images in this session are cited from Andrew Ng’s Deep Learning specialization.</summary></entry><entry><title type="html">Generalized Linear Models</title><link href="http://localhost:4000/ML/GLM/" rel="alternate" type="text/html" title="Generalized Linear Models" /><published>2019-12-01T21:29:53+08:00</published><updated>2019-12-01T21:29:53+08:00</updated><id>http://localhost:4000/ML/ML-GLM</id><content type="html" xml:base="http://localhost:4000/ML/GLM/">&lt;p&gt;Roadmap:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#bernoulli&quot;&gt;Bernoulli Distribution&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#gaussian&quot;&gt;Gaussian Distribution&lt;/a&gt;&lt;/li&gt;

@@ -216,7 +216,7 @@ References:
             - Brute-Force Search vs Policy Improvement
 
 References:
-* University of Alberta <a href="https://www.coursera.org/specializations/reinforcement-learning" target="__blank">Reinforcement Learning Specialization</a>. Coursera Inc.
+* University of Alberta. <a href="https://www.coursera.org/specializations/reinforcement-learning" target="__blank">Reinforcement Learning Specialization</a>. Coursera Inc.
 * Sutton, R.S., Barto, A.G., *Reinforcement Learning: An Introduction*. The MIT Press.
 
 
