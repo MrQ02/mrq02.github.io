@@ -10,4 +10,4 @@ permalink: /guide/
 - [**Deep Learning**](../../dl/)
 - [**Reinforcement Learning**](#RL)
 - [**Quantitative Finance**](#qf)
-- [**Econometrics**](#em)
+- [**Time Series Analysis**](#tsa)
