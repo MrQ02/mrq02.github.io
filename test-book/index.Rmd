@@ -1,4 +1,4 @@
---- 
+---
 title: "Guide to Handbooks"
 author: "Renyi Qu"
 date: "`r Sys.Date()`"
@@ -17,9 +17,9 @@ permalink: /guide/
 
 **Main Directories:**
 
-- [**Machine Learning**](#ML)  
-- [**Deep Learning**](#DL)  
-- [**Reinforcement Learning**](#RL)  
-- [**Quantitative Finance**](#qf)  
-- [**Econometrics**](#em)  
+- [**Machine Learning**](#ML)
+- [**Deep Learning**](#DL)
+- [**Reinforcement Learning**](#RL)
+- [**Quantitative Finance**](#qf)
+- [**Econometrics**](#em)
 
