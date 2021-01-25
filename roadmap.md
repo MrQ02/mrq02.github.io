@@ -6,8 +6,7 @@ permalink: /guide/
 ---
 <br>
 **Main Directories:**
-- [**Machine Learning**](#ML)
+- [**Machine Learning**](../../ml/)
 - [**Deep Learning**](../../dl/)
-- [**Reinforcement Learning**](#RL)
-- [**Quantitative Finance**](#qf)
-- [**Time Series Analysis**](#tsa)
+- [**Reinforcement Learning**](../../rl)
+- [**Time Series Analysis**](../../tsa/)
