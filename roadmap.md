@@ -10,4 +10,4 @@ permalink: /guide/
 - [**Deep Learning**](../../dl/)
 - [**Reinforcement Learning**](../../rl)
 - [**Time Series Analysis**](../../tsa/)
-- [**Bayesian Statistics**](../../bs/)
+- [**Bayesian Statistics**](../../bayes/)
