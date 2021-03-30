@@ -9,5 +9,5 @@ permalink: /guide/
 - [**Machine Learning**](../../ml/)
 - [**Deep Learning**](../../dl/)
 - [**Reinforcement Learning**](../../rl)
-- [**Time Series Analysis**](../../tsa/)
+- [**Econometrics**](../../em/)
 - [**Bayesian Statistics**](../../bayes/)
